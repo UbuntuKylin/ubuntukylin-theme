@@ -1,3 +1,9 @@
+ubuntukylin-theme (1.0.1) trusty; urgency=low
+
+  * Add new display-message functions for plymouth (LP: #1329262)
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Fri, 13 Jun 2014 13:50:07 +0800
+
 ubuntukylin-theme (1.0.0) trusty; urgency=low
 
   * for Ubuntu Kylin 14.04

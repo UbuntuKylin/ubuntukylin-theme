@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-//背景
+
 
 Window.SetBackgroundTopColor (0, 0, 0);           
 Window.SetBackgroundBottomColor (0, 0, 0); 
@@ -115,12 +115,425 @@ progress = 0;
 star_progress=0;
 
 
+# Set the text colour in (rgb / 256)
+text_colour.red = 1.0;
+text_colour.green = 1.0;
+text_colour.blue = 1.0;
+
+# Tinted text #988592
+tinted_text_colour.red = 0.59;
+tinted_text_colour.green = 0.52;
+tinted_text_colour.blue = 0.57;
+
+# Action Text - #ffffff - RGB 255 255 255
+action_text_colour.red = 1.0;
+action_text_colour.green = 1.0;
+action_text_colour.blue = 1.0;
+
+# Orange - #ff4012 - RGB 255 64 18
+debugsprite = Sprite();
+debugsprite_bottom = Sprite();
+debugsprite_medium = Sprite();
+
+# are we currently prompting for a password?
+prompt_active = 0;
+
+# General purpose function to create text
+fun WriteText (text, colour) {
+    image = Image.Text (text, colour.red, colour.green, colour.blue);
+    return image;
+}
+
+fun ImageToText (text) {
+    image = WriteText (text, text_colour);
+    return image;
+}
+
+fun ImageToTintedText (text) {
+    image = WriteText (text, tinted_text_colour);
+    return image;
+}
+
+fun ImageToActionText (text) {
+    image = WriteText (text, action_text_colour);
+    return image;
+}
+
+fun Debug(text) {
+    debugsprite.SetImage(ImageToText (text));
+}
+
+fun DebugBottom(text) {
+    debugsprite_bottom.SetImage(ImageToText (text));
+    debugsprite_bottom.SetPosition(0, (Window.GetHeight (0) - 20), 1);
+}
+
+fun DebugMedium(text) {
+    debugsprite_medium.SetImage(ImageToText (text));
+    debugsprite_medium.SetPosition(0, (Window.GetHeight (0) - 60), 1);
+}
+
+fun TextYOffset() {
+    local.y;
+    local.text_height;
+    local.min_height;
+
+    # Put the 1st line below the logo + some spacing 
+    y = text_sprite.GetY() + resized_text_image.GetHeight() ;
+    text_height = first_line_height * 7.5;
+#DebugBottom(resized_text_image.GetHeight());
+    min_height = Window.GetHeight();
+    if (y + text_height > min_height)
+        y = min_height - text_height;
+
+    return y;
+}
+
+#------------------------------String functions-------------------------------
+
+# This is the equivalent for strstr()
+fun StringString(string, substring) {
+    start = 0;
+    while (String(string).CharAt (start)) {
+        walk = 0;
+        while (String(substring).CharAt (walk) == String(string).CharAt (start + walk) ) {
+            walk++;
+            if (!String(substring).CharAt (walk)) return start;
+        }
+        start++;
+    }
+    
+    return NULL;
+}
+
+fun StringLength (string) {
+    index = 0;
+    while (String(string).CharAt(index)) index++;
+    return index;
+}
+
+fun StringCopy (source, beginning, end) {
+    local.destination = "";
+    for (index = beginning; ( ( (end == NULL) || (index <= end) ) && (String(source).CharAt(index)) ); index++) {
+        local.destination += String(source).CharAt(index);
+    }
+    
+    return local.destination;
+}
+
+fun StringReplace (source, pattern, replacement) {
+    local.found = StringString(source, pattern);
+    if (local.found == NULL)
+        return source;
+
+    local.new_string = StringCopy (source, 0, local.found - 1) +
+                       replacement +
+                       StringCopy (source, local.found + StringLength(pattern), NULL);
+
+    return local.new_string;
+}
+
+# it makes sense to use it only for
+# numbers up to 100
+fun StringToInteger (str) {
+    int = -1;
+    for (i=0; i<=100; i++) {
+        if (i+"" == str) {
+            int = i;
+            break;
+        }
+    }
+    return int;
+}
+
+#-----------------------------------------------------------------------------
+# Previous background colour
+# #300a24 --> 0.19, 0.04, 0.14
+# New background colour
+# #2c001e --> 0.16, 0.00, 0.12
+#
+#Window.SetBackgroundTopColor (0.16, 0.00, 0.12);     # Nice colour on top of the screen fading to
+#Window.SetBackgroundBottomColor (0.16, 0.00, 0.12);  # an equally nice colour on the bottom
 
 
-fun refresh_callback ()
-  {
-    # Currently we do nothing here
+# Spacing below the logo - in pixels
+logo_spacing = logo.height * 4;
+
+message_notification[0].image = ImageToTintedText ("");
+message_notification[1].image = ImageToTintedText ("");
+fsck_notification.image = ImageToActionText ("");
+
+status = "normal";
+
+# use a fixed string with ascending and descending stems to calibrate the
+# bounding box for the first message, so the messages below don't move up
+# and down according to *their* height.
+first_line_height = ImageToTintedText ("AfpqtM").GetHeight();
+
+# if the user has a 640x480 or 800x600 display, we can't quite fit everything
+# (including passphrase prompts) with the target spacing, so scoot the text up
+# a bit if needed.
+top_of_the_text = TextYOffset();
+
+#-----------------------------------------Logo functions------------------------------
+
+# Call this when updating the screen
+
+
+#-----------------------------------------Progress Indicator--------------------------
+fun set_progress_indicator () {
+    
+    
+}
+
+
+# We have 2 bullets, one on top of the other:
+# The white one is on top of the red one and the former should
+# slowly fade so as to get a nice transition effect.
+fun switch_on_bullet (bullets_off, bullets_on, bullet_number, opacity) {
    
+}
+
+fun switch_off_bullets () {
+ 
+}
+
+# This is something that we can call when we exit
+fun switch_on_bullets () {
+   
+}
+
+
+# Implement in boot progress callback
+fun animate_progress_indicator (progress, time) {
+ 
+}
+
+
+#-----------------------------------------Label utility functions---------------------
+
+# label should be either a string or NULL
+# Images for n lines will be created and returned as items of the
+# message_label array
+#
+fun get_message_label (label, is_fake, is_action_line) {
+    # Debug("Get Label position");
+    local.message_label;
+    
+    if (is_fake)
+        # Create a fake label so as to get the y coordinate of
+        # a standard-length label.
+        local.message_image = ImageToTintedText ("This is a fake message");
+    else
+        local.message_image = (is_action_line) && ImageToActionText (label) || ImageToTintedText (label);
+        
+    message_label.width = message_image.GetWidth ();
+    message_label.height = message_image.GetHeight ();
+
+    # Center the line horizontally
+    message_label.x = Window.GetX () + Window.GetWidth () / 2 - message_label.width / 2;
+
+#message_label.y =100;
+    message_label.y = top_of_the_text;
+
+    # Put the 2nd line below the fsck line
+    if (is_action_line) {
+        local.fsck_label.y = message_label.y + (first_line_height + first_line_height / 2);
+        message_label.y = local.fsck_label.y + (first_line_height * 2);
+    }
+
+    # Debug("action label x = " + message_label.x + " y = " + message_label.y );
+
+#    message_debug = "msg_x = " + message_label.x + " msg_y = " + message_label.y +
+#                    "msg_width = " + message_label.width + " msg_height = " +
+#                    message_label.height + " message = " + label;
+#    Debug(message_debug);
+    
+    return message_label;
+
+}
+
+# Create an fsck label and/or get its position
+fun get_fsck_label (label, is_fake) {
+    # Debug("Get Label position");
+    local.fsck_label = global.progress_label;
+    
+    if (is_fake)
+        fsck_label.image = ImageToTintedText ("This is a fake message");
+    else
+        fsck_label.image = ImageToTintedText (label);
+    
+    fsck_label.width = fsck_label.image.GetWidth ();
+    fsck_label.height = fsck_label.image.GetHeight ();
+    
+    # Centre the label horizontally
+    fsck_label.x = Window.GetX () + Window.GetWidth () / 2 - fsck_label.width / 2;
+    
+    local.first_label = get_message_label (label, 1, 0);
+    
+    # Place the label below the 1st message line
+    fsck_label.y = local.first_label.y + local.first_label.height + (local.first_label.height / 2);
+    
+#    message_debug = "msg_x = " + fsck_label.x + " msg_y = " + fsck_label.y +
+#                    "msg_width = " + fsck_label.width + " msg_height = " +
+#                    fsck_label.height + " message = " + label;
+#    Debug(message_debug);
+    
+    return fsck_label;
+}
+
+#-----------------------------------------Message stuff --------------------------------
+#
+
+# Set up a message label
+#
+# NOTE: this is called when doing something like 'plymouth message "hello world"'
+#
+fun setup_message (message_text, x, y, z, index) {
+    # Debug("Message setup");
+    global.message_notification[index].image = (index) && ImageToActionText (message_text) || ImageToTintedText (message_text);
+
+    # Set up the text message, if any
+    message_notification[index].x = x;
+    message_notification[index].y = y;
+    message_notification[index].z = z;
+    
+    message_notification[index].sprite = Sprite ();
+    message_notification[index].sprite.SetImage (message_notification[index].image);
+    message_notification[index].sprite.SetX (message_notification[index].x);
+    message_notification[index].sprite.SetY (message_notification[index].y);
+    message_notification[index].sprite.SetZ (message_notification[index].z);
+
+}
+
+fun show_message (index) {
+    if (global.message_notification[index].sprite) global.message_notification[index].sprite.SetOpacity(1);
+}
+
+fun hide_message (index) {
+    if (global.message_notification[index].sprite) global.message_notification[index].sprite.SetOpacity(0);
+}
+
+
+
+
+# the callback function is called when new message should be displayed.
+# First arg is message to display.
+fun message_callback (message)
+{
+    # Debug("Message callback");
+    is_fake = 0;
+    if (!message || (message == "")) is_fake = 1;
+    
+    local.substring = "keys:";
+    
+    # Look for the "keys:" prefix
+    local.keys = StringString(message, local.substring);
+    
+    local.is_action_line = (keys != NULL);
+    #Debug("keys " + local.keys + " substring length = " + StringLength(local.substring));
+
+    # Get the message without the "keys:" prefix
+    if (keys != NULL)
+        message = StringCopy (message, keys + StringLength(local.substring), NULL);
+
+    local.label.is_fake = is_fake;
+    label = get_message_label(message, is_fake, is_action_line);
+    label.z = 10000;
+    
+    setup_message (message, label.x, label.y, label.z, is_action_line);
+    if (prompt_active && local.is_action_line)
+        hide_message (is_action_line);
+    else
+        show_message (is_action_line);
+
+}
+
+
+Plymouth.SetMessageFunction (message_callback);
+#-----------------------------------------Display Question stuff -----------------------
+
+fun question_dialogue_setup (message_label, text_image) {
+    #Debug("Question dialog setup");
+    
+    local.field;
+    local.content;
+    local.margin;
+    
+    field.image = Image (question_field_filename);
+    content = Sprite ();    
+    bullet_image = Image (progress_dot_off_filename);
+    margin = bullet_image.GetWidth() / 2;
+    
+    # Hide the normal labels
+    prompt_active = 1;
+    if (message_notification[1].sprite) hide_message (1);
+    
+    # Set the prompt label
+    label = get_message_label(message_label, 0, 1);
+    label.z = 10000;
+    
+    setup_message (message_label, label.x, label.y, label.z, 2);
+    show_message (2);
+
+    # Set up the text field which contains the contents
+    field.sprite = Sprite ();
+    field.sprite.SetImage (field.image);
+    
+    # Centre the box horizontally
+    field.x = Window.GetX () + Window.GetWidth () / 2 - field.image.GetWidth () / 2;    
+    content_x = field.x + margin;
+
+    # Put the field below the second label.
+    field.y = message_notification[2].y + label.height;
+    content_y = field.y + field.image.GetHeight () / 2 - text_image.GetHeight () / 2;
+
+    #Debug ("field x = " + field.x + ", y = " + field.y);
+    field.z = 10000;
+    field.sprite.SetX (field.x);
+    field.sprite.SetY (field.y);
+    field.sprite.SetZ (field.z);   
+    
+    #Debug ("content_x = " + content_x + " content_y = " + content_y);
+    content_z = field.z + 1;
+    content.SetPosition (content_x, content_y, content_z);
+
+    global.question_dialogue = local;
+}
+
+# The callback function is called when the display should display a question dialogue.
+# First arg is prompt string, the second is the field contents.
+fun display_question_callback (prompt, contents) {  
+    global.status = "question";
+    #Debug ("Reply: " + contents);
+
+    textImage = ImageToText(contents); 
+    if (!global.question_dialogue) {
+        question_dialogue_setup(prompt, textImage);
+    }    
+
+    margin = global.question_dialogue.margin;
+    fieldWidth = global.question_dialogue.field.image.GetWidth ();
+    for (i = 0; ( (textImage.GetWidth () + 2 * margin ) > fieldWidth ); i++) {        
+        textImage = ImageToText(StringCopy (contents, i, StringLength (contents)));
+    }
+     
+    global.question_dialogue.content.SetImage (textImage);   
+}
+
+
+Plymouth.SetDisplayQuestionFunction (display_question_callback); 
+
+#-----------------------------------------Refresh stuff --------------------------------
+#
+# Calling Plymouth.SetRefreshFunction with a function will set that function to be
+# called up to 50 times every second, e.g.
+#
+# NOTE: if a refresh function is not set, Plymouth doesn't seem to be able to update
+#       the screen correctly
+#
+fun refresh_callback ()
+{
     if(progress < 157){
     left_1_sprite.SetOpacity(Math.Sin(progress/50));
     left_2_sprite.SetOpacity(1-Math.Sin(progress/50));
@@ -190,29 +603,22 @@ fun refresh_callback ()
  progress+=2;
 star_progress+=20; 
 
- }
-
-  
+}
 Plymouth.SetRefreshFunction (refresh_callback);
 
 
+#-----------------------------------------Display Normal stuff -----------------------
+#
 
-#----------------------------------------- Progress Bar --------------------------------
-
-
-fun progress_callback (duration, progress)
-  {
-    
-  }
-
-Plymouth.SetBootProgressFunction(progress_callback);
 
 #----------------------------------------- Quit --------------------------------
 
+# TODO: Maybe we should also hide any other dialog
+# Show the logo and make the progress indicator look full when on exit
 fun quit_callback ()
 {
+    
 }
 
 Plymouth.SetQuitFunction(quit_callback);
-
 
