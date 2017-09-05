@@ -15,7 +15,7 @@ prereqs)
         ;;
 esac
 
-[ -x /sbin/plymouthd ] || exit 0
+[ -x /sbin/plymouthd ] && [ -e /usr/share/fonts/truetype/droid/DroidSansFallbackFull.ttf ] || exit 0
 
 . /usr/share/initramfs-tools/hook-functions
 	# 为initrd增加中文字体，使plymouth支持中文显示
