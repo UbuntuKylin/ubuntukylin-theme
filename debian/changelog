@@ -1,3 +1,11 @@
+ubuntukylin-theme (0.8) saucy; urgency=low
+
+  * release 0.8
+  * fixed bug (LP: #1221088 #1221587)
+  * new grub theme(LP: #1225915)
+
+ -- zhangchao (work) <zctgbhu@163.com>  Mon, 16 Sep 2013 16:52:24 +0800
+
 ubuntukylin-theme (0.7) saucy; urgency=low
 
   * new plymouth animation(LP: #1217785)
