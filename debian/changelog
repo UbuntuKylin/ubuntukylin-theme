@@ -1,11 +1,11 @@
-ubuntukylin-theme (1.7.1) zesty; urgency=medium
+ubuntukylin-theme (1.7.1) artful; urgency=medium
 
   * add 16x16/panel in ukui-icon-theme.
   * update kylin greeter background picture.
   * update text plymouth
   * update ukui-theme about button and entry
 
- -- ShuiLu Pi <shuilupi@ubuntukylin.com>  Tue, 11 Apr 2017 10:13:32 +0800
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Tue, 27 Jun 2017 09:07:32 +0800
 
 ubuntukylin-theme (1.7.0) zesty; urgency=medium
 
