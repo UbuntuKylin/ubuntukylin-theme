@@ -1,3 +1,9 @@
+nautilus-desktop-window.background:backdrop,
+.nautilus-desktop-window.background:backdrop {
+    box-shadow: none;
+}
+
+
 .nautilus-canvas-item {
     border-radius: 5px;
 }
