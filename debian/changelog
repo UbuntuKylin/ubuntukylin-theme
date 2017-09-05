@@ -1,3 +1,9 @@
+ubuntukylin-theme (1.5.3) xenial; urgency=medium
+
+  * remove bluetoon and nm-wired larger icons to solve ubiquity display problem (LP: #1561416)
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Thu, 31 Mar 2016 15:48:10 +0800
+
 ubuntukylin-theme (1.5.2) xenial; urgency=medium
 
   * change icon theme
