@@ -89,14 +89,14 @@ text_sprite.SetX(0);
 text_sprite.SetY(Window.GetHeight() / 2 - resized_text_image.GetHeight() / 2);
 text_sprite.SetZ(106);
 text_sprite.SetOpacity(0);
-//
+/*
 light = Image("light.png");
 light_sprite = Sprite(light);
 light_sprite.SetX(Window.GetWidth()  / 2 - light.GetWidth() / 2); 
 light_sprite.SetY(Window.GetHeight() / 2 - light.GetHeight() / 2);
 light_sprite.SetZ(99);
 light_sprite.SetOpacity(0);
-
+*/
 
 xx_image = Image("xx.png");
 xx1_image = Image("xx1.png");
@@ -149,7 +149,7 @@ fun refresh_callback ()
     all_1_sprite.SetOpacity(Math.Sin(all_1_Opacity/50));
     }
     if(progress > 157){
-    light_sprite.SetOpacity(1);
+    //light_sprite.SetOpacity(1);
     all_2_Opacity=progress%157;
     all_2_sprite.SetOpacity(Math.Sin(all_2_Opacity/50));
     }
