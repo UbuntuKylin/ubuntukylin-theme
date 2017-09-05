@@ -998,7 +998,7 @@ GtkProgressBar {
     border-radius: 0px;
     border-width: 0px;
     background-image: none;
-    background-color: #db6a3c;
+    background-color: @progressbar_color;
     border-style: solid;
 }
 
