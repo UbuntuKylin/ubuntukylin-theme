@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.3.1) raring; urgency=low
+
+  * fix copyright.
+
+ -- zhangchao (work) <zctgbhu@163.com>  Fri, 01 Feb 2013 15:35:26 +0800
+
 ubuntukylin-theme (0.3) raring; urgency=low
 
   * add and fix copyright.
