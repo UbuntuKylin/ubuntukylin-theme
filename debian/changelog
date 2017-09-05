@@ -1,7 +1,7 @@
 ubuntukylin-theme (1.7.1) zesty; urgency=medium
 
   * add 16x16/panel in ukui-icon-theme.
-  * update kylin_greeter_background.png
+  * update kylin greeter background picture.
   * update text plymouth
   * update ukui-theme about button and entry
 
