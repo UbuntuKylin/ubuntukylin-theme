@@ -9,40 +9,27 @@ NautilusDesktopWindow GtkWidget {
 }
 
 .nautilus-canvas-item {
-    border-radius: 4px;
-}
-.nautilus-canvas-item:active,
-.nautilus-canvas-item:prelight,
-.nautilus-canvas-item:selected {
-    border-radius: 4px;
-    background-color: alpha (#83eefc, 0.7);
-
-    color: #4c4c4c;
+    border-radius: 0px;
 }
 
-.nautilus-canvas-item:backdrop {
-    border-radius: 4px;
-    background-image: none;
-    background-color: alpha (#acacac, 0.4);
-}
 /* desktop mode */
 .nautilus-desktop.nautilus-canvas-item {
-    color: @bg_color;
+    color: @desktop_item;
     text-shadow: 1px 1px alpha (#000000, 0.8);
 }
 
 .nautilus-desktop.nautilus-canvas-item:active {
     background-image: none;
-    background-color: alpha (@bg_color, 0.84);
+    background-color: alpha (@desktop_item, 0.84);
 
     color: @fg_color;
 }
 
 .nautilus-desktop.nautilus-canvas-item:selected {
     background-image: none;
-    background-color: alpha (#83eefc, 0.6);
+    background-color: alpha (@desktop_item_selected_bg, 0.6);
 
-    color: #4c4c4c;
+    color: @desktop_item_selected_fg;
 }
 
 .nautilus-desktop.nautilus-canvas-item:active,
@@ -107,7 +94,7 @@ NautilusSearchBar .entry {
 
 NautilusFloatingBar {
     background-color: @info_bg_color;
-    border-radius: 3px 3px 0 0;
+    border-radius: 0px 0px 0 0;
     border-style: solid;
     border-width: 1px;
     border-color: darker (@info_bg_color);
@@ -118,6 +105,11 @@ NautilusFloatingBar .button {
     -GtkButton-inner-border: 0;
 }
 
+NautilusWindow .header-bar .button {
+    padding: 6px;
+
+}
+
 /* sidebar */
 NautilusWindow .sidebar,
 NautilusWindow .sidebar .view {
@@ -125,8 +117,8 @@ NautilusWindow .sidebar .view {
 
     /*background-color: @bg_color;*/
 
-    color: @dark_fg_color;
-    text-shadow: none; 
+    color: @fg_color;
+    text-shadow: 0 1px shade (shade (@bg_color, 0.95), 1.04); 
 }
 
 NautilusWindow .sidebar .frame {
@@ -138,7 +130,7 @@ NautilusWindow .sidebar .frame {
 
 NautilusWindow .sidebar:backdrop,
 NautilusWindow .sidebar .view:backdrop {
-    color: mix (@dark_fg_color, shade (@bg_color, 0.95), 0.2);
+    color: mix (@fg_color, shade (@bg_color, 0.95), 0.2);
     text-shadow: 0 1px shade (shade (@bg_color, 0.95), 1.02); 
 }
 
@@ -153,7 +145,7 @@ NautilusWindow .sidebar row:selected:backdrop {
                                      to (shade (shade (@bg_color, 0.95), 0.86)));
     border-top-color: shade (shade (@bg_color, 0.95), 0.88);
 
-    color: @dark_fg_color;
+    color: @fg_color;
     text-shadow: 0 1px shade (shade (@bg_color, 0.95), 0.96); 
 }
 

@@ -13,3 +13,4 @@ MetacityTheme=ubuntukylin-theme
 IconTheme=ubuntukylin-icon-theme
 CursorTheme=ubuntukylin-icon-theme
 ButtonLayout=close,minimize,maximize:
+X-Ubuntu-UseOverlayScrollbars=true

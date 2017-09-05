@@ -14,24 +14,23 @@ GeditDocumentsPanel .view:backdrop {
 }
 
 GeditWindow .notebook {
-    padding: 1px;
-    border-radius: 1px;
+    border-radius: 0px;
 }
 
 GeditPanel .notebook {
-    border-radius: 1px;
+    border-radius: 0px;
 }
 
 GeditPanel .notebook tab,
 GeditWindow .notebook tab {
-    border-radius: 3px;
+    border-radius: 0px;
 }
 
 GeditViewFrame .gedit-search-slider {
-    background-color: @theme_base_color;
+    background-color: @base_color;
     padding: 6px;
     border-color: shade (@notebook_tab_gradient_b, 0.80);
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 0px 0px;
     border-width: 0 1px 1px 1px;
     border-style: solid;
 }
@@ -43,12 +42,12 @@ GeditViewFrame .gedit-search-slider .not-found {
 }
 
 GeditViewFrame .gedit-search-slider .not-found:selected {
-    background-color: @theme_selected_bg_color;
-    color: @theme_selected_fg_color;
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
 }
 
 GeditFileBrowserWidget .toolbar  {
-    background-color: @theme_bg_color;
+    background-color: @bg_color;
     border: none;
     padding-bottom: 3px;
 }

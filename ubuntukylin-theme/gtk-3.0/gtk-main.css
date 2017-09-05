@@ -1,47 +1,56 @@
 /*default color scheme */
-@define-color bg_color #fcfcfc;
-
-@define-color fg_color #595959;
+@define-color bg_color #e8e6ec;
+@define-color fg_color #504d59;
 @define-color base_color #ffffff;
-@define-color text_color #3C3C3C;
-
-@define-color selected_bg_color #34c2fa;/*#40b7e5;*/
+@define-color text_color #3d3c3e;
+@define-color selected_bg_color #528ebe;
 @define-color selected_fg_color #ffffff;
-@define-color tooltip_bg_color #abcfe4;/*tofix*/
-@define-color tooltip_fg_color #0f518b;
+@define-color tooltip_bg_color #b9d6ee;
+@define-color tooltip_fg_color #3d3c3e;
+
+/* kylin */
+@define-color progressbar_color #72a3ca;
+@define-color title_color #38373c;
+
+@define-color desktop_item #fcfcfc;
+@define-color desktop_item_selected_bg #528ebe;
+@define-color desktop_item_selected_fg #fcfcfc;
 
 /* misc colors used by gtk+ */
-@define-color info_fg_color rgb (181, 171, 156);
-@define-color info_bg_color rgb (252, 252, 189);
-@define-color warning_fg_color rgb (173, 120, 41);
-@define-color warning_bg_color rgb (250, 173, 61);
-@define-color question_fg_color rgb (97, 122, 214);
-@define-color question_bg_color rgb (138, 173, 212);
-@define-color error_fg_color rgb (235, 235, 235);
-@define-color error_bg_color rgb (223, 56, 44);
+@define-color info_fg_color #b5ab9c;
+@define-color info_bg_color #fcfcbd;
+@define-color warning_fg_color #ad7829;
+@define-color warning_bg_color #faad3d;
+@define-color question_fg_color #5c7ad6;
+@define-color question_bg_color #8aadd4;
+@define-color error_fg_color #ebebeb;
+@define-color error_bg_color #df382c;
 @define-color link_color @selected_bg_color;
 @define-color success_color #4e9a06;
 @define-color error_color #df382c;
 
 /* theme common colors */
-@define-color button_bg_color shade (@bg_color, 1.02);
+@define-color button_bg_color shade (@bg_color, 1.02); /*shade (#cdcdcd, 1.08);*/
 @define-color notebook_button_bg_color shade (@bg_color, 1.02);
 @define-color button_insensitive_bg_color mix (@button_bg_color, @bg_color, 0.6);
-@define-color dark_bg_color #e8eef1;
-@define-color dark_fg_color #0f518b;
+@define-color dark_bg_color #504d59;
+@define-color dark_fg_color #dcd9e9;
 
 @define-color backdrop_fg_color mix (@bg_color, @fg_color, 0.8);
 @define-color backdrop_text_color mix (@base_color, @text_color, 0.8);
 @define-color backdrop_dark_fg_color mix (@dark_bg_color, @dark_fg_color, 0.75);
+/*@define-color backdrop_dark_bg_color mix (@dark_bg_color, @dark_fg_color, 0.75);*/
 @define-color backdrop_selected_bg_color shade (@bg_color, 0.92);
 @define-color backdrop_selected_fg_color @fg_color;
 
+@define-color focus_color alpha (@selected_bg_color, 0.5);
+@define-color focus_bg_color alpha (@selected_bg_color, 0.1);
+
+@define-color shadow_color alpha(black, 0.5);
+
 @import url("gtk-widgets-borders.css");
-@import url("gtk-widgets-borders-radiance.css");
 @import url("gtk-widgets-assets.css");
-@import url("gtk-widgets-assets-radiance.css");
 @import url("gtk-widgets.css");
-@import url("gtk-widgets-radiance.css");
 @import url("apps/unity.css");
 @import url("apps/baobab.css");
 @import url("apps/gedit.css");
@@ -49,4 +58,7 @@
 @import url("apps/gnome-panel.css");
 @import url("apps/gnome-terminal.css");
 @import url("apps/gnome-system-log.css");
+@import url("apps/unity-greeter.css");
 @import url("apps/glade.css");
+@import url("apps/california.css");
+@import url("public-colors.css");

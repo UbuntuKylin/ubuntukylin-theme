@@ -1,7 +1,8 @@
+
 BaobabWindow GtkGrid {
     background-color: @bg_color;
 }
- 
+
 BaobabLocationList GtkGrid {
     background-color: transparent;
 }
