@@ -231,27 +231,7 @@ GtkSwitch.slider:backdrop,
 .button.default:insensitive {
 }
 */
-/* Middle button */
-.primary-toolbar .linked .entry,
-.primary-toolbar .linked .button,
-.primary-toolbar .linked .button:active,
-.primary-toolbar .linked .button:active:hover,
-.primary-toolbar .linked .button:insensitive,
-.menubar.toolbar .linked .entry,
-.menubar.toolbar .linked .button,
-.menubar.toolbar .linked .button:active,
-.menubar.toolbar .linked .button:active:hover,
-.menubar.toolbar .linked .button:insensitive,
-.header-bar .linked .entry,
-.header-bar .linked .button,
-.header-bar .linked .button:active,
-.header-bar .linked .button:active:hover,
-.header-bar .linked .button:insensitive {
-    border-width: 1px;
-    border-right-width: 0;
 
-    border-radius: 0;
-}
 
 /* Set up shadows and hilights for button visual separation */
 .linked .button,
@@ -313,12 +293,17 @@ GtkSwitch.slider:backdrop,
 
 /* Middle button */
 .linked .entry,
+.linked .entry:active,
+.linked .entry:focus,
+.linked .entry:focus:active,
 .linked .button,
 .linked .button:active,
 .linked .button:active:hover,
 .linked .button:focus,
 .linked .button:focus:active,
-.linked .button:insensitive {
+.linked .button:insensitive,
+.linked .button:backdrop,
+.linked .button:active:backdrop {
     border-right-width: 0;
     border-left-width: 0;
     border-image-width: 10px 0 10px 0;
@@ -327,12 +312,17 @@ GtkSwitch.slider:backdrop,
 
 /* Leftmost button */
 .linked .entry:first-child,
+.linked .entry:active:first-child,
+.linked .entry:focus:first-child,
+.linked .entry:focus:active:first-child,
 .linked .button:first-child,
 .linked .button:active:first-child,
 .linked .button:active:hover:first-child,
 .linked .button:focus:first-child,
 .linked .button:focus:active:first-child,
-.linked .button:insensitive:first-child {
+.linked .button:insensitive:first-child,
+.linked .button:backdrop:first-child,
+.linked .button:active:backdrop:first-child {
     border-width: 1px;
     border-right-width: 0;
     border-image-width: 10px 0 10px 12px;
@@ -343,12 +333,17 @@ GtkSwitch.slider:backdrop,
 
 /* Rightmost button */
 .linked .entry:last-child,
+.linked .entry:active:last-child,
+.linked .entry:focus:last-child,
+.linked .entry:focus:active:last-child,
 .linked .button:last-child,
 .linked .button:active:last-child,
 .linked .button:active:hover:last-child,
 .linked .button:focus:last-child,
 .linked .button:focus:active:last-child,
-.linked .button:insensitive:last-child {
+.linked .button:insensitive:last-child,
+.linked .button:backdrop:last-child,
+.linked .button:active:backdrop:last-child {
     border-width: 1px;
     border-left-width: 0;
     border-image-width: 10px 12px 10px 0;
@@ -359,12 +354,17 @@ GtkSwitch.slider:backdrop,
 
 /* Linked single button */
 .linked .entry:only-child,
+.linked .entry:active:only-child,
+.linked .entry:focus:only-child,
+.linked .entry:focus:active:only-child,
 .linked .button:only-child,
 .linked .button:active:only-child,
 .linked .button:active:hover:only-child,
 .linked .button:focus:only-child,
 .linked .button:focus:active:only-child,
-.linked .button:insensitive:only-child {
+.linked .button:insensitive:only-child,
+.linked .button:backdrop:only-child,
+.linked .button:active:backdrop:only-child {
     border-right-width: 1px;
     border-left-width: 1px;
     border-image-width: 10px 12px 10px 12px;
@@ -760,6 +760,11 @@ GtkComboBox.combobox-entry .button:insensitive:backdrop,
 /************
  * iconview *
  ************/
+.view {
+    background-color: @base_color;
+    color: @text_color;
+}
+
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focused {
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -915,6 +920,8 @@ GtkMenuToolButton.menu,
                 inset 0 -1px shade (@dark_bg_color, 1.18),
                 inset -1px 0 shade (@dark_bg_color, 1.16),
                 inset 1px 0 shade (@dark_bg_color, 1.18);
+
+    margin: 1px;
 }
 
 .toolbar .menu,
@@ -2054,22 +2061,7 @@ GtkTextView {
                                      to (shade (@dark_bg_color, 1.02)));
 }
 
-.primary-toolbar .entry,
-.primary-toolbar .entry:active,
-.primary-toolbar .entry:focused,
-.menubar.toolbar .entry,
-.menubar.toolbar .entry:active,
-.menubar.toolbar .entry:focused,
-.header-bar .entry,
-.header-bar .entry:active,
-.header-bar .entry:focused {
-    border-radius: 9px;
 
-/*    background-color: @dark_bg_color;
-    background-image: none;
-
-    background-clip: border-box;*/
-}
 
 .primary-toolbar GtkSeparatorToolItem,
 .primary-toolbar .separator,
@@ -2116,54 +2108,6 @@ GtkTextView {
 }
 
 /* Middle button */
-.primary-toolbar .button.raised.linked,
-.primary-toolbar .button.raised.linked:active,
-.primary-toolbar .button.raised.linked:focus,
-.primary-toolbar .button.raised.linked:focus:active,
-.primary-toolbar .button.raised.linked:insensitive,
-.primary-toolbar .button.raised.linked:backdrop,
-.primary-toolbar .raised.linked .button,
-.primary-toolbar .raised.linked .button:active,
-.primary-toolbar .raised.linked .button:focus,
-.primary-toolbar .raised.linked .button:focus:active,
-.primary-toolbar .raised.linked .button:insensitive,
-.primary-toolbar .raised.linked .button:backdrop,
-.menubar.toolbar .linked .button,
-.menubar.toolbar .linked .button:active,
-.menubar.toolbar .linked .button:focus,
-.menubar.toolbar .linked .button:focus:active,
-.menubar.toolbar .linked .button:hover,
-.menubar.toolbar .linked .button:hover:active,
-.menubar.toolbar .linked .button:insensitive,
-.menubar.toolbar .linked .button:backdrop,
-.menubar.toolbar .linked .entry,
-.menubar.toolbar .linked .entry:active,
-.menubar.toolbar .linked .entry:focused,
-.menubar.toolbar .linked .entry:focused:active,
-.menubar.toolbar .linked .entry:insensitive,
-.menubar.toolbar .raised.linked .button,
-.menubar.toolbar .raised.linked .button:active,
-.menubar.toolbar .raised.linked .button:focus,
-.menubar.toolbar .raised.linked .button:focus:active,
-.menubar.toolbar .raised.linked .button:insensitive,
-.menubar.toolbar .raised.linked .button:backdrop,
-.header-bar .linked .button,
-.header-bar .linked .button:active,
-.header-bar .linked .button:focus,
-.header-bar .linked .button:focus:active,
-.header-bar .linked .button:insensitive,
-.header-bar .linked .button:backdrop,
-.header-bar .linked .entry,
-.header-bar .linked .entry:active,
-.header-bar .linked .entry:focused,
-.header-bar .linked .entry:focused:active,
-.header-bar .linked .entry:insensitive,
-.header-bar .raised.linked .button,
-.header-bar .raised.linked .button:active,
-.header-bar .raised.linked .button:focus,
-.header-bar .raised.linked .button:focus:active,
-.header-bar .raised.linked .button:insensitive,
-.header-bar .raised.linked .button:backdrop,
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar .button:active,
 .inline-toolbar.toolbar .button:focus,
@@ -2185,52 +2129,7 @@ GtkTextView {
 }
 
 /* Leftmost button */
-.primary-toolbar .button.raised.linked:first-child,
-.primary-toolbar .button.raised.linked:active:first-child,
-.primary-toolbar .button.raised.linked:focus:first-child,
-.primary-toolbar .button.raised.linked:focus:active:first-child,
-.primary-toolbar .button.raised.linked:insensitive:first-child,
-.primary-toolbar .button.raised.linked:backdrop:first-child,
-.primary-toolbar .raised.linked .button:first-child,
-.primary-toolbar .raised.linked .button:active:first-child,
-.primary-toolbar .raised.linked .button:focus:first-child,
-.primary-toolbar .raised.linked .button:focus:active:first-child,
-.primary-toolbar .raised.linked .button:insensitive:first-child,
-.primary-toolbar .raised.linked .button:backdrop:first-child,
-.menubar.toolbar .linked .button:first-child,
-.menubar.toolbar .linked .button:active:first-child,
-.menubar.toolbar .linked .button:focus:first-child,
-.menubar.toolbar .linked .button:focus:active:first-child,
-.menubar.toolbar .linked .button:insensitive:first-child,
-.menubar.toolbar .linked .button:backdrop:first-child,
-.menubar.toolbar .linked .entry:first-child,
-.menubar.toolbar .linked .entry:active:first-child,
-.menubar.toolbar .linked .entry:focused:first-child,
-.menubar.toolbar .linked .entry:focused:active:first-child,
-.menubar.toolbar .linked .entry:insensitive:first-child,
-.menubar.toolbar .raised.linked .button:first-child,
-.menubar.toolbar .raised.linked .button:active:first-child,
-.menubar.toolbar .raised.linked .button:focus:first-child,
-.menubar.toolbar .raised.linked .button:focus:active:first-child,
-.menubar.toolbar .raised.linked .button:insensitive:first-child,
-.menubar.toolbar .raised.linked .button:backdrop:first-child,
-.header-bar .linked .linked .button:first-child,
-.header-bar .linked .button:active:first-child,
-.header-bar .linked .button:focus:first-child,
-.header-bar .linked .button:focus:active:first-child,
-.header-bar .linked .button:insensitive:first-child,
-.header-bar .linked .button:backdrop:first-child,
-.header-bar .linked .entry:first-child,
-.header-bar .linked .entry:active:first-child,
-.header-bar .linked .entry:focused:first-child,
-.header-bar .linked .entry:focused:active:first-child,
-.header-bar .linked .entry:insensitive:first-child,
-.header-bar .raised.linked .button:first-child,
-.header-bar .raised.linked .button:active:first-child,
-.header-bar .raised.linked .button:focus:first-child,
-.header-bar .raised.linked .button:focus:active:first-child,
-.header-bar .raised.linked .button:insensitive:first-child,
-.header-bar .raised.linked .button:backdrop:first-child,
+
 .inline-toolbar.toolbar .button:first-child,
 .inline-toolbar.toolbar .button:active:first-child,
 .inline-toolbar.toolbar .button:focus:first-child,
@@ -2254,52 +2153,7 @@ GtkTextView {
 }
 
 /* Rightmost button */
-.primary-toolbar .button.raised.linked:last-child,
-.primary-toolbar .button.raised.linked:active:last-child,
-.primary-toolbar .button.raised.linked:focus:last-child,
-.primary-toolbar .button.raised.linked:focus:active:last-child,
-.primary-toolbar .button.raised.linked:insensitive:last-child,
-.primary-toolbar .button.raised.linked:backdrop:last-child,
-.primary-toolbar .raised.linked .button:last-child,
-.primary-toolbar .raised.linked .button:active:last-child,
-.primary-toolbar .raised.linked .button:focus:last-child,
-.primary-toolbar .raised.linked .button:focus:active:last-child,
-.primary-toolbar .raised.linked .button:insensitive:last-child,
-.primary-toolbar .raised.linked .button:backdrop:last-child,
-.menubar.toolbar .linked .button:last-child,
-.menubar.toolbar .linked .button:active:last-child,
-.menubar.toolbar .linked .button:focus:last-child,
-.menubar.toolbar .linked .button:focus:active:last-child,
-.menubar.toolbar .linked .button:insensitive:last-child,
-.menubar.toolbar .linked .button:backdrop:last-child,
-.menubar.toolbar .linked .entry:last-child,
-.menubar.toolbar .linked .entry.active:last-child,
-.menubar.toolbar .linked .entry:focused:last-child,
-.menubar.toolbar .linked .entry:focused:active:last-child,
-.menubar.toolbar .linked .entry:insensitive:last-child,
-.menubar.toolbar .raised.linked .button:last-child,
-.menubar.toolbar .raised.linked .button:active:last-child,
-.menubar.toolbar .raised.linked .button:focus:last-child,
-.menubar.toolbar .raised.linked .button:focus:active:last-child,
-.menubar.toolbar .raised.linked .button:insensitive:last-child,
-.menubar.toolbar .raised.linked .button:backdrop:last-child,
-.header-bar .linked .button:last-child,
-.header-bar .linked .button:active:last-child,
-.header-bar .linked .button:focus:last-child,
-.header-bar .linked .button:focus:active:last-child,
-.header-bar .linked .button:insensitive:last-child,
-.header-bar .linked .button:backdrop:last-child,
-.header-bar .linked .entry:last-child,
-.header-bar .linked .entry.active:last-child,
-.header-bar .linked .entry:focused:last-child,
-.header-bar .linked .entry:focused:active:last-child,
-.header-bar .linked .entry:insensitive:last-child,
-.header-bar .raised.linked .button:last-child,
-.header-bar .raised.linked .button:active:last-child,
-.header-bar .raised.linked .button:focus:last-child,
-.header-bar .raised.linked .button:focus:active:last-child,
-.header-bar .raised.linked .button:insensitive:last-child,
-.header-bar .raised.linked .button:backdrop:last-child,
+
 .inline-toolbar.toolbar .button:last-child,
 .inline-toolbar.toolbar .button:active:last-child,
 .inline-toolbar.toolbar .button:focus:last-child,
@@ -2324,48 +2178,7 @@ GtkTextView {
 }
 
 /* Single button */
-.primary-toolbar.toolbar .button:only-child,
-.primary-toolbar.toolbar .button:active:only-child,
-.primary-toolbar.toolbar .button:focus:only-child,
-.primary-toolbar.toolbar .button:focus:active:only-child,
-.primary-toolbar.toolbar .button:insensitive:only-child,
-.primary-toolbar.toolbar .button:backdrop:only-child,
-.primary-toolbar.toolbar .button:backdrop:insensitive:only-child,
-.primary-toolbar.toolbar GtkToolButton:only-child .button,
-.primary-toolbar.toolbar GtkToolButton:only-child .button:active,
-.primary-toolbar.toolbar GtkToolButton:only-child .button:focus,
-.primary-toolbar.toolbar GtkToolButton:only-child .button:focus:active,
-.primary-toolbar.toolbar GtkToolButton:only-child .button:insensitive,
-.primary-toolbar.toolbar GtkToolButton:only-child .button:backdrop,
-.primary-toolbar.toolbar GtkToolButton:only-child .button:backdrop:insensitive,
-.menubar.toolbar.toolbar .button:only-child,
-.menubar.toolbar.toolbar .button:active:only-child,
-.menubar.toolbar.toolbar .button:focus:only-child,
-.menubar.toolbar.toolbar .button:focus:active:only-child,
-.menubar.toolbar.toolbar .button:insensitive:only-child,
-.menubar.toolbar.toolbar .button:backdrop:only-child,
-.menubar.toolbar.toolbar .button:backdrop:insensitive:only-child,
-.menubar.toolbar.toolbar GtkToolButton:only-child .button,
-.menubar.toolbar.toolbar GtkToolButton:only-child .button:active,
-.menubar.toolbar.toolbar GtkToolButton:only-child .button:focus,
-.menubar.toolbar.toolbar GtkToolButton:only-child .button:focus:active,
-.menubar.toolbar.toolbar GtkToolButton:only-child .button:insensitive,
-.menubar.toolbar.toolbar GtkToolButton:only-child .button:backdrop,
-.menubar.toolbar.toolbar GtkToolButton:only-child .button:backdrop:insensitive,
-.header-bar .button:only-child,
-.header-bar .button:active:only-child,
-.header-bar .button:focus:only-child,
-.header-bar .button:focus:active:only-child,
-.header-bar .button:insensitive:only-child,
-.header-bar .button:backdrop:only-child,
-.header-bar .button:backdrop:insensitive:only-child,
-.header-bar GtkToolButton:only-child .button,
-.header-bar GtkToolButton:only-child .button:active,
-.header-bar GtkToolButton:only-child .button:focus,
-.header-bar GtkToolButton:only-child .button:focus:active,
-.header-bar GtkToolButton:only-child .button:insensitive,
-.header-bar GtkToolButton:only-child .button:backdrop,
-.header-bar GtkToolButton:only-child .button:backdrop:insensitive,
+
 .inline-toolbar.toolbar .button:only-child,
 .inline-toolbar.toolbar .button:active:only-child,
 .inline-toolbar.toolbar .button:focus:only-child,

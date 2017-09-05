@@ -12,4 +12,4 @@ GtkTheme=ubuntukylin-theme
 MetacityTheme=ubuntukylin-theme
 IconTheme=ubuntukylin-icon-theme
 CursorTheme=ubuntukylin-icon-theme
-ButtonLayout=:close,minimize,maximize
+ButtonLayout=close,minimize,maximize:
