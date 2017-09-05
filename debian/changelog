@@ -1,7 +1,8 @@
 ubuntukylin-theme (1.5.1) xenial; urgency=medium
 
   * change depends: add kylin-greeter 
-                    use fonts-noto instead of fonts-droid (LP: #1546847)
+                    temporarily remove fonts-droid (LP: #1546847)
+  * add judge about DroidSansFallbackFull.ttf
 
  -- zhangchao <zhangchao@ubuntukylin.com>  Thu, 18 Feb 2016 11:00:42 +0800
 

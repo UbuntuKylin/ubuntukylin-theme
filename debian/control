@@ -16,7 +16,6 @@ Depends: gnome-icon-theme,
          ubuntu-mono,
          unity-greeter,
          kylin-greeter,
-         fonts-noto,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Ubuntu Kylin theme
