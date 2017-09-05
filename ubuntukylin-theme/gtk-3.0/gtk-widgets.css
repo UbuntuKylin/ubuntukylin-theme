@@ -1334,6 +1334,10 @@ GtkComboBox .menuitem.separator {
     border-width: 0;
 }
 
+GtkPlacesSidebar.sidebar .sidebar-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 /**************
  * spinbutton *
  **************/
