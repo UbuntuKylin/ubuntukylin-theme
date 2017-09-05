@@ -2,7 +2,7 @@
 @define-color bg_color #f2f1f0;
 @define-color fg_color #4c4c4c;
 @define-color base_color #ffffff;
-@define-color text_color #3C3C3C;
+@define-color text_color #3c3c3c;
 @define-color selected_bg_color #f07746;
 @define-color selected_fg_color #ffffff;
 @define-color tooltip_bg_color #000000;
@@ -25,8 +25,8 @@
 @define-color button_bg_color shade (@bg_color, 1.02); /*shade (#cdcdcd, 1.08);*/
 @define-color notebook_button_bg_color shade (@bg_color, 1.02);
 @define-color button_insensitive_bg_color mix (@button_bg_color, @bg_color, 0.6);
-@define-color dark_bg_color #3c3b37;
-@define-color dark_fg_color #dfdbd2;
+@define-color dark_bg_color #373c3a;
+@define-color dark_fg_color #d2dadf;
 
 @define-color backdrop_fg_color mix (@bg_color, @fg_color, 0.8);
 @define-color backdrop_text_color mix (@base_color, @text_color, 0.8);
@@ -35,12 +35,14 @@
 @define-color backdrop_selected_fg_color @fg_color;
 
 @import url("gtk-widgets-borders.css");
+@import url("gtk-widgets-borders-radiance.css");
 @import url("gtk-widgets-assets.css");
+@import url("gtk-widgets-assets-radiance.css");
 @import url("gtk-widgets.css");
+@import url("gtk-widgets-radiance.css");
 @import url("apps/unity.css");
 @import url("apps/baobab.css");
 @import url("apps/gedit.css");
 @import url("apps/nautilus.css");
 @import url("apps/gnome-panel.css");
 @import url("apps/gnome-terminal.css");
-@import url("apps/unity-greeter.css");

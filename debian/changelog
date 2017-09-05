@@ -1,3 +1,12 @@
+ubuntukylin-theme (0.5) raring; urgency=low
+
+  * relese for ubuntukylin 13.04
+  * set unity panel-opacity to 0.7 
+  * set button-layout to right
+  * add new gtk and metacity theme for ubuntukylin,Designed by OYY
+
+ -- zhangchao (work) <zctgbhu@163.com>  Tue, 26 Mar 2013 16:27:32 +0800
+
 ubuntukylin-theme (0.4.3) raring; urgency=low
 
   * fixed Bug #1155462 
