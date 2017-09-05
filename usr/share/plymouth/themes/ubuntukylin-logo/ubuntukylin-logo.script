@@ -106,7 +106,7 @@ fun TextYOffset() {
     local.min_height;
 
     # Put the 1st line below the logo + some spacing 
-    y = text_sprite.GetY() + resized_text_image.GetHeight() ;
+    y = text.sprite.GetY() + text.image.GetHeight()* 3 ;
     text_height = first_line_height * 7.5;
 #DebugBottom(resized_text_image.GetHeight());
     min_height = Window.GetHeight();
@@ -588,7 +588,7 @@ fun update_progress_label (progress) {
     progress_label.sprite = Sprite (progress_label.image);
     
     # Set up the bar
-    progress_label.sprite.SetPosition(progress_label.x, progress_label.y, 1);
+    progress_label.sprite.SetPosition(progress_label.x, progress_label.y, 10000);
 
     set_progress_label_opacity (1);
 
