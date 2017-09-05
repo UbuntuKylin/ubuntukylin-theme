@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.4.3) raring; urgency=low
+
+  * fixed Bug #1155462 
+
+ -- zhangchao (work) <zctgbhu@163.com>  Fri, 15 Mar 2013 14:46:04 +0800
+
 ubuntukylin-theme (0.4.2) raring; urgency=low
 
   * del plymouth-text

@@ -4,4 +4,6 @@ ubuntukylin-icon-theme usr/share/icons/
 lib/plymouth/themes/ubuntukylin-logo/
 
 ubuntukylin-unity-greeter/ubuntukylin-logo.png /usr/share/unity-greeter/
-debian/25_ubuntukylin-theme.gschema.override usr/share/glib-2.0/schemas
+debian/25_ubuntukylin-theme.gschema.override /usr/share/glib-2.0/schemas
+
+debian/ubuntukylin-theme.xml /usr/share/gnome-background-properties
