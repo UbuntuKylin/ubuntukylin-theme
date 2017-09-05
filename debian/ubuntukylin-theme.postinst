@@ -22,6 +22,11 @@ case "$1" in
 		--install /lib/plymouth/themes/default.plymouth default.plymouth \
 		/lib/plymouth/themes/ubuntukylin-logo/ubuntukylin-logo.plymouth 150
 
+	update-alternatives \
+		--install /lib/plymouth/themes/text.plymouth text.plymouth \
+		/lib/plymouth/themes/ubuntukylin-text/ubuntukylin-text.plymouth 150
+
+
 	if which update-initramfs >/dev/null 2>&1
 	then
 	    update-initramfs -u

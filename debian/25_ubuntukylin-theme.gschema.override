@@ -3,7 +3,7 @@
 logo="/usr/share/unity-greeter/ubuntukylin-logo.png"
 
 [org.gnome.desktop.wm.preferences]
-button-layout="close,maximize,minimize:"
+button-layout="close,minimize,maximize:"
 
 [org.compiz.unityshell]
 panel-opacity=0.7

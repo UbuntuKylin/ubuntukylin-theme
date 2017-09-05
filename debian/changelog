@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.5.5) raring; urgency=low
+
+  * add plymouth-text for ubuntukylin (LP: #1169013)
+
+ -- zhangchao (work) <zctgbhu@163.com>  Mon, 15 Apr 2013 17:10:37 +0800
+
 ubuntukylin-theme (0.5.4) raring; urgency=low
 
   * set button-layout to left (LP: #1165298)
