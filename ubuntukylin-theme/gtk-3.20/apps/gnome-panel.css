@@ -1,22 +1,58 @@
-panel-toplevel,
-panel-plug {
+/* Fallback Mode Panel */
+PanelWidget :backdrop,
+PanelApplet :backdrop,
+PanelToplevel :backdrop,
+PanelWidget,
+PanelApplet,
+PanelToplevel {
+    border-image: none;
+
     color: @dark_fg_color;
+}
+
+PanelWidget,
+PanelApplet,
+PanelToplevel {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.5)),
                                      to (shade (@dark_bg_color, 1.05)));
 }
 
-panel-toplevel .gnome-panel-menu-bar:backdrop,
-panel-toplevel .gnome-panel-menu-bar,
-panel-applet > menubar,
-panel-applet,
-clock-box {
-    background: transparent;
+PanelApplet {
+    border-width: 0;
+}
+
+PanelSeparator:backdrop,
+PanelSeparator {
+    border-width: 0;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.5)),
+                                     to (shade (@dark_bg_color, 1.05)));
+
     color: @dark_fg_color;
 }
 
-panel-applet button:backdrop,
-panel-applet button {
+.gnome-panel-menu-bar,
+PanelApplet > GtkMenuBar.menubar,
+PanelApplet > GtkMenuBar.menubar.menuitem,
+PanelMenuBar.menubar,
+PanelMenuBar.menubar.menuitem {
+    -PanelMenuBar-icon-visible: true;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.5)),
+                                     to (shade (@dark_bg_color, 1.05)));
+}
+
+PanelAppletFrame { 
+    background-color: @dark_bg_color;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.5)),
+                                     to (shade (@dark_bg_color, 1.05)));
+    border-width: 0;
+}
+
+PanelApplet .button:backdrop,
+PanelApplet .button {
     border-image: none;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.5)),
@@ -30,16 +66,10 @@ panel-applet button {
     text-shadow: none;
 }
 
-#clock-applet-button {
-  background: transparent;
-  border: 0;
-}
-
-panel-applet button:active:hover:backdrop,
-panel-applet button:active:hover,
-panel-applet button:active:backdrop,
-#clock-applet-button:active:hover,
-#clock-applet-button:active {
+PanelApplet .button:active:hover:backdrop,
+PanelApplet .button:active:hover,
+PanelApplet .button:active:backdrop,
+PanelApplet .button:active {
     border-image: none;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.85)),
@@ -47,10 +77,8 @@ panel-applet button:active:backdrop,
     border-color: shade (@dark_bg_color, 0.9);
 }
 
-panel-applet button:hover:backdrop,
-panel-applet button:hover,
-panel-applet button:hover,
-#clock-applet-button:hover {
+PanelApplet .button:hover:backdrop,
+PanelApplet .button:hover {
     border-image: none;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.7)),
@@ -59,22 +87,19 @@ panel-applet button:hover,
     border-left-color: alpha (shade (@dark_bg_color, 1.5), 0.4);
 }
 
-panel-applet button:checked,
-#clock-applet-button:checked {
+PanelApplet .button:checked {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.95)),
                                      to (shade (@dark_bg_color, 1.1)));
 }
 
-panel-applet button:checked:hover,
-#clock-applet-button:checked:hover {
+PanelApplet .button:checked:hover {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.15)),
                                      to (shade (@dark_bg_color, 1.3)));
 }
 
-panel-applet button:checked:hover:active,
-#clock-applet-button:checked:hover:active {
+PanelApplet .button:checked:hover:active {
     border-image: none;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.75)),
@@ -82,34 +107,10 @@ panel-applet button:checked:hover:active,
     border-color: shade (@dark_bg_color, 0.8);
 }
 
-clock-box {
+ClockBox {
     text-shadow: 0 -1px shade (@dark_bg_color, 0.6);
 }
 
-wnck-pager,
-wnck-tasklist {
+WnckPager, WnckTasklist {
     background-color: @dark_bg_color;
-}
-
-gp-arrow-button {
-  min-width: 20px;
-  min-height: 0px;
-
-  border: 1px solid #9d9d99;
-  border-radius: 3px;
-  background-image: linear-gradient(to bottom, #e8e8e7, #dededd 60%, #cfcfcd);
-  margin: 2px;
-}
-
-.vertical gp-arrow-button {
-  min-width: 0px;
-  min-height: 20px;
-}
-
-gp-arrow-button:hover {
-  background-image: linear-gradient(to bottom, #f7f7f7, #e8e8e7 60%, #dededd);
-}
-
-gp-arrow-button:active {
-  background-image: linear-gradient(to bottom, #c8c8c5, #dcdcda);
 }
