@@ -3,9 +3,9 @@ ubuntukylin-theme (1.7.0) zesty; urgency=medium
   * add ukui-theme and ukui-icon-theme.
   * adapt to new Nautilus icon name.(LP: #1669663)
   * remove empty directory
-  * drop unity-greeter and kylin-greeter in debian/control file.
+  * Don't depend on unity-greeter or kylin-greeter
 
- -- ShuiLu Pi <shuilupi@ubuntukylin.com>  Mon, 27 Feb 2017 14:09:49 +0800
+ -- ShuiLu Pi <shuilupi@ubuntukylin.com>  Sun, 01 Apr 2017 00:39:49 +0800
 
 ubuntukylin-theme (1.6.2) yakkety; urgency=medium
 
