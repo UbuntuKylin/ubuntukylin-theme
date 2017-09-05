@@ -1032,6 +1032,14 @@ MinSize=65
 MaxSize=96
 Type=scalable
 
+[128x128@2x/places]
+Context=Places
+Scale=2
+Size=128
+MinSize=97
+MaxSize=128
+Type=scalable
+
 [256x256@2x/places]
 Context=Places
 Scale=2
