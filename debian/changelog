@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.4) raring; urgency=low
+
+  * add ubuntukylin-plymouth-theme and ubuntukylin-unity-greeter
+
+ -- zhangchao (work) <zctgbhu@163.com>  Wed, 13 Mar 2013 20:17:35 +0800
+
 ubuntukylin-theme (0.3.7) raring; urgency=low
 
   * palces icons done
