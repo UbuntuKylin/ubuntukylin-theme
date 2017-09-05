@@ -1,3 +1,13 @@
+ubuntukylin-theme (1.6.1) yakkety; urgency=medium
+
+  * Adapt to flatpak style icon names for GNOME apps (LP: #1618138 #1623768)
+  * fiexd caffeine icon wrong (LP: #1598445)
+  * change libreoffice icons
+  * improve the display effect of device icons
+  * debian/control: add Depend ubuntu-kylin-wizard.
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Tue, 04 Oct 2016 16:07:22 +0800
+
 ubuntukylin-theme (1.6.0) yakkety; urgency=medium
 
   * Update Ubuntu kylin themes to support GTK 3.20. (LP:#1593048)

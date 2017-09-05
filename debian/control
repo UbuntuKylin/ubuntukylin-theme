@@ -16,6 +16,7 @@ Depends: gnome-icon-theme,
          ubuntu-mono,
          unity-greeter,
          kylin-greeter,
+         ubuntu-kylin-wizard,
          fonts-droid-fallback,
          ${misc:Depends},
          ${shlibs:Depends}
