@@ -14,4 +14,4 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
          gnome-icon-theme,
          hicolor-icon-theme
 Description: UbuntuKylin theme
- This package contain the default UbuntuKylin theme. 
+ This package contains the default theme for UbuntuKylin, which is to be a flavor of Ubuntu. 
