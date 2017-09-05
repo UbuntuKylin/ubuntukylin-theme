@@ -57,6 +57,7 @@ GeditFileBrowserWidget .toolbar  {
     color: @backdrop_text_color;
     margin: 2px;
     padding: 2px;
+    border: none;
 }
 
 
