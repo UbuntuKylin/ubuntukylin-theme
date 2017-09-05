@@ -1251,7 +1251,7 @@ toolbar.primary-toolbar button.image-button {
 }
 
 button {
-	transition: all 400ms ease-out;
+	transition: all 0ms ease-out;
 	border-style: solid;
 	border-color: transparent;
 	text-shadow: 0 1px @button_text_shadow;
