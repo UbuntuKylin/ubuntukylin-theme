@@ -1,6 +1,6 @@
 ubuntukylin-theme (1.7.0) zesty; urgency=medium
 
-  * add ukui-theme.
+  * add ukui-theme and ukui-icon-theme.
 
  -- ShuiLu Pi <shuilupi@ubuntukylin.com>  Mon, 27 Feb 2017 14:09:49 +0800
 
