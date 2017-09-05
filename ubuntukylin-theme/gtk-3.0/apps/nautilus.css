@@ -11,7 +11,20 @@ NautilusDesktopWindow GtkWidget {
 .nautilus-canvas-item {
     border-radius: 4px;
 }
+.nautilus-canvas-item:active,
+.nautilus-canvas-item:prelight,
+.nautilus-canvas-item:selected {
+    border-radius: 4px;
+    background-color: alpha (#83eefc, 0.7);
 
+    color: #4c4c4c;
+}
+
+.nautilus-canvas-item:backdrop {
+    border-radius: 4px;
+    background-image: none;
+    background-color: alpha (#acacac, 0.4);
+}
 /* desktop mode */
 .nautilus-desktop.nautilus-canvas-item {
     color: @bg_color;
@@ -27,9 +40,9 @@ NautilusDesktopWindow GtkWidget {
 
 .nautilus-desktop.nautilus-canvas-item:selected {
     background-image: none;
-    background-color: alpha (@selected_bg_color, 0.84);
+    background-color: alpha (#83eefc, 0.6);
 
-    color: @selected_fg_color;
+    color: #4c4c4c;
 }
 
 .nautilus-desktop.nautilus-canvas-item:active,

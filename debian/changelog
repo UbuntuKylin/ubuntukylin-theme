@@ -1,3 +1,10 @@
+ubuntukylin-theme (0.9.6) trusty; urgency=low
+
+  * ubuntukylin-grub-background ready
+  * change the gtk-theme for nautilus
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Mon, 17 Mar 2014 16:02:03 +0800
+
 ubuntukylin-theme (0.9.5) trusty; urgency=low
 
   * ubuntukylin-icon-theme ready
