@@ -3,6 +3,9 @@
 logo="/usr/share/unity-greeter/ubuntukylin-logo.png"
 theme-name="ubuntukylin-theme"
 
+[com.kylin.kylin-greeter]
+background="/usr/share/kylin-greeter/kylin_greeter_background.png"
+
 [org.gnome.desktop.wm.preferences]
 button-layout="close,minimize,maximize:"
 
