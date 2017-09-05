@@ -1,3 +1,9 @@
+ubuntukylin-theme (1.6.1.1) yakkety; urgency=medium
+
+  * debian/control: del Depend ubuntu-kylin-wizard.
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Thu, 06 Oct 2016 11:10:49 +0800
+
 ubuntukylin-theme (1.6.1) yakkety; urgency=medium
 
   * Adapt to flatpak style icon names for GNOME apps (LP: #1618138 #1623768)
