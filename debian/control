@@ -1,9 +1,11 @@
 Source: ubuntukylin-theme
-Section: x11
+Section: gnome
 Priority: extra
 Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.4
+Homepage: https://launchpad.net/ubuntukylin-theme
+Vcs-Bzr: https://code.launchpad.net/~ubuntukylin-members/ubuntukylin-theme/ubuntukylin-theme
 
 Package: ubuntukylin-theme
 Architecture: any

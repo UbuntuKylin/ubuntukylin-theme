@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>Faience</name>
-	<copyright>Matthieu James</copyright>
-	<author>Matthieu James</author>
-	<date>2012</date>
-	<description>Faience GNOME 3 window theme</description>
+	<name>ubuntukylin-theme</name>
+	<author>zhangchao</author>
+	<copyright>National University of Defense Technology(NUDT) & Kylin Ltd,2013</copyright>
+	<date>2013</date>
+	<description>ubuntukylin-theme GNOME 3 window theme</description>
 </info>
 
 <!-- meaningfull constants -->
