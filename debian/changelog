@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.3.6) raring; urgency=low
+
+  * Bug #1143375 is fixed.add some icons in palces
+
+ -- zhangchao (work) <zctgbhu@163.com>  Tue, 05 Mar 2013 13:45:28 +0800
+
 ubuntukylin-theme (0.3.5) raring; urgency=low
 
   * Bug #1130537 is fixed.
