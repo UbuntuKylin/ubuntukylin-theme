@@ -1,3 +1,12 @@
+ubuntukylin-theme (1.6.0) yakkety; urgency=medium
+
+  * Update Ubuntu kylin themes to support GTK 3.20. (LP:#1593048)
+  * change device icons
+  * change plymouth text for 16.10
+  * debian/control: Standards-Version to 3.9.8.
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Thu, 18 Aug 2016 08:43:12 +0800
+
 ubuntukylin-theme (1.5.4) xenial; urgency=medium
 
   * fix the directory structure of plymouth-theme(LP:#1571283)
