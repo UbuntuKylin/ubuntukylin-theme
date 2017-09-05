@@ -1,3 +1,10 @@
+ubuntukylin-theme (0.9) trusty; urgency=low
+
+  * change the unity-greeter's logo for Ubuntu Kylin 14.04 (LP: #1261375)
+  * change the Plymouth text for Ubuntu Kylin 14.04 (LP: #1261379)
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Mon, 16 Dec 2013 20:44:41 +0800
+
 ubuntukylin-theme (0.8.2) saucy; urgency=low
 
   * Remove update-grub2 in .postinst and .postrm (LP: #1228462)
