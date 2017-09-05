@@ -1,3 +1,10 @@
+ubuntukylin-theme (1.2.0) utopic; urgency=low
+
+  * change the unity-greeter's logo for Ubuntu Kylin 15.04 (LP: #1395611)
+  * change the Plymouth text for Ubuntu Kylin 15.04 (LP: #1402468)
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Mon, 15 Dec 2014 10:18:41 +0800
+
 ubuntukylin-theme (1.1.2) utopic; urgency=low
 
   * Add A font file to initramfs to support Chinese display (LP: #1341913)
