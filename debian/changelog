@@ -1,3 +1,9 @@
+ubuntukylin-theme (1.3.1) vivid; urgency=medium
+
+  * add fcitx-qimpanel skin for ubuntukylin
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Mon, 23 Mar 2015 16:43:33 +0800
+
 ubuntukylin-theme (1.3.0) vivid; urgency=medium
 
   * Release for 15.04
