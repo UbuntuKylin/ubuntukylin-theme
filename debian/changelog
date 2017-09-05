@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.5.2.1) raring; urgency=low
+
+  * Modified the metacity-theme-1.xml (LP: #1160721)
+
+ -- zhangchao (work) <zctgbhu@163.com>  Wed, 27 Mar 2013 14:31:08 +0800
+
 ubuntukylin-theme (0.5.2) raring; urgency=low
 
   * Repair the metacity theme (LP: #1160721)
