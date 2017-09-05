@@ -5,6 +5,7 @@ usr/share/plymouth/themes/ubuntukylin-text/
 ubuntukylin-grub-theme/ubuntu_kylin_grub_bg.tga /boot/grub/
 ubuntukylin-icon-theme usr/share/icons/
 ubuntukylin-theme usr/share/themes/
+ukui-theme usr/share/themes/
 ubuntukylin-unity-greeter/ubuntukylin-logo.png /usr/share/unity-greeter/
 kylin-greeter/kylin_greeter_background.png /usr/share/kylin-greeter/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-dark1/

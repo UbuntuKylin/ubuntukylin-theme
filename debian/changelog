@@ -1,3 +1,9 @@
+ubuntukylin-theme (1.7.0) zesty; urgency=medium
+
+  * add ukui-theme.
+
+ -- ShuiLu Pi <shuilupi@ubuntukylin.com>  Mon, 27 Feb 2017 14:09:49 +0800
+
 ubuntukylin-theme (1.6.2) yakkety; urgency=medium
 
   * update theme from upstream for gtk3.20:
