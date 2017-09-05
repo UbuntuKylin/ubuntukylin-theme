@@ -1,193 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
-	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
-	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
-	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
-	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
-	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
-	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
-	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
-	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
-]>
-<svg version="1.1" id="图层_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="21px"
-	 viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
-<metadata>
-	<sfw  xmlns="&ns_sfw;">
-		<slices></slices>
-		<sliceSourceBounds  width="1976.117" height="1612.166" x="-467.515" y="-486.662" bottomLeftOrigin="true"></sliceSourceBounds>
-		<optimizationSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="0">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="1">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="2">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="3">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="4">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="5">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="6">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="7">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="8">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="9">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="10">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="11">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="12">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="13">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="14">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="363907582">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="363924389">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="363941196">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="363958003">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-			<targetSettings  fileFormat="GIFFormat" targetSettingsID="363974810">
-				
-					<GIFFormat  transparency="true" includeCaption="false" interlaced="false" noMatteColor="false" matteColor="#FFFFFF" autoReduce="false" webShiftPercent="0" numColors="256" lossy="0" ditherAlgorithm="diffusion" ditherPercent="100" rolloverMasterPalette="false" reductionAlgorithm="selective">
-					<colorTable  isExact="false"></colorTable>
-					<lockedColors></lockedColors>
-					<colorShiftEntries></colorShiftEntries>
-				</GIFFormat>
-			</targetSettings>
-		</optimizationSettings>
-	</sfw>
-</metadata>
-<g>
-	<path fill-rule="evenodd" clip-rule="evenodd" fill="#0D4E84" d="M8.356,16.5h4.287l1.356,4H7L8.356,16.5z"/>
-	<path fill-rule="evenodd" clip-rule="evenodd" fill="#0D4E84" d="M3,19.5h15v1H3V19.5z"/>
-	<path fill-rule="evenodd" clip-rule="evenodd" fill="#0D4E84" d="M2,0.5h17c1.105,0,2,0.895,2,2v12c0,1.104-0.895,2-2,2H2
-		c-1.105,0-2-0.895-2-2v-12C0,1.395,0.896,0.5,2,0.5z M3,1.625h15c1.105,0,2,0.95,2,2.121v7.424c0,1.172-0.895,2.121-2,2.121H3
-		c-1.105,0-2-0.95-2-2.121V3.746C1,2.575,1.895,1.625,3,1.625z M11.344,14.625c0-0.466-0.378-0.844-0.844-0.844l0,0
-		c-0.466,0-0.844,0.378-0.844,0.844l0,0c0,0.466,0.378,0.844,0.844,0.844l0,0C10.966,15.469,11.344,15.091,11.344,14.625
-		L11.344,14.625z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="16"
+   height="16"
+   id="svg13094"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="user-desktop-symbolic.svg"
+   inkscape:export-filename="folder.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     id="namedview6"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:zoom="20.85965"
+     inkscape:cx="0.13989289"
+     inkscape:cy="4.9042296"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13094">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2983" />
+  </sodipodi:namedview>
+  <defs
+     id="defs7" />
+  <metadata
+     id="metadata13099">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#bdbdbd;fill-opacity:1;fill-rule:nonzero"
+     d="m 1,1 0,10 14,0 0,-10 z m 3,3 8,0 0,4 -8,0 z"
+     id="path3006"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccccc" />
+  <path
+     style="fill:#bdbdbd;fill-opacity:1;stroke:none"
+     d="m 6,12 -1,2 0,1 6,0 0,-1 -1,-2 z"
+     id="rect2984"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccc" />
+  <rect
+     style="fill:#bdbdbd;fill-opacity:0.54377878000000002;stroke:none"
+     id="rect3758"
+     width="6"
+     height="2"
+     x="5"
+     y="5" />
 </svg>

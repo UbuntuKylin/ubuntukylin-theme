@@ -1,7 +1,8 @@
 ubuntukylin-theme (1.5.1) xenial; urgency=medium
 
-  * change depends: add kylin-greeter 
-                    use fonts-droid-fallback instead of fonts-droid (LP: #1546847)
+  * change depends: 
+    -add kylin-greeter 
+    -use fonts-droid-fallback instead of fonts-droid (LP: #1546847)
   * add judge about DroidSansFallbackFull.ttf
   * merge: Aron Xu 2016-01-26 Maintainer script fix
 
