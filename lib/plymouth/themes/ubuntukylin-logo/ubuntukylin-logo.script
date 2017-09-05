@@ -24,98 +24,22 @@
 Window.SetBackgroundTopColor (0, 0, 0);           
 Window.SetBackgroundBottomColor (0, 0, 0); 
 //
-left_1_image = Image("left_1.png");
-resized_left_1_image = left_1_image.Scale(Window.GetWidth(), Window.GetWidth()*left_1_image.GetHeight()/left_1_image.GetWidth());
-left_1_sprite = Sprite();
-left_1_sprite.SetImage(resized_left_1_image);
-left_1_sprite.SetX(0); 
-left_1_sprite.SetY(Window.GetHeight() / 2 - resized_left_1_image.GetHeight() / 2);
-left_1_sprite.SetZ(98);
-left_1_sprite.SetOpacity(0);
-
-left_2_image = Image("left_2.png");
-resized_left_2_image = left_2_image.Scale(Window.GetWidth(), Window.GetWidth()*left_2_image.GetHeight()/left_2_image.GetWidth());
-left_2_sprite = Sprite();
-left_2_sprite.SetImage(resized_left_2_image);
-left_2_sprite.SetX(0); 
-left_2_sprite.SetY(Window.GetHeight() / 2 - resized_left_2_image.GetHeight() / 2);
-left_2_sprite.SetZ(98);
-left_2_sprite.SetOpacity(1);
-
-xx_h=resized_left_1_image.GetHeight()-50;
-xx_y=Window.GetHeight() / 2 - xx_h / 2;
-
-xx_w=resized_left_1_image.GetWidth()-200;
-xx_x=Window.GetWidth() / 2 - xx_w / 2;
-
-all_1_image = Image("all_1.png");
-resized_all_1_image = all_1_image.Scale(Window.GetWidth(), Window.GetWidth()*all_1_image.GetHeight()/all_1_image.GetWidth());
-all_1_sprite = Sprite();
-all_1_sprite.SetImage(resized_all_1_image);
-all_1_sprite.SetX(0); 
-all_1_sprite.SetY(Window.GetHeight() / 2 - resized_all_1_image.GetHeight() / 2);
-all_1_sprite.SetZ(102);
-all_1_sprite.SetOpacity(0);
-
-all_2_image = Image("all_2.png");
-resized_all_2_image = all_2_image.Scale(Window.GetWidth(), Window.GetWidth()*all_2_image.GetHeight()/all_2_image.GetWidth());
-all_2_sprite = Sprite();
-all_2_sprite.SetImage(resized_all_2_image);
-all_2_sprite.SetX(0); 
-all_2_sprite.SetY(Window.GetHeight() / 2 - resized_all_2_image.GetHeight() / 2);
-all_2_sprite.SetZ(103);
-all_2_sprite.SetOpacity(0);
-
-all1_1_image = Image("all1_1.png");
-resized_all1_1_image = all1_1_image.Scale(Window.GetWidth(), Window.GetWidth()*all1_1_image.GetHeight()/all1_1_image.GetWidth());
-all1_1_sprite = Sprite();
-all1_1_sprite.SetImage(resized_all1_1_image);
-all1_1_sprite.SetX(0); 
-all1_1_sprite.SetY(Window.GetHeight() / 2 - resized_all1_1_image.GetHeight() / 2);
-all1_1_sprite.SetZ(101);
-all1_1_sprite.SetOpacity(0);
-
-all1_2_image = Image("all1_2.png");
-resized_all1_2_image = all1_2_image.Scale(Window.GetWidth(), Window.GetWidth()*all1_2_image.GetHeight()/all1_2_image.GetWidth());
-all1_2_sprite = Sprite();
-all1_2_sprite.SetImage(resized_all1_2_image);
-all1_2_sprite.SetX(0); 
-all1_2_sprite.SetY(Window.GetHeight() / 2 - resized_all1_2_image.GetHeight() / 2);
-all1_2_sprite.SetZ(100);
-all1_2_sprite.SetOpacity(0);
-//文字
-text_image = Image("text.png");
-resized_text_image = text_image.Scale(Window.GetWidth(), Window.GetWidth()*text_image.GetHeight()/text_image.GetWidth());
-text_sprite = Sprite();
-text_sprite.SetImage(resized_text_image);
-text_sprite.SetX(0); 
-text_sprite.SetY(Window.GetHeight() / 2 - resized_text_image.GetHeight() / 2);
-text_sprite.SetZ(106);
-text_sprite.SetOpacity(0);
-
-
-xx_image = Image("xx.png");
-xx1_image = Image("xx1.png");
-xx2_image = Image("xx2.png");
-xx3_image = Image("xx3.png");
-xxnum=15;
-for(i=0;i<xxnum;i++){
-  xx_sprite[i]=Sprite(xx_image);
-  xx_sprite[i].SetOpacity(0);
-  xx_sprite[i].SetZ(105);
-  xx1_sprite[i]=Sprite(xx1_image);
-  xx1_sprite[i].SetOpacity(0);
-  xx1_sprite[i].SetZ(105);
-  xx2_sprite[i]=Sprite(xx2_image);
-  xx2_sprite[i].SetOpacity(0);
-  xx2_sprite[i].SetZ(105);
-  xx3_sprite[i]=Sprite(xx3_image);
-  xx3_sprite[i].SetOpacity(0);
-  xx3_sprite[i].SetZ(105);
-}
-
-progress = 0;
-star_progress=0;
+i =19;
+kylin[i].image = Image(i + ".png");
+kylin[i].sprite = Sprite(kylin[i].image);
+kylin[i].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[i].image.GetWidth()/2);
+kylin[i].sprite.SetY(Window.GetY() + Window.GetHeight()/2 - kylin[i].image.GetHeight()/2);
+kylin[i].sprite.SetOpacity(0.0);
+text.image = Image("uk.png");
+text.sprite = Sprite(text.image);
+text.sprite.SetOpacity (0.0);
+text.sprite.SetX(Window.GetX() + Window.GetWidth()/2 - text.image.GetWidth()/2);
+text.sprite.SetY(Window.GetY() + Window.GetHeight()/2 - text.image.GetHeight()/2);
+text.sprite.SetZ(20);
+x = 0;
+lasti = 0;
+c = 0;
+text.flag=0;
 
 
 # Set the text colour in (rgb / 256)
@@ -1029,76 +953,61 @@ Plymouth.SetDisplayQuestionFunction (display_question_callback);
 #
 fun refresh_callback ()
 {
-    if(progress < 157){
-    left_1_sprite.SetOpacity(Math.Sin(progress/50));
-    left_2_sprite.SetOpacity(1-Math.Sin(progress/50));
-    text_sprite.SetOpacity(progress/157);
-}else{
-    left_1_sprite.SetOpacity(0);
-    left_2_sprite.SetOpacity(0);
-    }
-    if(progress > 50){
-    all1_1_Opacity=(progress-50)%314;
-    all1_1_sprite.SetOpacity(Math.Sin(all1_1_Opacity/100));
-    }
-    if(progress > 127){
-    all1_2_Opacity=progress%78;
-    all1_2_sprite.SetOpacity(Math.Sin(all1_2_Opacity/25));
-    }
-    if(progress > 78){
-    all_1_Opacity=(progress-78)%157;
-    all_1_sprite.SetOpacity(Math.Sin(all_1_Opacity/50));
-    }
-    if(progress > 157){
-    all_2_Opacity=progress%157;
-    all_2_sprite.SetOpacity(Math.Sin(all_2_Opacity/50));
-    }
-    
-
-    
-
-    if(star_progress < 800){
-    	if(star_progress%40==0){
-    	xx_sprite[star_progress/40].SetX(Math.Int(Math.Random(10)*xx_w+xx_x));
-    	xx_sprite[star_progress/40].SetY(Math.Int(Math.Random(10)*xx_h+xx_y));
-    	xx1_sprite[star_progress/40].SetX(Math.Int(Math.Random(10)*Window.GetWidth()));
-    	xx1_sprite[star_progress/40].SetY(Math.Int(Math.Random(10)*Window.GetHeight()));
-    	xx2_sprite[star_progress/40].SetX(Math.Int(Math.Random(10)*Window.GetWidth()));
-    	xx2_sprite[star_progress/40].SetY(Math.Int(Math.Random(10)*Window.GetHeight()));
-    	xx3_sprite[star_progress/40].SetX(Math.Int(Math.Random(10)*Window.GetWidth()));
-    	xx3_sprite[star_progress/40].SetY(Math.Int(Math.Random(10)*Window.GetHeight()));
-    	}
-    	xx_sprite[Math.Int(star_progress/40)].SetOpacity((progress%40)/40);
-    	xx1_sprite[Math.Int(star_progress/40)].SetOpacity((progress%40)/40);
-    	xx2_sprite[Math.Int(star_progress/40)].SetOpacity((progress%40)/40);
-    	xx3_sprite[Math.Int(star_progress/40)].SetOpacity((progress%40)/40);
-    }else{
-        if(star_progress%80 < 40){
-        xx_sprite[Math.Int(star_progress/80)% 20].SetOpacity(1-(progress%80)/40);
-    	xx1_sprite[Math.Int(star_progress/80)% 20].SetOpacity(1-(progress%80)/40);
-    	xx2_sprite[Math.Int(star_progress/80)% 20].SetOpacity(1-(progress%80)/40);
-        xx3_sprite[Math.Int(star_progress/80)% 20].SetOpacity(1-(progress%80)/40);
+    if(c == 0)
+	{
+		i = 19 + x;
 	}else{
-           if(star_progress%80==40){
-	   	xx_sprite[Math.Int(star_progress/80)% 20].SetX(Math.Int(Math.Random(10)*xx_w+xx_x));
-    		xx_sprite[Math.Int(star_progress/80)% 20].SetY(Math.Int(Math.Random(10)*xx_h+xx_y));
-    		xx1_sprite[Math.Int(star_progress/80)% 20].SetX(Math.Int(Math.Random(10)*Window.GetWidth()));
-    		xx1_sprite[Math.Int(star_progress/80)% 20].SetY(Math.Int(Math.Random(10)*Window.GetHeight()));
-    		xx2_sprite[Math.Int(star_progress/80)% 20].SetX(Math.Int(Math.Random(10)*Window.GetWidth()));
-    		xx2_sprite[Math.Int(star_progress/80)% 20].SetY(Math.Int(Math.Random(10)*Window.GetHeight()));
-    		xx3_sprite[Math.Int(star_progress/80)% 20].SetX(Math.Int(Math.Random(10)*Window.GetWidth()));
-    		xx3_sprite[Math.Int(star_progress/80)% 20].SetY(Math.Int(Math.Random(10)*Window.GetHeight()));
-	   }
-           xx_sprite[Math.Int(star_progress/80)% 20].SetOpacity((progress%80)/40);
-    	   xx1_sprite[Math.Int(star_progress/80)% 20].SetOpacity((progress%80)/40);
-    	   xx2_sprite[Math.Int(star_progress/80)% 20].SetOpacity((progress%80)/40);
-           xx3_sprite[Math.Int(star_progress/80)% 20].SetOpacity((progress%80)/40);
-        }
-    }
- progress+=2;
-star_progress+=20; 
+		i = 19 + Math.Int(x/4);
+	}
+   
+	if(text.flag==0)
+	{
+		text.sprite.SetOpacity (x/50);
+		if(x==50)
+		{
+			text.flag=1;
+		}
+	}
 
+	if(i != lasti)
+	{
+		if(c == 0)
+		{
+		kylin[i].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[i].image.GetWidth()/2);
+		kylin[i].sprite.SetY(Window.GetY() + Window.GetHeight()/2 - kylin[i].image.GetHeight()/2);
+		kylin[i].sprite.SetZ(10);
+		kylin[i+1].image = Image(i+1 + ".png");
+			if(i != 97)
+			{
+			kylin[i+1].sprite = Sprite(kylin[i+1].image);
+			kylin[i+1].sprite.SetOpacity(0.0);
+			}else{	
+			x=x*4;
+			}
+		}
+		if(i==97 )
+   		{
+		c++;
+		}
+		if(i==18)
+		{
+		c++;
+		i++;
+		}
+		
+		kylin[lasti].sprite.SetOpacity(0.0);
+		kylin[i].sprite.SetOpacity(1.0);
+		lasti = i;
+   		
+	}
+	if(c % 2  == 0)
+		{
+		x++;
+		}else{
+		x--;
+		}
 }
+
 Plymouth.SetRefreshFunction (refresh_callback);
 
 
