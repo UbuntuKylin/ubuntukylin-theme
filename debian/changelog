@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.8.2) saucy; urgency=low
+
+  * Remove update-grub2 in .postinst and .postrm (LP: #1228462)
+
+ -- Aron Xu <happyaron@ubuntu.com>  Sun, 22 Sep 2013 16:27:17 +0800
+
 ubuntukylin-theme (0.8.1) saucy; urgency=low
 
   * Replace symlinks to non-existing files with real

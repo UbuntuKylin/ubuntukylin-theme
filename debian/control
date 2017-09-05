@@ -2,6 +2,7 @@ Source: ubuntukylin-theme
 Section: gnome
 Priority: extra
 Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
+Uploaders: zhangchao <zhangchao@ubuntukylin.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.4
 Homepage: https://launchpad.net/ubuntukylin-theme
