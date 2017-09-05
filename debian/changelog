@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.6) saucy; urgency=low
+
+  * for ubuntu 13.10
+
+ -- zhangchao (work) <zctgbhu@163.com>  Mon, 17 Jun 2013 09:22:50 +0800
+
 ubuntukylin-theme (0.5.5) raring; urgency=low
 
   * add plymouth-text for ubuntukylin (LP: #1169013)
