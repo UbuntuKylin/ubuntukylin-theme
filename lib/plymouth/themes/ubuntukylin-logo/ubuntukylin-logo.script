@@ -22,7 +22,13 @@ Window.SetBackgroundBottomColor (0, 0, 0);
 //光环
 halo_image = Image("halo.png");
 halo_sprite = Sprite();
+if(Window.GetWidth()/Window.GetHeight()<1.5){
+ratio_fix=0.75;
+resized_halo_image = halo_image.Scale(Window.GetWidth()/5.0*0.75, Window.GetWidth()/5.0);
+}else{
+ratio_fix=1;
 resized_halo_image = halo_image.Scale(Window.GetWidth()/5, Window.GetWidth()/5);
+}
 halo_sprite.SetImage(resized_halo_image);
 halo_sprite.SetX(Window.GetWidth()  / 2 - resized_halo_image.GetWidth() / 2); 
 halo_sprite.SetY(Window.GetHeight() / 2 - resized_halo_image.GetHeight() / 2);
@@ -43,18 +49,21 @@ xx2_image = Image("xx2.png");
 xxnum=20;
 for(i=0;i<xxnum;i++){
   xx_sprite[i]=Sprite(xx_image);
+  xx_sprite[i].SetOpacity(0);
   xx1_sprite[i]=Sprite(xx1_image);
+  xx1_sprite[i].SetOpacity(0);
   xx2_sprite[i]=Sprite(xx2_image);
+  xx2_sprite[i].SetOpacity(0);
 }
 //ubuntu-logo
-for(i=0;i<5;i++){
-  ubuntu_images[i]=Image("ubuntu" + i + ".png");
-}
+ubuntu_logo=Image("ubuntu0.png");
+ubuntu_images=ubuntu_logo.Scale(ubuntu_logo.GetWidth()*ratio_fix, ubuntu_logo.GetWidth());
 ubuntu_sprite = Sprite();
 ubuntu_sprite.SetZ(10000);
 
 //kylin-logo
-kylin_image = Image("kylin.png");
+kylin_logo = Image("kylin.png");
+kylin_image=kylin_logo.Scale(kylin_logo.GetWidth()*ratio_fix, kylin_logo.GetWidth());
 kylin_sprite = Sprite(kylin_image);
 kylin_sprite.SetX(Window.GetWidth()  / 2 - kylin_image.GetWidth() / 2); 
 kylin_sprite.SetY(Window.GetHeight() / 2 - kylin_image.GetHeight() / 2);
@@ -70,15 +79,21 @@ fun refresh_callback ()
     #x=Math.Cos(theta) * 300
     #y=Math.Sin(theta) * 200
     
-    light_sprite.SetX(Window.GetWidth() / 2 - resized_light_image.GetWidth() / 2 + Math.Cos(theta) * r);
+    light_sprite.SetX(Window.GetWidth() / 2 - resized_light_image.GetWidth() / 2 + Math.Cos(theta) * r * ratio_fix);
     light_sprite.SetY(Window.GetHeight() / 2 - resized_light_image.GetHeight() / 2 + Math.Sin(theta) * r);
+    
     light_sprite.SetImage(resized_light_image.Rotate(theta+3.14));
     halo_sprite.SetOpacity(opacity);
     light_sprite.SetOpacity(opacity);
 
-    ubuntu_sprite.SetX(Window.GetWidth() / 2 - ubuntu_images[0].GetWidth() / 2 );
-    ubuntu_sprite.SetY(Window.GetHeight() / 2 - ubuntu_images[0].GetHeight() / 2 );
-    ubuntu_sprite.SetImage(ubuntu_images[0].Rotate(theta));
+    ubuntu_sprite.SetX(Window.GetWidth() / 2 - ubuntu_images.GetWidth() / 2 );
+    ubuntu_sprite.SetY(Window.GetHeight() / 2 - ubuntu_images.GetHeight() / 2 );
+    ubuntu_sprite.SetImage(ubuntu_images);
+    if(ratio_fix==0.75){
+    ubuntu_sprite.SetImage(ubuntu_images);
+    }else{
+    ubuntu_sprite.SetImage(ubuntu_images.Rotate(theta));
+    }
     ubuntu_sprite.SetOpacity((Math.Cos(theta)+1)/3+0.33);
     if(progress < 800){
     	if(progress%40==0){
