@@ -1,3 +1,11 @@
+ubuntukylin-theme (1.3.0) vivid; urgency=medium
+
+  * Release for 15.04
+  * New gtk theme to fix some bugs (LP: #1304891 ,LP: #1380911)
+  * Add distributor-logo-ubuntukylin icons (LP: #1240818)
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Fri, 20 Mar 2015 16:45:51 +0800
+
 ubuntukylin-theme (1.2.1) vivid; urgency=medium
 
   * Add update-grub in .postinst and .postrm. (LP: #1415792)
