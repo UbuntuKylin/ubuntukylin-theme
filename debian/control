@@ -9,12 +9,13 @@ Vcs-Bzr: https://code.launchpad.net/~ubuntukylin-members/ubuntukylin-theme/ubunt
 
 Package: ubuntukylin-theme
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends},
-         ubuntu-mono,
-         gnome-icon-theme,
+Depends: gnome-icon-theme,
          hicolor-icon-theme,
          plymouth,
-         unity-greeter
+         ubuntu-mono,
+         unity-greeter,
+         ${misc:Depends},
+         ${shlibs:Depends}
 Description: UbuntuKylin theme
- This package contains the default theme for UbuntuKylin, 
- which is to be a flavor of Ubuntu. 
+ This package contains the default theme for UbuntuKylin,
+ which is to be a flavor of Ubuntu.

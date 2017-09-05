@@ -1,10 +1,10 @@
-ubuntukylin-theme usr/share/themes/
-ubuntukylin-icon-theme usr/share/icons/
 
+
+
+debian/25_ubuntukylin-theme.gschema.override /usr/share/glib-2.0/schemas
 lib/plymouth/themes/ubuntukylin-logo/
 lib/plymouth/themes/ubuntukylin-text/
-
-ubuntukylin-unity-greeter/ubuntukylin-logo.png /usr/share/unity-greeter/
-debian/25_ubuntukylin-theme.gschema.override /usr/share/glib-2.0/schemas
-
 ubuntukylin-grub-theme/IcePhoenix.tga /boot/grub/
+ubuntukylin-icon-theme usr/share/icons/
+ubuntukylin-theme usr/share/themes/
+ubuntukylin-unity-greeter/ubuntukylin-logo.png /usr/share/unity-greeter/
