@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.5.4) raring; urgency=low
+
+  * set button-layout to left (LP: #1165298)
+
+ -- zhangchao (work) <zctgbhu@163.com>  Sun, 07 Apr 2013 10:52:00 +0800
+
 ubuntukylin-theme (0.5.3) raring; urgency=low
 
   * add the gtk2.0 theme and Modified the metacity-theme-1.xml (LP: #1161181)
