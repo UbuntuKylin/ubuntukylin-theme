@@ -1,3 +1,9 @@
+ubuntukylin-theme (1.1.2) utopic; urgency=low
+
+  * Add A font file to initramfs to support Chinese display (LP: #1341913)
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Tue, 15 Jul 2014 10:35:41 +0800
+
 ubuntukylin-theme (1.1.1) utopic; urgency=low
 
   * Add Password stuff and FSCK functions for plymouth(LP: #1335644)

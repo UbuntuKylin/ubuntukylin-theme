@@ -15,6 +15,7 @@ Depends: gnome-icon-theme,
          plymouth,
          ubuntu-mono,
          unity-greeter,
+         fonts-droid,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Ubuntu Kylin theme
