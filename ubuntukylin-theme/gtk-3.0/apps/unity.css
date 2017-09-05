@@ -103,7 +103,6 @@ UnityPanelWidget,
     border-width: 1px 1px 0 1px;
     icon-shadow: 0 -1px rgb (255, 0, 255);
 }*/
-
 .unity-panel.menubar.menuitem:hover,
 .unity-panel.menubar .menuitem *:hover {
     background-image: -gtk-gradient (linear, left top, left bottom,

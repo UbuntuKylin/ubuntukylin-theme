@@ -112,8 +112,8 @@ NautilusWindow .sidebar .view {
 
     /*background-color: @bg_color;*/
 
-    color: @fg_color;
-    text-shadow: 0 1px shade (shade (@bg_color, 0.95), 1.04); 
+    color: @dark_fg_color;
+    text-shadow: none; 
 }
 
 NautilusWindow .sidebar .frame {
@@ -125,7 +125,7 @@ NautilusWindow .sidebar .frame {
 
 NautilusWindow .sidebar:backdrop,
 NautilusWindow .sidebar .view:backdrop {
-    color: mix (@fg_color, shade (@bg_color, 0.95), 0.2);
+    color: mix (@dark_fg_color, shade (@bg_color, 0.95), 0.2);
     text-shadow: 0 1px shade (shade (@bg_color, 0.95), 1.02); 
 }
 
@@ -140,7 +140,7 @@ NautilusWindow .sidebar row:selected:backdrop {
                                      to (shade (shade (@bg_color, 0.95), 0.86)));
     border-top-color: shade (shade (@bg_color, 0.95), 0.88);
 
-    color: @fg_color;
+    color: @dark_fg_color;
     text-shadow: 0 1px shade (shade (@bg_color, 0.95), 0.96); 
 }
 
