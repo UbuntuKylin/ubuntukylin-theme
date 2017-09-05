@@ -1,3 +1,10 @@
+ubuntukylin-theme (1.5.4) xenial; urgency=medium
+
+  * fix the directory structure of plymouth-theme(LP:#1571283)
+  * and fix the problem that plymouth can't display meassage(LP:#1571284)
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Sun, 17 Apr 2016 13:52:45 +0800
+
 ubuntukylin-theme (1.5.3) xenial; urgency=medium
 
   * remove bluetoon and nm-wired larger icons to solve ubiquity display problem (LP: #1561416)
