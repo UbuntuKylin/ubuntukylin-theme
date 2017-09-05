@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.3.5) raring; urgency=low
+
+  * Bug #1130537 is fixed.
+
+ -- zhangchao (work) <zctgbhu@163.com>  Thu, 21 Feb 2013 09:13:48 +0800
+
 ubuntukylin-theme (0.3.4) raring; urgency=low
 
   * releasing version 0.3.4.
