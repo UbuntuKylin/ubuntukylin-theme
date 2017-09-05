@@ -38,7 +38,7 @@ r=resized_halo_image.GetHeight()/2-resized_halo_image.GetHeight()/halo_image.Get
 light_images = Image("light.png");
 light_ratio = light_images.GetWidth()/light_images.GetHeight();
 light_sprite = Sprite();
-resized_light_image = light_images.Scale(Window.GetHeight()/4 * light_ratio , Window.GetHeight()/4);
+resized_light_image = light_images.Scale(Window.GetHeight()/3 * light_ratio , Window.GetHeight()/3);
 //light_sprite.SetImage(resized_light_image);
 light_sprite.SetZ(10000);
 progress = 0;
@@ -84,7 +84,7 @@ fun refresh_callback ()
     
     light_sprite.SetImage(resized_light_image.Rotate(theta+3.14));
     halo_sprite.SetOpacity(opacity);
-    light_sprite.SetOpacity(opacity);
+    //light_sprite.SetOpacity(opacity);
 
     ubuntu_sprite.SetX(Window.GetWidth() / 2 - ubuntu_images.GetWidth() / 2 );
     ubuntu_sprite.SetY(Window.GetHeight() / 2 - ubuntu_images.GetHeight() / 2 );
