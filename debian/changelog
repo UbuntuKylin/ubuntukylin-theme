@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.3.4) raring; urgency=low
+
+  * releasing version 0.3.4.
+
+ -- zhangchao (work) <zctgbhu@163.com>  Mon, 18 Feb 2013 10:20:37 +0800
+
 ubuntukylin-theme (0.3.3) raring; urgency=low
 
   * fix debian/*,and add some icons.
