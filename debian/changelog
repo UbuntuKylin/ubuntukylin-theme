@@ -1,3 +1,10 @@
+ubuntukylin-theme (0.5.3) raring; urgency=low
+
+  * add the gtk2.0 theme and Modified the metacity-theme-1.xml (LP: #1161181)
+  * fixed bug (LP: #1161185)
+
+ -- zhangchao (work) <zctgbhu@163.com>  Fri, 29 Mar 2013 15:43:23 +0800
+
 ubuntukylin-theme (0.5.2.1) raring; urgency=low
 
   * Modified the metacity-theme-1.xml (LP: #1160721)

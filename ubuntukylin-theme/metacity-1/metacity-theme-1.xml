@@ -2,10 +2,10 @@
 
 <metacity_theme>
 <info>
-  <name>ubuntukylin-theme</name>
-  <author>zhangchao and oyy</author>
-  <copyright>National University of Defense Technology(NUDT) and Kylin Ltd,2013</copyright>
-  <date>2013</date>
+  <name>Radiance</name>
+  <author>Kenneth Wimer, James Schriver, Andrea Cimitan</author>
+  <copyright>Canonical Ltd.</copyright>
+  <date>June, 2011</date>
   <description>Metacity theme</description>
 </info>
 
@@ -66,7 +66,7 @@
 
 <draw_ops name="draw_title">
   <!-- frame and gradient -->
-  <rectangle color="shade/#dfd7cf/0.8" filled="false" x="0" y="0" width="width-1" height="top_height"/>
+  <rectangle color="shade/#ebebeb/0.8" filled="false" x="0" y="0" width="width-1" height="top_height"/>
   <gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
     <color value="shade/#e6e6e6/1.06" />
     <color value="#c8c8c8" />
@@ -100,16 +100,16 @@
 
 <draw_ops name="draw_title_unfocused">
   <!-- frame and gradient -->
-  <rectangle color="shade/#dfd7cf/0.8" filled="false" x="0" y="0" width="width-1" height="top_height"/>
+  <rectangle color="shade/#e6e6e6/0.8" filled="false" x="0" y="0" width="width-1" height="top_height"/>
   <gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-    <color value="shade/#edebe6/0.96" />
-    <color value="#dfd7cf" />
+    <color value="shade/#c8c8c8/0.99" />
+    <color value="#e6e6e6" />
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
-    <color value="shade/#edebe6/0.98" />
-    <color value="#edebe6" />
-    <color value="shade/#edebe6/0.98" />
+    <color value="shade/#c8c8c8/0.98" />
+    <color value="#c8c8c8" />
+    <color value="shade/#c8c8c8/0.98" />
   </gradient>
   <!-- left arch -->
   <!-- <arc color="shade/#edebe6/1.02" x="0" y="1" width="9" height="7" start_angle="270" extent_angle="90" />
@@ -134,10 +134,10 @@
 
 <draw_ops name="draw_title_maximized">
   <!-- frame and gradient -->
-  <line color="shade/#dfd7cf/0.8" x1="0" x2="width" y1="0" y2="0"/>
+  <line color="shade/#ebebeb/0.8" x1="0" x2="width" y1="0" y2="0"/>
   <gradient type="vertical" x="0" y="1" width="width" height="top_height-1">
-    <color value="shade/#edebe6/0.98" />
-    <color value="#dfd7cf" />
+    <color value="shade/#e6e6e6/0.98" />
+    <color value="#c8c8c8" />
   </gradient>
   <!-- top line -->
   <gradient type="horizontal" x="0" y="1" width="width" height="1">
@@ -149,10 +149,10 @@
 
 <draw_ops name="draw_title_maximized_unfocused">
   <!-- frame and gradient -->
-  <line color="shade/#dfd7cf/0.8" x1="0" x2="width" y1="0" y2="0"/>
+  <line color="shade/#e6e6e6/0.8" x1="0" x2="width" y1="0" y2="0"/>
   <gradient type="vertical" x="0" y="1" width="width" height="top_height-1">
-    <color value="shade/#edebe6/0.94" />
-    <color value="#dfd7cf" />
+    <color value="shade/#c8c8c8/0.94" />
+    <color value="#e6e6e6" />
   </gradient>
   <!-- top line -->
   <line color="#edebe6" x1="0" x2="width" y1="1" y2="1"/>
