@@ -1,5 +1,11 @@
 ubuntukylin-theme (0.9.2) trusty; urgency=low
 
+  * ubuntukylin-theme ready
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Wed, 12 Mar 2014 09:28:48 +0800
+
+ubuntukylin-theme (0.9.2) trusty; urgency=low
+
   * change the button for unity
   * fix color 
 

@@ -1,7 +1,7 @@
 /* Decorations */
 
 UnityDecoration {
-    -UnityDecoration-extents: 30px 3px 6px 3px;/*窗口上、左、下、右边的厚度*/
+    -UnityDecoration-extents: 33px 3px 6px 3px;/*窗口上、左、下、右边的厚度*/
     -UnityDecoration-input-extents: 10px;/*窗口四边触发缩放的区域大小*/
 
     -UnityDecoration-shadow-offset-x: 4px;/*窗口四边阴影大小，横向*/
@@ -22,7 +22,7 @@ UnityDecoration {
 UnityDecoration.top {
     border-width: 0;/* 窗口标题栏描边宽度 */
     border-top-width: 0;
-    border-bottom: 2px solid rgb (162,192, 213); /* 窗口标题栏描边 */
+    border-bottom: 0;/*2px solid rgb (162,192, 213); 窗口标题栏描边 */
     /*border-bottom-width: 1px;*/
     border-radius: 8px 8px 0 0;/* 窗口标题栏边角弧度 */
     padding: 1px 8px 0 8px;/* 窗口标题栏按钮左边的填充区域 */
@@ -31,11 +31,13 @@ UnityDecoration.top {
     /*background-color: rgb (255,0, 255);*/
     
     background-color: transparent;
-    background-image: -gtk-gradient (linear, 0 0, 0 1,
-                                     from (rgb (255,255, 255)),
-                                     to (rgb (221,221, 229)));
+    background-image: -gtk-gradient (linear, 0 0, 1 0,
+                                     from (#54add9),
+                                     color-stop (0.35, #49a5d4),
+                                     color-stop (1, #8bcdef));
 
-    color: rgb (15, 81, 139);/*字体颜色*/
+    color: #ffffff;/*字体颜色*/
+    
     text-shadow:none;
 }
 
@@ -85,12 +87,15 @@ UnityDecoration.bottom {
 UnityPanelWidget,
 .unity-panel {
     /*tofix*/
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (#edebe6, 1.06)),
-                                     to (@dark_bg_color));
+    background-color: transparent;
+    /*background-image: -gtk-gradient (linear, left top, left bottom,
+                                     color-stop (0, #ff0000),
+                                     color-stop (0.5, #abcfe4),
+                                     color-stop (1, #ff0000));
+    */
     border-width: 0;
 
-    color: rgb (15, 81, 139);/*字体颜色*/
+    color: #f2f2f2;/*字体颜色*/
     text-shadow: none;
 }
 
@@ -98,11 +103,11 @@ UnityPanelWidget,
 .unity-panel .menubar {
 }
 /*上工具条图标外发光*/
-/*.unity-panel.menuitem,
+.unity-panel.menuitem,
 .unity-panel .menuitem {
-    border-width: 1px 1px 0 1px;
-    icon-shadow: 0 -1px rgb (255, 0, 255);
-}*/
+    border-width: 1px 1px 1px 1px;
+    icon-shadow: 0 1px #0f518b;
+}
 .unity-panel.menubar.menuitem:hover,
 .unity-panel.menubar .menuitem *:hover {
     background-image: -gtk-gradient (linear, left top, left bottom,
