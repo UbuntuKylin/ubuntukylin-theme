@@ -1,6 +1,7 @@
 ubuntukylin-theme (0.8.1) saucy; urgency=low
 
-  * fixed bug (LP: #1226899)
+  * Replace symlinks to non-existing files with real
+    contents (LP: #1226899).
 
  -- zhangchao (work) <zctgbhu@163.com>  Wed, 18 Sep 2013 09:55:05 +0800
 
