@@ -1181,7 +1181,7 @@ scale.horizontal.fine-tune slider:hover:active {
 
 frame,
 .frame {
-	border-width: 1px;
+	border-width: 0px;
 	border-color: @borders;
 	border-style: solid;
 	padding: 0;
