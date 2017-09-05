@@ -17,6 +17,6 @@ Depends: gnome-icon-theme,
          unity-greeter,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: UbuntuKylin theme
- This package contains the default theme for UbuntuKylin,
+Description: Ubuntu Kylin theme
+ This package contains the default theme for Ubuntu Kylin,
  which is to be a flavor of Ubuntu.
