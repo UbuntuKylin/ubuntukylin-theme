@@ -1,0 +1,15 @@
+
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=kylin-theme
+Comment=kylin-theme GTK2 / GTK3 theme
+Encoding=UTF-8
+
+Name[en]=index.theme
+
+[X-GNOME-Metatheme]
+GtkTheme=kylin-theme
+MetacityTheme=kylin-theme
+IconTheme=kylin-icon-theme
+CursorTheme=kylin-icon-theme
+ButtonLayout=close,minimize,maximize:menu
