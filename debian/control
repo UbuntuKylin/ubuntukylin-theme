@@ -8,7 +8,10 @@ Homepage: https://launchpad.net/ubuntukylin-theme
 Vcs-Bzr: https://code.launchpad.net/~ubuntukylin-members/ubuntukylin-theme/ubuntukylin-theme
 
 Package: ubuntukylin-theme
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends},
+         ubuntu-mono,
+         gnome-icon-theme,
+         hicolor-icon-theme
 Description: UbuntuKylin theme
- Theme for UbuntuKylin
+ This package contain the default UbuntuKylin theme. 
