@@ -14,8 +14,6 @@ Depends: gnome-icon-theme,
          hicolor-icon-theme,
          plymouth,
          ubuntu-mono,
-         unity-greeter,
-         kylin-greeter,
          fonts-droid-fallback,
          ${misc:Depends},
          ${shlibs:Depends}

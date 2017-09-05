@@ -1,7 +1,7 @@
 ubuntukylin-theme (1.7.0) zesty; urgency=medium
 
   * add ukui-theme and ukui-icon-theme.
-  * adapt to new Nautilus icon name.(LP: 1669663)
+  * adapt to new Nautilus icon name.(LP: #1669663)
 
  -- ShuiLu Pi <shuilupi@ubuntukylin.com>  Mon, 27 Feb 2017 14:09:49 +0800
 
