@@ -1,14 +1,12 @@
 Source: ubuntukylin-theme
 Section: x11
 Priority: extra
-Maintainer: zhangchao <zctgbhu@163.com>
-Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.2
-Homepage: <insert the upstream URL, if relevant>
-
+Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.4
 
 Package: ubuntukylin-theme
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: ubuntukylin theme
- <insert long description, indented with spaces>
+ Theme for UbuntuLykin

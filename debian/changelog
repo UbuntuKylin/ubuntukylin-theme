@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.2) raring; urgency=low
+
+  * Standardization:Delete some scripts and files.
+
+ -- zhangchao <zctgbhu@163.com>  Fri, 25 Jan 2013 09:56:41 +0800
+
 ubuntukylin-theme (0.1) raring; urgency=low
 
   * Initial Release.
