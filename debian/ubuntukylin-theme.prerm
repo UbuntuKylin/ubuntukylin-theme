@@ -29,16 +29,11 @@
 
 case "$1" in
     remove)
+	update-alternatives \
+		--remove default.plymouth /lib/plymouth/themes/ubuntukylin-logo/ubuntukylin-logo.plymouth
 
-	if [ -e /boot/grub/grub.cfg ]; then
-		# Will break Live CD generation, LP #1228462
-		update-grub || true
-	fi
-
-	if which update-initramfs >/dev/null 2>&1
-	then
-	    update-initramfs -u
-	fi
+	update-alternatives \
+		--remove text.plymouth /lib/plymouth/themes/ubuntukylin-text/ubuntukylin-text.plymouth
 	;;
 
     purge)
