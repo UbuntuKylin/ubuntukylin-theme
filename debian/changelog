@@ -6,7 +6,7 @@ ubuntukylin-theme (1.6.2) yakkety; urgency=medium
       -nautilus :Remove box-shadow from .background:backdrop.
       -gtk-widgets-borders: Fix jumping menu items. (LP: #1617415)
       -add libreoffice.css: fix gtk3 toolbar theming for LibreOffice (LP: #1580537)
-  * change ubuntukylin-logo to 16.10.
+  * change ubuntukylin-logo to 16.10 (LP: #1618326).
 
  -- zhangchao <zhangchao@ubuntukylin.com>  Tue, 11 Oct 2016 19:30:08 +0800
 
