@@ -1,3 +1,17 @@
+ubuntukylin-theme (1.5.2) xenial; urgency=medium
+
+  * change icon theme
+  * add launcher icon-background
+  * change plymouth-theme
+  * add kylin-greeter background for 16.04
+  * fix gtk theme bug:
+    -fix progressbar color error (LP: #1558890)
+    -fix scrollbar style for 16.04 
+    -Basic app-notification theming to avoid weirdness in nautilus
+    -Adds padding to sidebar icons to fix bug (LP: #1538997)
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Fri, 18 Mar 2016 10:50:15 +0800
+
 ubuntukylin-theme (1.5.1) xenial; urgency=medium
 
   * change depends: 
