@@ -1,3 +1,9 @@
+ubuntukylin-theme (1.2.1) vivid; urgency=medium
+
+  * Add update-grub in .postinst and .postrm. (LP: #1415792)
+
+ -- Bin Li <bin.li@canonical.com>  Wed, 28 Jan 2015 15:38:27 +0800
+
 ubuntukylin-theme (1.2.0) vivid; urgency=low
 
   * change the unity-greeter's logo for Ubuntu Kylin 15.04 (LP: #1395611)

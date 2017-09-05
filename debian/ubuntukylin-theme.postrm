@@ -35,8 +35,10 @@ case "$1" in
 	update-alternatives \
 		--remove text.plymouth /lib/plymouth/themes/ubuntukylin-text/ubuntukylin-text.plymouth
 
-	# Will break Live CD generation, LP #1228462
-	#update-grub2
+	if [ -e /boot/grub/grub.cfg ]; then
+		# Will break Live CD generation, LP #1228462
+		update-grub || true
+	fi
 
 	if which update-initramfs >/dev/null 2>&1
 	then
