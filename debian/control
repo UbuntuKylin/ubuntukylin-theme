@@ -10,5 +10,5 @@ Vcs-Bzr: https://code.launchpad.net/~ubuntukylin-members/ubuntukylin-theme/ubunt
 Package: ubuntukylin-theme
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: ubuntukylin theme
- Theme for UbuntuLykin
+Description: UbuntuKylin theme
+ Theme for UbuntuKylin

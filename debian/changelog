@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.3.2) raring; urgency=low
+
+  * fix debian/*,and add some icons.
+
+ -- zhangchao (work) <zctgbhu@163.com>  Tue, 05 Feb 2013 16:56:23 +0800
+
 ubuntukylin-theme (0.3.1) raring; urgency=low
 
   * fix copyright.
