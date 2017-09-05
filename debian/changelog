@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.4.2) raring; urgency=low
+
+  * del plymouth-text
+
+ -- zhangchao (work) <zctgbhu@163.com>  Thu, 14 Mar 2013 10:28:00 +0800
+
 ubuntukylin-theme (0.4.1) raring; urgency=low
 
   * add some devices icons
