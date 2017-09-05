@@ -1,3 +1,10 @@
+ubuntukylin-theme (1.1.0) utopic; urgency=low
+
+  * change the unity-greeter's logo for Ubuntu Kylin 14.10 (LP: #1331295)
+  * change the Plymouth text for Ubuntu Kylin 14.10 (LP: #1331297)
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Wed, 18 Jun 2014 11:14:03 +0800
+
 ubuntukylin-theme (1.0.1) trusty; urgency=low
 
   * Add new display-message functions for plymouth (LP: #1329262)
