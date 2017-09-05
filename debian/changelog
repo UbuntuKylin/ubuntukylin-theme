@@ -1,3 +1,9 @@
+ubuntukylin-theme (1.1.1) utopic; urgency=low
+
+  * Add Password stuff and FSCK functions for plymouth(LP: #1335644)
+
+ -- zhangchao <zhangchao@ubuntukylin.com>  Wed, 09 Jul 2014 16:45:24 +0800
+
 ubuntukylin-theme (1.1.0) utopic; urgency=low
 
   * change the unity-greeter's logo for Ubuntu Kylin 14.10 (LP: #1331295)
