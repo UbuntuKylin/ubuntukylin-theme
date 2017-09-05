@@ -1,6 +1,6 @@
 [Plymouth Theme]
-Name=ubuntukylin Logo
-Description=A theme that features a blank background with a logo.
+Name=My Theme
+Description=This theme is a template to build on
 ModuleName=script
 
 [script]

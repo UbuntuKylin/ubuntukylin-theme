@@ -6,4 +6,4 @@ logo="/usr/share/unity-greeter/ubuntukylin-logo.png"
 button-layout="close,minimize,maximize:"
 
 [org.compiz.unityshell]
-panel-opacity=0.7
+panel-opacity=0.95

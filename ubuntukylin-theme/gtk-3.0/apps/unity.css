@@ -1,38 +1,112 @@
+/* Decorations */
+
+UnityDecoration {
+    -UnityDecoration-extents: 30px 3px 6px 3px;/*窗口上、左、下、右边的厚度*/
+    -UnityDecoration-input-extents: 10px;/*窗口四边触发缩放的区域大小*/
+
+    -UnityDecoration-shadow-offset-x: 4px;/*窗口四边阴影大小，横向*/
+    -UnityDecoration-shadow-offset-y: 4px;/*窗口四边阴影大小，纵向*/
+    -UnityDecoration-active-shadow-color: rgba (0, 0, 0, 0.4);/*阴影颜色*/
+    -UnityDecoration-active-shadow-radius: 12px;/*阴影半径*/
+    -UnityDecoration-inactive-shadow-color: rgba (0, 0, 0, 0.2);
+    -UnityDecoration-inactive-shadow-radius: 10px;
+
+    -UnityDecoration-glow-size: 20px;/*窗口平铺时的颜色和大小*/
+    -UnityDecoration-glow-color: rgb (255, 111, 31);
+
+    -UnityDecoration-title-indent: 16px;/*窗口标题栏文字的缩进*/
+    -UnityDecoration-title-fade: 60px;/*窗口标题栏文字右边渐变消失长度*/
+    -UnityDecoration-title-alignment: 0.0;/*窗口标题栏文字相对位置，0.5为居中*/
+}
+
+UnityDecoration.top {
+    border-width: 0;/* 窗口标题栏描边宽度 */
+    border-top-width: 0;
+    border-bottom: 2px solid rgb (162,192, 213); /* 窗口标题栏描边 */
+    /*border-bottom-width: 1px;*/
+    border-radius: 8px 8px 0 0;/* 窗口标题栏边角弧度 */
+    padding: 1px 8px 0 8px;/* 窗口标题栏按钮左边的填充区域 */
+
+    
+    /*background-color: rgb (255,0, 255);*/
+    
+    background-color: transparent;
+    background-image: -gtk-gradient (linear, 0 0, 0 1,
+                                     from (rgb (255,255, 255)),
+                                     to (rgb (221,221, 229)));
+
+    color: rgb (15, 81, 139);/*字体颜色*/
+    text-shadow:none;
+}
+
+UnityDecoration.top:backdrop {
+    border-width: 0;/* 窗口标题栏描边宽度 */
+    border-bottom: 2px solid rgb (162,192, 213); /* 窗口标题栏描边 */
+    background-color: transparent;
+    
+    background-image: -gtk-gradient (linear, 0 0, 0 1,
+                                     from (rgb (162,192, 213)),
+                                     to (rgb (162,192, 213)));
+   
+    color: #fafafa;/*字体颜色*/
+    text-shadow:none;
+}
+
+UnityDecoration.left,
+UnityDecoration.right {
+    background-color: rgb (172, 207, 228);/*左右边框的颜色*/
+    background-size: 1px 70px;
+    background-repeat: repeat-x;
+
+    /* 左右边框上部分的颜色:渐变 */   
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                   color-stop (0, #abcfe4),
+                                     color-stop (0.5, #abcfe4),
+                                     color-stop (1, #abcfe4));
+}
+
+UnityDecoration.left:backdrop,
+UnityDecoration.right:backdrop {
+    /* start color: mix of the top border color and bg-image gradient end */
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                   color-stop (0, #abcfe4),
+                                     color-stop (0.5, #abcfe4),
+                                     color-stop (1, #abcfe4));
+}
+
+UnityDecoration.bottom {
+    background-image: none;
+    background-color: rgb (172, 207, 228);
+    border-radius: 0px 0px 8px 8px;
+}
+
+/* Panel Style */
+
 UnityPanelWidget,
 .unity-panel {
+    /*tofix*/
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (#373c3a, 1.3)),
-                                     to (shade (#373c3a, 1.0)));
-    border-top-color: shade (#373c3a, 1.4);
-    border-style: solid;
-    border-width: 1px 0 0 0;
+                                     from (shade (#edebe6, 1.06)),
+                                     to (@dark_bg_color));
+    border-width: 0;
 
-    color: @dark_fg_color;
-    text-shadow: 0 1px shade (#373c3a, 1.1);
+    color: rgb (15, 81, 139);/*字体颜色*/
+    text-shadow: none;
 }
 
 .unity-panel.menubar,
 .unity-panel .menubar {
 }
-
-.unity-panel.menuitem,
+/*上工具条图标外发光*/
+/*.unity-panel.menuitem,
 .unity-panel .menuitem {
     border-width: 1px 1px 0 1px;
-
-    icon-shadow: 0 1px shade (#373c3a, 1.06);
-}
+    icon-shadow: 0 -1px rgb (255, 0, 255);
+}*/
 
 .unity-panel.menubar.menuitem:hover,
 .unity-panel.menubar .menuitem *:hover {
-    border-radius: 7px 7px 0 0;
-    border-width: 1px 1px 0 1px;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (#373c3a, 1.5)),
-                                     to (shade (#373c3a, 1.02)));
-    border-image: url("../assets/radiance-menubaritem.png") 8 10 1 10 / 8px 10px 1px 10px stretch;
-    /*box-shadow: inset 0 -1px shade (@dark_bg_color, 0.95);*/
-    box-shadow: none;
-
-    color: @selected_fg_color;
-    text-shadow: 0 1px shade (#373c3a, 1.1);
+                                     from (shade (@dark_bg_color, 1.5)),
+                                     to (shade (@dark_bg_color, 1.02)));
 }
