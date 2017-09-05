@@ -48,7 +48,7 @@ install: build
 	dh_prep  
 	dh_installdirs
 
-	# Add here commands to install the package into debian/faenza-icon-theme.
+	
 	#$(MAKE) DESTDIR=$(CURDIR)/debian/ubuntukylin-theme install
 	cp -dpRf kylin-theme $(CURDIR)/debian/ubuntukylin-theme/usr/share/themes/
 	cp -dpRf kylin-icon-theme $(CURDIR)/debian/ubuntukylin-theme/usr/share/icons/
