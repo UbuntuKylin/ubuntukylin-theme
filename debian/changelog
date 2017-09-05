@@ -1,3 +1,9 @@
+ubuntukylin-theme (0.4.1) raring; urgency=low
+
+  * add some devices icons
+
+ -- zhangchao (work) <zctgbhu@163.com>  Wed, 13 Mar 2013 21:42:51 +0800
+
 ubuntukylin-theme (0.4) raring; urgency=low
 
   * add ubuntukylin-plymouth-theme and ubuntukylin-unity-greeter
