@@ -1,3 +1,9 @@
+ubuntukylin-theme (1.7.4) artful; urgency=medium
+
+  * Remove redundant configuration entries in 25_ubuntukylin-theme.gschema.override
+
+ -- lihao <lihao@kylinos.cn>  Wed, 13 Sep 2017 15:34:35 +0800
+
 ubuntukylin-theme (1.7.3) artful; urgency=medium
 
   * Update 17.04 to 17.10 in ubuntukylin-text.plymouth
