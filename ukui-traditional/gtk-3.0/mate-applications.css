@@ -88,18 +88,18 @@
 }
 
 /***************
- * mate-panel *
+ * ukui-panel *
  ***************/
 
-.mate-panel-menu-bar,
-MatePanelApplet > menubar,
+.ukui-panel-menu-bar,
+UkuiPanelApplet > menubar,
 PanelToplevel.background,
 PanelWidget,
 PanelFrame,
 PanelAppletFrame,
-MatePanelAppletFrameDBus,
-MatePanelAppletContainer,
-MatePanelApplet {
+UkuiPanelAppletFrameDBus,
+UkuiPanelAppletContainer,
+UkuiPanelApplet {
     background-image: -gtk-gradient (linear,
                       left top,
                       left bottom,
@@ -112,7 +112,7 @@ MatePanelApplet {
     text-shadow: none;
 }
 
-MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
+UkuiPanelAppletFrameDBus > UkuiPanelAppletFrameDBus {
     background-image: -gtk-scaled(url("img/panel-grid.svg"));
     background-color: transparent;
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@ MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
 }
 
 /* workaround to avoid unwanted black frames if switching compositor on/off */
-.mate-panel-menu-bar .window-frame.csd.popup {
+.ukui-panel-menu-bar .window-frame.csd.popup {
     box-shadow: none;
 }
 
@@ -143,9 +143,9 @@ PanelSeparator {
 
 /* outlines */
 window.background, /* selector where outlines are writen on GtkTrayIcon */
-.mate-panel-menu-bar menubar,
-.mate-panel-menu-bar PanelApplet,
-.mate-panel-menu-bar button,
+.ukui-panel-menu-bar menubar,
+.ukui-panel-menu-bar PanelApplet,
+.ukui-panel-menu-bar button,
 #PanelApplet > #clock-applet-button.flat.toggle,
 #PanelApplet > #showdesktop-button,
 #PanelApplet > wnck-tasklist > button,
@@ -156,7 +156,7 @@ PanelApplet.wnck-applet .wnck-pager {
     outline-width: 2px;
 }
 
-.mate-panel-menu-bar button {
+.ukui-panel-menu-bar button {
     -gtk-outline-radius: 3px;
     box-shadow: none;
     border-image: none;
@@ -164,15 +164,15 @@ PanelApplet.wnck-applet .wnck-pager {
 
 /* main menu */
 /* set normal menubar button */
-.mate-panel-menu-bar menubar {
+.ukui-panel-menu-bar menubar {
     padding: 0px;
 }
 
 /* all applets */
-.mate-panel-menu-bar #PanelApplet button,
-.mate-panel-menu-bar #PanelApplet button.flat,
-.mate-panel-menu-bar #PanelApplet button.toggle,
-.mate-panel-menu-bar #PanelApplet button.flat.toggle {
+.ukui-panel-menu-bar #PanelApplet button,
+.ukui-panel-menu-bar #PanelApplet button.flat,
+.ukui-panel-menu-bar #PanelApplet button.toggle,
+.ukui-panel-menu-bar #PanelApplet button.flat.toggle {
     padding: 4px;
     border-radius: 3px;
     border-width: 1px;
@@ -188,18 +188,18 @@ PanelApplet.wnck-applet .wnck-pager {
                       to (@button_gradient_d));
 }
 
-.mate-panel-menu-bar #PanelApplet button:checked,
-.mate-panel-menu-bar #PanelApplet button:checked:hover,
-.mate-panel-menu-bar #PanelApplet button:hover:active,
-.mate-panel-menu-bar #PanelApplet button.flat:checked,
-.mate-panel-menu-bar #PanelApplet button.flat:checked:hover,
-.mate-panel-menu-bar #PanelApplet button.flat:hover:active,
-.mate-panel-menu-bar #PanelApplet button.toggle:checked,
-.mate-panel-menu-bar #PanelApplet button.toggle:checked:hover,
-.mate-panel-menu-bar #PanelApplet button.toggle:hover:active,
-.mate-panel-menu-bar #PanelApplet button.flat.toggle:checked,
-.mate-panel-menu-bar #PanelApplet button.flat.toggle:checked:hover,
-.mate-panel-menu-bar #PanelApplet button.flat.toggle:hover:active {
+.ukui-panel-menu-bar #PanelApplet button:checked,
+.ukui-panel-menu-bar #PanelApplet button:checked:hover,
+.ukui-panel-menu-bar #PanelApplet button:hover:active,
+.ukui-panel-menu-bar #PanelApplet button.flat:checked,
+.ukui-panel-menu-bar #PanelApplet button.flat:checked:hover,
+.ukui-panel-menu-bar #PanelApplet button.flat:hover:active,
+.ukui-panel-menu-bar #PanelApplet button.toggle:checked,
+.ukui-panel-menu-bar #PanelApplet button.toggle:checked:hover,
+.ukui-panel-menu-bar #PanelApplet button.toggle:hover:active,
+.ukui-panel-menu-bar #PanelApplet button.flat.toggle:checked,
+.ukui-panel-menu-bar #PanelApplet button.flat.toggle:checked:hover,
+.ukui-panel-menu-bar #PanelApplet button.flat.toggle:hover:active {
     border-style: solid;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -211,10 +211,10 @@ PanelApplet.wnck-applet .wnck-pager {
                       @button_active_gradient_f);
 }
 
-.mate-panel-menu-bar #PanelApplet button:hover,
-.mate-panel-menu-bar #PanelApplet button.flat:hover,
-.mate-panel-menu-bar #PanelApplet button.toggle:hover,
-.mate-panel-menu-bar #PanelApplet button.flat.toggle:hover {
+.ukui-panel-menu-bar #PanelApplet button:hover,
+.ukui-panel-menu-bar #PanelApplet button.flat:hover,
+.ukui-panel-menu-bar #PanelApplet button.toggle:hover,
+.ukui-panel-menu-bar #PanelApplet button.flat.toggle:hover {
     border-style: solid;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -224,16 +224,16 @@ PanelApplet.wnck-applet .wnck-pager {
 }
 
 /* use only outlines if focused */
-.mate-panel-menu-bar #PanelApplet button:focus {
+.ukui-panel-menu-bar #PanelApplet button:focus {
     box-shadow: none;
     border-image: none;
 }
 
 /* 1.18 changings for gtk+-3.22 warning fixes*/
-.mate-panel-menu-bar #PanelApplet #drive-button,
-.mate-panel-menu-bar #PanelApplet #drive-button:hover,
-.mate-panel-menu-bar #PanelApplet #charpick-applet-button,
-.mate-panel-menu-bar #PanelApplet #showdesktop-button:checked {
+.ukui-panel-menu-bar #PanelApplet #drive-button,
+.ukui-panel-menu-bar #PanelApplet #drive-button:hover,
+.ukui-panel-menu-bar #PanelApplet #charpick-applet-button,
+.ukui-panel-menu-bar #PanelApplet #showdesktop-button:checked {
     border-image: url("img/border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
     border-width: 0px;
 }
@@ -282,16 +282,16 @@ PanelApplet.wnck-applet .wnck-pager {
 }
 
 /* calendar window */
-#MatePanelPopupWindow {
+#UkuiPanelPopupWindow {
 	border-radius: 3px;
 }
 
-#MatePanelPopupWindow expander {
+#UkuiPanelPopupWindow expander {
 	border-style: none;
 }
 
 /* Weird, this sets the border color of the clockmap */
-#MatePanelPopupWindow > frame > box > box > box > widget {
+#UkuiPanelPopupWindow > frame > box > box > box > widget {
     color: @border_color;
 }
 
@@ -317,7 +317,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
 }
 
 /* Classic icon style */
-.mate-panel-menu-bar {
+.ukui-panel-menu-bar {
     -PanelMenuBar-icon-visible: true;
 }
 
@@ -330,11 +330,11 @@ na-tray-applet {
 }
 
 /* volume applet, brightness applet */
-.mate-panel-applet-slider {
+.ukui-panel-applet-slider {
     background: transparent;
 }
 
-.mate-panel-applet-slider frame {
+.ukui-panel-applet-slider frame {
     background-color: @theme_bg_color;
     border-image: none;
     border-style: solid;
@@ -343,24 +343,24 @@ na-tray-applet {
     margin: 0px;
 }
 
-.mate-panel-applet-slider frame frame {
+.ukui-panel-applet-slider frame frame {
     background-color:transparent;
     border-style: none;
     box-shadow: none;
 }
 
-.mate-panel-applet-slider frame button {
+.ukui-panel-applet-slider frame button {
     color: @theme_fg_color;
 }
 
-/* mate-menu, mintmenu fork */
-#mate-menu.background {
+/* ukui-menu, mintmenu fork */
+#ukui-menu.background {
     border-color: @border_color;
     border-style: solid;
     border-width: 1px;
 }
 
-/* mate-indicator-applet */
+/* ukui-indicator-applet */
 /* needed for a transparent panel */
 #fast-user-switch-applet > #fast-user-switch-menubar {
     background-color: transparent;
@@ -489,7 +489,7 @@ EggToolbarEditor.vertical scrolledwindow {
     border-style: none;
 }
 
-/* mate-appearance-properties, UI tab */
+/* ukui-appearance-properties, UI tab */
 
 .appearance-window > box.vertical.dialog-vbox > notebook.frame  box.vertical > box.vertical > box.horizontal > box.vertical menubar {
     border-style: solid;
@@ -582,7 +582,7 @@ window.background.mate-terminal > box.vertical > notebook > header.top tab:check
 }
 
 /***********************
- * mate-volume-control *
+ * ukui-volume-control *
  ***********************/
 
 /* application notebook page */
@@ -600,7 +600,7 @@ GvcMixerDialog notebook.frame box scrolledwindow.frame {
 }
 
 /***********************
- * mate-control-center *
+ * ukui-control-center *
  ***********************/
 
 #MyControlCenter button.flat {

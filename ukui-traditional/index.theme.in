@@ -1,13 +1,13 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=TraditionalOk
-_Comment=Port of Clearlooks-Phenix
+Name=ukui-traditional
+_Comment=UKUI Desktop Environment Traditional Theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=TraditionalOk
-MetacityTheme=TraditionalOk
-IconTheme=mate
-CursorTheme=mate
+GtkTheme=ukui-traditional
+MetacityTheme=ukui-traditional
+IconTheme=ukui
+CursorTheme=ukui
 CursorSize=16
 ButtonLayout=:minimize,maximize,close
