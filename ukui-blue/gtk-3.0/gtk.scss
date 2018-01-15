@@ -2,5 +2,9 @@
 /* I know you don't like GTK+'s nasty css themes, but don't worry because we will fuck them soon. */
 // OK, Let's fuck GTK+'s motherfucking css rules.
 
+$variant: 'light';
+
 @import 'colors';
+@import 'drawing';
 @import 'common';
+@import 'colors-public';
