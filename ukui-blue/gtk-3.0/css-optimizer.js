@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 try {
-	var css_data = fs.readFileSync('gtk-contained.css', 'utf-8');
+	var css_data = fs.readFileSync('gtk.css', 'utf-8');
 } catch (err) {
 	console.log("Read css file error.");
 }
@@ -41,4 +41,4 @@ var options = {
 
 var output = new CleanCSS(options).minify(css_data);
 //console.log(output.styles);
-fs.writeFileSync("gtk-contained.css", output.styles);
+fs.writeFileSync("gtk.css", output.styles);
