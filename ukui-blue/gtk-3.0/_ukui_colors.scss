@@ -117,6 +117,8 @@ $scrollbar_slider_normal_color: #cdcdcd;
 $scrollbar_slider_active_color: #888888;
 $scrollbar_slider_prelight_color: #aaaaaa;
 $scrollbar_slider_insensitive_color: $scrollbar_free_space_color;
+$scrollbar_stepper_fg_color: $scrollbar_slider_active_color;
+$scrollbar_stepper_bg_color: $scrollbar_free_space_color;
 
 
 /*

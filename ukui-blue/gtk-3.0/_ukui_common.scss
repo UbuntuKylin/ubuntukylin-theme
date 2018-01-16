@@ -358,6 +358,9 @@ tooltip {
 scrollbar {
     -GtkScrollbar-has-backward-stepper: true;
     -GtkScrollbar-has-forward-stepper: true;
+    &.top, &.bottom, &.left, &.right {
+        border-width: 0px;
+    }
 
     trough {
         background-color: $scrollbar_free_space_color;
@@ -383,6 +386,10 @@ scrollbar {
     }
 
     /* The backword-stepper and forward-stepper are button widget */
+    button, button:disabled {
+        color: $scrollbar_stepper_fg_color;
+        background-image: image($scrollbar_stepper_bg_color);
+    }
     &.horizontal {
         button {
             min-height: 16px;
