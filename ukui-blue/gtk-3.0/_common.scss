@@ -3,7 +3,7 @@
 }
 
 $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-$asset_suffix: if($variant == "dark", "-dark", "");
+$asset_suffix: "";
 $backdrop_transition: 200ms ease-out;
 $button_transition: all 200ms $ease-out-quad;
 
@@ -160,20 +160,20 @@ flowbox {
 
 .content-view .tile {
     margin: 2px;
-    background-color: if($variant == "light", transparent, black);
+    background-color: transparent;
     border-radius: 0;
     padding: 0;
 
     &:backdrop {
-        background-color: if($variant == "light", transparent, darken($backdrop_base_color, 5%));
+        background-color: transparent;
     }
 
     &:active, &:selected {
-        background-color: if($variant == "light", transparent, $selected_bg_color);
+        background-color: transparent;
     }
 
     &:disabled {
-        background-color: if($variant == "light", transparent, $insensitive_bg_color);
+        background-color: transparent;
     }
 }
 
@@ -546,11 +546,11 @@ treeview entry {
 
     border-style: none;
 
-    $_entry_tag_color: if($variant == "light", $selected_fg_color, $base_color);
+    $_entry_tag_color: $selected_fg_color;
 
     color: $_entry_tag_color;
 
-    $_entry_tag_bg: if($variant == "light", $selected_bg_color, mix($fg_color, $base_color, 50%));
+    $_entry_tag_bg: $selected_bg_color;
 
     background-color: $_entry_tag_bg;
 
@@ -560,7 +560,7 @@ treeview entry {
 
     :backdrop & {
         color: $backdrop_base_color;
-        background-color: if($variant == "light", $selected_bg_color, mix($backdrop_fg_color, $backdrop_base_color, 50%));
+        background-color: $selected_bg_color;
     }
 
     &.button {
@@ -585,7 +585,7 @@ treeview entry {
  * Buttons *
  ***********/
 // stuff for .needs-attention
-$_dot_color: if($variant == "light", $selected_bg_color, lighten($selected_bg_color, 15%));
+$_dot_color: $selected_bg_color;
 
 @keyframes needs_attention {
     from {
@@ -709,16 +709,14 @@ button {
 
     @at-root %button_selected, & {
         row:selected & {
-            @if $variant == "light" {
-                border-color: $selected_borders_color;
-            }
+            border-color: $selected_borders_color;
 
             &.flat:not(:active):not(:checked):not(:hover):not(disabled) {
                 color: $selected_fg_color;
                 border-color: transparent;
 
                 &:backdrop {
-                    color: if($variant == "light", $backdrop_base_color, $backdrop_fg_color);
+                    color: $backdrop_base_color;
                 }
             }
         }
@@ -1063,30 +1061,19 @@ button {
     animation: needs_attention 150ms ease-in;
 
     $_dot_shadow: _text_shadow_color();
-    $_dot_shadow_r: if($variant == "light", 0.5, 0.45);
+    $_dot_shadow_r: 0.5;
 
     background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to($_dot_color), to(transparent)), -gtk-gradient(radial, center center, 0, center center, $_dot_shadow_r, to($_dot_shadow), to(transparent));
     background-size: 6px 6px, 6px 6px;
     background-repeat: no-repeat;
-
-    @if $variant == "light" {
-        background-position: right 3px, right 4px;
-    }
-    @else {
-        background-position: right 3px, right 2px;
-    }
+    background-position: right 3px, right 4px;
 
     &:backdrop {
         background-size: 6px 6px, 0 0;
     }
 
     &:dir(rtl) {
-        @if $variant == "light" {
-            background-position: left 3px, left 4px;
-        }
-        @else {
-            background-position: left 3px, left 2px;
-        }
+        background-position: left 3px, left 4px;
     }
 }
 
@@ -1262,24 +1249,20 @@ button.color {
             border-radius: 0;
         }
 
-        @if $variant == "light" {
-            box-shadow: 0 1px _text_shadow_color();
+        box-shadow: 0 1px _text_shadow_color();
 
-            .osd & {
-                box-shadow: none;
-            }
+        .osd & {
+            box-shadow: none;
         }
     }
 
-    @if $variant == "light" {
-        .osd &, & {
-            &:disabled,
-            &:backdrop,
-            &:active,
-            &:checked {
-                colorswatch:only-child {
-                    box-shadow: none;
-                }
+    .osd &, & {
+        &:disabled,
+        &:backdrop,
+        &:active,
+        &:checked {
+            colorswatch:only-child {
+                box-shadow: none;
             }
         }
     }
@@ -2223,40 +2206,25 @@ treeview.view {
 
     &.progressbar {
         // progress bar in treeviews
-        @if $variant == light {
-            color: $base_color;
-        }
-
+        color: $base_color;
         border: 1px solid $selected_borders_color;
         border-radius: 4px;
         background-color: $selected_bg_color;
         background-image: linear-gradient(to bottom, $selected_bg_color, darken($selected_bg_color, 10%));
-        box-shadow: inset 0 1px if($variant == "light", transparentize(white, 0.7), transparentize(white, 0.85)), 0 1px if($variant == "light", transparentize(black, 0.8), transparentize(black, 0.9));
+        box-shadow: inset 0 1px transparentize(white, 0.7), 0 1px transparentize(black, 0.8);
 
         &:selected {
             &:focus, & {
                 border-radius: 4px;
-
-                @if $variant == "light" {
-                    color: $selected_bg_color;
-                    box-shadow: none;
-                }
-                @else {
-                    box-shadow: inset 0 1px transparentize(white, 0.95);
-                }
-
+                color: $selected_bg_color;
+                box-shadow: none;
                 background-image: linear-gradient(to bottom, $base_color, darken($base_color, 10%));
 
                 &:backdrop {
-                    @if $variant == "light" {
-                        color: $selected_bg_color;
-                        border-color: $selected_borders_color;
+                    color: $selected_bg_color;
+                    border-color: $selected_borders_color;
 
-                        // otherwise it gets inherited by .view(?!?)
-                    }
-                    @else {
-                        border-color: $backdrop_base_color;
-                    }
+                    // otherwise it gets inherited by .view(?!?)
 
                     background-color: $backdrop_base_color;
                 }
@@ -2264,13 +2232,7 @@ treeview.view {
         }
 
         &:backdrop {
-            @if $variant == "light" {
-                color: $backdrop_base_color;
-            }
-            @else {
-                border-color: $backdrop_base_color;
-            }
-
+            color: $backdrop_base_color;
             background-image: none;
             box-shadow: none;
         }
@@ -2283,14 +2245,11 @@ treeview.view {
 
         &:selected {
             &:focus, & {
-                background-color: if($variant == "light", transparentize($selected_fg_color, 0.7), darken($selected_bg_color, 10%));
+                background-color: transparentize($selected_fg_color, 0.7);
                 border-radius: 4px;
-
-                @if $variant == "light" {
-                    border-width: 1px 0;
-                    border-style: solid;
-                    border-color: $selected_bg_color;
-                }
+                border-width: 1px 0;
+                border-style: solid;
+                border-color: $selected_bg_color;
             }
         }
     }
@@ -3036,7 +2995,7 @@ scrollbar {
                 min-width: 3px;
                 min-height: 3px;
                 background-color: $fg_color;
-                border: 1px solid if($variant == "light", white, black);
+                border: 1px solid white;
             }
 
             button {
@@ -3045,7 +3004,7 @@ scrollbar {
                 background-color: $fg_color;
                 background-clip: padding-box;
                 border-radius: 100%;
-                border: 1px solid if($variant == "light", white, black);
+                border: 1px solid white;
                 -gtk-icon-source: none;
             }
 
@@ -3200,11 +3159,8 @@ switch {
         transition: $backdrop_transition;
 
         &:checked {
-            @if $variant == "light" {
-                color: $backdrop_bg_color;
-            }
-
-            border-color: if($variant == "light", $selected_bg_color, $selected_borders_color);
+            color: $backdrop_bg_color;
+            border-color: $selected_bg_color;
             background-color: $selected_bg_color;
         }
 
@@ -3246,7 +3202,7 @@ switch {
         }
 
         &:checked slider {
-            border-color: if($variant == "light", $selected_bg_color, $selected_borders_color);
+            border-color: $selected_bg_color;
         }
 
         &:disabled slider {
@@ -3255,26 +3211,24 @@ switch {
     }
 
     row:selected & {
-        @if $variant == "light" {
-            box-shadow: none;
+        box-shadow: none;
+        border-color: $selected_borders_color;
+
+        &:backdrop {
             border-color: $selected_borders_color;
+        }
 
-            &:backdrop {
+        slider:dir(rtl) {
+            border-left-color: $borders_color;
+        }
+
+        slider:dir(ltr) {
+            border-right-color: $borders_color;
+        }
+
+        slider {
+            &:checked, & {
                 border-color: $selected_borders_color;
-            }
-
-            slider:dir(rtl) {
-                border-left-color: $borders_color;
-            }
-
-            slider:dir(ltr) {
-                border-right-color: $borders_color;
-            }
-
-            slider {
-                &:checked, & {
-                    border-color: $selected_borders_color;
-                }
             }
         }
     }
@@ -3369,12 +3323,10 @@ radio {
         }
     }
 
-    @if $variant == "light" {
-        // the borders of the light variant versions of checks and radios are too similar in luminosity to the selected background
-        // color, hence we need special casing.
-        row:selected & {
-            border-color: $selected_borders_color;
-        }
+    // the borders of the light variant versions of checks and radios are too similar in luminosity to the selected background
+    // color, hence we need special casing.
+    row:selected & {
+        border-color: $selected_borders_color;
     }
 
     .osd & {
@@ -3481,10 +3433,7 @@ treeview.view radio {
     &:selected {
         &:focus, & {
             color: $fg_color;
-
-            @if $variant == "light" {
-                border-color: $selected_borders_color;
-            }
+            border-color: $selected_borders_color;
         }
 
         &:disabled {
@@ -3562,7 +3511,7 @@ treeview.view radio:selected {
     }
 
     &:backdrop {
-        border-color: if($variant == "light", $selected_bg_color, $selected_borders_color);
+        border-color: $selected_bg_color;
 
         &:disabled {
             background-color: transparent;
@@ -3820,7 +3769,7 @@ scale {
     // *WARNING* scale with marks madness following
 
     // FIXME: OSD and selected list rows missing, I don't feel like adding the other 144 assets needed for those...
-    $suffix: if($variant == "light", "", "-dark");
+    $suffix: "";
 
     @each $dir_class, $dir_infix in ("horizontal", "horz"), ("vertical", "vert") {
         @each $marks_infix, $marks_class in ("scale-has-marks-above", "marks-before:not(.marks-after)"), ("scale-has-marks-below", "marks-after:not(.marks-before)") {
@@ -4175,7 +4124,7 @@ levelbar {
         border-radius: 1px;
 
         &.low {
-            border-color: if($variant == "light", darken($warning_color, 20%), $warning_color);
+            border-color: darken($warning_color, 20%);
             background-color: $warning_color;
 
             &:backdrop {
@@ -4185,7 +4134,7 @@ levelbar {
 
         &.high,
         &:not(.empty) {
-            border-color: if($variant == "light", darken($selected_bg_color, 20%), $selected_bg_color);
+            border-color: darken($selected_bg_color, 20%);
             background-color: $selected_bg_color;
 
             &:backdrop {
@@ -4194,7 +4143,7 @@ levelbar {
         }
 
         &.full {
-            border-color: if($variant == "light", darken($success_color, 20%), $success_color);
+            border-color: darken($success_color, 20%);
             background-color: $success_color;
 
             &:backdrop {
@@ -4204,7 +4153,7 @@ levelbar {
 
         &.empty {
             background-color: transparent;
-            border-color: if($variant == "light", transparentize($fg_color, 0.8), transparentize($fg_color, 0.9));
+            border-color: transparentize($fg_color, 0.8);
 
             &:backdrop {
                 border-color: transparentize($backdrop_fg_color, 0.85);
@@ -4384,7 +4333,7 @@ row {
         &.has-open-popup, // this is for indicathing which row generated a popover see https://bugzilla.gnome.org/show_bug.cgi?id=754411
 
         &:hover {
-            background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.95));
+            background-color: transparentize($fg_color, 0.9);
         }
 
         &:active {
@@ -5057,7 +5006,7 @@ colorswatch {
             color: white;
 
             &:hover {
-                border-color: if($variant == "light", transparentize(black, 0.2), $borders_color);
+                border-color: transparentize(black, 0.2);
             }
 
             &:backdrop {
@@ -5073,7 +5022,7 @@ colorswatch {
             color: black;
 
             &:hover {
-                border-color: if($variant == "light", transparentize(black, 0.5), $borders_color);
+                border-color: transparentize(black, 0.5);
             }
 
             &:backdrop {
@@ -5087,24 +5036,24 @@ colorswatch {
 
         &.light overlay {
             border-color: $drop_target_color;
-            box-shadow: inset 0 0 0 2px if($variant == "light", darken($drop_target_color, 7%), $borders_color), inset 0 0 0 1px $drop_target_color;
+            box-shadow: inset 0 0 0 2px darken($drop_target_color, 7%), inset 0 0 0 1px $drop_target_color;
         }
 
         &.dark overlay {
             border-color: $drop_target_color;
-            box-shadow: inset 0 0 0 2px if($variant == "light", transparentize(black, 0.7), $borders_color), inset 0 0 0 1px $drop_target_color;
+            box-shadow: inset 0 0 0 2px transparentize(black, 0.7), inset 0 0 0 1px $drop_target_color;
         }
     }
 
     overlay {
-        border: 1px solid if($variant == "light", transparentize(black, 0.7), $borders_color);
+        border: 1px solid transparentize(black, 0.7);
 
         &:hover {
             box-shadow: inset 0 1px transparentize(white, 0.6), inset 0 -1px transparentize(black, 0.8);
         }
 
         &:backdrop, &:backdrop:hover {
-            border-color: if($variant == "light", transparentize(black, 0.7), $borders_color);
+            border-color: transparentize(black, 0.7);
             box-shadow: none;
         }
     }
@@ -5215,8 +5164,8 @@ decoration {
 
     // this needs to be transparent
     // see bug #722563
-    $_wm_border: if($variant == "light", transparentize(black, 0.77), transparentize($borders_color, 0.1));
-    $_wm_border_backdrop: if($variant == "light", transparentize(black, 0.82), transparentize($borders_color, 0.1));
+    $_wm_border: transparentize(black, 0.77);
+    $_wm_border_backdrop: transparentize(black, 0.82);
 
     box-shadow: 0 3px 9px 1px transparentize(black, 0.5), 0 0 0 1px $_wm_border;
 
@@ -5391,9 +5340,9 @@ cursor-handle {
     color: $fg_color;
     background-color: $base_color;
     border: 1px solid;
-    border-color: if($variant == "light", mix($borders_color, $bg_color, 50%), $borders_color);
+    border-color: mix($borders_color, $bg_color, 50%);
     border-radius: 5px;
-    box-shadow: if($variant == "light", inset 0 -3px mix($base_color, $bg_color, 20%), inset 0 -3px mix($borders_color, $base_color, 60%));
+    box-shadow: inset 0 -3px mix($base_color, $bg_color, 20%);
     font-size: smaller;
 
     &:backdrop {
