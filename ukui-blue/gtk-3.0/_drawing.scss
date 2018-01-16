@@ -57,14 +57,10 @@
         border-color: $borders_color;
         background-color: $base_color;
 
-        @include _shadows(entry_focus_shadow(transparentize($fc, 1)), $_entry_edge);
-
         // for the transition to work the number of shadows in different states needs to match, hence the transparent shadow here.
     }
 
     @if $t == focus {
-        @include _shadows(entry_focus_shadow($fc), $_entry_edge);
-
         border-color: entry_focus_border($fc);
     }
 
@@ -240,7 +236,6 @@
         background-image: $button_fill;
 
         @include _button_text_shadow($tc, $c);
-        @include _shadows(inset 0 1px $_hilight_color, $_button_edge);
     }
     @else if $t == hover {
         //
@@ -254,7 +249,6 @@
         $button_fill: linear-gradient(to bottom, lighten($c, 6%), $c 60%, darken($c, 4%)) !global;
 
         @include _button_text_shadow($tc, lighten($c, 6%));
-        @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)), $_button_edge);
 
         background-image: $button_fill;
     }
@@ -270,8 +264,6 @@
         @include _button_text_shadow($tc, $c);
 
         background-image: linear-gradient(to bottom, lighten($c, 5%) 20%, $c 90%);
-
-        @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)), inset 0 -2px lighten($c, 2%), inset 0 -1px darken($c, 12%), $_button_edge);
     }
     @else if $t == hover-alt {
         //
@@ -282,8 +274,6 @@
         border-color: if($c != $bg_color, _border_color($c, true), $alt_borders_color);
 
         $button_fill: linear-gradient(to bottom, lighten($c, 9%) 10%, lighten($c, 4%) 90%) !global;
-
-        @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)), inset 0 -2px lighten($c, 5%), inset 0 -1px darken($c, 10%), $_button_edge);
 
         background-image: $button_fill;
     }
@@ -298,9 +288,6 @@
         $button_fill: image(darken($c, 6%)) !global;
 
         background-image: $button_fill;
-
-        @include _shadows(inset 0 1px transparentize($_hilight_color, 1), $_button_edge);
-
         text-shadow: none;
         -gtk-icon-shadow: none;
     }
@@ -324,7 +311,6 @@
 
         // white with 0 alpha to avoid an ugly transition, since no color means
         // black with 0 alpha
-        @include _shadows(inset 0 1px transparentize(white, 1), $_button_edge);
     }
     @else if $t == insensitive-active {
         //
@@ -345,7 +331,6 @@
 
         // white with 0 alpha to avoid an ugly transition, since no color means
         // black with 0 alpha
-        @include _shadows(inset 0 1px transparentize(white, 1), $_button_edge);
     }
     @else if $t == backdrop {
         //
@@ -365,8 +350,6 @@
         background-image: $button_fill;
         text-shadow: none;
         -gtk-icon-shadow: none;
-
-        @include _shadows(inset 0 1px transparentize(white, 1), $_blank_edge);
     }
     @else if $t == backdrop-active {
         //
@@ -384,8 +367,6 @@
         $button_fill: image($_bg) !global;
 
         background-image: $button_fill;
-
-        @include _shadows(inset 0 1px transparentize(white, 1), $_blank_edge);
     }
     @else if $t == backdrop-insensitive {
         //
@@ -409,7 +390,6 @@
 
         // white with 0 alpha to avoid an ugly transition, since no color means
         // black with 0 alpha
-        @include _shadows(inset 0 1px transparentize(white, 1), $_blank_edge);
     }
     @else if $t == backdrop-insensitive-active {
         //
@@ -428,8 +408,6 @@
         $button_fill: image($_bg) !global;
 
         background-image: $button_fill;
-
-        @include _shadows(inset 0 1px transparentize(white, 1), $_blank_edge);
     }
     @else if $t == osd {
         //
@@ -532,9 +510,6 @@
         $button_fill: none !global;
 
         background-image: $button_fill;
-
-        @include _shadows(inset 0 1px transparentize(white, 1), $_blank_edge);
-
         text-shadow: none;
         -gtk-icon-shadow: none;
     }
