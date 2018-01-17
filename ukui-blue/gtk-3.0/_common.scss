@@ -45,7 +45,7 @@ $button_transition: all 200ms $ease-out-quad;
 
     &:backdrop {
         color: $backdrop_fg_color;
-        background-color: $backdrop_bg_color;
+        background-color: $base_backdrop_bg_color;
         text-shadow: none;
         -gtk-icon-shadow: none;
     }

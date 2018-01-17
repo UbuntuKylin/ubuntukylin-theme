@@ -54,20 +54,6 @@
         background-color: $base_insensitive_bg_color;
         border-color: $base_insensitive_border_color;
     }
-
-    /* backdrop */
-    &:backdrop {
-        color: $base_backdrop_sensitive_fg_color;
-        background-color: $base_backdrop_sensitive_bg_color;
-        border-color: $base_backdrop_sensitive_border_color;
-    }
-
-    /* backdrop & insensitive */
-    &:backdrop:disabled {
-        color: $base_backdrop_insensitive_fg_color;
-        background-color: $base_backdrop_insensitive_bg_color;
-        border-color: $base_backdrop_insensitive_border_color;
-    }
 }
 
 /*
