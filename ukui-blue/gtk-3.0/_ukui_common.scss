@@ -183,12 +183,8 @@ combobox {
 /****************
  * Text Entries *
  ****************/
-%entry_base_class {
-    @extend %widget_base_class;
-}
-
 entry {
-    @extend %entry_base_class;
+    @extend %widget_base_class;
 }
 
 
