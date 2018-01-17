@@ -228,7 +228,7 @@
         //
         color: $tc;
         outline-color: transparentize($tc, 0.7);
-        border-color: if($c != $bg_color, _border_color($c), $borders_color);
+        border-color: $base_normal_border_color;
         border-bottom-color: if($c != $bg_color, _border_color($c, true), $alt_borders_color);
 
         $button_fill: linear-gradient(to bottom, $c, darken($c, 4%) 60%, darken($c, 10%)) !global;
@@ -243,7 +243,7 @@
         //
         color: $tc;
         outline-color: transparentize($tc, 0.7);
-        border-color: if($c != $bg_color, _border_color($c), $borders_color);
+        border-color: $base_prelight_border_color;
         border-bottom-color: if($c != $bg_color, _border_color($c, true), $alt_borders_color);
 
         $button_fill: linear-gradient(to bottom, lighten($c, 6%), $c 60%, darken($c, 4%)) !global;
@@ -283,7 +283,7 @@
         //
         color: $tc;
         outline-color: transparentize($tc, 0.7);
-        border-color: if($c != $bg_color, _border_color($c), $borders_color);
+        border-color: $base_active_border_color;
 
         $button_fill: image(darken($c, 6%)) !global;
 
@@ -301,7 +301,7 @@
             color: if($tc != $fg_color, mix($tc, $_bg, 50%), $insensitive_fg_color);
         }
 
-        border-color: if($c != $bg_color, _border_color($c), $insensitive_borders_color);
+        border-color: $base_insensitive_border_color;
 
         $button_fill: image($_bg) !global;
 
@@ -343,7 +343,7 @@
             color: if($tc != $fg_color, mix($tc, $_bg, 80%), $backdrop_fg_color);
         }
 
-        border-color: if($c != $bg_color, $_bc, $backdrop_borders_color);
+        border-color: $base_backdrop_border_color;
 
         $button_fill: image($_bg) !global;
 
