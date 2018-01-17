@@ -1644,7 +1644,7 @@ combobox {
 %toolbar {
     -GtkWidget-window-dragging: true;
     padding: 4px;
-    background-color: $bg_color;
+    background-color: $base_normal_bg_color;
 }
 
 toolbar {
