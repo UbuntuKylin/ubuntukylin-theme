@@ -2177,17 +2177,17 @@ treeview.view {
             -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
         }
 
-        color: mix($text_color, $base_color, 70%);
+        color: $base_normal_fg_color;
 
         &:hover {
-            color: $text_color;
+            color: $base_prelight_fg_color;
         }
 
         &:selected {
-            color: mix($selected_fg_color, $selected_bg_color, 70%);
+            color: $base_selected_fg_color;
 
             &:hover {
-                color: $selected_fg_color;
+                color: $base_selected_fg_color;
             }
 
             &:backdrop {
