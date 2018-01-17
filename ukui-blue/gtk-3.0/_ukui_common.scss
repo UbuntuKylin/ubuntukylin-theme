@@ -324,21 +324,6 @@ toolbar {
 
 
 /*
- * Tooltip
- */
-tooltip {
-    background-color: $base_normal_bg_color;
-    border-color: $base_normal_border_color;
-
-    label {
-        color: $base_normal_fg_color;
-        text-shadow: none;
-        padding: 0px;
-    }
-}
-
-
-/*
  * Scrollbar
  */
 scrollbar {
