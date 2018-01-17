@@ -53,21 +53,21 @@
     $_entry_edge: if($edge == none, none, _widget_edge($edge));
 
     @if $t == normal {
-        color: $text_color;
-        border-color: $borders_color;
-        background-color: $base_color;
+        color: $base_normal_fg_color;
+        border-color: $base_normal_border_color;
+        background-color: $base_normal_bg_color;
 
         // for the transition to work the number of shadows in different states needs to match, hence the transparent shadow here.
     }
 
     @if $t == focus {
-        border-color: entry_focus_border($fc);
+        border-color: $base_focused_border_color;
     }
 
     @if $t == insensitive {
-        color: $insensitive_fg_color;
-        border-color: $borders_color;
-        background-color: $insensitive_bg_color;
+        color: $base_insensitive_fg_color;
+        border-color: $base_insensitive_border_color;
+        background-color: $base_insensitive_bg_color;
         box-shadow: $_entry_edge;
     }
 
