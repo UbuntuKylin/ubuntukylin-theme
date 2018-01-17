@@ -185,10 +185,6 @@ combobox {
  ****************/
 %entry_base_class {
     @extend %widget_base_class;
-
-    &:focus {
-        box-shadow: 0 0 0 1px $entry_focus_shadow_color inset;
-    }
 }
 
 entry {
@@ -320,12 +316,6 @@ slider {
  */
 spinbutton {
     @extend %widget_base_class;
-
-    entry {
-        &:focus {
-            box-shadow: none;
-        }
-    }
 }
 
 
