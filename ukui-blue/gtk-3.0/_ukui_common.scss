@@ -196,7 +196,7 @@ entry {
     }
     &.bottom {
         tab {
-            border-style: solid none none solid; /* left top */
+            border-style: solid solid none none; /* top right */
             &:checked {
                 border-top-style: none;
             }
@@ -204,7 +204,7 @@ entry {
     }
     &.right {
         tab {
-            border-style: solid none none solid; /* left top */
+            border-style: none none solid solid; /* left bottom */
             &:checked {
                 border-left-style: none;
             }
