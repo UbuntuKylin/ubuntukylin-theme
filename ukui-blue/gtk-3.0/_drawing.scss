@@ -229,7 +229,6 @@
         color: $tc;
         outline-color: transparentize($tc, 0.7);
         border-color: $base_normal_border_color;
-        border-bottom-color: if($c != $bg_color, _border_color($c, true), $alt_borders_color);
 
         $button_fill: linear-gradient(to bottom, $c, darken($c, 4%) 60%, darken($c, 10%)) !global;
 
@@ -244,7 +243,6 @@
         color: $tc;
         outline-color: transparentize($tc, 0.7);
         border-color: $base_prelight_border_color;
-        border-bottom-color: if($c != $bg_color, _border_color($c, true), $alt_borders_color);
 
         $button_fill: linear-gradient(to bottom, lighten($c, 6%), $c 60%, darken($c, 4%)) !global;
 
