@@ -181,9 +181,6 @@ entry {
     &.top {
         tab {
             border-style: none solid solid none; /* bottom right*/
-            &:last-child {
-                border-style: none none solid none; /* bottom */
-            }
             &:checked {
                 border-bottom-style: none;
             }
@@ -192,9 +189,6 @@ entry {
     &.left {
         tab {
             border-style: none solid solid none; /* bottom right*/
-            &:last-child {
-                border-style: none solid none none; /* right */
-            }
             &:checked {
                 border-right-style: none;
             }
@@ -203,9 +197,6 @@ entry {
     &.bottom {
         tab {
             border-style: solid none none solid; /* left top */
-            &:first-child {
-                border-style: solid none none none; /* top */
-            }
             &:checked {
                 border-top-style: none;
             }
@@ -214,9 +205,6 @@ entry {
     &.right {
         tab {
             border-style: solid none none solid; /* left top */
-            &:first-child {
-                border-style: none none none solid; /* left */
-            }
             &:checked {
                 border-left-style: none;
             }
