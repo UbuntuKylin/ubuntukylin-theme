@@ -1922,12 +1922,12 @@ headerbar {
     }
 
     &.default-decoration {
-        min-height: 28px;
-        padding: 4px;
+        min-height: 30px;
+        padding: 0px;
 
         button.titlebutton {
-            min-height: 26px;
-            min-width: 26px;
+            min-height: 30px;
+            min-width: 45px;
             margin: 0;
             padding: 0;
         }
