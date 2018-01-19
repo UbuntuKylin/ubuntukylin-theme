@@ -230,22 +230,7 @@ notebook {
 
     > header {
         > tabs {
-            padding: 0px;
-
             > tab {
-                @extend %widget_base_class;
-                margin: 0px;
-                /* Override the bg color in normal state(unchecked state) */
-                background-color: $notebook_tab_normal_bg_color;
-                border-color: $notebook_generic_border_color;
-                &:checked {
-                    background-color: $notebook_tab_checked_bg_color;
-                    border-color: $notebook_generic_border_color;
-                    outline-width: 0px;
-                }
-                &:hover {
-                    border-color: $notebook_generic_border_color;
-                }
                 /* close button in tab */
                 @extend %tab_closebutton;
             }
