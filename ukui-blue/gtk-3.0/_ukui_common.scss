@@ -484,8 +484,10 @@ scrolledwindow {
  * titlebar
  */
 .titlebar {
+    color: $headerbar_normal_fg_color;
     background-image: $headerbar_normal_bg_image;
     &:backdrop {
+        color: $headerbar_button_backdrop_fg_color;
         background-image: $headerbar_backdrop_bg_image;
     }
     button.titlebutton {
