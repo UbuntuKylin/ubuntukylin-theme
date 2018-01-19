@@ -1740,15 +1740,15 @@ searchbar,
 headerbar {
     padding: 0 6px;
     min-height: 46px;
-    border-width: 0 0 1px;
+    border-width: 1px 1px 0px 1px;
     border-style: solid;
-    border-color: $alt_borders_color;
+    border-color: $headerbar_normal_border_color;
     border-radius: 0;
 
     @include headerbar_fill;
 
     &:backdrop {
-        border-color: $backdrop_borders_color;
+        border-color: $headerbar_backdrop_border_color;
         background-color: $bg_color;
         background-image: none;
         box-shadow: inset 0 1px $top_hilight;
