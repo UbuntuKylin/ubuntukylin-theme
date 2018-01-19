@@ -481,8 +481,37 @@ scrolledwindow {
 
 
 /*
- * headerbar
+ * titlebar
  */
-headerbar {
-    background-image: $headerbar_bg_image;
+.titlebar {
+    background-image: $headerbar_normal_bg_image;
+    &:backdrop {
+        background-image: $headerbar_backdrop_bg_image;
+    }
+    button.titlebutton {
+        color: $headerbar_button_normal_fg_color;
+        background-image:image($headerbar_button_normal_bg_image);
+        border-width: 0px;
+        /* maximize and minimize close */
+        &:hover {
+            color: $headerbar_button_prelight_fg_color;
+            background-image: $headerbar_button_prelight_bg_image;
+        }
+        &:active {
+            color: $headerbar_button_active_fg_color;
+            background-image: $headerbar_button_active_bg_image;
+        }
+        &:backdrop {
+            color: $headerbar_button_backdrop_fg_color;
+            background-image:image($headerbar_button_backdrop_bg_image);
+        }
+
+        /* close button */
+        &.close:hover {
+            background-image: $headerbar_closebutton_prelight_bg_image;
+        }
+        &.close:active {
+            background-image: $headerbar_closebutton_active_bg_image;
+        }
+    }
 }

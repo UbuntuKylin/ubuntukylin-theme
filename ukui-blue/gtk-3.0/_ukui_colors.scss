@@ -157,4 +157,17 @@ $treeview_generic_border_color: #e5e5e5;
 /*
  * Headerbar
  */
-$headerbar_bg_image: $base_normal_bg_image;
+$headerbar_normal_bg_image: image(#0078d7);
+$headerbar_backdrop_bg_image: image(#e4e4e4);
+
+$headerbar_button_normal_fg_color: white;
+$headerbar_button_backdrop_fg_color: #888888;
+$headerbar_button_prelight_fg_color: white;
+$headerbar_button_active_fg_color: white;
+
+$headerbar_button_normal_bg_image: image(#0078d7);
+$headerbar_button_backdrop_bg_image: image(#e4e4e4);
+$headerbar_button_prelight_bg_image: image(#3f8de0);
+$headerbar_button_active_bg_image: image(#2367b9);
+$headerbar_closebutton_prelight_bg_image: image(#d42320);
+$headerbar_closebutton_active_bg_image: image(#ac4844);
