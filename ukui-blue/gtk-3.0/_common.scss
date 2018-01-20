@@ -5130,10 +5130,15 @@ colorchooser .popover.osd {
  * Window Decorations *
  *********************/
 decoration {
-    border-radius: 7px 7px 0 0;
+    border-radius: 0px;
 
     // lamefun trick to get rounded borders regardless of CSD use
-    border-width: 0px;
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+
+    /* both border-color and background-color must be set to take effect */
+    border-color: $headerbar_normal_border_color;
+    background-color: $headerbar_normal_border_color;
 
     // this needs to be transparent
     // see bug #722563
@@ -5156,6 +5161,10 @@ decoration {
         // or the jumping will happen during the transition.
         box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px transparentize(black, 0.8), 0 0 0 1px $_wm_border_backdrop;
         transition: $backdrop_transition;
+
+        /* both border-color and background-color must be set to take effect */
+        border-color: $headerbar_backdrop_border_color;
+        background-color: $headerbar_backdrop_border_color;
     }
 
     .maximized &,
