@@ -481,9 +481,10 @@ scrolledwindow {
 
 
 /*
- * titlebar
+ * titlebar - for generic window
+ * headerbar - for several applications such as gedit and gnome-calculator
  */
-.titlebar {
+.titlebar, headerbar {
     color: $headerbar_normal_fg_color;
     background-image: $headerbar_normal_bg_image;
     &:backdrop {
