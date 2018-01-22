@@ -465,6 +465,9 @@ treeview {
             border-style: none solid none none;
             border-color: $treeview_generic_border_color;
             background-color: $treeview_view_selected_bg_color;
+            &:backdrop {
+                color: $base_backdrop_fg_color;
+            }
         }
         &:hover {
             border-style: none solid none none;

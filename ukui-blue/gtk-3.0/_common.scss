@@ -2190,7 +2190,7 @@ treeview.view {
             }
 
             &:backdrop {
-                color: mix($backdrop_selected_fg_color, $selected_bg_color, 70%);
+                color: $base_backdrop_fg_color;
             }
         }
 
@@ -2199,7 +2199,7 @@ treeview.view {
         }
 
         &:backdrop {
-            color: mix($backdrop_fg_color, $backdrop_base_color, 70%);
+            color: $base_backdrop_fg_color;
         }
     }
 
