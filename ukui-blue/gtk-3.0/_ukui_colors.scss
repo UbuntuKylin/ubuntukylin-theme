@@ -177,3 +177,12 @@ $headerbar_closebutton_active_bg_image: image(#ac4844);
 
 $headerbar_normal_border_color: #145670;
 $headerbar_backdrop_border_color: #cccccc;
+
+
+/*
+ * Panel
+ */
+$panel_normal_bg_color: #15678f;
+$panel_normal_bg_image: image($panel_normal_bg_color);
+$panel_button_normal_bg_image: image(#367b9c);
+$panel_button_normal_border_color: #507e93;

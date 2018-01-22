@@ -1,1 +1,33 @@
 /* CSS for applications */
+/*
+ * Panel
+ */
+.ukui-panel-menu-bar {
+	grid {
+		background-color: $panel_normal_bg_color;
+	}
+
+	button {
+		border-width: 1px;
+		border-color: $panel_button_normal_border_color;
+		color: white;
+		background-image: $panel_button_normal_bg_image;
+	}
+}
+
+
+/*
+ * Menu, Indicator
+ */
+#PanelPlug box {
+	background-color: $panel_normal_bg_color;
+}
+
+
+/*
+ * Calendar
+ */
+#ukui-time-button {
+	border-width: 0px;
+	background-image: $panel_normal_bg_image;
+}
