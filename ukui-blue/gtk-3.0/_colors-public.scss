@@ -125,3 +125,9 @@ read if you used those and something break with a version upgrade you're on your
 //FIXME this is really an API
 
 @define-color content_view_bg #{"" + $base_color};
+
+
+/*
+ * For panel applets
+ */
+@define-color panel_normal_bg_color #{"" + $panel_normal_bg_color};
