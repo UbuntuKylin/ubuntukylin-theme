@@ -447,34 +447,38 @@ scrolledwindow {
     border-style: solid;
     border-width: 1px;
     border-color: $treeview_generic_border_color;
+}
 
-    treeview {
-        /* row */
-        &.view {
-            @extend %widget_base_class;
-            &, &:focus { /* hover state is the same as normal state */
-                border-style: none solid solid none; /* only right and bottom side has border */
-                border-color: $treeview_generic_border_color;
-            }
-            &:selected {
-                border-style: none solid none none;
-                border-color: $treeview_generic_border_color;
-                background-color: $treeview_view_selected_bg_color;
-            }
-            &:hover {
-                border-style: none solid none none;
-                border-color: $treeview_generic_border_color;
-            }
+
+/*
+ * Treeview
+ */
+treeview {
+    /* row */
+    &.view {
+        @extend %widget_base_class;
+        &, &:focus { /* hover state is the same as normal state */
+            border-style: none solid solid none; /* only right and bottom side has border */
+            border-color: $treeview_generic_border_color;
         }
+        &:selected {
+            border-style: none solid none none;
+            border-color: $treeview_generic_border_color;
+            background-color: $treeview_view_selected_bg_color;
+        }
+        &:hover {
+            border-style: none solid none none;
+            border-color: $treeview_generic_border_color;
+        }
+    }
 
-        /* Title header */
-        button {
-            @extend %widget_base_class;
-            background-image: $treeview_header_bg_image;
-            &, &:hover, &:focus, &:active {
-                border-style: none solid solid none;
-                border-color: $treeview_generic_border_color;
-            }
+    /* Title header */
+    button {
+        @extend %widget_base_class;
+        background-image: $treeview_header_bg_image;
+        &, &:hover, &:focus, &:active {
+            border-style: none solid solid none;
+            border-color: $treeview_generic_border_color;
         }
     }
 }
