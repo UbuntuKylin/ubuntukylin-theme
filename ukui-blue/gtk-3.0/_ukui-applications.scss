@@ -31,3 +31,37 @@
 	border-width: 0px;
 	background-image: $panel_normal_bg_image;
 }
+
+
+/*
+ * Control Center
+ */
+/* left side bar */
+#viewport11 {
+	background-color: $ukcc_sidebar_normal_bg_color;
+	button {
+		color: blue;
+	}
+	/* viewport>button that is selected will be disabled in UKCC */
+	viewport:disabled {
+		button:disabled {
+			background-image: $base_active_bg_image;
+			label:disabled {
+				color: $base_normal_fg_color;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+#default_app_scroll_window {
+	border-width: 0px;
+}
+
+#shortcut_treeview.view {
+	header {
+		button {
+			min-height: 35px;
+		}
+	}
+}
