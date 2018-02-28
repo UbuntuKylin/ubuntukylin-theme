@@ -3,7 +3,8 @@ Section: gnome
 Priority: optional
 Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
 Uploaders: zhangchao <zhangchao@ubuntukylin.com>
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 9),
+		sass
 Standards-Version: 4.0.0
 Homepage: https://launchpad.net/ubuntukylin-theme
 Vcs-Bzr: https://code.launchpad.net/~ubuntukylin-members/ubuntukylin-theme/ubuntukylin-theme
