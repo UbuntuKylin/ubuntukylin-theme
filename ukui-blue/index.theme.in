@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Genisys
-_Comment=Genisys is a fucking good GTK+ theme
+Name=ukui-blue
+_Comment=ukui-blue is an awesome GTK+ theme. It's another name is Genisys.
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Genisys
-MetacityTheme=Genisys
+GtkTheme=ukui-blue
+MetacityTheme=ukui-blue
 IconTheme=ukui-icon-theme
 CursorTheme=ukui-icon-theme
