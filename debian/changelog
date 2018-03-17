@@ -1,3 +1,11 @@
+ubuntukylin-theme (1.7.5) artful; urgency=medium
+
+  * Add ukui-blue theme
+  * Update several icons
+  * add ukui-main-menu icon
+
+ -- lihao <lihao@kylinos.cn>  Sat, 17 Mar 2018 10:30:25 +0800
+
 ubuntukylin-theme (1.7.4) artful; urgency=medium
 
   * Remove redundant configuration entries in
