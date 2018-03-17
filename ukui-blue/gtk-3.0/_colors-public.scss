@@ -131,3 +131,4 @@ read if you used those and something break with a version upgrade you're on your
  * For panel applets
  */
 @define-color panel_normal_bg_color #{"" + $panel_normal_bg_color};
+@define-color panel_normal_border_color #{"" + $headerbar_normal_border_color};
