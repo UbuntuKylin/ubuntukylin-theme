@@ -1,6 +1,7 @@
 ubuntukylin-theme (1.7.4) artful; urgency=medium
 
-  * Remove redundant configuration entries in 25_ubuntukylin-theme.gschema.override
+  * Remove redundant configuration entries in
+    25_ubuntukylin-theme.gschema.override
 
  -- lihao <lihao@kylinos.cn>  Wed, 13 Sep 2017 15:34:35 +0800
 
@@ -98,7 +99,7 @@ ubuntukylin-theme (1.5.2) xenial; urgency=medium
   * add kylin-greeter background for 16.04
   * fix gtk theme bug:
     -fix progressbar color error (LP: #1558890)
-    -fix scrollbar style for 16.04 
+    -fix scrollbar style for 16.04
     -Basic app-notification theming to avoid weirdness in nautilus
     -Adds padding to sidebar icons to fix bug (LP: #1538997)
 
@@ -106,8 +107,8 @@ ubuntukylin-theme (1.5.2) xenial; urgency=medium
 
 ubuntukylin-theme (1.5.1) xenial; urgency=medium
 
-  * change depends: 
-    -add kylin-greeter 
+  * change depends:
+    -add kylin-greeter
     -use fonts-droid-fallback instead of fonts-droid (LP: #1546847)
   * add judge about DroidSansFallbackFull.ttf
   * merge: Aron Xu 2016-01-26 Maintainer script fix
@@ -218,7 +219,7 @@ ubuntukylin-theme (0.9.3) trusty; urgency=low
 ubuntukylin-theme (0.9.2) trusty; urgency=low
 
   * change the button for unity
-  * fix color 
+  * fix color
 
  -- zhangchao <zhangchao@ubuntukylin.com>  Mon, 10 Mar 2014 09:14:19 +0800
 
@@ -309,7 +310,7 @@ ubuntukylin-theme (0.5.1) raring; urgency=low
 ubuntukylin-theme (0.5) raring; urgency=low
 
   * relese for ubuntukylin 13.04
-  * set unity panel-opacity to 0.7 
+  * set unity panel-opacity to 0.7
   * set button-layout to right
   * add new gtk and metacity theme for ubuntukylin,Designed by OYY
 
@@ -317,7 +318,7 @@ ubuntukylin-theme (0.5) raring; urgency=low
 
 ubuntukylin-theme (0.4.3) raring; urgency=low
 
-  * fixed Bug #1155462 
+  * fixed Bug #1155462
 
  -- zhangchao (work) <zctgbhu@163.com>  Fri, 15 Mar 2013 14:46:04 +0800
 

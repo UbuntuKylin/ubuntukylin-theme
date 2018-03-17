@@ -8,7 +8,7 @@ css:
 
 install:
 	install -d $(DESTDIR)/usr/share/themes/ukui-blue/gtk-3.0/
-	install -D index.theme $(DESTDIR)/usr/share/themes/ukui-blue/index.theme
+	install -m 644 -D index.theme $(DESTDIR)/usr/share/themes/ukui-blue/index.theme
 	cp gtk-3.0/assets* $(DESTDIR)/usr/share/themes/ukui-blue/gtk-3.0/ -r
 	install -D gtk-3.0/gtk.css $(DESTDIR)/usr/share/themes/ukui-blue/gtk-3.0/gtk.css
 
