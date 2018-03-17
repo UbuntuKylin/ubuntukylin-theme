@@ -1,10 +1,10 @@
-ubuntukylin-theme (1.7.5) artful; urgency=medium
+ubuntukylin-theme (1.7.5) bionic; urgency=medium
 
   * Add ukui-blue theme
   * Update several icons
-  * add ukui-main-menu icon
+  * Add ukui-main-menu icon
 
- -- lihao <lihao@kylinos.cn>  Sat, 17 Mar 2018 10:30:25 +0800
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Sat, 17 Mar 2018 15:03:16 +0800
 
 ubuntukylin-theme (1.7.4) artful; urgency=medium
 
