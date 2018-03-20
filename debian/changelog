@@ -3,6 +3,7 @@ ubuntukylin-theme (1.7.5) bionic; urgency=medium
   * Add ukui-blue theme
   * Update several icons
   * Add ukui-main-menu icon
+  * ukui-theme: rename ukuiside_color to panel_normal_bg_color
 
  -- handsome_feng <jianfengli@ubuntukylin.com>  Sat, 17 Mar 2018 15:03:16 +0800
 
