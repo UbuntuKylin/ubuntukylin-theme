@@ -2,10 +2,12 @@ debian/25_ubuntukylin-theme.gschema.override /usr/share/glib-2.0/schemas
 debian/chinese /usr/share/initramfs-tools/hooks/
 usr/share/plymouth/themes/ubuntukylin-logo/
 usr/share/plymouth/themes/ubuntukylin-text/
-ubuntukylin-grub-theme/ubuntu_kylin_grub_bg.tga /boot/grub/
-ukui-icon-theme usr/share/icons/
+ukui-icon-theme ukui-icon-theme-one usr/share/icons/
 ukui-theme usr/share/themes/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-dark1/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-dark2/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-light1/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-light2/
+ubuntukylin-grub-theme/06_kylin_theme /etc/grub.d/
+ubuntukylin-grub-theme/background.png /boot/grub/
+usr/share/grub/themes/UKUI/

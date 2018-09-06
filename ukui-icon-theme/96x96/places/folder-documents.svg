@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_39" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve">
+<title>画板 1</title>
+<g id="_128">
+	<polygon style="opacity:0.1;enable-background:new    ;" points="4.5,88.1 4.5,26.5 9.7,26.5 9.7,9.5 30.8,9.5 36.8,15.4 
+		87.6,15.4 87.6,26.5 93.5,26.5 93.5,88.1 	"/>
+	<polygon style="opacity:8.000000e-02;enable-background:new    ;" points="3,89.6 3,25.1 8.2,25.1 8.2,8 30.8,8 36.8,13.9 
+		89.1,13.9 89.1,25.1 95,25.1 95,89.6 	"/>
+	<polygon style="opacity:0.2;enable-background:new    ;" points="3,86 3,25 8,25 8,8 29.3,8 35.3,13.9 85,14 85,25 92,25 92,86 	
+		"/>
+	<polygon style="fill:#F57F17;" points="4,85 4,26 9.1,26 9.1,9 28.8,9 34.8,15 84,15 84,26 91,26 91,85 	"/>
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-898.725" y1="4315.0005" x2="-898.725" y2="4304.5005" gradientTransform="matrix(2 0 0 2 1844 -8599.001)">
+		<stop  offset="0" style="stop-color:#F57C00"/>
+		<stop  offset="0.16" style="stop-color:#F58F09"/>
+		<stop  offset="0.36" style="stop-color:#F59D11"/>
+		<stop  offset="0.6" style="stop-color:#F5A515"/>
+		<stop  offset="0.99" style="stop-color:#F5A816"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_1_);" d="M83,16H34l-5.9-6H10v18c0.2,1.6,1.5,2.9,3.2,3h67.3c1.5,0,2.6,0,2.6-1.5L83,16L83,16z"/>
+	
+		<linearGradient id="rect2990_1_" gradientUnits="userSpaceOnUse" x1="-898.25" y1="4313.0005" x2="-898.25" y2="4341.5005" gradientTransform="matrix(2 0 0 2 1844 -8599.001)">
+		<stop  offset="0" style="stop-color:#FADD60"/>
+		<stop  offset="0.99" style="stop-color:#F5A816"/>
+	</linearGradient>
+	<rect id="rect2990" x="5" y="27" style="fill:url(#rect2990_1_);" width="85" height="57"/>
+	<path id="rect3004" style="opacity:0.25;fill:#FDEFBA;enable-background:new    ;" d="M5.2,27.3v11.1c0-3.8,2.8-6.7,5.9-6.7h72.7
+		c3.1,0,5.9,2.9,5.9,6.7V27.3H5.2z"/>
+	<path id="path3801" style="opacity:0.1;fill:#E65100;enable-background:new    ;" d="M10.4,10.2v7.4c0-2.8,0.9-4.4,2.2-4.4h14.8
+		c1.7-0.2,3.4,0.3,4.8,1.3c0.7,0.4,1.5,1.1,2.3,1.7l-5.9-5.9H10.4V10.2z"/>
+	<polygon style="opacity:0.1;fill:#E65100;enable-background:new    ;" points="34.5,16.2 83.9,16.2 83.9,20.6 39,20.6 	"/>
+	<rect x="10.4" y="24.3" style="opacity:5.000000e-02;fill:#E65100;enable-background:new    ;" width="73.4" height="3"/>
+</g>
+<path style="fill:#F57F17;fill-opacity:0.39;" d="M67,66V36H33v43h22L67,66z M64,39v27H54v10H36V39H64z"/>
+<polygon style="fill:#F57F17;fill-opacity:0.39;" points="39,66 52,66 52,69 39,69 "/>
+<polygon style="fill:#F57F17;fill-opacity:0.39;" points="39,59 61,59 61,62 39,62 "/>
+<polygon style="fill:#F57F17;fill-opacity:0.39;" points="39,52 61,52 61,55 39,55 "/>
+<polygon style="fill:#F57F17;fill-opacity:0.39;" points="39,45 61,45 61,48 39,48 "/>
+</svg>
