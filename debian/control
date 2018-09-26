@@ -2,10 +2,10 @@ Source: ubuntukylin-theme
 Section: gnome
 Priority: optional
 Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
-Uploaders: zhangchao <zhangchao@ubuntukylin.com>
+Uploaders: handsome_feng <jianfengli@ubuntukylin.com>
 Build-Depends: debhelper (>= 11),
-		sass
-Standards-Version: 4.1.3
+               sass
+Standards-Version: 4.2.1
 Homepage: https://launchpad.net/ubuntukylin-theme
 Vcs-Bzr: https://code.launchpad.net/~ubuntukylin-members/ubuntukylin-theme/ubuntukylin-theme
 

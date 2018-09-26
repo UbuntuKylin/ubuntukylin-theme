@@ -1,13 +1,12 @@
-ubuntukylin-theme (1.7.7) bionic; urgency=medium
+ubuntukylin-theme (1.7.8) cosmic; urgency=medium
 
-  * update 96x96/all icons in ukui-icon-theme.
-  * update ubuntukylin-grub-theme
-  * add grub/themes/UKUI in usr/share
-  * Update several icons
-  * add ukui-black theme
-  * add ukui-icon-theme-one icon theme
+  * Update 96x96/all icons in ukui-icon-theme.
+  * Update ubuntukylin-grub-theme
+  * Add grub/themes/UKUI in usr/share
+  * Add ukui-black theme
+  * Add ukui-icon-theme-one icon theme
 
- -- liumeiyan <meiyanliu@ubuntukylin.com>  Tue, 04 Sep 2018 14:17:42 +0800
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Tue, 18 Sep 2018 15:47:55 +0800
 
 ubuntukylin-theme (1.7.6) bionic; urgency=medium
 
