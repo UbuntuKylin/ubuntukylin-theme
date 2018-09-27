@@ -9,5 +9,4 @@ usr/share/fcitx-qimpanel/skin/ubuntukylin-dark2/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-light1/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-light2/
 ubuntukylin-grub-theme/06_kylin_theme /etc/grub.d/
-ubuntukylin-grub-theme/background.png /boot/grub/
 usr/share/grub/themes/UKUI/
