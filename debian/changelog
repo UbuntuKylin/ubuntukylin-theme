@@ -1,9 +1,10 @@
-ubuntukylin-theme (1.7.9) cosmic; urgency=medium
+ubuntukylin-theme (1.7.9.1) cosmic; urgency=medium
 
   * Remove the background.png to avoid the wrong behavior when
     only one system exists.
+  * Rename some file and update the kylin.png.
 
- -- handsome_feng <jianfengli@ubuntukylin.com>  Thu, 27 Sep 2018 14:01:16 +0800
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Fri, 28 Sep 2018 15:51:01 +0800
 
 ubuntukylin-theme (1.7.8) cosmic; urgency=medium
 
