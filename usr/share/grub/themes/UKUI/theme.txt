@@ -16,10 +16,10 @@ terminal-border: "0"
 
 + image {
     id = "__logo__"
-    left = 25%
-    width = 50%
-    top = 5%
-    height = 15%
+    left = 50%-95
+#    width = 60%
+    top = 8%
+#    height = 6%
     file = "logo.png"
 }
 
@@ -46,10 +46,10 @@ terminal-border: "0"
 # Show a styled horizontal progress bar
 + progress_bar {
 		id = "__timeout__"
-		left = 15%
-		width = 70%
+		left = 25%
+		width = 50%
 		top = 83%
-		height = 12
+		height = 10
 		show_text = true
 		font = "Unifont Regular 16"
 		text_color = "255, 255, 255"
@@ -61,8 +61,8 @@ terminal-border: "0"
 # Show an informational message.
 +label{
 		top = 100%-30
-		left = 35%
-                width = 400
+		left = 50%-255
+#                width = 400
                 height = 20
                 align = "center"
                 font = "Unifont Regular 16"
