@@ -1,10 +1,11 @@
-ubuntukylin-theme (1.7.9.1) cosmic; urgency=medium
+ubuntukylin-theme (1.7.9.2) cosmic; urgency=medium
 
   * Remove the background.png to avoid the wrong behavior when
-    only one system exists.
+    only one system exists (LP: #1794709).
   * Rename some file and update the kylin.png.
+  * Update the grub theme.
 
- -- handsome_feng <jianfengli@ubuntukylin.com>  Fri, 28 Sep 2018 15:51:01 +0800
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Sat, 29 Sep 2018 17:20:58 +0800
 
 ubuntukylin-theme (1.7.8) cosmic; urgency=medium
 
