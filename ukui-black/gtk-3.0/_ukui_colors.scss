@@ -108,7 +108,7 @@ $combobox_dropdown_menuitem_normal_bg_color: #f9f9f9;
  */
 $notebook_generic_border_color: $base_normal_border_color;
 $notebook_tab_normal_bg_color: #f0f0f0;
-$notebook_tab_checked_bg_color: #FFF;/*文本编辑关闭背景色*/
+$notebook_tab_checked_bg_color: #FFF;
 $notebook_tab_closebutton_normal_bg_image: image($notebook_tab_normal_bg_color);
 $notebook_tab_closebutton_checked_bg_image: image($notebook_tab_checked_bg_color);
 
@@ -157,16 +157,16 @@ $treeview_generic_border_color: #e5e5e5;
 /*
  * Headerbar
  */
-$headerbar_normal_fg_color: black;/*当前管理器标题文字色*/
+$headerbar_normal_fg_color: black;
 $headerbar_backdrop_fg_color: #a5a9ab;
 
 $headerbar_normal_bg_image: image(#f5f6f7);
 $headerbar_backdrop_bg_image: image(#f5f6f7);
 
-$headerbar_button_normal_fg_color: black;/*当前管理器最小化最大化等默认图标色*/
+$headerbar_button_normal_fg_color: black;
 $headerbar_button_backdrop_fg_color: #a5a9ab;
-$headerbar_button_prelight_fg_color: black;/*当前管理器最小化最大化等移上去图标色*/
-$headerbar_button_active_fg_color: black;/*当前管理器最小化最大化等点击图标色*/
+$headerbar_button_prelight_fg_color: black;
+$headerbar_button_active_fg_color: black;
 
 $headerbar_button_normal_bg_image: image(#f5f6f7);
 $headerbar_button_backdrop_bg_image: image(#f5f6f7);
