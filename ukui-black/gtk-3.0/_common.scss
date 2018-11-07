@@ -51,6 +51,12 @@ $button_transition: all 200ms $ease-out-quad;
     }
 }
 
+/* for screenshot */
+
+.background.rubberband {
+  background-color: transparent;
+}
+
 /*
    These wildcard seems unavoidable, need to investigate.
    Wildcards are bad and troublesome, use them with care,
@@ -140,6 +146,9 @@ iconview {
 rubberband {
     border: 1px solid darken($selected_bg_color, 10%);
     background-color: transparentize(darken($selected_bg_color, 10%), 0.8);
+    background-image: linear-gradient(to bottom,
+                                  transparentize($base_selected_bg_color, 0.65),
+                                  transparentize($base_selected_bg_color, 0.65));
 }
 
 flowbox {
