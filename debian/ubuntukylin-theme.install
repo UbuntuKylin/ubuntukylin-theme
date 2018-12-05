@@ -1,5 +1,6 @@
 debian/25_ubuntukylin-theme.gschema.override /usr/share/glib-2.0/schemas
 debian/chinese /usr/share/initramfs-tools/hooks/
+ukui-custom.xml /usr/share/mime/packages
 usr/share/plymouth/themes/ubuntukylin-logo/
 usr/share/plymouth/themes/ubuntukylin-text/
 ukui-icon-theme ukui-icon-theme-one usr/share/icons/

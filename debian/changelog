@@ -1,3 +1,9 @@
+ubuntukylin-theme (1.7.9.2ubuntu1) cosmic; urgency=medium
+
+  * 
+
+ -- Yue Lan <lanyue@kylinos.cn>  Wed, 05 Dec 2018 09:57:10 +0800
+
 ubuntukylin-theme (1.7.9.2) cosmic; urgency=medium
 
   * Remove the background.png to avoid the wrong behavior when
