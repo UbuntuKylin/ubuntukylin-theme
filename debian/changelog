@@ -1,6 +1,7 @@
-ubuntukylin-theme (1.7.9.2ubuntu1) cosmic; urgency=medium
+ubuntukylin-theme (0.7.9.3) cosmic; urgency=medium
 
-  * 
+  * Add generic-x-text and generic-x-script icons for theme.
+  * Use custom sharedlib mime-type and new generic icons for raw type.
 
  -- Yue Lan <lanyue@kylinos.cn>  Wed, 05 Dec 2018 09:57:10 +0800
 
