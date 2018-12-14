@@ -182,7 +182,7 @@ $headerbar_backdrop_border_color: #cccccc;
 /*
  * Panel
  */
-$panel_normal_bg_color: #15678f;
+$panel_normal_bg_color: #013c77;
 $panel_normal_bg_image: image($panel_normal_bg_color);
 $panel_button_normal_bg_image: image(#367b9c);
 $panel_button_normal_border_color: #507e93;
@@ -198,24 +198,6 @@ $ukcc_sidebar_normal_bg_color: #f0f0f0;
  * start-menu
  */
 $menu_font_color:#000000;
-$startup_menu_color:#1a5085;
-
-/*
-* calendar
-*/
-$calendar_left_bg:#151a1e;
-$calendar_right_bg:#1f2428;
-$calendar_left_border:#262e34;
-$calendar_right_border:#343d45;
-$calendar_default_color:#cccccc;
-$calendar_active_color:#aaaaaa;
-$calendar_select_bg:#3593b5;
-$calendar_click_bg:#2b87a8;
-$calendar_list_border:#56a3bf;
-$calendar_list_bg:#44aacf;
-$calendar_rest_bg:#ff0000;
-$calendar_work_bg:#999999;
-$calendar_light_color:#ff4433;
 
 
 
