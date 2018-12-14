@@ -145,4 +145,10 @@ read if you used those and something break with a version upgrade you're on your
 @define-color base_active_bg_color #{"" + $base_active_bg_color};
 
 
+/*
+ * For startup menu_
+ */
 @define-color startup_menu_color #29292a;
+@define-color startup_slider_background_color #3c444b;
+@define-color startup_slider_color #63696e;
+
