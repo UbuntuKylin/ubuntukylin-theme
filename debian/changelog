@@ -1,9 +1,14 @@
-ubuntukylin-theme (0.7.9.3) cosmic; urgency=medium
+ubuntukylin-theme (1.8.0) disco; urgency=medium
 
-  * Add generic-x-text and generic-x-script icons for theme.
+  * Add generic-x-text and generic-x-script icons.
   * Use custom sharedlib mime-type and new generic icons for raw type.
+  * Adjust for the new style ukui-menu.
+  * Fix the wrong bit depth of background image in grub.
+    (LP: #1800432)
+  * Fix the wrong background color in gnome-screenshot.
+  * Update the icon of dialog-error.
 
- -- Yue Lan <lanyue@kylinos.cn>  Wed, 05 Dec 2018 09:57:10 +0800
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Fri, 14 Dec 2018 14:37:30 +0800
 
 ubuntukylin-theme (1.7.9.2) cosmic; urgency=medium
 
