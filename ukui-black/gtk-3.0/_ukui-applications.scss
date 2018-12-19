@@ -55,6 +55,11 @@
 /*
  * Terminal
  */
+window.background.mate-terminal vte-terminal {
+	background-color: #000000;
+	color: #ffffff;
+}
+
 notebook {
 	> header {
 		tab {
