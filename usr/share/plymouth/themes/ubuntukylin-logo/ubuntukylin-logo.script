@@ -21,10 +21,10 @@
  */
 
 
-Window.SetBackgroundTopColor (0, 0, 0);           
-Window.SetBackgroundBottomColor (0, 0, 0); 
-//
-i =19;
+Window.SetBackgroundTopColor (6/256, 83/256, 161/256);           
+Window.SetBackgroundBottomColor (6/256, 83/256, 161/256);
+
+i = 1;
 kylin[i].image = Image(i + ".png");
 kylin[i].sprite = Sprite(kylin[i].image);
 kylin[i].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[i].image.GetWidth()/2);
@@ -40,7 +40,6 @@ x = 0;
 lasti = 0;
 c = 0;
 text.flag=0;
-
 
 # Set the text colour in (rgb / 256)
 text_colour.red = 1.0;
@@ -953,59 +952,39 @@ Plymouth.SetDisplayQuestionFunction (display_question_callback);
 #
 fun refresh_callback ()
 {
-    if(c == 0)
+	if (i != 144)
 	{
-		i = 19 + x;
-	}else{
-		i = 19 + Math.Int(x/4);
-	}
-   
-	if(text.flag==0)
-	{
-		text.sprite.SetOpacity (x/50);
-		if(x==50)
-		{
-			text.flag=1;
-		}
-	}
-
-	if(i != lasti)
-	{
-		if(c == 0)
-		{
+		kylin[i].image = Image (i + ".png");
+		kylin[i].sprite = Sprite(kylin[i].image);
 		kylin[i].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[i].image.GetWidth()/2);
 		kylin[i].sprite.SetY(Window.GetY() + Window.GetHeight()/2 - kylin[i].image.GetHeight()/2);
 		kylin[i].sprite.SetZ(10);
-		kylin[i+1].image = Image(i+1 + ".png");
-			if(i != 97)
-			{
-			kylin[i+1].sprite = Sprite(kylin[i+1].image);
-			kylin[i+1].sprite.SetOpacity(0.0);
-			}else{	
-			x=x*4;
-			}
-		}
-		if(i==97 )
-   		{
-		c++;
-		}
-		if(i==18)
+		if (lasti != 0)
 		{
-		c++;
-		i++;
+			kylin[lasti].sprite.SetOpacity(0.0);
 		}
-		
-		kylin[lasti].sprite.SetOpacity(0.0);
 		kylin[i].sprite.SetOpacity(1.0);
 		lasti = i;
-   		
+		i++;
 	}
-	if(c % 2  == 0)
+	else
+	{
+		i = 116;
+		kylin[i].sprite.SetOpacity(0.0);
+		kylin[i].image = Image (i + ".png");
+		kylin[i].sprite = Sprite(kylin[i].image);
+		kylin[i].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[i].image.GetWidth()/2);
+		kylin[i].sprite.SetY(Window.GetY() + Window.GetHeight()/2 - kylin[i].image.GetHeight()/2);
+		kylin[i].sprite.SetZ(10);
+		kylin[i].sprite.SetOpacity(1.0);
+
+		if (lasti != 0)
 		{
-		x++;
-		}else{
-		x--;
+			kylin[lasti].sprite.SetOpacity(0.0);
 		}
+		lasti = i;
+		i++;
+	}
 }
 
 Plymouth.SetRefreshFunction (refresh_callback);
