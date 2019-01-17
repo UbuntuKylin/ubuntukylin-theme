@@ -25,6 +25,9 @@ Window.SetBackgroundTopColor (6/256, 83/256, 161/256);
 Window.SetBackgroundBottomColor (6/256, 83/256, 161/256);
 
 i = 1;
+if (Plymouth.GetMode() == "shutdown") {
+	i = 116;
+}
 kylin[i].image = Image(i + ".png");
 kylin[i].sprite = Sprite(kylin[i].image);
 kylin[i].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[i].image.GetWidth()/2);
