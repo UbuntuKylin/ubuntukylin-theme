@@ -25,14 +25,16 @@ Window.SetBackgroundTopColor (6/256, 83/256, 161/256);
 Window.SetBackgroundBottomColor (6/256, 83/256, 161/256);
 
 i = 1;
+imgindex = 1;
 if (Plymouth.GetMode() == "shutdown") {
-	i = 116;
+	imgindex = 116;
 }
-kylin[i].image = Image(i + ".png");
-kylin[i].sprite = Sprite(kylin[i].image);
-kylin[i].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[i].image.GetWidth()/2);
-kylin[i].sprite.SetY(Window.GetY() + Window.GetHeight()/2 - kylin[i].image.GetHeight()/2);
-kylin[i].sprite.SetOpacity(0.0);
+
+kylin[imgindex].image = Image(i + ".png");
+kylin[imgindex].sprite = Sprite(kylin[imgindex].image);
+kylin[imgindex].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[imgindex].image.GetWidth()/2);
+kylin[imgindex].sprite.SetY(Window.GetY() + Window.GetHeight()/2 - kylin[imgindex].image.GetHeight()/2);
+kylin[imgindex].sprite.SetOpacity(0.0);
 text.image = Image("uk.png");
 text.sprite = Sprite(text.image);
 text.sprite.SetOpacity (0.0);
@@ -955,38 +957,38 @@ Plymouth.SetDisplayQuestionFunction (display_question_callback);
 #
 fun refresh_callback ()
 {
-	if (i != 144)
+	if (imgindex != 144)
 	{
-		kylin[i].image = Image (i + ".png");
-		kylin[i].sprite = Sprite(kylin[i].image);
-		kylin[i].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[i].image.GetWidth()/2);
-		kylin[i].sprite.SetY(Window.GetY() + Window.GetHeight()/2 - kylin[i].image.GetHeight()/2);
-		kylin[i].sprite.SetZ(10);
+		kylin[imgindex].image = Image (imgindex + ".png");
+		kylin[imgindex].sprite = Sprite(kylin[imgindex].image);
+		kylin[imgindex].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[imgindex].image.GetWidth()/2);
+		kylin[imgindex].sprite.SetY(Window.GetY() + Window.GetHeight()/2 - kylin[imgindex].image.GetHeight()/2);
+		kylin[imgindex].sprite.SetZ(10);
 		if (lasti != 0)
 		{
 			kylin[lasti].sprite.SetOpacity(0.0);
 		}
-		kylin[i].sprite.SetOpacity(1.0);
-		lasti = i;
-		i++;
+		kylin[imgindex].sprite.SetOpacity(1.0);
+		lasti = imgindex;
+		imgindex++;
 	}
 	else
 	{
-		i = 116;
-		kylin[i].sprite.SetOpacity(0.0);
-		kylin[i].image = Image (i + ".png");
-		kylin[i].sprite = Sprite(kylin[i].image);
-		kylin[i].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[i].image.GetWidth()/2);
-		kylin[i].sprite.SetY(Window.GetY() + Window.GetHeight()/2 - kylin[i].image.GetHeight()/2);
-		kylin[i].sprite.SetZ(10);
-		kylin[i].sprite.SetOpacity(1.0);
+		imgindex = 116;
+		kylin[imgindex].sprite.SetOpacity(0.0);
+		kylin[imgindex].image = Image (imgindex + ".png");
+		kylin[imgindex].sprite = Sprite(kylin[imgindex].image);
+		kylin[imgindex].sprite.SetX(Window.GetX() + Window.GetWidth()/2 - kylin[imgindex].image.GetWidth()/2);
+		kylin[imgindex].sprite.SetY(Window.GetY() + Window.GetHeight()/2 - kylin[imgindex].image.GetHeight()/2);
+		kylin[imgindex].sprite.SetZ(10);
+		kylin[imgindex].sprite.SetOpacity(1.0);
 
 		if (lasti != 0)
 		{
 			kylin[lasti].sprite.SetOpacity(0.0);
 		}
-		lasti = i;
-		i++;
+		lasti = imgindex;
+		imgindex++;
 	}
 }
 
