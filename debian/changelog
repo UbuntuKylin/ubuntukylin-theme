@@ -1,19 +1,21 @@
 ubuntukylin-theme (1.8.2) disco; urgency=medium
 
-  * Add generic-x-text and generic-x-script icons.
+  * Add generic-x-text, generic-x-script, folder-drag-accept,
+    blueman-active and nm-device-wired, drive-hardist,
+    timing-shutdown icons.
   * Use custom sharedlib mime-type and new generic icons for raw type.
-  * Adjust for the new style ukui-menu.
+  * Adjust for the new style ukui-menu and peony.
+  * Update the icon of dialog-error, kylin-burner.
+  * Update the boot/shutdown splash.
   * Fix the wrong bit depth of background image in grub.
     (LP: #1800432)
   * Fix the wrong background color in gnome-screenshot.
-  * Update the icon of dialog-error.
-  * Update the boot/shutdown splash.
-  * Add ssd window box shadow for ukwm.
-  * Bump Standards-Version to 4.3.0, compat level to 12.
-  * Update the burner icon.
   * Fix the wrong icon when showing media-dvd.
+  * debian:
+    - Bump Standards-Version to 4.3.0
+    - Bump compat level to 12.
 
- -- handsome_feng <jianfengli@ubuntukylin.com>  Wed, 30 Jan 2019 16:32:57 +0800
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Wed, 20 Mar 2019 14:28:47 +0800
 
 ubuntukylin-theme (1.7.9.2) cosmic; urgency=medium
 
