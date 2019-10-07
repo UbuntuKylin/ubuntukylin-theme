@@ -5,7 +5,8 @@ Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
 Uploaders: handsome_feng <jianfengli@ubuntukylin.com>
 Build-Depends: debhelper (>= 12),
                sass
-Standards-Version: 4.4.0
+Standards-Version: 4.4.1
+Rules-Requires-Root: no
 Homepage: https://github.com/ukui/ubuntukylin-theme
 Vcs-Git: https://github.com/ukui/ubuntukylin-theme.git
 Vcs-Browser: https://github.com/ukui/ubuntukylin-theme

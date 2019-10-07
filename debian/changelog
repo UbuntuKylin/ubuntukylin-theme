@@ -1,11 +1,12 @@
 ubuntukylin-theme (1.8.3) eoan; urgency=medium
 
-  * Add missing icons of media-cdr.
+  * Add missing icons of media-cdr, image magic and software center.
+  * Update some icons of panel.
   * Fix wrong mode of index.theme.in.
   * Debian/control:
-    - Bump standards-vertion to 4.4.0.
+    - Bump standards-vertion to 4.4.1.
 
- -- handsome_feng <jianfengli@ubuntukylin.com>  Tue, 20 Aug 2019 11:53:17 +0800
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Mon, 07 Oct 2019 12:02:59 +0800
 
 ubuntukylin-theme (1.8.2.1) disco; urgency=medium
 
