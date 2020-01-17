@@ -1,17 +1,16 @@
-Source: ubuntukylin-theme
+Source: ukui-theme
 Section: gnome
 Priority: optional
 Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
 Uploaders: handsome_feng <jianfengli@ubuntukylin.com>
 Build-Depends: debhelper (>= 12),
                sass
-Standards-Version: 4.4.1
-Rules-Requires-Root: no
+Standards-Version: 4.3.0
 Homepage: https://github.com/ukui/ubuntukylin-theme
 Vcs-Git: https://github.com/ukui/ubuntukylin-theme.git
 Vcs-Browser: https://github.com/ukui/ubuntukylin-theme
 
-Package: ubuntukylin-theme
+Package: ukui-theme
 Architecture: all
 Depends: gnome-icon-theme,
          hicolor-icon-theme,
@@ -20,6 +19,7 @@ Depends: gnome-icon-theme,
          fonts-droid-fallback,
          ${misc:Depends},
          ${shlibs:Depends}
-Description: Ubuntu Kylin theme
+Replaces: ubuntukylin-theme
+Description:theme for Ubuntu Kylin
  This package contains the default theme for Ubuntu Kylin,
  which is to be a flavor of Ubuntu.

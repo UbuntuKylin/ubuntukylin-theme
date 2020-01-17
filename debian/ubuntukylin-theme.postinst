@@ -16,6 +16,14 @@ set -e
 # If prerm fails during replacement due to conflict:
 #       <postinst> abort-remove in-favour <new-package> <version>
 
+rm -rf /usr/share/themes/ukui-blue
+rm -rf /usr/share/themes/ukui-theme
+rm -rf /usr/share/icons/ukui-icon-theme
+rm -rf /usr/share/icons/ukui-icon-theme-one
+rm -rf /usr/share/icons/ukui-icon-theme-two
+rm -rf /usr/share/icons/ukui-icon-theme-three
+
+
 
 case "$1" in
     configure)

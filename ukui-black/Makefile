@@ -1,5 +1,5 @@
 all: index css
-
+	
 index:
 	cp index.theme.in index.theme
 
