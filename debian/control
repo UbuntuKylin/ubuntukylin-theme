@@ -1,4 +1,4 @@
-Source: ukui-theme
+Source: ubuntukylin-theme
 Section: gnome
 Priority: optional
 Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
@@ -10,7 +10,7 @@ Homepage: https://github.com/ukui/ubuntukylin-theme
 Vcs-Git: https://github.com/ukui/ubuntukylin-theme.git
 Vcs-Browser: https://github.com/ukui/ubuntukylin-theme
 
-Package: ukui-theme
+Package: ubuntukylin-theme
 Architecture: all
 Depends: gnome-icon-theme,
          hicolor-icon-theme,
