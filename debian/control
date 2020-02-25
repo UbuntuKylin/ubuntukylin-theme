@@ -3,9 +3,10 @@ Section: gnome
 Priority: optional
 Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
 Uploaders: handsome_feng <jianfengli@ubuntukylin.com>
-Build-Depends: debhelper (>= 12),
+Build-Depends: debhelper-compat (= 12),
                sass
-Standards-Version: 4.3.0
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
 Homepage: https://github.com/ukui/ubuntukylin-theme
 Vcs-Git: https://github.com/ukui/ubuntukylin-theme.git
 Vcs-Browser: https://github.com/ukui/ubuntukylin-theme
@@ -19,7 +20,6 @@ Depends: gnome-icon-theme,
          fonts-droid-fallback,
          ${misc:Depends},
          ${shlibs:Depends}
-Replaces: ubuntukylin-theme
-Description:theme for Ubuntu Kylin
+Description: theme for Ubuntu Kylin
  This package contains the default theme for Ubuntu Kylin,
  which is to be a flavor of Ubuntu.
