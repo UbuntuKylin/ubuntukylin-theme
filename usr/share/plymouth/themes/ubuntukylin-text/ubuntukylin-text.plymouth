@@ -4,7 +4,7 @@ Description=Text mode theme based on UbuntuKylin-logo theme
 ModuleName=ubuntu-text
 
 [ubuntu-text]
-title=Ubuntu Kylin 19.04
+title=Ubuntu Kylin 20.04
 black=0x412612
 white=0xffffff
 brown=0xD69869
