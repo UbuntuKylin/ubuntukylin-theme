@@ -1,3 +1,9 @@
+ubuntukylin-theme (2.0.1) focal; urgency=medium
+
+  * Remove the empty images.
+
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Wed, 26 Feb 2020 10:42:27 +0800
+
 ubuntukylin-theme (2.0.0) focal; urgency=medium
 
   * Update style and icons for ukui3.0.
