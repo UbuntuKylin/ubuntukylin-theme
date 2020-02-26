@@ -1,8 +1,23 @@
-ubuntukylin-theme (2.1.0.0) eoan; urgency=medium
+ubuntukylin-theme (2.0.0) focal; urgency=medium
 
-  * Update style and icons of ukui3.0
+  * Update style and icons for ukui3.0.
+  * debian:
+    - Bump standards-vertion to 4.5.0.
+    - Use debhelper-compat.
+    - Set Rules-Requires-Root to no.
 
- -- meiyanliu <meiyanliu@ubuntukylin.com>  Mon, 04 Nov 2019 14:29:46 +0800
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Tue, 25 Feb 2020 23:34:47 +0800
+
+ubuntukylin-theme (1.8.3) eoan; urgency=medium
+
+  * Add missing icons of media-cdr, image magic and software center.
+  * Update some icons of panel.
+  * Fix wrong mode of index.theme.in.
+  * Debian/control:
+    - Bump standards-vertion to 4.4.1.
+
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Mon, 07 Oct 2019 12:02:59 +0800
+
 
 ubuntukylin-theme (1.8.2.1) disco; urgency=medium
 
