@@ -15,9 +15,9 @@ ZipOverlay=zip
 
 DesktopDefault=48
 DesktopSizes=16,22,24,32,48,64,96,256
-ToolbarDefault=22
+ToolbarDefault=32
 ToolbarSizes=16,22,24,32,48
-MainToolbarDefault=22
+MainToolbarDefault=32
 MainToolbarSizes=16,22,24,32,48
 SmallDefault=16
 SmallSizes=16,22,24,32,48
