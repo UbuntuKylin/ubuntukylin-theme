@@ -1,3 +1,9 @@
+ubuntukylin-theme (2.0.2) focal; urgency=medium
+
+  * Update the gtk style and update some icons.
+
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Tue, 17 Mar 2020 10:40:50 +0800
+
 ubuntukylin-theme (2.0.1.1) focal; urgency=medium
 
   * debian/rules:
