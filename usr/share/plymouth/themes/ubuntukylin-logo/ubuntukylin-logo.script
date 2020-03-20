@@ -21,13 +21,13 @@
  */
 
 
-Window.SetBackgroundTopColor (6/256, 83/256, 161/256);           
-Window.SetBackgroundBottomColor (6/256, 83/256, 161/256);
+Window.SetBackgroundTopColor (9/256, 4/256, 18/256);           
+Window.SetBackgroundBottomColor (9/256, 4/256, 18/256);
 
 i = 1;
 imgindex = 1;
 if (Plymouth.GetMode() == "shutdown") {
-	imgindex = 116;
+	imgindex = 1;
 }
 
 kylin[imgindex].image = Image(i + ".png");
@@ -957,7 +957,7 @@ Plymouth.SetDisplayQuestionFunction (display_question_callback);
 #
 fun refresh_callback ()
 {
-	if (imgindex != 144)
+	if (imgindex != 61)
 	{
 		kylin[imgindex].image = Image (imgindex + ".png");
 		kylin[imgindex].sprite = Sprite(kylin[imgindex].image);
@@ -974,7 +974,7 @@ fun refresh_callback ()
 	}
 	else
 	{
-		imgindex = 116;
+		imgindex = 1;
 		kylin[imgindex].sprite.SetOpacity(0.0);
 		kylin[imgindex].image = Image (imgindex + ".png");
 		kylin[imgindex].sprite = Sprite(kylin[imgindex].image);
