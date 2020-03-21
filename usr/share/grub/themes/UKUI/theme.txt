@@ -32,15 +32,13 @@ terminal-border: "0"
   item_font = "Unifont Regular 16"
   item_color = "#cccccc"
   selected_item_color = "#ffffff"
-  item_height = 24
+  selected_item_font = "Unifont Bold 16"
+#  item_height = 24
+  item_height = 30
   item_spacing = 12
   item_spacing = 4
   selected_item_pixmap_style = "select_*.png"
   menu_pixmap_style = "menu_bkg_*.png"
-  scrollbar = true
-  scrollbar_width = 24
-  scrollbar_thumb = "sb_thumb_*.png"
-  scrollbar_frame = "sb_frame_*.png"
 }
 
 # Show a styled horizontal progress bar
@@ -51,7 +49,7 @@ terminal-border: "0"
 		top = 83%
 		height = 10
 		show_text = true
-		font = "Unifont Regular 16"
+  		font = "Unifont Regular 16"
 		text_color = "255, 255, 255"
 		text = "@TIMEOUT_NOTIFICATION_MIDDLE@"
 		bar_style = "progress_bar_*.png"
@@ -60,12 +58,13 @@ terminal-border: "0"
 
 # Show an informational message.
 +label{
-		top = 100%-30
-		left = 50%-255
+		top = 100%-80
+		left = 50%-250
+		left = 50%-420
 #                width = 400
                 height = 20
                 align = "center"
-                font = "Unifont Regular 16"
+  		font = "Unifont Regular 16"
                 color = "#FFFFFF"
                 text = "@KEYMAP_MIDDLE@"
                 visible = true
