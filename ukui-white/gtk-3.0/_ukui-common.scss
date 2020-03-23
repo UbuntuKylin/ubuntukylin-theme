@@ -56,7 +56,7 @@ menubar {
   /* For most widget, we don't need box-shadow at all. */
   /* normal */
   color: $headerbar_normal_fg_color;
-  background: $headerbar_normal_bg_image;
+  background: $bg_color;
   /* focus */
   /* prelight */
   /* active */
@@ -100,17 +100,13 @@ menubar {
   /* For most widget, we don't need box-shadow at all. */
   /* normal */
   color: $headerbar_normal_fg_color;
-  background-color:$headerbar_normal_bg_image;
+  background-color:$bg_color;
 
   /* focus */
   /* prelight */
   /* active */
   /* checked */
   /* insensitive */
-        &:hover {
-			color:$base_normal_fg_color;
-            background-color: $active_color;
-        }
     }
 }
 
@@ -239,12 +235,13 @@ entry {
 	&:hover{
 		button{
 			border-radius: 10px;
-			background: #3D3D41;		
+			background: #cccccc;		
 		}
 	}
 }
 
 notebook {
+
     > header {
         > tabs {
             > tab {

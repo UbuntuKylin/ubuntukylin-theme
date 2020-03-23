@@ -1152,6 +1152,7 @@ modelbutton.flat,
     @extend %undecorated_button;
 
     &:hover {
+		color:$fg_color;
         background-color: $active_color;
     }
 
@@ -1584,7 +1585,7 @@ combobox {
 %toolbar {
     -GtkWidget-window-dragging: true;
     padding: 4px;
-    background:$headerbar_normal_bg_image;
+    background:$bg_color;
 }
 
 toolbar {
@@ -2295,7 +2296,7 @@ menubar,
     box-shadow: inset 0 -1px transparentize(black, 0.9);
 
     &:backdrop {
-        background-color: $base_backdrop_bg_color;
+        background-color: $bg_color;
       
     }
 
@@ -2306,7 +2307,8 @@ menubar,
         &:hover {
             //Seems like it :hover even with keyboard focus
             box-shadow: none;
-            color: $link_color;
+            color: $active_fg_color;
+			background-color:$active_color;
         }
 
         &:disabled {
@@ -2335,7 +2337,7 @@ menu,
     // axes borders in a composited env
 
     &:backdrop {
-        background-color: $backdrop_menu_color;
+        background-color: $bg_color;
     }
 
     menuitem {
@@ -2344,10 +2346,7 @@ menu,
         padding: 4px 6px;
         text-shadow: none;
 
-        &:hover {
-            color: $selected_fg_color;
-            background-color: $selected_bg_color;
-        }
+
 
         &:disabled {
             color: $insensitive_fg_color;
@@ -2408,10 +2407,6 @@ menu,
             margin-bottom: -6px;
             border-top: 1px solid mix($fg_color, $base_color, 10%);
             -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-        }
-
-        &:hover {
-            background-color: mix($fg_color, $base_color, 10%);
         }
 
         &:backdrop {
@@ -2504,8 +2499,9 @@ popover.background {
  *************/
 notebook {
     > header {
-        padding: 2px;
+        padding-bottom: 0px;
         background-color:  $notebook_tab_normal_bg_color ;
+		border-width:none;
 
         &:backdrop {
             border-color: $backdrop_borders_color;
@@ -2517,7 +2513,6 @@ notebook {
         }
 
         &.top {
-            border-bottom-style: solid;
 
             > tabs {
                 margin-bottom: -2px;
@@ -2539,7 +2534,6 @@ notebook {
         }
 
         &.bottom {
-            border-top-style: solid;
 
             > tabs {
                 margin-top: -2px;
@@ -2561,7 +2555,6 @@ notebook {
         }
 
         &.left {
-            border-right-style: solid;
 
             > tabs {
                 margin-right: -2px;
@@ -2583,7 +2576,6 @@ notebook {
         }
 
         &.right {
-            border-left-style: solid;
 
             > tabs {
                 margin-left: -2px;
@@ -2690,7 +2682,7 @@ notebook {
             color: $base_normal_fg_color;
             background-color:  $notebook_tab_normal_bg_color ;
 
-            // for reorderable tabs
+            // for reorderable 
             border-color: $base_normal_border_color;
 
             //
@@ -2717,10 +2709,10 @@ notebook {
 
                 &, &.reorderable-page {
                     border-color: $base_normal_border_color;
-                    background-color: $base_normal_bg_color;
+                    background-color: $base_color;
 
                     &:hover {
-                        background-color: $base_normal_bg_color;
+                        background-color: $base_color;
                     }
                 }
             }
@@ -3083,11 +3075,11 @@ radio {
     @include button(normal-alt, $edge: $shadow_color);
 
     &:hover {
-        @include button(hover-alt, $edge: $shadow_color);
+       // @include button(hover-alt, $edge: $shadow_color);
     }
 
     &:active {
-        @include button(active);
+       // @include button(active);
     }
 
     &:disabled {
@@ -3114,11 +3106,11 @@ radio {
         @include button(osd);
 
         &:hover {
-            @include button(osd);
+           // @include button(osd);
         }
 
         &:active {
-            @include button(osd-active);
+          //  @include button(osd-active);
         }
 
         &:backdrop {
@@ -3155,7 +3147,9 @@ check {
     &:checked {
         -gtk-icon-source: image(-gtk-recolor(url("assets/check-symbolic.svg")), -gtk-recolor(url("assets/check-symbolic.symbolic.png")));
     }
-
+    &:hover {
+        -gtk-icon-source: image(-gtk-recolor(url("assets/check-symbolic.svg")), -gtk-recolor(url("assets/check-symbolic.symbolic.png")));
+    }
     &:indeterminate {
         -gtk-icon-source: image(-gtk-recolor(url("assets/dash-symbolic.svg")), -gtk-recolor(url("assets/dash-symbolic.symbolic.png")));
     }
@@ -3166,6 +3160,9 @@ radio {
     border-radius: 100%;
 
     &:checked {
+        -gtk-icon-source: image(-gtk-recolor(url("assets/bullet-symbolic.svg")), -gtk-recolor(url("assets/bullet-symbolic.symbolic.png")));
+    }
+    &:hover {
         -gtk-icon-source: image(-gtk-recolor(url("assets/bullet-symbolic.svg")), -gtk-recolor(url("assets/bullet-symbolic.symbolic.png")));
     }
 
