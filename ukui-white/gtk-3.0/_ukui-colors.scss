@@ -5,7 +5,7 @@ $bg_color: #E7E7E7;
 $fg_color: #0C0C0D;
 $active_fg_color: #ffffff;
 $active_color: #3D6BE5;
-$insensitive_bg_color:#F8F8F8;
+$insensitive_bg_color:#E7E7E7;
 $insensitive_fg_color:#48484C;
 
 $selected_fg_color: $fg_color;
@@ -85,14 +85,14 @@ $base_checked_border_color: $bg_color;
  * background image in different states.
  * The color value of bg_image is the same as the bg_color
  */
-$base_normal_bg_image: image($insensitive_bg_color);
+$base_normal_bg_image: image($bg_color);
 $base_active_bg_image: image($base_active_bg_color);
 $base_prelight_bg_image: image($base_prelight_bg_color);
-$base_insensitive_bg_image: image($insensitive_bg_color);
+$base_insensitive_bg_image: image($bg_color);
 $base_focused_bg_image: image($base_focused_bg_color);
 $base_backdrop_bg_image: image($base_backdrop_bg_color);
-$base_backdrop_sensitive_bg_image: image($insensitive_bg_color);
-$base_backdrop_insensitive_bg_image: image($insensitive_bg_color);
+$base_backdrop_sensitive_bg_image: image($bg_color);
+$base_backdrop_insensitive_bg_image: image($bg_color);
 $base_checked_bg_image: image($base_checked_bg_color);
 
 /*
@@ -107,7 +107,7 @@ $combobox_dropdown_menuitem_normal_bg_color: #F8F8F8;
  */
 $notebook_tab_normal_bg_color: $bg_color;
 $notebook_tab_checked_bg_color: #ffffff;
-$notebook_tab_closebutton_normal_bg_image: $bg_color;
+$notebook_tab_closebutton_normal_bg_image: image($bg_color);
 $notebook_tab_closebutton_checked_bg_image: image($notebook_tab_checked_bg_color);
 
 /*
@@ -162,7 +162,7 @@ $headerbar_button_normal_fg_color: #0c0c0d;
 $headerbar_button_backdrop_fg_color: #0c0c0d;
 $headerbar_button_prelight_fg_color: $active_fg_color;
 $headerbar_button_active_fg_color: $active_fg_color;
-$headerbar_button_normal_bg_image: #ffffff;
+$headerbar_button_normal_bg_image: image(#ffffff);
 $headerbar_button_backdrop_bg_image: image(#ffffff);
 $headerbar_button_prelight_bg_image: image(#3D6BE5);
 $headerbar_button_active_bg_image: image(#3D6BE5);

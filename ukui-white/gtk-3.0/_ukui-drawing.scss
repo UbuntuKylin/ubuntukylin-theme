@@ -232,7 +232,7 @@
 
         $button_fill: linear-gradient(to bottom, $c, lighten($c, 4%) 60%, lighten($c, 10%)) !global;
 
-        background-image: $bg_color;
+        background-image: image($bg_color);
 
         @include _button_text_shadow($tc, $c);
     }
@@ -248,7 +248,7 @@
 
         @include _button_text_shadow($tc, lighten($c, 6%));
 
-        background-image: $bg_color;
+        background-image: image($bg_color);
     }
 
     @if $t == normal-alt {
@@ -283,9 +283,7 @@
         outline-color: transparentize($tc, 0.7);
         border-color: $bg_color;
 
-        $button_fill: image(lighten($c, 6%)) !global;
-
-        background-image: $bg_color;
+        background-image: image($bg_color);
         text-shadow: none;
         -gtk-icon-shadow: none;
     }
@@ -505,9 +503,9 @@
         border-color: transparent;
         background-color: transparent;
 
-        $button_fill: none !global;
+        //$button_fill: none !global;
 
-        background-image: $button_fill;
+        //background-image: $button_fill;
         text-shadow: none;
         -gtk-icon-shadow: none;
     }
