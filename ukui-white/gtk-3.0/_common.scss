@@ -606,7 +606,7 @@ $_dot_color: $selected_bg_color;
     }
 
     to {
-        background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to($selected_bg_color), to(transparent));
+        background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to($_dot_color), to(transparent));
     }
 }
 
@@ -998,7 +998,7 @@ button {
         // FIXME: take care of colored circular button.
         $_border_bg: linear-gradient(to top, $alt-borders-color 25%, $bg_color 50%);
 
-        &:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+        &:not(:checked):not(:active):not(:disabled):not(:backdrop) {
             border-color: transparent;
         }
 
@@ -2345,7 +2345,11 @@ menu,
         min-width: 40px;
         padding: 4px 6px;
         text-shadow: none;
-
+        &:hover {
+            box-shadow: none;
+            color: $active_fg_color;
+			background-color:$active_color;
+        }
 
 
         &:disabled {
@@ -2396,7 +2400,11 @@ menu,
         padding: 4px;
         background-color: $menu_color;
         border-radius: 0;
-
+        &:hover {
+            box-shadow: none;
+            color: $active_fg_color;
+			background-color:$active_color;
+        }
         &.top {
             margin-top: -6px;
             border-bottom: 1px solid mix($fg_color, $base_color, 10%);
@@ -2500,8 +2508,7 @@ popover.background {
 notebook {
     > header {
         padding-bottom: 0px;
-        background-color:  $notebook_tab_normal_bg_color ;
-		border-width:none;
+        background-color: $notebook_tab_normal_bg_color;
 
         &:backdrop {
             border-color: $backdrop_borders_color;
@@ -2595,7 +2602,6 @@ notebook {
                 }
             }
         }
-
         &.top > tabs > arrow {
             @extend %notebook_vert_arrows;
 
@@ -3015,7 +3021,7 @@ switch {
 //selection-mode
 @each $s, $as in ("", "-selectionmode"), (":hover", "-hover-selectionmode"), (":active", "-active-selectionmode"), (":backdrop", "-backdrop-selectionmode"), (":checked", "-checked-selectionmode"), (":checked:hover", "-checked-hover-selectionmode"), (":checked:active", "-checked-active-selectionmode"), (":backdrop:checked", "-checked-backdrop-selectionmode") {
     .view.content-view.check#{$s}:not(list),
-    .content-view .tile check#{$s}:not(list) {
+    .content-view .tile .check#{$s}:not(list) {
         -gtk-icon-shadow: none;
         -gtk-icon-source: -gtk-scaled(url("assets/checkbox#{$as}.png"), url("assets/checkbox#{$as}@2.png"));
         background-color: transparent;

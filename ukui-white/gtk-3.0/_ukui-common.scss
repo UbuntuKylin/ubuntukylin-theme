@@ -72,7 +72,7 @@ menubar {
 		background:$menu_color;
 
     &:disabled {
-        background-image: $insensitive_fg_color;
+        background-image: image($insensitive_fg_color);
   		color:$insensitive_fg_color;
     }
 
@@ -116,30 +116,30 @@ menubar {
 %button_base_class {
     @extend %widget_base_class;
 
-    background-image: $base_normal_bg_image;
+    //background-image: $base_normal_bg_image;
 
     &:hover {
-        background-image: $base_prelight_bg_image;
+        //background-image: $base_prelight_bg_image;
     }
 
     &:active {
-        background-image: $base_active_bg_image;
+        //background-image: $base_active_bg_image;
     }
 
     &:checked {
-        background-image: $base_checked_bg_image;
+        //background-image: $base_checked_bg_image;
     }
 
     &:disabled {
-        background-image: $insensitive_fg_color;
+        //background-image: image($insensitive_fg_color);
     }
 
     &:backdrop {
-        background-image: $base_backdrop_sensitive_bg_image;
+        //background-image: $base_backdrop_sensitive_bg_image;
     }
 
     &:backdrop:disabled {
-        background-image: $insensitive_bg_color;
+        //background-image: image($insensitive_bg_color);
     }
 }
 
@@ -460,7 +460,7 @@ treeview {
     }
     button.titlebutton {
         color: $headerbar_button_normal_fg_color;
-        background-image:image($headerbar_button_normal_bg_image);
+        background-image:$headerbar_button_normal_bg_image;
         border-width: 0px;
         /* maximize and minimize close */
         &:hover,&:backdrop:hover {
@@ -473,7 +473,7 @@ treeview {
         }
         &:backdrop {
             color: $headerbar_button_backdrop_fg_color;
-            background-image:image($headerbar_button_backdrop_bg_image);
+            background-image:$headerbar_button_backdrop_bg_image;
         }
 
         /* close button */

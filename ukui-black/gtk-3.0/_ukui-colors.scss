@@ -106,7 +106,7 @@ $combobox_dropdown_menuitem_normal_bg_color: #1C1C1E;
  */
 $notebook_tab_normal_bg_color: #242424;
 $notebook_tab_checked_bg_color: $bg_color;
-$notebook_tab_closebutton_normal_bg_image: #ffffff;
+$notebook_tab_closebutton_normal_bg_image: image(#ffffff);
 $notebook_tab_closebutton_checked_bg_image: image($notebook_tab_checked_bg_color);
 
 /*

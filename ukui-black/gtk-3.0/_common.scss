@@ -998,7 +998,7 @@ button {
         // FIXME: take care of colored circular button.
         $_border_bg: linear-gradient(to top, $alt-borders-color 25%, $bg_color 50%);
 
-        &:not(.flat):not(:checked):not(:active):not(:disabled):not(:backdrop) {
+        &:not(:checked):not(:active):not(:disabled):not(:backdrop) {
             border-color: transparent;
         }
 

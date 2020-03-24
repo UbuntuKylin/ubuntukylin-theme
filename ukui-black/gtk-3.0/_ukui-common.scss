@@ -72,7 +72,7 @@ menubar {
 		background:$menu_color;
 
     &:disabled {
-        background-image: $insensitive_fg_color;
+        background-image: image($insensitive_fg_color);
   		color:$insensitive_fg_color;
     }
 
@@ -100,7 +100,7 @@ menubar {
   /* For most widget, we don't need box-shadow at all. */
   /* normal */
   color: $headerbar_normal_fg_color;
-  background-color:$headerbar_normal_bg_image;
+  background-color:$bg_color;
 
   /* focus */
   /* prelight */
@@ -135,7 +135,7 @@ menubar {
     }
 
     &:disabled {
-        background-image: $insensitive_fg_color;
+        background-image: image($insensitive_fg_color);
     }
 
     &:backdrop {
@@ -143,7 +143,7 @@ menubar {
     }
 
     &:backdrop:disabled {
-        background-image: $insensitive_bg_color;
+        background-image: image($insensitive_bg_color);
     }
 }
 
