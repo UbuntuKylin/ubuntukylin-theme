@@ -1,3 +1,11 @@
+ubuntukylin-theme (2.0.3) focal; urgency=medium
+
+  * Update the boot animation.
+  * Update the grub theme.
+  * Update the ukui-white theme.
+
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Mon, 23 Mar 2020 23:09:05 +0800
+
 ubuntukylin-theme (2.0.2) focal; urgency=medium
 
   * Update the gtk style and update some icons.
