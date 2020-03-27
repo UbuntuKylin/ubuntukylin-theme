@@ -84,8 +84,8 @@ $button_transition: all 200ms $ease-out-quad;
     }
 
     &:disabled {
-        color: $insensitive_fg_color;
-        background-color: $insensitive_bg_color;
+        color: $disable_fg_color;
+        background-color: $disable_bg_color;
     }
 
     &:selected {
@@ -104,13 +104,13 @@ $button_transition: all 200ms $ease-out-quad;
         background-color: $backdrop_base_color;
 
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
         }
     }
 
     &:disabled {
-        color: $insensitive_fg_color;
-        background-color: $insensitive_bg_color;
+        color: $disable_fg_color;
+        background-color: $disable_bg_color;
     }
 
     &:selected {
@@ -182,7 +182,7 @@ flowbox {
     }
 
     &:disabled {
-        background-color: $insensitive_bg_color;
+        background-color: $disable_bg_color;
     }
 }
 
@@ -212,14 +212,14 @@ label {
     }
 
     &:disabled {
-        color: $insensitive_fg_color;
+        color: $disable_fg_color;
 
         selection {
         	@extend %selected_items, :disabled;
         }
 
         &:backdrop {
-            color: $insensitive_bg_color;
+            color: $disable_bg_color;
         }
     }
 
@@ -346,7 +346,7 @@ entry {
             &:focus, &:backdrop, &:disabled, &:backdrop:disabled, & {
                 min-height: 0;
                 padding: 2px;
-                background-color: $insensitive_bg_color;
+                background-color: $disable_bg_color;
                 border-color: transparent;
                 border-radius: 0;
             }
@@ -725,7 +725,7 @@ button {
         row:selected & {
 
             &.flat:not(:active):not(:checked):not(:hover):not(disabled) {
-                color: $insensitive_fg_color;
+                color: $disable_fg_color;
 
                 &:backdrop {
                     color: $backdrop_base_color;
@@ -1037,7 +1037,7 @@ button {
     // redefining the button look is
     // needed since those are flat...
     &:hover {
-		background-color: $active_color;
+		background-color: $active_bg_color;
     }
 
     &:active,
@@ -1152,7 +1152,7 @@ modelbutton.flat,
     @extend %undecorated_button;
 
     &:hover {
-        background-color: $active_color;
+        background-color: $active_bg_color;
     }
 
     &:selected {
@@ -1162,14 +1162,14 @@ modelbutton.flat,
     &:backdrop,
     &:backdrop:hover {
         @extend %undecorated_button;
-		background-color: $active_color;
+		background-color: $active_bg_color;
     }
 }
 
 modelbutton.flat arrow {
-	background-color: $active_color;
+	background-color: $active_bg_color;
     &:hover {
-		background-color: $active_color;
+		background-color: $active_bg_color;
     }
 
     &.left {
@@ -1214,29 +1214,29 @@ button.color {
 
 %link,
 *:link {
-    color: $link_color;
+    color: $link_fg_color;
 
     &:visited {
-        color: $link_visited_color;
+        color: $link_visited_fg_color;
 
         *:selected & {
-            color: mix($selected_fg_color, $selected_bg_color, 60%);
+            color: $link_selected_fg_color;
         }
     }
 
     &:hover {
-        color: lighten($link_color, 10%);
+        color: $link_active_fg_color;
 
         *:selected & {
-            color: mix($selected_fg_color, $selected_bg_color, 90%);
+            color: $link_selected_fg_color;
         }
     }
 
     &:active {
-        color: $link_color;
+        color: $link_active_fg_color;
 
         *:selected & {
-            color: mix($selected_fg_color, $selected_bg_color, 80%);
+            color: $link_selected_fg_color;
         }
     }
 
@@ -1300,7 +1300,7 @@ spinbutton {
             box-shadow: none;
 
             &:backdrop:disabled {
-                background-color: $insensitive_bg_color;
+                background-color: $disable_bg_color;
             }
         }
 
@@ -1326,8 +1326,8 @@ spinbutton {
             }
 
             &:disabled {
-                color: $insensitive_fg_color;
-                background-color: $insensitive_bg_color;
+                color: $disable_fg_color;
+                background-color: $disable_bg_color;
             }
 
             &:active {
@@ -1343,8 +1343,8 @@ spinbutton {
             }
 
             &:backdrop:disabled {
-                color: $insensitive_bg_color;
-                background-color: $insensitive_bg_color;
+                color: $disable_bg_color;
+                background-color: $disable_bg_color;
                 border-style: none none none solid;
 
                 // It is needed or it gets overridden
@@ -1402,8 +1402,8 @@ spinbutton {
             &:disabled {
                 @include button(undecorated);
 
-                color: $insensitive_fg_color;
-                border-color: $insensitive_bg_color;
+                color: $disable_fg_color;
+                border-color: $disable_bg_color;
                 -gtk-icon-shadow: none;
                 box-shadow: none;
             }
@@ -1427,11 +1427,11 @@ spinbutton {
         // FIXME: this should not be set at all, but otherwise it gets the wrong
         // color
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
         }
 
         &:backdrop:disabled {
-            color: $insensitive_bg_color;
+            color: $disable_bg_color;
         }
 
         &:drop(active) {
@@ -1716,7 +1716,7 @@ border-bottom-color:$base_normal_border_color;
         // hilight color
 
         color: $selected_fg_color;
-        border-color: $selected_borders_color;
+        border-color: $selected_bd_color;
         text-shadow: 0 -1px transparentize(black, 0.5);
 
         @include headerbar_fill($selected_bg_color, $_hc);
@@ -1752,24 +1752,24 @@ border-bottom-color:$base_normal_border_color;
                     @include button(backdrop, $selected_bg_color, $selected_fg_color);
 
                     -gtk-icon-effect: none;
-                    border-color: $selected_borders_color;
+                    border-color: $selected_bd_color;
 
                     &:active,
                     &:checked {
                         @include button(backdrop-active, $selected_bg_color, $selected_fg_color);
 
-                        border-color: $selected_borders_color;
+                        border-color: $selected_bd_color;
                     }
 
                     &:disabled {
                         @include button(backdrop-insensitive, $selected_bg_color, $selected_fg_color);
 
-                        border-color: $insensitive_bg_color;
+                        border-color: $disable_bg_color;
 
                         &:active, &:checked {
                             @include button(backdrop-insensitive-active, $selected_bg_color, $selected_fg_color);
 
-                            border-color: $selected_borders_color;
+                            border-color: $selected_bd_color;
                         }
                     }
                 }
@@ -1793,36 +1793,36 @@ border-bottom-color:$base_normal_border_color;
             &.suggested-action {
                 @include button(normal);
 
-                border-color: $selected_borders_color;
+                border-color: $selected_bd_color;
 
                 &:hover {
                     @include button(hover);
 
-                    border-color: $selected_borders_color;
+                    border-color: $selected_bd_color;
                 }
 
                 &:active {
                     @include button(active);
 
-                    border-color: $selected_borders_color;
+                    border-color: $selected_bd_color;
                 }
 
                 &:disabled {
                     @include button(insensitive);
 
-                    border-color: $insensitive_bg_color;
+                    border-color: $disable_bg_color;
                 }
 
                 &:backdrop {
                     @include button(backdrop);
 
-                    border-color: $selected_borders_color;
+                    border-color: $selected_bd_color;
                 }
 
                 &:backdrop:disabled {
                     @include button(backdrop-insensitive);
 
-                    border-color: $selected_borders_color;
+                    border-color: $selected_bd_color;
                 }
             }
         }
@@ -2067,7 +2067,7 @@ treeview.view {
     }
 
     &:disabled {
-        color: $insensitive_fg_color;
+        color: $disable_fg_color;
 
         &:selected {
             color: mix($selected_fg_color, $selected_bg_color, 40%);
@@ -2078,7 +2078,7 @@ treeview.view {
         }
 
         &:backdrop {
-            color: $insensitive_bg_color;
+            color: $disable_bg_color;
         }
     }
 
@@ -2099,7 +2099,7 @@ treeview.view {
     &:drop(active) {
         border-style: solid none;
         border-width: 1px;
-        border-color: $selected_borders_color;
+        border-color: $selected_bd_color;
 
         &.after {
             border-top-style: none;
@@ -2147,7 +2147,7 @@ treeview.view {
     &.progressbar {
         // progress bar in treeviews
         color: $base_color;
-        border: 1px solid $selected_borders_color;
+        border: 1px solid $selected_bd_color;
         border-radius: 4px;
         background-color: $selected_bg_color;
         background-image: linear-gradient(to bottom, $selected_bg_color, darken($selected_bg_color, 10%));
@@ -2162,7 +2162,7 @@ treeview.view {
 
                 &:backdrop {
                     color: $selected_bg_color;
-                    border-color: $selected_borders_color;
+                    border-color: $selected_bd_color;
 
                     // otherwise it gets inherited by .view(?!?)
 
@@ -2261,7 +2261,7 @@ treeview.view {
     text-shadow: none;
 
     &:disabled {
-        border-color: $insensitive_fg_color;
+        border-color: $disable_fg_color;
         background-image: none;
     }
 
@@ -2273,7 +2273,7 @@ treeview.view {
         background-color: $backdrop_base_color;
 
         &:disabled {
-            border-color: $insensitive_bg_color;
+            border-color: $disable_bg_color;
             background-image: none;
         }
     }
@@ -2306,11 +2306,12 @@ menubar,
         &:hover {
             //Seems like it :hover even with keyboard focus
             box-shadow: none;
-            color: $link_color;
+            color: $link_fg_color;
+			background-color: $active_bg_color;
         }
 
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
             box-shadow: none;
         }
     }
@@ -2345,15 +2346,15 @@ menu,
         text-shadow: none;
 
         &:hover {
-            color: $selected_fg_color;
-            background-color: $selected_bg_color;
+            color: $fg_color;
+            background-color: $active_bg_color;
         }
 
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
 
             &:backdrop {
-                color: $insensitive_bg_color;
+                color: $disable_bg_color;
             }
         }
 
@@ -2411,7 +2412,8 @@ menu,
         }
 
         &:hover {
-            background-color: mix($fg_color, $base_color, 10%);
+			color:$fg_color;
+            background-color: $active_bg_color;
         }
 
         &:backdrop {
@@ -2419,9 +2421,9 @@ menu,
         }
 
         &:disabled {
-            color: $insensitive_fg_color;
-            background-color: $insensitive_bg_color;
-            border-color: $insensitive_bg_color;
+            color: $disable_fg_color;
+            background-color: $disable_bg_color;
+            border-color: $disable_bg_color;
         }
     }
 }
@@ -2888,7 +2890,7 @@ scrollbar {
         }
 
         &:disabled {
-            background-color: $insensitive_bg_color;
+            background-color: $disable_bg_color;
         }
     }
 
@@ -2919,15 +2921,15 @@ switch {
 
     &:checked {
         color: $selected_fg_color;
-        border-color: $selected_borders_color;
+        border-color: $selected_bd_color;
         background-color: $selected_bg_color;
-        text-shadow: 0 1px transparentize($selected_borders_color, 0.5), 0 0 2px transparentize(white, 0.4);
+        text-shadow: 0 1px transparentize($selected_bd_color, 0.5), 0 0 2px transparentize(white, 0.4);
     }
 
     &:disabled {
-        color: $insensitive_fg_color;
-        border-color: $insensitive_bg_color;
-        background-color: $insensitive_bg_color;
+        color: $disable_fg_color;
+        border-color: $disable_bg_color;
+        background-color: $disable_bg_color;
         text-shadow: none;
     }
 
@@ -2945,9 +2947,9 @@ switch {
         }
 
         &:disabled {
-            color: $insensitive_bg_color;
-            border-color: $insensitive_bg_color;
-            background-color: $insensitive_bg_color;
+            color: $disable_bg_color;
+            border-color: $disable_bg_color;
+            background-color: $disable_bg_color;
         }
     }
 
@@ -2967,7 +2969,7 @@ switch {
     }
 
     &:checked slider {
-        border: 1px solid $selected_borders_color;
+        border: 1px solid $selected_bd_color;
     }
 
     &:disabled slider {
@@ -2992,10 +2994,10 @@ switch {
 
     row:selected & {
         box-shadow: none;
-        border-color: $selected_borders_color;
+        border-color: $selected_bd_color;
 
         &:backdrop {
-            border-color: $selected_borders_color;
+            border-color: $selected_bd_color;
         }
 
         slider:dir(rtl) {
@@ -3008,7 +3010,7 @@ switch {
 
         slider {
             &:checked, & {
-                border-color: $selected_borders_color;
+                border-color: $selected_bd_color;
             }
         }
     }
@@ -3107,7 +3109,7 @@ radio {
     // the borders of the light variant versions of checks and radios are too similar in luminosity to the selected background
     // color, hence we need special casing.
     row:selected & {
-        border-color: $selected_borders_color;
+        border-color: $selected_bd_color;
     }
 
     .osd & {
@@ -3140,7 +3142,7 @@ radio {
             min-height: 14px;
             min-width: 14px;
             background-image: none;
-            background-color: $insensitive_bg_color;
+            background-color: $disable_bg_color;
             box-shadow: none;
             -gtk-icon-shadow: none;
             color: inherit;
@@ -3213,14 +3215,14 @@ treeview.view radio {
     &:selected {
         &:focus, & {
             color: $fg_color;
-            border-color: $selected_borders_color;
+            border-color: $selected_bd_color;
         }
 
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
 
             &:backdrop {
-                color: $insensitive_bg_color;
+                color: $disable_bg_color;
             }
         }
     }
@@ -3249,7 +3251,7 @@ treeview.view radio:selected {
     background-color: $dark_fill;
 
     &:disabled {
-        background-color: $insensitive_bg_color;
+        background-color: $disable_bg_color;
     }
 
     &:backdrop {
@@ -3258,14 +3260,14 @@ treeview.view radio:selected {
         transition: $backdrop_transition;
 
         &:disabled {
-            background-color: $insensitive_bg_color;
+            background-color: $disable_bg_color;
         }
     }
 
     // ...on selected list rows
     row:selected & {
         &:disabled, & {
-            border-color: $selected_borders_color;
+            border-color: $selected_bd_color;
         }
     }
 
@@ -3275,34 +3277,34 @@ treeview.view radio:selected {
         background-color: transparentize($osd_borders_color, 0.2);
 
         &:disabled {
-            background-color: $insensitive_bg_color;
+            background-color: $disable_bg_color;
         }
     }
 }
 
 %scale_highlight {
-    border: 1px solid $selected_borders_color;
+    border: 1px solid $selected_bd_color;
     border-radius: 0px;
     background-color: $selected_bg_color;
 
     &:disabled {
-        background-color: $insensitive_bg_color;
-        border-color: $insensitive_bg_color;
+        background-color: $disable_bg_color;
+        border-color: $disable_bg_color;
     }
 
     &:backdrop {
         border-color: $selected_bg_color;
 
         &:disabled {
-            background-color: $insensitive_bg_color;
-            border-color: $insensitive_bg_color;
+            background-color: $disable_bg_color;
+            border-color: $disable_bg_color;
         }
     }
 
     // ...on selected list rows
     row:selected & {
         &:disabled, & {
-            border-color: $insensitive_bg_color;
+            border-color: $disable_bg_color;
         }
     }
 
@@ -3311,7 +3313,7 @@ treeview.view radio:selected {
         border-color: $osd_borders_color;
 
         &:disabled {
-            border-color: $insensitive_bg_color;
+            border-color: $disable_bg_color;
         }
     }
 }
@@ -3390,8 +3392,8 @@ scale {
 
         &:disabled {
             &:backdrop, & {
-                border-color: $insensitive_bg_color;
-                background-color: $insensitive_bg_color;
+                border-color: $disable_bg_color;
+                background-color: $disable_bg_color;
             }
         }
 
@@ -3401,8 +3403,8 @@ scale {
 
             &:disabled {
                 &:backdrop, & {
-                    border-color: $insensitive_bg_color;
-                    background-color: $insensitive_bg_color;
+                    border-color: $disable_bg_color;
+                    background-color: $disable_bg_color;
                 }
             }
         }
@@ -3421,7 +3423,7 @@ scale {
         }
 
         &:active {
-            border-color: $selected_borders_color;
+            border-color: $selected_bd_color;
         }
 
         &:disabled {
@@ -3441,7 +3443,7 @@ scale {
         // ...on selected list rows
         row:selected & {
             &:disabled, & {
-                border-color: $insensitive_bg_color;
+                border-color: $disable_bg_color;
             }
         }
 
@@ -3475,7 +3477,7 @@ scale {
             &:disabled {
                 @include button(osd-insensitive);
 
-                background-color: $insensitive_bg_color;
+                background-color: $disable_bg_color;
 
                 // solid background needed here
 
@@ -3491,7 +3493,7 @@ scale {
                 &:disabled {
                     @include button(osd-backdrop-insensitive);
 
-                    background-color: $insensitive_bg_color;
+                    background-color: $disable_bg_color;
 
                     // solid background needed here
 
@@ -4220,15 +4222,15 @@ calendar {
         }
 
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
         }
     }
 
     &.highlight {
-        color: $insensitive_fg_color;
+        color: $disable_fg_color;
 
         &:backdrop {
-            color: $insensitive_bg_color;
+            color: $disable_bg_color;
         }
     }
 
@@ -4413,7 +4415,7 @@ placessidebar {
         }
 
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
         }
 
         &:backdrop {
@@ -4424,7 +4426,7 @@ placessidebar {
             }
 
             &:disabled {
-                color: $insensitive_fg_color;
+                color: $disable_fg_color;
             }
         }
 
@@ -4825,7 +4827,7 @@ colorswatch {
         opacity: 0.5;
 
         overlay {
-            border-color: $insensitive_bg_color;
+            border-color: $disable_bg_color;
             box-shadow: none;
         }
     }
@@ -5005,14 +5007,14 @@ headerbar.selection-mode button.titlebutton,
         color: $base_selected_fg_color;
 
         &:disabled {
-            color: $insensitive_bg_color;
+            color: $disable_bg_color;
         }
 
         &:backdrop {
             color: $backdrop_selected_fg_color;
 
             &:disabled {
-                color: $insensitive_bg_color;
+                color: $disable_bg_color;
             }
         }
     }

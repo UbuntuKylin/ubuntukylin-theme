@@ -1,7 +1,3 @@
-* {
-    border-radius: 0px;
-}
-
 /***************
  * Base States *
  ***************/
@@ -10,38 +6,33 @@
     /* normal */
     color: $base_normal_fg_color;
     background-color: $base_normal_bg_color;
-
-
-
+	border-width:1px;
+	border-color:$bd_color;
+	border-radius:4px;
     /* focus */
     &:focus {
         color: $base_focused_fg_color;
         background-color: $base_focused_bg_color;
     }
-
-
     /* prelight */
     &:hover {
         color: $base_prelight_fg_color;
         background-color: $base_prelight_bg_color;
     }
-
     /* active */
     &:active {
         color: $base_active_fg_color;
         background-color: $base_active_bg_color;
     }
-
     /* checked */
     &:checked {
         color: $base_checked_fg_color;
         background-color: $base_checked_bg_color;
     }
-
     /* insensitive */
     &:disabled {
-        color: $insensitive_fg_color;
-        background-color: $insensitive_bg_color;
+        color: $disable_fg_color;
+        background-color: $disable_bg_color;
     }
 }
 
@@ -51,17 +42,11 @@
  * menubar
  */
 menubar {
-   /* @extend %widget_base_class;*/
+  @extend %widget_base_class;
   box-shadow: none;
-  /* For most widget, we don't need box-shadow at all. */
-  /* normal */
   color: $headerbar_normal_fg_color;
   background: $headerbar_normal_bg_image;
-  /* focus */
-  /* prelight */
-  /* active */
-  /* checked */
-  /* insensitive */
+  
 }
 
 /*
@@ -69,20 +54,17 @@ menubar {
  */
 %menuitem_base_class {
     @extend %widget_base_class;
-		background:$menu_color;
-
+	background:$menu_color;
     &:disabled {
-        background-image: image($insensitive_fg_color);
-  		color:$insensitive_fg_color;
+        background-image: image($disable_fg_color);
+  		color:$disable_fg_color;
     }
-
     min-height: 22px;
 }
 
 /* menuitem in menu widget */
 menubar {
-    menu {
-		
+    menu {		
 		border-radius:6px;
         > menuitem {
             @extend %menuitem_base_class;
@@ -95,21 +77,13 @@ menubar {
 /* `	When menuitem in menubar is clicked, this is its hover state! */
 menubar {
     > menuitem {
-       /* @extend %menuitem_base_class;*/
-  box-shadow: none;
-  /* For most widget, we don't need box-shadow at all. */
-  /* normal */
-  color: $headerbar_normal_fg_color;
-  background-color:$bg_color;
-
-  /* focus */
-  /* prelight */
-  /* active */
-  /* checked */
-  /* insensitive */
-        &:hover {
+  		box-shadow: none;
+  		/* normal */
+  		color: $headerbar_normal_fg_color;
+  		background-color:$bg_color;
+  		&:hover {
 			color:$base_normal_fg_color;
-            background-color: $active_color;
+            background-color: $active_bg_color;
         }
     }
 }
@@ -119,37 +93,29 @@ menubar {
  **************/
 %button_base_class {
     @extend %widget_base_class;
-
     background-image: $base_normal_bg_image;
-
     &:hover {
         background-image: $base_prelight_bg_image;
     }
-
     &:active {
         background-image: $base_active_bg_image;
     }
-
     &:checked {
         background-image: $base_checked_bg_image;
     }
-
     &:disabled {
-        background-image: image($insensitive_fg_color);
+        background-image: image($disable_fg_color);
     }
-
     &:backdrop {
         background-image: $base_backdrop_sensitive_bg_image;
     }
-
     &:backdrop:disabled {
-        background-image: image($insensitive_bg_color);
+        background-image: image($disable_bg_color);
     }
 }
 
 button {
     @extend %button_base_class;
-
     min-height: 24px;
 }
 
@@ -164,7 +130,7 @@ combobox {
 
             &:hover {
                 color: $fg_color;
-                background-color: $active_color;
+                background-color: $active_bg_color;
             }
         }
     }
@@ -183,6 +149,7 @@ combobox {
  ****************/
 entry {
     @extend %widget_base_class;
+	background-color:$text_bg_color;
 }
 
 
@@ -305,8 +272,8 @@ spinbutton {
     background-color: $trough_free_space_normal_color;
     border-color: $trough_border_normal_color;
     &:disabled {
-        background-color: $insensitive_bg_color;
-        border-color: $insensitive_bg_color;
+        background-color: $disable_bg_color;
+        border-color: $disable_bg_color;
     }
 
     /* trough - filled part (highlight or progress) */
@@ -314,8 +281,8 @@ spinbutton {
         background-color: $trough_filled_space_normal_color;
         border-color: $trough_border_normal_color;
         &:disabled {
-            background-color: $insensitive_bg_color;
-            border-color: $insensitive_bg_color;
+            background-color: $disable_bg_color;
+            border-color: $disable_bg_color;
         }
     }
 }
@@ -395,14 +362,14 @@ frame {
     border {
         color: $frame_border_normal_color;
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
         }
     }
 
     label {
         color: $frame_label_normal_fg_color;
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
         }
     }
 }
