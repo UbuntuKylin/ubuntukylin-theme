@@ -1,16 +1,13 @@
-* {
-    border-radius: 0px;
-}
 
 /***************
  * Base States *
  ***************/
 %widget_base_class {
     box-shadow: none;
+	border-radius: 4px;
     /* normal */
-    color: $base_normal_fg_color;
-    background-color: $base_normal_bg_color;
-
+    color: $fg_color;
+    background-color: $bg_color;
 
 
     /* focus */
@@ -40,106 +37,49 @@
 
     /* insensitive */
     &:disabled {
-        color: $insensitive_fg_color;
-        background-color: $insensitive_bg_color;
+        color: $disable_fg_color;
+        background-color: $disable_bg_color;
     }
 }
 
 
-
-/*
- * menubar
- */
-menubar {
-   /* @extend %widget_base_class;*/
-  box-shadow: none;
-  /* For most widget, we don't need box-shadow at all. */
-  /* normal */
-  color: $headerbar_normal_fg_color;
-  background: $bg_color;
-  /* focus */
-  /* prelight */
-  /* active */
-  /* checked */
-  /* insensitive */
-}
-
-/*
- * Menuitems
- */
-%menuitem_base_class {
-    @extend %widget_base_class;
-		background:$menu_color;
-
-    &:disabled {
-        background-image: image($insensitive_fg_color);
-  		color:$insensitive_fg_color;
-    }
-
-    min-height: 22px;
-}
-
-/* menuitem in menu widget */
-menubar {
-    menu {
-		
-		border-radius:6px;
-        > menuitem {
-            @extend %menuitem_base_class;
-			margin-left:5px;
-			margin-right:5px;
-        }
-    }
-}
-
-/* `	When menuitem in menubar is clicked, this is its hover state! */
-menubar {
-    > menuitem {
-       /* @extend %menuitem_base_class;*/
-  box-shadow: none;
-  /* For most widget, we don't need box-shadow at all. */
-  /* normal */
-  color: $headerbar_normal_fg_color;
-  background-color:$bg_color;
-
-  /* focus */
-  /* prelight */
-  /* active */
-  /* checked */
-  /* insensitive */
-    }
-}
 
 /**************
  * Buttons *
  **************/
 %button_base_class {
     @extend %widget_base_class;
-
-    //background-image: $base_normal_bg_image;
+	color: $fg_color;
+    background-image: image($button_bg_color);
 
     &:hover {
-        //background-image: $base_prelight_bg_image;
+		color: $active_fg_color;
+        background-image: $base_prelight_bg_image;
     }
 
-    &:active {
-        //background-image: $base_active_bg_image;
+    &:active {		
+		color: $active_fg_color;
+        background-image: $base_active_bg_image;
     }
 
     &:checked {
-        //background-image: $base_checked_bg_image;
+		color: $active_fg_color;
+        background-image: $base_checked_bg_image;
     }
 
     &:disabled {
-        //background-image: image($insensitive_fg_color);
+		color: $disable_fg_color;
+        background-image: image($disable_bg_color);
     }
 
     &:backdrop {
-        //background-image: $base_backdrop_sensitive_bg_image;
+		color: $fg_color;
+        background-image: image($bg_color);
     }
 
     &:backdrop:disabled {
-        //background-image: image($insensitive_bg_color);
+		color: $disable_fg_color;
+        background-image: image($disable_bg_color);
     }
 }
 
@@ -149,18 +89,172 @@ button {
     min-height: 24px;
 }
 
+/*********
+ * Menus *
+ *********/
+%menuitem_base_class {
+    @extend %widget_base_class;
+		background:$menu_color;
+    &:disabled {
+        background-image: image($disable_bg_color);
+  		color:$disable_fg_color;
+    }
+    min-height: 22px;
+}
+menubar,
+.menubar {
+    -GtkWidget-window-dragging: true;
+	@extend %widget_base_class;
+    padding: 0px;
+	border-width:10px;
+	border-color: $fg_color;
+	border-radius:4px;
+	color: $headerbar_normal_fg_color;
+	background-color: $menu_color; 
+    &:backdrop {
+        background-color: $menu_color;  
+    }
+	>decoration{
+		border-radius: 4px;	
+	}
+    > menuitem {
+		border-radius:4px;
+        min-height: 16px;
+        padding: 4px 8px;
+		box-shadow: none;
+		color: $headerbar_normal_fg_color;
+		>decoration{
+			border-radius: 4px;	
+		}
+        &:hover {
+            //Seems like it :hover even with keyboard focus
+            box-shadow: none;
+            color: $active_fg_color;
+			background-color:$active_bg_color;
+        }
+        &:disabled {
+            color: $disable_fg_color;
+            box-shadow: none;
+        }
+    }
+
+    menu {		
+		border-radius:6px;
+        > menuitem {
+            @extend %menuitem_base_class;
+			margin-left:5px;
+			margin-right:5px;
+        }
+    }
+}
+
+menu,
+.menu,
+.context-menu {
+    margin: 4px;
+    padding: 2px 0px;
+    background-color: $menu_color;
+    border: 1px solid $bg_color;
+    .csd & {
+        border: none;
+    }
+    &:backdrop {
+        background-color: $menu_color;
+    }
+    menuitem {
+        min-height: 16px;
+        min-width: 40px;
+        padding: 4px 6px;
+        text-shadow: none;
+        &:hover {
+            box-shadow: none;
+            color: $active_fg_color;
+			background-color:$active_bg_color;
+        }
+        &:disabled {
+            color: $disable_fg_color;
+            &:backdrop {
+                color: $disable_bg_color;
+            }
+        }
+
+        &:backdrop,
+        &:backdrop:hover {
+            color: $backdrop_fg_color;
+            background-color: transparent;
+        }
+
+        // submenu indicators
+        arrow {
+            min-height: 16px;
+            min-width: 16px;
+            &:dir(ltr) {
+                -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+                margin-left: 10px;
+            }
+            &:dir(rtl) {
+                -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
+                margin-right: 10px;
+            }
+        }
+        label {
+            &:dir(rtl), &:dir(ltr) {
+                color: inherit;
+            }
+        }
+    }
+    // overflow arrows
+    > arrow {
+        @include button(undecorated);
+        min-height: 16px;
+        min-width: 16px;
+        padding: 4px;
+        background-color: $menu_color;
+        border-radius: 4px;
+        &:hover {
+            box-shadow: none;
+            color: $active_fg_color;
+			background-color:$active_bg_color;
+        }
+        &.top {
+            margin-top: -6px;
+            border-bottom: 1px solid mix($fg_color, $bg_color, 10%);
+            -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+        }
+
+        &.bottom {
+            margin-bottom: -6px;
+            border-top: 1px solid mix($fg_color, $bg_color, 10%);
+            -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+        }
+
+        &:backdrop {
+            background-color: $backdrop_menu_color;
+        }
+
+        &:disabled {
+            color: $disable_fg_color;
+            background-color: $disable_bg_color;
+            border-color: $disable_bg_color;
+        }
+    }
+}
+
+
 /**************
  * ComboBoxes *
  **************/
 combobox {
+	
     menu {
         menuitem {
+			border-radius: 4px;
             min-height: 23px;
             background-color: $combobox_dropdown_menuitem_normal_bg_color;
 
             &:hover {
                 color: $fg_color;
-                background-color: $active_color;
+                background-color: $active_bg_color;
             }
         }
     }
@@ -178,7 +272,8 @@ combobox {
  * Text Entries *
  ****************/
 entry {
-    @extend %widget_base_class;
+	background-color:    $text_bg_color;
+	border-radius: 4px;
 }
 
 
@@ -235,30 +330,30 @@ entry {
 	&:hover{
 		button{
 			border-radius: 10px;
-			background: #cccccc;		
+			background-image: $notebook_tab_closebutton_active_bg_image;		
 		}
 	}
+
 }
 
 notebook {
-
     > header {
+		border-color: $disable_bd_color;
         > tabs {
             > tab {
                 /* close button in tab */
                 @extend %tab_closebutton;
             }
         }
-
         @extend %tab_border;
     }
 }
 
 
-/*
- * Check, Radio
- * It uses button's style
- */
+/****************************
+ * Check, Radio				*
+ * It uses button's style	*
+ ***************************/
 check, radio {
     @extend %button_base_class;
 	border-radius: 4px;
@@ -271,9 +366,9 @@ radio {
 }
 
 
-/*
+/*********************
  * Switch & its slider
- */
+ *********************/
 switch {
     @extend %widget_base_class;
 }
@@ -283,9 +378,9 @@ slider {
 }
 
 
-/*
+/************
  * SpinButton
- */
+ ************/
 spinbutton {
     @extend %widget_base_class;
 }
@@ -302,8 +397,8 @@ spinbutton {
     background-color: $trough_free_space_normal_color;
     border-color: $trough_border_normal_color;
     &:disabled {
-        background-color: $insensitive_bg_color;
-        border-color: $insensitive_bg_color;
+        background-color: $disable_bg_color;
+        border-color: $disable_bg_color;
     }
 
     /* trough - filled part (highlight or progress) */
@@ -311,8 +406,8 @@ spinbutton {
         background-color: $trough_filled_space_normal_color;
         border-color: $trough_border_normal_color;
         &:disabled {
-            background-color: $insensitive_bg_color;
-            border-color: $insensitive_bg_color;
+            background-color: $disable_bg_color;
+            border-color: $disable_bg_color;
         }
     }
 }
@@ -326,13 +421,13 @@ spinbutton {
     }
 }
 
-/*
- * Scale
- */
+/*********
+ * Scale *
+ *********/
 scale {
     trough {
         @include trough_colors(highlight);
-
+		
         slider {
             /* scale slider */
 
@@ -363,9 +458,9 @@ scale {
 }
 
 
-/*
- * Progessbar
- */
+/**************
+ * Progessbar*
+ **************/
 progressbar {
     trough {
         @include trough_colors(progress);
@@ -385,21 +480,21 @@ progressbar {
 }
 
 
-/*
- * Frame
- */
+/*********
+ * Frame *
+ *********/
 frame {
     border {
         color: $frame_border_normal_color;
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
         }
     }
 
     label {
         color: $frame_label_normal_fg_color;
         &:disabled {
-            color: $insensitive_fg_color;
+            color: $disable_fg_color;
         }
     }
 }
@@ -420,6 +515,7 @@ treeview {
     /* row */
     &.view {
         @extend %widget_base_class;
+		
         &, &:focus { /* hover state is the same as normal state */
             border-style: none solid solid none; /* only right and bottom side has border */
         }
@@ -485,11 +581,209 @@ treeview {
         }
     }
 }
+/************
+ * Toolbars *
+ ************/
+%toolbar {
+    -GtkWidget-window-dragging: true;
+    padding: 4px;
+    background:$change_bg_color;
+}
 
+toolbar {
+    @extend %toolbar;
+    padding: 4px 3px 3px 4px;
+	
+    // on OSD
+    .osd & {
+        background-color: transparent;
+    }
+    // stand-alone OSD toolbars
+    &.osd {
+        padding: 13px;
+        border: none;
+        border-radius: 5px;
+        background-color: $osd_bg_color;
 
-/*
- * Separator
- */
+        &.left,
+        &.right,
+        &.top,
+        &.bottom {
+            border-radius: 0;
+        }
+
+        // positional classes for `attached` osd toolbars
+
+    }
+	button {
+        @extend %widget_base_class;
+        background-image: image($change_bg_color);
+    }
+    // toolbar separators
+    &.horizontal separator {
+        margin: 0 7px 1px 6px;
+    }
+
+    &.vertical separator {
+        margin: 6px 1px 7px 0;
+    }
+
+    &:not(.inline-toolbar):not(.osd) {
+        switch,
+        scale,
+        entry,
+        spinbutton,
+        button {
+            margin-right: 1px;
+
+        }
+    }
+}
+
+//searchbar, location-bar & inline-toolbar
+.inline-toolbar {
+    @extend %toolbar;
+    @extend %darkbar;
+    padding: 3px;
+    border-width: 1px;
+    border-radius: 0  0 5px 5px;
+}
+
+searchbar,
+.location-bar {
+    @extend %toolbar;
+    @extend %darkbar;
+    border-width: 1px;
+    padding: 3px;
+	border-color:$active_bg_color;
+}
+
+%darkbar {
+    border-style: solid;
+    border-color: $fg_color;
+    background-color: $change_bg_color;
+
+    &:backdrop {
+        border-color: $fg_color;
+        background-color: $change_bg_color;
+        box-shadow: none;
+        transition: $backdrop_transition;
+    }
+}
+
+/************
+ * Separator*
+ ***********/
 separator {
     margin: 3px;
+}
+
+/*********
+ * Links *
+ *********/
+
+%link,
+*:link {
+    color: $link_fg_color;
+    &:visited {
+        color: $link_visited_fg_color;
+        *:selected & {
+            color: $link_selected_fg_color;
+        }
+    }
+
+    &:hover {
+        color: $link_active_fg_color;
+        *:selected & {
+            color: $link_selected_fg_color;
+        }
+    }
+
+    &:active {
+        color: $link_active_fg_color;
+        *:selected & {
+            color: $link_selected_fg_color;
+        }
+    }
+
+    &:backdrop {
+        &:backdrop:hover, &:backdrop:hover:selected, & {
+            color: $selected_bg_color;
+        }
+    }
+
+    @at-root %link_selected,
+    &:selected,
+    *:selected & {
+        color: mix($selected_fg_color, $selected_bg_color, 80%);
+    }
+}
+
+button:link,
+button:visited {
+    @extend %undecorated_button;
+    @extend *, :link;
+    text-shadow: none;
+    &:hover,
+    &:active,
+    &:checked {
+        @extend %undecorated_button;
+        text-shadow: none;
+    }
+
+    > label {
+        @extend %link;
+        text-decoration-line: underline;
+    }
+}
+
+/*********
+ * Emoji *
+ ********/
+
+popover.emoji-picker { 
+	padding-left: 0;
+    padding-right: 0;
+}
+
+button.emoji-section {
+    border-color: transparent;
+    border-width: 3px;
+    border-style: none none solid;
+    border-radius: 0;
+    margin: 2px 4px 2px 4px;
+    padding: 3px 0 0;
+    min-width: 32px;
+    min-height: 28px;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    outline-offset: -5px;
+    &:backdrop:not(:checked) {
+        border-color: transparent;
+    }
+    &:hover {
+        border-color: $bg_color;
+    }
+    &:checked {
+        border-color: $selected_bg_color;
+    }
+    label {
+        padding: 0;
+        opacity: 0.55;
+    }
+    &:hover label {
+        opacity: 0.775;
+    }
+    &:checked label {
+        opacity: 1;
+    }
+}
+.emoji {
+    font-size: x-large;
+    padding: 6px;
+    border-radius: 6px;
+    :hover {
+        background: $selected_bg_color;
+    }
 }
