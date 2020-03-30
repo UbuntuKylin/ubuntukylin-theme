@@ -1,3 +1,14 @@
+ubuntukylin-theme (2.0.4) focal; urgency=medium
+
+  * Bugfix only:
+    - Fix that input box style missing.
+    - Fix menu color being covered.
+    - Fix window background shadow lose.
+    - Fix scroll bar missing color.
+    - Fix a syntax error.
+
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Mon, 30 Mar 2020 22:31:07 +0800
+
 ubuntukylin-theme (2.0.3) focal; urgency=medium
 
   * Update the boot animation.
