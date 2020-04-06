@@ -1,26 +1,67 @@
-$bg_color: #0C0C0D;
+$bg_color: #0c0c0d;
 $fg_color: #ffffff;
 $bd_color: $bg_color;
-
+$hover_bg_color:#3D6BE5;
+$hover_fg_color:#fff;
+$hover_bd_color:$hover_bg_color;
 $active_bg_color: #3D6BE5;
-$active_fg_color: #ffffff;
+$active_fg_color: #fff;
 $active_bd_color: $active_bg_color;
-
-$disable_bg_color: #1C1C1E;
-$disable_fg_color: #48484C;
-$disable_bd_color:$disable_bg_color;
-
-$selected_fg_color: $active_fg_color;
-$selected_bg_color: $active_bg_color;
+$selected_bg_color: #3D6BE5;
+$selected_fg_color: #fff;
 $selected_borders_color: $selected_bg_color;
+$disable_bg_color:#1C1C1E;
+$disable_fg_color:#474747;
+$disable_bd_color: $disable_bg_color;
+$backdrop_bg_color:#1C1C1E;
+$backdrop_fg_color:#474747;
+$backdrop_bd_color:$backdrop_bg_color;
 
-$button_bg_color:#2C2C2E;
+/* All button color  */
+$button_bg_color:#393A3E;
+$button_fg_color:#fff;
+$button_bd_color:$button_bg_color;
+$bt_hover_bg_color:#3D6BE5;
+$bt_hover_fg_color:#fff;
+$bt_hover_bd_color:$bt_hover_bg_color;
+$bt_active_bg_color:#3D6BE5;
+$bt_active_fg_color:#fff;
+$bt_active_bd_color:$bt_active_bg_color;
+$bt_selected_bg_color: #3D6BE5;
+$bt_selected_fg_color:#fff;
+$bt_selected_borders_color: $selected_bg_color;
+$bt_disable_bg_color: #1C1C1E ;
+$bt_disable_fg_color:#474747;
+$bt_disable_bd_color:$bt_disable_bg_color;
+$bt_backdrop_bg_color:#1C1C1E;
+$bt_backdrop_fg_color:#474747;
+$bt_backdrop_bd_color:$bt_backdrop_bg_color;
 
-$change_bg_color:#1C1C1E;
-/**  The above are all the basic colors, it is recommended to adjust only these colors  **/
+/*For future colors can change*/
+$change_bg_color:#2D2E32 ;
 
 /* Text Entries */
-$text_bg_color:#1C1C1E;
+$text_bg_color: #242424  ;
+
+/**  The above are all the basic colors, it is recommended to adjust only these colors  **/
+
+/*check and radio button color*/
+$crb_bg_color:$bg_color;
+$crb_fg_color: #ffffff;
+$crb_bd_color:#48484D;
+$crb_hover_bg_color: #2D418D  ;
+$crb_hover_fg_color:#2D418D ;
+$crb_hover_bd_color:  #6B8EEB;
+$crb_active_bg_color: #3D6BE5 ;
+$crb_active_fg_color:#ffffff;
+$crb_active_bd_color: #415FC4 ;
+$crb_disable_bg_color: #1C1C1E  ;
+$crb_disable_fg_color: #474747  ;
+$crb_disable_bd_color: #1C1C1E ;
+$crb_backdrop_bg_color:#1C1C1E;
+$crb_backdrop_fg_color: #343438;
+$crb_backdrop_bd_color: #1C1C1E;
+
 
 /** Link **/
 $link_fg_color: $fg_color;
@@ -73,15 +114,14 @@ $base_focused_bg_color: $bg_color;
 $base_backdrop_bg_color: $bg_color;
 $base_checked_bg_color: $base_active_bg_color;
 
-
 /* foreground colors in different states */
 $base_normal_fg_color: $fg_color;
 $base_active_fg_color: $active_fg_color;
 $base_prelight_fg_color: $active_fg_color;
-$base_selected_fg_color: $selected_fg_color;
-$base_focused_fg_color: $selected_fg_color;
+$base_selected_fg_color: $active_fg_color;
+$base_focused_fg_color: $fg_color;
 $base_backdrop_fg_color: $base_normal_fg_color;
-$base_checked_fg_color: $selected_fg_color;
+$base_checked_fg_color: $fg_color;
 
 /* border color in different states */
 $base_normal_border_color: $backdrop_borders_color ;
@@ -91,19 +131,20 @@ $base_selected_border_color: $backdrop_borders_color;
 $base_focused_border_color: $backdrop_borders_color;
 $base_backdrop_border_color: $backdrop_borders_color;
 $base_checked_border_color: $backdrop_borders_color;
+
 /*
  * background image in different states.
  * The color value of bg_image is the same as the bg_color
  */
 $base_normal_bg_image: image($bg_color);
-$base_active_bg_image: image($active_bg_color);
-$base_prelight_bg_image: image($active_bg_color);
-$base_insensitive_bg_image: image($disable_bg_color);
-$base_focused_bg_image: image($selected_bg_color);
+$base_active_bg_image: image($base_active_bg_color);
+$base_prelight_bg_image: image($base_prelight_bg_color);
+$base_insensitive_bg_image: image($bg_color);
+$base_focused_bg_image: image($base_focused_bg_color);
 $base_backdrop_bg_image: image($base_backdrop_bg_color);
-$base_backdrop_sensitive_bg_image: image($disable_bg_color);
-$base_backdrop_insensitive_bg_image: image($disable_bg_color);
-$base_checked_bg_image: image($selected_bg_color);
+$base_backdrop_sensitive_bg_image: image($bg_color);
+$base_backdrop_insensitive_bg_image: image($bg_color);
+$base_checked_bg_image: image($base_checked_bg_color);
 
 /*
  * ComboBox
@@ -118,9 +159,8 @@ $combobox_dropdown_menuitem_normal_bg_color: #1C1C1E;
 $notebook_tab_normal_bg_color: $change_bg_color;
 $notebook_tab_checked_bg_color: $bg_color;
 $notebook_tab_closebutton_normal_bg_image: image($change_bg_color);
-$notebook_tab_closebutton_active_bg_image: image(#1C1C1E);
+$notebook_tab_closebutton_active_bg_image: image(#cccccc);
 $notebook_tab_closebutton_checked_bg_image: image($notebook_tab_checked_bg_color);
-
 
 /*
  * Scrollbar
@@ -133,7 +173,6 @@ $scrollbar_slider_normal_color: #3D3D41;
 $scrollbar_slider_active_color: #85858C;
 $scrollbar_slider_prelight_color: #616166;
 $scrollbar_slider_insensitive_color: $disable_bg_color;
-
 
 /*
  * Scale & Progressbar
@@ -155,11 +194,12 @@ $frame_border_normal_color: $base_normal_border_color;
 /*
  * Treeview
  */
-$treeview_view_selected_bg_color: $base_active_bg_color;
-$treeview_view_prelight_bg_color: $base_prelight_bg_color;
-$treeview_header_bg_image: image(#f0f0f0);
-$treeview_generic_border_color: #0C0C0D;
+$treeview_view_selected_bg_color: #18181A;
 
+/*
+*ToolBar
+*/
+$toolbar_button_bg_color:$change_bg_color;
 
 /*
  * Headerbar
@@ -186,5 +226,7 @@ $headerbar_backdrop_border_color: #0C0C0D;
 /*
  * menu
  */
-$menu_color:$change_bg_color;
-$menuitem_insensitive_bg_color:$disable_bg_color;
+$menu_color:#3D3E42;
+$menuitem_bg_color: $menu_color;
+$menuitem_insensitive_bg_color:$menu_color;
+
