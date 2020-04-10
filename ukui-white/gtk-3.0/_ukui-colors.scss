@@ -10,15 +10,15 @@ $active_bd_color: $active_bg_color;
 $selected_bg_color: #3D6BE5;
 $selected_fg_color: #F8F8F8;
 $selected_borders_color: $selected_bg_color;
-$disable_bg_color:#F8F8F8;
-$disable_fg_color:#c0c0c0;
+$disable_bg_color:#E6E6E6;
+$disable_fg_color:#cccccc;
 $disable_bd_color: $disable_bg_color;
-$backdrop_bg_color:#E9E9E9;
+$backdrop_bg_color:#E6E6E6;
 $backdrop_fg_color:#CCCCCC;
 $backdrop_bd_color:$backdrop_bg_color;
 
 /* All button color  */
-$button_bg_color:#E9E9E9;
+$button_bg_color:#E6E6E6;
 $button_fg_color:#0C0C0D;
 $button_bd_color:$button_bg_color;
 $bt_hover_bg_color:#3D6BE5;
@@ -30,16 +30,18 @@ $bt_active_bd_color:$bt_active_bg_color;
 $bt_selected_bg_color: #3D6BE5;
 $bt_selected_fg_color:#F8F8F8;
 $bt_selected_borders_color: $selected_bg_color;
-$bt_disable_bg_color: #E9E9E9 ;
+$bt_disable_bg_color: #E6E6E6 ;
 $bt_disable_fg_color:#CCCCCC;
 $bt_disable_bd_color:$bt_disable_bg_color;
-$bt_backdrop_bg_color:#E9E9E9;
+$bt_backdrop_bg_color:#E6E6E6;
 $bt_backdrop_fg_color:#CCCCCC;
 $bt_backdrop_bd_color:$bt_backdrop_bg_color;
 
 /*For future colors can change*/
 $change_bg_color:#E6E6E6;
 
+/*sp_bd_color*/
+$sp_bd_color:#c0c0c0;
 /* Text Entries */
 $text_bg_color: #E7E7E7 ;
 
@@ -91,8 +93,6 @@ $drop_target_color: $bg_color;
 //colors for the backdrop state, derived from the main colors.
 $backdrop_base_color: darken($bg_color, 1%);
 $backdrop_text_color: mix($fg_color, $backdrop_base_color, 80%);
-$backdrop_bg_color: $bg_color;
-$backdrop_fg_color: mix($fg_color, $backdrop_bg_color, 50%);
 $backdrop_selected_fg_color: $backdrop_base_color;
 $backdrop_borders_color: 	$disable_bd_color;
 $backdrop_dark_fill: mix($backdrop_borders_color, $backdrop_bg_color, 35%);
