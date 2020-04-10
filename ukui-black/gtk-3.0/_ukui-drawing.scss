@@ -66,21 +66,21 @@
 
     @if $t == insensitive {
         color: $disable_fg_color;
-        border-color: $disable_bg_color;
+        border-color: $disable_bd_color;
         background-color: $disable_bg_color;
         box-shadow: $_entry_edge;
     }
 
     @if $t == backdrop {
         color: $backdrop_text_color;
-        border-color: $backdrop_borders_color;
+        border-color: $bd_color;
         background-color: $backdrop_base_color;
         box-shadow: $_blank_edge;
     }
 
     @if $t == backdrop-insensitive {
         color: $disable_fg_color;
-        border-color: $disable_bg_color;
+        border-color: $disable_bd_color;
         background-color: $disable_bg_color;
         box-shadow: $_blank_edge;
     }
@@ -297,7 +297,7 @@
             color: if($tc != $fg_color, mix($tc, $_bg, 50%), $disable_fg_color);
         }
 
-        border-color: $disable_bg_color;
+        border-color: $disable_bd_color;
 
         $button_fill: image($_bg) !global;
 
@@ -373,7 +373,7 @@
         $_bc: $_bg;
 
         label, & {
-            color: if($c != $bg_color, mix($tc, $_bg, 35%), $disable_bg_color);
+            color: if($c != $bg_color, mix($tc, $_bg, 35%), $disable_fg_color);
         }
 
         border-color: if($c != $bg_color, $_bc, $backdrop_borders_color);
@@ -396,7 +396,7 @@
         $_bc: $_bg;
 
         label {
-            color: if($c != $bg_color, mix($tc, $_bg, 35%), $disable_bg_color);
+            color: if($c != $bg_color, mix($tc, $_bg, 35%), $disable_fg_color);
         }
 
         border-color: if($c != $bg_color, $_bc, $backdrop_borders_color);

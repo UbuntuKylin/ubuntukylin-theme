@@ -7,36 +7,30 @@
     color: $fg_color;
 	box-shadow:none;
     background-color: $bg_color;
-	border-color:$bd_color;
+	border-style:none;
     &:focus {
         color: $fg_color;
         background-color: $bg_color;
-		border-color:$bd_color;
     }
     &:hover {
         color: $hover_fg_color;
         background-color: $hover_bg_color;
-		border-color:$hover_bd_color;
     }
     &:active {
         color: $active_fg_color;
         background-color: $active_bg_color;
-		border-color:$active_bd_color;    
 	}
     &:checked {
         color: $active_fg_color;
         background-color: $active_bg_color;
-		border-color:$active_bd_color;    
 	}
     &:disabled {
         color: $disable_fg_color;
         background-color: $disable_bg_color;
-		border-color:$disable_bd_color;
     }
 	&:backdrop{
 		color:$backdrop_bg_color;
 		background-color:$backdrop_fg_color;
-		border-color:$backdrop_bd_color;	
 	}
 }
 
@@ -46,12 +40,12 @@
  * Buttons *
  **************/
 %button_base_class {
+	@extend %widget_base_class;
     box-shadow: none;
 	border-radius: 4px;
-	@extend %widget_base_class;
 	color: $button_fg_color;
     background-image: image($button_bg_color);
-
+	border-style:none;
     &:hover {
 		color: $bt_hover_fg_color;
         background-image: image($bt_hover_bg_color);
@@ -78,7 +72,7 @@
     }
 
     &:backdrop:disabled {
-		color: $bt_disable_fg_color;
+		color: $hover_bg_color;
         background-image: image($bt_disable_bg_color);
     }
 }
@@ -169,7 +163,7 @@ menu,
         &:disabled {
             color: $disable_fg_color;
             &:backdrop {
-                color: $disable_bg_color;
+                color: $disable_fg_color;
             }
         }
 
@@ -229,7 +223,7 @@ menu,
         &:disabled {
             color: $disable_fg_color;
             background-color: $disable_bg_color;
-            border-color: $disable_bg_color;
+            border-color: $disable_bd_color;
         }
     }
 }
@@ -312,17 +306,20 @@ entry {
 %tab_closebutton {
     button {
 		border-radius:10px;
+		border-width:0;
         background-image: $notebook_tab_closebutton_normal_bg_image;
     }
     &:checked {
         button {
 			border-radius:10px;
+			border-width:0;
             background-image: $notebook_tab_closebutton_checked_bg_image;
         }
     }
 	&:hover{
 		button{
 			border-radius: 10px;
+			border-width:0;
 			background-image: $notebook_tab_closebutton_active_bg_image;		
 		}
 	}
@@ -331,14 +328,14 @@ entry {
 
 notebook {
     > header {
-		border-color: $disable_bd_color;
+		//border-color: $disable_bd_color;
         > tabs {
             > tab {
                 /* close button in tab */
                 @extend %tab_closebutton;
             }
         }
-        @extend %tab_border;
+        //@extend %tab_border;
     }
 }
 
@@ -731,6 +728,7 @@ treeview.view {
         &:backdrop, & {
             border-left-color: mix($selected_fg_color, $selected_bg_color, 50%);
             border-top-color: transparentize($fg_color, 0.9);
+			background-color: $backdrop_bg_color;
         }
     }
     &:disabled {
@@ -756,6 +754,7 @@ treeview.view {
     &:backdrop {
         border-left-color: mix($backdrop_fg_color, $backdrop_bg_color, 50%);
         border-top: $backdrop_bg_color;
+		color:$backdrop_fg_color;
     }
 
     &:drop(active) {
@@ -994,11 +993,11 @@ toolbar {
 
     }
 	button {
-        @extend %button_base_class;
+		box-shadow: none;
+		border-radius: 4px;
+		color: $button_fg_color;
         background-image: image($toolbar_button_bg_color);
-		&:disabled{
-        	background-image: image($toolbar_button_bg_color);
-		}
+
     }
     // toolbar separators
     &.horizontal separator {
@@ -1036,16 +1035,16 @@ searchbar,
     @extend %darkbar;
     border-width: 1px;
     padding: 3px;
-	border-color:$active_bg_color;
+	border-color:$sp_bd_color;
 }
 
 %darkbar {
     border-style: solid;
-    border-color: $fg_color;
+    border-color: $sp_bd_color;
     background-color: $change_bg_color;
 
     &:backdrop {
-        border-color: $fg_color;
+        border-color: $sp_bd_color;
         background-color: $change_bg_color;
         box-shadow: none;
         transition: $backdrop_transition;
