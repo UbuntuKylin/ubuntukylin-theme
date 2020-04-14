@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#808080;}
-	.st1{fill:none;stroke:#808080;stroke-miterlimit:10;}
-</style>
-<g>
-	<g>
-		<path class="st0" d="M13.2,2.4l1.3,1.3l-8.7,8.5c-0.1,0.1-0.4,0.2-1,0.5c-0.4,0.2-0.9,0.4-1.4,0.6C3.8,13,4,12.5,4.2,12
-			c0.3-0.5,0.4-0.9,0.5-0.9L13.2,2.4 M13.2,1l-0.4,0.4l-9,9.1l0,0c-0.1,0.1-0.3,0.4-0.6,1.1c-0.3,0.6-0.7,1.5-1,2.5L2,15l0.9-0.3
-			c0.9-0.3,1.7-0.6,2.5-1c0.6-0.3,1-0.5,1.1-0.6l0,0L16,3.8L13.2,1L13.2,1z"/>
-	</g>
-	<path class="st0" d="M2,6H0c0.3,0.8,2,3.3,2.5,4C2.9,9.3,4.6,6.8,5,6H3"/>
-</g>
-<path class="st1" d="M2,8c0-3.3,2.7-6,6-6c1.4,0,2.6,0.5,3.6,1.2"/>
-</svg>
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:#1f2022;opacity:0.75;}</style></defs><title>error-correct-symbolic</title><path class="cls-1" d="M13,2.41,14.59,4,6.73,11.85a2,2,0,0,1-.67.45l-2.27.91.91-2.27,0-.06,0-.06a1.7,1.7,0,0,1,.36-.51l.29-.3h0L13,2.41M13,1,4.44,9.56l0,0a2.62,2.62,0,0,0-.57.83l-.07.14L2,15l4.43-1.77a3,3,0,0,0,1-.67L16,4,13,1Z"/><polygon class="cls-1" points="5 6 3.48 8.44 2.89 9.37 2.5 10 0 6 5 6"/><path class="cls-1" d="M11.56,2.44l-.73.73A6.28,6.28,0,0,0,8,2.5C5.21,2.5,3.26,4.29,3,6H2c.25-2.28,2.69-4.5,6-4.5A7.06,7.06,0,0,1,11.56,2.44Z"/></svg>

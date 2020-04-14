@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="document-open" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#808080;}
-</style>
-<title>16</title>
-<g id="_16">
-	<polygon class="st0" points="13,8 13,0 2,0 2,14 3,14 3,12 3,0.9 12,1 12,8 13,9 13,13 7,13 7,14 14,14 14,9 	"/>
-	<path class="st0" d="M8,2L2,0v14l6,2v-3.6 M7,14.7l-4-1.5V1.4l4,1.4"/>
-</g>
-</svg>
+<svg id="document-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:#1f2022;opacity:0.75;}</style></defs><title>document-open-symbolic</title><path class="cls-1" d="M14,8V2a2,2,0,0,0-2-2H3V13.8l.6.2,2.7.9A2.09,2.09,0,0,0,8.7,14H13a2,2,0,0,0,2-2V9ZM6.7,14,4,13V1.4L7.3,2.6a.88.88,0,0,1,.7.9v9.6A.93.93,0,0,1,6.7,14ZM14,12a1.08,1.08,0,0,1-1,1H9V3.4A1.92,1.92,0,0,0,7.6,1.5L5.8.9,12,1a1,1,0,0,1,1,1V8l1,1Z"/></svg>

@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="视图" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#808080;}
-</style>
-<path class="st0" d="M0,1v13h6c1,0,1.6,0.8,1.6,0.8L8,15.3l0.4-0.5c0,0,0.7-0.8,1.6-0.8h6V1h-6C9,1,8.4,1.5,8,1.8C7.6,1.5,7,1,6,1H0
-	z M1,2h5c1,0,1.6,0.8,1.6,0.8L8,3.3l0.4-0.5C8.4,2.8,9,2,10,2h5v11h-5c-1,0-1.6,0.5-2,0.8C7.5,13.3,6.8,13,6,13H1V2z M2,4v1h4V4H2z
-	 M9,4v1h4V4H9z M2,6v1h4V6H2z M9,6v1h4V6H9z M2,8v1h4V8H2z M9,8v1h4V8H9z M2,10v1h4v-1H2z M9,10v1h4v-1H9z"/>
-</svg>
+<svg id="视图" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:gray;}</style></defs><title>view-dual-symbolic</title><path class="cls-1" d="M0,3v9a2,2,0,0,0,2,2H6a3.5,3.5,0,0,1,2,1,3.94,3.94,0,0,1,2-1h4a2,2,0,0,0,2-2V3a2,2,0,0,0-2-2H10a3.11,3.11,0,0,0-2,.8A3.11,3.11,0,0,0,6,1H2A2,2,0,0,0,0,3ZM1,3A1,1,0,0,1,2,2H6A3.5,3.5,0,0,1,8,3a3.5,3.5,0,0,1,2-1h4a1,1,0,0,1,1,1v9a1,1,0,0,1-1,1H10a3.11,3.11,0,0,0-2,.8A2.79,2.79,0,0,0,6,13H2a1,1,0,0,1-1-1ZM2,4V5H6V4ZM9,4V5h4V4ZM2,6V7H6V6ZM9,6V7h4V6ZM2,8V9H6V8ZM9,8V9h4V8ZM2,10v1H6V10Zm7,0v1h4V10Z"/></svg>
