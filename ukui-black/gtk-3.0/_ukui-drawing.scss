@@ -72,7 +72,7 @@
     }
 
     @if $t == backdrop {
-        color: $backdrop_text_color;
+        color: $backdrop_fg_color;
         border-color: $bd_color;
         background-color: $backdrop_base_color;
         box-shadow: $_blank_edge;
@@ -234,7 +234,7 @@
 
         background-image: image($bg_color);
 
-        @include _button_text_shadow($tc, $c);
+        //@include _button_text_shadow($tc, $c);
     }
     @else if $t == hover {
         //
@@ -246,7 +246,7 @@
 
         $button_fill: linear-gradient(to bottom, lighten($c, 6%), $c 60%, lighten($c, 4%)) !global;
 
-        @include _button_text_shadow($tc, lighten($c, 6%));
+       // @include _button_text_shadow($tc, lighten($c, 6%));
 
         background-image: image($bg_color);
     }
@@ -259,7 +259,7 @@
         outline-color: transparentize($tc, 0.7);
         border-color: if($c != $bg_color, _border_color($c, true), $alt_borders_color);
 
-        @include _button_text_shadow($tc, $c);
+        //@include _button_text_shadow($tc, $c);
 
         background-image: linear-gradient(to bottom, lighten($c, 5%) 20%, $c 90%);
     }

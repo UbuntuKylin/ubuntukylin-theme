@@ -72,7 +72,7 @@
     }
 
     &:backdrop:disabled {
-		color: $hover_bg_color;
+		color: $bt_disable_fg_color;
         background-image: image($bt_disable_bg_color);
     }
 }
@@ -417,9 +417,9 @@ radio {
 		border-color:$crb_active_bd_color;        
         color: $crb_active_fg_color;
         &:disabled {
-		    background-image: image(darken($crb_active_bg_color,20%));
-			border-color:darken($crb_active_bd_color,20%);        
-		    color: darken($crb_active_fg_color,20%);
+		    background-image: image($crb_disable_bg_color);
+			border-color:$crb_disable_bd_color;
+        	color: $crb_disable_fg_color;	
         }	
 	}
     &:selected {
@@ -427,9 +427,9 @@ radio {
 		border-color:$crb_active_bd_color;        
         color: $crb_active_fg_color;	
         &:disabled {
-		    background-image: image($crb_active_bg_color);
-			border-color:$crb_active_bd_color;        
-		    color: $crb_active_fg_color;	
+		    background-image: image($crb_disable_bg_color);
+			border-color:$crb_disable_bd_color;
+        	color: $crb_disable_fg_color;	
         }
 	}
     &:disabled {
@@ -933,6 +933,7 @@ scrolledwindow {
         background-image: $headerbar_backdrop_bg_image;
     }
     button.titlebutton {
+		border-radius:6px;
         color: $headerbar_button_normal_fg_color;
         background-image:$headerbar_button_normal_bg_image;
         border-width: 0px;
@@ -997,7 +998,6 @@ toolbar {
 		border-radius: 4px;
 		color: $button_fg_color;
         background-image: image($toolbar_button_bg_color);
-
     }
     // toolbar separators
     &.horizontal separator {
@@ -1044,6 +1044,7 @@ searchbar,
     background-color: $change_bg_color;
 
     &:backdrop {
+		color:$backdrop_fg_color;
         border-color: $sp_bd_color;
         background-color: $change_bg_color;
         box-shadow: none;
