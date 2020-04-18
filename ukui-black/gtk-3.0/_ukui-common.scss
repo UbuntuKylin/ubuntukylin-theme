@@ -524,12 +524,11 @@ menu menuitem {
 	}
 }
 
-treeview.view check,
-treeview.view radio {
+treeview.view check {
 		@extend %check;
 		background-image: image($bg_color);
 		&:checked{
-				background-image: image($bg_color);
+				background-image: image($crb_active_bg_color);
 				border-color:$crb_active_bd_color;        
 				color: $crb_active_fg_color;
 			&:disabled {
