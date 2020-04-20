@@ -16,15 +16,6 @@
     //
     // Helper mixin to stack up to box-shadows;
     //
-    $shadows: null;
-
-    @each $shadow in $list {
-        @if $shadow != none {
-            $shadows: $shadows, $shadow;
-        }
-    }
-
-    box-shadow: $shadows;
 }
 
 // entries
@@ -189,16 +180,6 @@
     // TODO: this functions needs a way to deal with special cases
     //
 
-    $_shadow: _text_shadow_color($tc, $bg);
-
-    @if lightness($tc) < 50% {
-        text-shadow: 0 1px $_shadow;
-        -gtk-icon-shadow: 0 1px $_shadow;
-    }
-    @else {
-        text-shadow: 0 -1px $_shadow;
-        -gtk-icon-shadow: 0 -1px $_shadow;
-    }
 }
 
 @mixin button($t, $c: $bg_color, $tc: $fg_color, $edge: none) {
@@ -332,7 +313,7 @@
         //
         // backdrop button
         //
-        $_bg: if($c != $bg_color, $c, $backdrop_bg_color);
+        $_bg: if($c != $bg_color, $c, $change_bg_color);
         $_bc: $c;
 
         label, & {
