@@ -730,8 +730,7 @@ treeview.view {
         &:backdrop, & {
             border-left-color: mix($selected_fg_color, $selected_bg_color, 50%);
             border-top-color: transparentize($fg_color, 0.9);
-			background-color: $treeview_view_selected_bg_color;
-			color: $backdrop_fg_color;
+
         }
     }
     &:disabled {
