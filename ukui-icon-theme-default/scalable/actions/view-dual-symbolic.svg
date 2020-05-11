@@ -1,1 +1,13 @@
-<svg id="视图" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:gray;}</style></defs><title>view-dual-symbolic</title><path class="cls-1" d="M0,3v9a2,2,0,0,0,2,2H6a3.5,3.5,0,0,1,2,1,3.94,3.94,0,0,1,2-1h4a2,2,0,0,0,2-2V3a2,2,0,0,0-2-2H10a3.11,3.11,0,0,0-2,.8A3.11,3.11,0,0,0,6,1H2A2,2,0,0,0,0,3ZM1,3A1,1,0,0,1,2,2H6A3.5,3.5,0,0,1,8,3a3.5,3.5,0,0,1,2-1h4a1,1,0,0,1,1,1v9a1,1,0,0,1-1,1H10a3.11,3.11,0,0,0-2,.8A2.79,2.79,0,0,0,6,13H2a1,1,0,0,1-1-1ZM2,4V5H6V4ZM9,4V5h4V4ZM2,6V7H6V6ZM9,6V7h4V6ZM2,8V9H6V8ZM9,8V9h4V8ZM2,10v1H6V10Zm7,0v1h4V10Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="视图" opacity="0.8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1F2022;}
+</style>
+<title>view-dual-symbolic</title>
+<path class="st0" d="M0,3v9c0,1.1,0.9,2,2,2h4c0.8,0.1,1.5,0.5,2,1c0.6-0.5,1.3-0.9,2-1h4c1.1,0,2-0.9,2-2V3c0-1.1-0.9-2-2-2h-4
+	C9.3,1,8.6,1.3,8,1.8C7.4,1.3,6.7,1,6,1H2C0.9,1,0,1.9,0,3z M1,3c0-0.6,0.4-1,1-1h4c0.8,0.1,1.5,0.5,2,1c0.5-0.5,1.2-0.9,2-1h4
+	c0.6,0,1,0.4,1,1v9c0,0.6-0.4,1-1,1h-4c-0.7,0-1.4,0.3-2,0.8C7.5,13.3,6.7,13,6,13H2c-0.6,0-1-0.4-1-1V3z M2,4v1h4V4H2z M10,4v1h4V4
+	H10z M2,6v1h4V6H2z M10,6v1h4V6H10z M2,8v1h4V8H2z M10,8v1h4V8H10z M2,10v1h4v-1H2z M10,10v1h4v-1H10z"/>
+</svg>

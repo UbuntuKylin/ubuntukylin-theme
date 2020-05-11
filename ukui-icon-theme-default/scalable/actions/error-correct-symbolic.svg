@@ -1,1 +1,19 @@
-<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:#1f2022;opacity:0.75;}</style></defs><title>error-correct-symbolic</title><path class="cls-1" d="M13,2.41,14.59,4,6.73,11.85a2,2,0,0,1-.67.45l-2.27.91.91-2.27,0-.06,0-.06a1.7,1.7,0,0,1,.36-.51l.29-.3h0L13,2.41M13,1,4.44,9.56l0,0a2.62,2.62,0,0,0-.57.83l-.07.14L2,15l4.43-1.77a3,3,0,0,0,1-.67L16,4,13,1Z"/><polygon class="cls-1" points="5 6 3.48 8.44 2.89 9.37 2.5 10 0 6 5 6"/><path class="cls-1" d="M11.56,2.44l-.73.73A6.28,6.28,0,0,0,8,2.5C5.21,2.5,3.26,4.29,3,6H2c.25-2.28,2.69-4.5,6-4.5A7.06,7.06,0,0,1,11.56,2.44Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.75;enable-background:new    ;}
+	.st1{fill:#1F2022;}
+	.st2{opacity:0.75;fill:#1F2022;enable-background:new    ;}
+</style>
+<g class="st0">
+	<path class="st1" d="M13,2.4L13,2.4L14.6,4l-7.9,7.9c-0.2,0.2-0.4,0.3-0.7,0.4l-2.3,0.9l0.9-2.3l0.1-0.1l0,0l0,0
+		c0.1-0.2,0.2-0.4,0.4-0.5L13,2.4C13,2.4,13,2.4,13,2.4 M13,1.4c-0.3,0-0.5,0.1-0.7,0.3L4.4,9.6C4.2,9.8,4,10.1,3.9,10.4l-0.1,0.1
+		l-1.4,3.4c-0.1,0.3,0.1,0.7,0.5,0.7c0.1,0,0.1,0,0.2,0l3.3-1.3c0.4-0.2,0.7-0.4,1-0.7l7.9-7.9c0.4-0.4,0.4-1,0-1.4l-1.6-1.6
+		C13.5,1.5,13.3,1.4,13,1.4L13,1.4z"/>
+</g>
+<polygon class="st2" points="5,6 3.5,8.4 2.9,9.4 2.5,10 0,6 "/>
+<path class="st2" d="M11.6,2.4l-0.7,0.7C10,2.7,9,2.5,8,2.5C5.2,2.5,3.3,4.3,3,6H2c0.3-2.3,2.7-4.5,6-4.5C9.2,1.5,10.5,1.8,11.6,2.4
+	z"/>
+</svg>

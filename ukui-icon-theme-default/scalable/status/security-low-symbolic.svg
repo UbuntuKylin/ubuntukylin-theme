@@ -1,3 +1,20 @@
-<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <path class="error" d="M8 .262S6.364 3 2 3c0 9.31 6 12.594 6 12.594S14 12.31 14 3C9.636 3 8 .262 8 .262zm0 1.386c.272.312.257.42.781.795.912.654 2.362 1.19 4.153 1.391-.174 3.943-1.439 6.642-2.73 8.352-.982 1.298-1.74 1.878-2.204 2.193-.463-.315-1.222-.895-2.203-2.193-1.292-1.71-2.557-4.409-2.73-8.352 1.79-.2 3.24-.737 4.152-1.39.524-.377.51-.483.781-.796zM7 4v3l.5 2h1L9 7V4zm1 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" style="marker:none" color="#000" overflow="visible" fill="#f22c42"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.75;}
+	.st1{fill:#1F2022;}
+</style>
+<g id="图层_170" class="st0">
+	<title>16</title>
+	<g id="_16">
+		<g>
+			<path class="st1" d="M13,1c0.6,0,1,0.4,1,1v5.5c0,4.9-4.5,7.5-6,7.5s-6-2.6-6-7.5V2c0-0.6,0.4-1,1-1H13 M13,0H3C1.9,0,1,0.9,1,2
+				v5.5C1,13,6,16,8,16s7-3,7-8.5V2C15,0.9,14.1,0,13,0L13,0z"/>
+		</g>
+	</g>
+</g>
+<g id="图层_2_1_" class="st0">
+</g>
 </svg>

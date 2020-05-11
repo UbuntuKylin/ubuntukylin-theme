@@ -1,4 +1,19 @@
-<svg height="16" width="16.001" xmlns="http://www.w3.org/2000/svg">
-    <path color="#000" d="M8.64.668C6.482.67 4.648 1.999 3.772 3.9l-.061.13-.139.01C1.578 4.184 0 5.91 0 8.008 0 10.201 1.716 12 3.838 12H6v-1H3.838C2.281 11 1 9.679 1 8.008c0-1.597 1.184-2.866 2.644-2.973l.723-.05.31-.663v-.004c.729-1.58 2.213-2.649 3.961-2.65 2.368.002 4.292 1.952 4.405 4.447v.01l.05.776.704.296a1.944 1.944 0 0 1 1.195 1.815c.01 1.114-.846 1.988-1.871 1.988H9.998v1h3.123c1.591 0 2.877-1.35 2.877-2.988a2.958 2.958 0 0 0-1.805-2.735l-.136-.058-.01-.149C13.911 3.077 11.56.67 8.642.668z" fill="gray" font-family="sans-serif" font-weight="400" overflow="visible" style="line-height:normal;-inkscape-font-specification:sans-serif;text-indent:0;text-align:start;text-decoration-line:none;text-transform:none;marker:none"/>
-    <path class="error" color="#000" d="M7.291 6v2.662c0 .793.03 1.517.086 2.168.057.642.128 1.284.213 1.926h.82c.085-.642.157-1.284.213-1.926.057-.651.086-1.375.086-2.168V6zm.71 8.102c-.294 0-.524.094-.694.283a.965.965 0 0 0-.256.666c0 .255.086.477.256.666.17.189.4.283.693.283.293 0 .524-.094.694-.283a.965.965 0 0 0 .255-.666.965.965 0 0 0-.255-.666c-.17-.19-.401-.283-.694-.283z" fill="#da1636" font-family="sans-serif" font-weight="400" overflow="visible" style="line-height:normal;font-variant-ligatures:none;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;shape-padding:0;isolation:auto;mix-blend-mode:normal;marker:none" white-space="normal"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_2_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.75;}
+	.st1{fill:none;stroke:#1F2022;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:#E40000;}
+</style>
+<g id="云_2_" class="st0">
+	<path class="st1" d="M3.9,10.9c-1.9,0-3.4-1.7-3.4-3.7S2,3.5,3.9,3.5c0.7,0,1.4,0.2,1.9,0.6"/>
+	<path class="st1" d="M13.2,4.7c1.3,0.4,2.3,1.7,2.3,3.2c0,1.8-1.4,3.3-3,3.3"/>
+	<path class="st1" d="M5.8,4.2c0.6-1.6,2-2.7,3.7-2.7c1.9,0,3.5,1.4,3.8,3.4"/>
+</g>
+<g id="_16-3">
+	<path class="st2" d="M9,7L9,7c0.6,0,1,0.4,1,1v3c0,0.6-0.4,1-1,1l0,0c-0.6,0-1-0.4-1-1V8C8,7.4,8.4,7,9,7z"/>
+	<path class="st2" d="M9,13L9,13c0.6,0,1,0.4,1,1l0,0c0,0.6-0.4,1-1,1l0,0c-0.6,0-1-0.4-1-1l0,0C8,13.4,8.4,13,9,13z"/>
+</g>
 </svg>

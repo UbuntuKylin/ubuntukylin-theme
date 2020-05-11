@@ -1,3 +1,11 @@
-<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <path class="warning" d="M8 0L5.69 1.65l-2.833.221-.709 2.75-2.027 1.99 1.225 2.563L1.072 12l2.586 1.176 1.606 2.342L8 14.758l2.736.76 1.606-2.342L14.928 12l-.274-2.826L15.88 6.61l-2.027-1.99-.71-2.75-2.831-.22zM7 4h2v3l-.5 2h-1L7 7zm1 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;isolation:auto;mix-blend-mode:normal;marker:none" color="#000" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible" fill="#fdc92b"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_174" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.75;fill:none;stroke:#1F2022;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<title>software-update-urgent</title>
+<polygon id="_16" class="st0" points="7,1.5 8.7,4.4 13.7,2.5 12,6.3 13.7,7.3 12,8.3 14.5,10.2 11.2,10.2 12,15 8.7,13.1 7,15 
+	6.2,12.1 2,13.1 5.3,10.2 2,8.3 4.5,7.3 2.8,4.4 6.2,5.4 "/>
 </svg>

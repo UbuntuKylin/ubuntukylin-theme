@@ -1,3 +1,17 @@
-<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <path d="M2 2c-.438 0-.786.039-1.078.148-.293.11-.526.31-.664.561C-.02 3.211.01 3.823 0 4.662V11.338c.01.839-.02 1.451.258 1.953.138.251.371.45.664.56.292.11.64.149 1.078.149h12c.438 0 .786-.039 1.078-.148.292-.11.528-.31.666-.561.277-.502.246-1.114.256-1.953V4.662c-.01-.839.021-1.451-.256-1.953a1.257 1.257 0 0 0-.666-.56C14.786 2.038 14.438 2 14 2zm0 1h12c.38 0 .606.039.727.084.084.031.127.08.142.107.095.172.12.615.131 1.473V11.338c-.01.855-.036 1.299-.13 1.47a.272.272 0 0 1-.143.108c-.121.045-.347.084-.727.084H2c-.38 0-.606-.039-.727-.084a.257.257 0 0 1-.14-.107c-.096-.174-.123-.617-.133-1.471V4.664c.01-.856.037-1.299.133-1.473a.257.257 0 0 1 .14-.107C1.394 3.039 1.62 3 2 3zm.537 1.578l-.285.438 5.873 4.22L14 5l-.285-.422-5.59 3.373z" style="line-height:125%;-inkscape-font-specification:Ubuntu;text-align:center" font-weight="400" font-size="15" font-family="Ubuntu" letter-spacing="0" word-spacing="0" text-anchor="middle" opacity=".5" fill="gray"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="邮件" opacity="0.8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#1F2022;stroke-miterlimit:10;}
+</style>
+<g id="邮件-2">
+	<g id="_16">
+		<path class="st0" d="M7.3,1L1.5,5c-0.6,0.5-1,1.2-1,2v6.5c0,1.1,0.9,2,2,2h11c1.1,0,2-0.9,2-2V7c0-0.8-0.3-1.5-1-2L8.7,1
+			C8.2,0.7,7.8,0.7,7.3,1z"/>
+		<polyline class="st0" points="15,15 8,9.5 1,15 		"/>
+		<line class="st0" x1="7" y1="10" x2="1" y2="6"/>
+		<line class="st0" x1="15" y1="6" x2="9" y2="10"/>
+	</g>
+</g>
 </svg>

@@ -1,3 +1,13 @@
-<svg height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-    <path d="M3.992 1c-1.257.014-2.177-.028-2.93.387a1.878 1.878 0 0 0-.84.996C.059 2.82 0 3.343 0 4v8c0 .658.058 1.179.223 1.617.164.439.463.79.84.998.752.416 1.673.37 2.931.385h8.02c1.258-.015 2.179.03 2.932-.385.376-.207.675-.56.84-.998.155-.438.214-.96.214-1.617V6c0-.658-.058-1.179-.223-1.617-.02-.055-.048-.104-.074-.154l-.027-.057a1.838 1.838 0 0 0-.738-.787c-.753-.416-1.673-.37-2.932-.385H8.963L6.942 1H3.994zm0 1H6.532l2.021 2H12c1.282.015 2.032.026 2.455.26a.847.847 0 0 1 .33.367c-.016-.03 0 .01.031.064.01.017 0 .002.01.012v.002c.011.022.025.053.018.03.1.266.158.666.158 1.265H1V4c0-.599.058-.998.158-1.266a.877.877 0 0 1 .387-.472c.423-.234 1.173-.247 2.45-.262z" style="line-height:normal;font-variant-ligatures:none;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;shape-padding:0;isolation:auto;mix-blend-mode:normal;marker:none" color="#000" font-weight="400" font-family="sans-serif" white-space="normal" overflow="visible" fill="gray"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_2_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.75;}
+	.st1{fill:none;stroke:#1F2022;stroke-miterlimit:10;}
+</style>
+<g id="_16_1_" class="st0">
+	<path class="st1" d="M12.5,6V4.5c0-0.6-0.4-1-1-1h-1.4c-0.5,0-1.5-1-2.1-1H1.5c-0.6,0-1,0.4-1,1V15"/>
+	<path class="st1" d="M4,6.5h10.4c0.6,0,1.1,0.5,1.1,1.1c0,0.1,0,0.3-0.1,0.4l-2.1,6.5H0.7l2.4-7.3C3.2,6.8,3.6,6.5,4,6.5z"/>
+</g>
 </svg>
