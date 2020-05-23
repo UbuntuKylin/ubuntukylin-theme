@@ -1,7 +1,7 @@
 
-/***************
- * Base States *
- ***************/
+/**********************
+ * Base States基本状态 *
+ **********************/
 %widget_base_class {
 	border-radius: 4px;
     color: $fg_color;
@@ -41,7 +41,7 @@
 
 
 /**************
- * Buttons *
+ * Buttons按钮 *
  **************/
 %button_base_class {
 	@extend %widget_base_class;
@@ -86,9 +86,9 @@ button {
     min-height: 24px;
 }
 
-/*********
- * Menus *
- *********/
+/************
+ * Menus菜单 *
+ ************/
 %menuitem_base_class {
     @extend %widget_base_class;
 		background:$menu_color;
@@ -233,9 +233,9 @@ menu,
 }
 
 
-/**************
- * ComboBoxes *
- **************/
+/******************
+ * ComboBoxes 组合框*
+ ******************/
 combobox {
 	@extend %widget_base_class;
     menu {
@@ -259,18 +259,18 @@ combobox {
     /* When combobox entry isn't clicked, it uses entry's style. I don't want to change it. */
 }
 
-/****************
- * Text Entries *
- ****************/
+/***********************
+ * Text Entries文字输入 *
+ **********************/
 entry {
 	background-color:    $text_bg_color;
 	border-radius: 4px;
 }
 
 
-/*
- * Notebooks
- */
+/***************
+ * Notebooks分页、标签页*
+ ***************/
 %tab_border {
     &.top {
         tab {
@@ -343,9 +343,9 @@ notebook {
     }
 }
 
-/*************************
- * Check and Radio items *
- *************************/
+/*********************************
+ * Check and Radio items 单选复选框*
+ *********************************/
 // draw regular check and radio items using our PNG assets
 // all assets are rendered from assets.svg. never add pngs directly
 
@@ -497,6 +497,7 @@ radio {
 // ANIMATION:
 // this is made with those pretty convoluted transitions, since checks and radios have to animate only on state changes,
 // the transformation is set on the active state and it get reset on the checked state.
+// radio 和 check 的动画
 radio:not(:indeterminate):not(:checked):active:not(:backdrop) {
     -gtk-icon-transform: scale(0);
 }
@@ -571,9 +572,9 @@ treeview.view radio{
 		@extend %radio;
 }
 
-/*********************
- * Switch & its slider
- *********************/
+/*********************************
+ * Switch & its slider 开关及其滑块*
+ ********************************/
 switch {
     @extend %widget_base_class;
 }
@@ -583,20 +584,16 @@ slider {
 }
 
 
-/************
- * SpinButton
- ************/
+/*************************************************
+ * SpinButton 微调按钮是个简易的滑动条，它经常与一个称为“兄弟窗口”（Buddy Window）的编辑控件结合起来使用，它们可以很好地配合，以响应用户的输入
+ ****************************/
 spinbutton {
     @extend %widget_base_class;
 }
 
-
-
-
-
-/*
- * trough in scale/progress bar
- */
+/*************************************
+ * trough in scale/progress bar 刻度/进度条槽*
+ *************************************/
 @mixin trough_colors($filled_widget) {
     /* trough - not filled part */
     background-color: $trough_free_space_normal_color;
@@ -626,9 +623,9 @@ spinbutton {
     }
 }
 
-/*********
- * Scale *
- *********/
+/**************
+ * Scale 拖动条*
+ **************/
 scale {
     trough {
         @include trough_colors(highlight);
@@ -664,7 +661,7 @@ scale {
 
 
 /**************
- * Progessbar*
+ * Progessbar 进度条*
  **************/
 progressbar {
     trough {
@@ -730,7 +727,7 @@ treeview.view {
         &:backdrop, & {
             border-left-color: mix($selected_fg_color, $selected_bg_color, 50%);
             border-top-color: transparentize($fg_color, 0.9);
-			background-color:$active_bg_color;
+			
         }
     }
     &:disabled {
@@ -927,6 +924,8 @@ scrolledwindow {
 /*************************************
  * titlebar - for generic window
  * headerbar - for several applications such as gedit and gnome-calculator
+ * titlebar-用于通用窗口
+ * headerbar-适用于gedit和gnome-calculator等几种应用程序
  *****************************************/
 .titlebar, headerbar {
     color: $headerbar_normal_fg_color;
@@ -963,9 +962,9 @@ scrolledwindow {
         }
     }
 }
-/************
- * Toolbars *
- ************/
+/****************
+ * Toolbars工具栏*
+ ***************/
 %toolbar {
     -GtkWidget-window-dragging: true;
     padding: 4px;
@@ -1024,6 +1023,7 @@ toolbar {
 }
 
 //searchbar, location-bar & inline-toolbar
+//搜索栏，位置栏和嵌入式工具栏
 .inline-toolbar {
     @extend %toolbar;
     @extend %darkbar;
@@ -1055,15 +1055,15 @@ searchbar,
     }
 }
 
-/************
- * Separator*
- ***********/
+/*****************
+ * Separator分割器*
+ *****************/
 separator {
     margin: 3px;
 }
 
 /*********
- * Links *
+ * Links链接 *
  *********/
 
 %link,
