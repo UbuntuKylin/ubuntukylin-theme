@@ -11,7 +11,7 @@ $selected_bg_color: #3D6BE5;
 $selected_fg_color: #F8F8F8;
 $selected_borders_color: $selected_bg_color;
 $disable_bg_color:#E6E6E6;
-$disable_fg_color:#cccccc;
+$disable_fg_color: rgba($fg_color,0.3);
 $disable_bd_color: $disable_bg_color;
 $backdrop_bg_color:#FCFCFC;
 $backdrop_fg_color:#0C0C0D;
