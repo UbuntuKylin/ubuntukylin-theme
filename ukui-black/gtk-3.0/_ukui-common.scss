@@ -1,6 +1,5 @@
-
 /**********************
- * Base States基本状态 *
+ * Base States *
  **********************/
 %widget_base_class {
 	border-radius: 4px;
@@ -41,7 +40,7 @@
 
 
 /**************
- * Buttons按钮 *
+ * Buttons *
  **************/
 %button_base_class {
 	@extend %widget_base_class;
@@ -87,7 +86,7 @@ button {
 }
 
 /************
- * Menus菜单 *
+ * Menus *
  ************/
 %menuitem_base_class {
     @extend %widget_base_class;
@@ -234,7 +233,7 @@ menu,
 
 
 /******************
- * ComboBoxes 组合框*
+ * ComboBoxes*
  ******************/
 combobox {
 	@extend %widget_base_class;
@@ -260,7 +259,7 @@ combobox {
 }
 
 /***********************
- * Text Entries文字输入 *
+ * Text Entries *
  **********************/
 entry {
 	background-color:    $text_bg_color;
@@ -269,7 +268,7 @@ entry {
 
 
 /***************
- * Notebooks分页、标签页*
+ * Notebooks*
  ***************/
 %tab_border {
     &.top {
@@ -344,7 +343,7 @@ notebook {
 }
 
 /*********************************
- * Check and Radio items 单选复选框*
+ * Check and Radio items*
  *********************************/
 // draw regular check and radio items using our PNG assets
 // all assets are rendered from assets.svg. never add pngs directly
@@ -497,7 +496,6 @@ radio {
 // ANIMATION:
 // this is made with those pretty convoluted transitions, since checks and radios have to animate only on state changes,
 // the transformation is set on the active state and it get reset on the checked state.
-// radio 和 check 的动画
 radio:not(:indeterminate):not(:checked):active:not(:backdrop) {
     -gtk-icon-transform: scale(0);
 }
@@ -573,7 +571,7 @@ treeview.view radio{
 }
 
 /*********************************
- * Switch & its slider 开关及其滑块*
+ * Switch & its slider *
  ********************************/
 switch {
     @extend %widget_base_class;
@@ -584,15 +582,15 @@ slider {
 }
 
 
-/*************************************************
- * SpinButton 微调按钮是个简易的滑动条，它经常与一个称为“兄弟窗口”（Buddy Window）的编辑控件结合起来使用，它们可以很好地配合，以响应用户的输入
- ****************************/
+/**************
+ * SpinButton *
+ **************/
 spinbutton {
     @extend %widget_base_class;
 }
 
 /*************************************
- * trough in scale/progress bar 刻度/进度条槽*
+ * trough in scale/progress bar *
  *************************************/
 @mixin trough_colors($filled_widget) {
     /* trough - not filled part */
@@ -624,7 +622,7 @@ spinbutton {
 }
 
 /**************
- * Scale 拖动条*
+ * Scale *
  **************/
 scale {
     trough {
@@ -661,7 +659,7 @@ scale {
 
 
 /**************
- * Progessbar 进度条*
+ * Progessbar *
  **************/
 progressbar {
     trough {
@@ -924,8 +922,6 @@ scrolledwindow {
 /*************************************
  * titlebar - for generic window
  * headerbar - for several applications such as gedit and gnome-calculator
- * titlebar-用于通用窗口
- * headerbar-适用于gedit和gnome-calculator等几种应用程序
  *****************************************/
 .titlebar, headerbar {
     color: $headerbar_normal_fg_color;
@@ -963,7 +959,7 @@ scrolledwindow {
     }
 }
 /****************
- * Toolbars工具栏*
+ * Toolbars*
  ***************/
 %toolbar {
     -GtkWidget-window-dragging: true;
@@ -1023,7 +1019,6 @@ toolbar {
 }
 
 //searchbar, location-bar & inline-toolbar
-//搜索栏，位置栏和嵌入式工具栏
 .inline-toolbar {
     @extend %toolbar;
     @extend %darkbar;
@@ -1056,14 +1051,14 @@ searchbar,
 }
 
 /*****************
- * Separator分割器*
+ * Separator*
  *****************/
 separator {
     margin: 3px;
 }
 
 /*********
- * Links链接 *
+ * Links *
  *********/
 
 %link,

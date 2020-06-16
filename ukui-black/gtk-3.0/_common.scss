@@ -15,10 +15,6 @@ $button_transition: all 200ms $ease-out-quad;
     // up so that the whole area is sensitive to button presses for the
     // slider. The stepper button is larger in both directions, the slider
     // only in the width
-	// 滚动条的大小。 滑块小了2px，但我们保留了
-    // 向上移动，以便整个区域对按钮的按下敏感
-    // 滑块。 步进按钮在两个方向上都较大，滑块
-    // 仅在宽度上
     -GtkScrolledWindow-scrollbar-spacing: 0;
     -GtkToolItemGroup-expander-size: 0;
     -GtkWidget-text-handle-width: 20;
@@ -29,7 +25,6 @@ $button_transition: all 200ms $ease-out-quad;
     // We use the outline properties to signal the focus properties
     // to the adwaita engine: using real CSS properties is faster,
     // and we don't use any outlines for now.
-	//我们使用outline属性将焦点属性发送给adwaita引擎：使用真正的CSS属性更快，并且目前暂不使用任何outline。。
     outline-color: gtkalpha(currentColor, 0.3);
     outline-style: dashed;
     outline-offset: -3px;
@@ -39,7 +34,7 @@ $button_transition: all 200ms $ease-out-quad;
 }
 
 /******************
- * Base States基础 *
+ * Base States *
  ******************/
 .background {
     background-color: $bg_color;
@@ -242,7 +237,7 @@ assistant {
     }
 }
 /****************************
- * Spinner Animation微调动画 *
+ * Spinner Animation*
  ****************************/
 @keyframes spin {
     to {
@@ -255,7 +250,6 @@ spinner {
     opacity: 0;
 
     // non spinning spinner makes no sense
-	// 不旋转的微调器没有意义
     -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
 
     &:checked {
@@ -269,7 +263,7 @@ spinner {
 }
 
 /******************
- * Text Entries文本*
+ * Text Entries*
  ******************/
 %entry,
 entry {
@@ -329,7 +323,6 @@ entry {
             @extend %selected_items;
         }
         // entry error and warning style
-		// 输入错误和警告样式
         @each $e_type, $e_color in (error, $error_color), (warning, $warning_color) {
             &.#{$e_type} {
                 color: $e_color;
@@ -345,7 +338,6 @@ entry {
 
         image {
             // entry icons colors
-			// 文本图标颜色
             color: mix($fg_color, $bg_color, 80%);
             &:hover {
                 color: $active_fg_color;
@@ -394,7 +386,6 @@ entry {
     }
 
     // linked entries
-	// 链接文本
     .linked:not(.vertical) > & {
         @extend %linked;
     }
@@ -412,13 +403,11 @@ entry {
     }
 
     // Vertically linked entries
-	// 文本垂直链接
     // FIXME: take care of "colored" entries
     .linked.vertical > & {
         @extend %linked_vertical;
 
         // brighter border between linked entries
-		// 文本链接之间的边框更亮
         &:not(:disabled) + entry:not(:disabled),
         &:not(:disabled) + %entry:not(:disabled) {
             border-top-color: mix($bg_color, $bg_color, 30%);
@@ -429,14 +418,12 @@ entry {
         }
 
         // brighter border between linked insensitive entries
-		// 文本的链接的不敏感条目之间的边框更亮
         &:disabled + %entry:disabled,
         &:disabled + entry:disabled {
             border-top-color: mix($bg_color, $bg_color, 30%);
         }
 
         // color back the top border of a linked focused entry following another entry.
-		// 在另一个文本之后，将链接的文本条目的顶部边框涂成彩色。
         // :not(:only-child) is a specificity bump hack.
         + %entry:focus:not(:only-child),
         + entry:focus:not(:only-child) {
@@ -448,8 +435,7 @@ entry {
             border-top-color: $drop_target_color;
         }
 
-        // this takes care of coloring the top border of the focused entry subsequent widget.
-		// 这将为着色的重点文本后续小部件的顶部边框着色。        
+        // this takes care of coloring the top border of the focused entry subsequent widget.     
 		// :not(:only-child) is a specificity bump hack.
         &:focus:not(:only-child) {
             + %entry,
@@ -496,7 +482,6 @@ treeview entry {
     margin-bottom: 2px;
     // side margins: compensate the entry padding with a negative margin
     // then the negative margin itself
-	// 边距：先用负边距补偿输入填充，然后用负边距本身补偿
     :dir(ltr) & {
         margin-left: 8px;
         margin-right: -5px;
@@ -538,7 +523,7 @@ treeview entry {
 }
 
 /*************
- * Buttons按钮*
+ * Buttons*
  *************/
 
 $_dot_color: $selected_bg_color;
@@ -572,10 +557,6 @@ button {
             // to none, while it's added back in the hover state, so the button decoration will fade in on hover, but
             // it won't fade out when the pointer leave the button allocation area. To make the transition more evident
             // in this case the duration is increased.
-			//为了避免过渡时过渡按钮边界冲突，请设置正常状态下的过渡
-            //设为无，虽然它重新以悬停状态添加，所以按钮装饰会在悬停时淡入，但是
-            //当指针离开按钮分配区域时，它不会消失。 使过渡更加明显
-            //在这种情况下，持续时间会增加。
       		transition: none;
 
             &:hover {
@@ -682,7 +663,6 @@ button {
     }
 
     // big standalone buttons like in Documents pager
-	// 大型独立按钮，例如“文档”页面中的按钮
     &.osd {
         min-width: 24px;
         min-height: 32px;
@@ -719,7 +699,6 @@ button {
     }
 
     //overlay / OSD style
-	//叠加 / osd 样式
     @at-root %osd_button,
     .osd & {
         &:hover {
@@ -941,8 +920,6 @@ button {
         // so on relevant states we an additional background-image with a gradient clipped on the border-box,
         // so setting a transparent border would reveal it.
         // FIXME: take care of colored circular button.
-		// 因为我们在按钮上使用了一个较深的底部边框，所以需要findind代码，该边框看起来很糟糕，边框半径为100％（有关详细信息，请参见https://bugzilla.gnome.org/show_bug.cgi?id=771205），因此，在相关状态下，我们会在边框上附加一个带有渐变的附加背景图像，因此设置透明边框即可显示该背景图像。
-		// 请注意彩色圆形按钮。
         $_border_bg: linear-gradient(to top, $alt-borders-color 25%, $bg_color 50%);
 
         &:not(:checked):not(:active):not(:disabled):not(:backdrop) {
@@ -980,11 +957,9 @@ button {
 
 // all the following is for the +|- buttons on inline toolbars, that way
 // should really be deprecated...
-// 以下所有内容都是针对内联工具栏上的+ |-按钮的，因此实际上不建议使用...
 .inline-toolbar toolbutton > button {
     // redefining the button look is
     // needed since those are flat...
-	// 需要重新定义按钮外观，因为它们是扁平的...
    		box-shadow: none;
 		border-radius: 4px;
 		color: $button_fg_color;
@@ -1010,7 +985,6 @@ button {
 }
 
 // More inline toolbar buttons
-// 更多内联工具栏按钮
 toolbar.inline-toolbar toolbutton,
 toolbar.inline-toolbar toolbutton:backdrop {
     > button.flat {
@@ -1174,7 +1148,6 @@ spinbutton {
         // in this horizontal configuration, the whole spinbutton
         // behaves as the entry, so we extend the entry styling
         // and nuke the style on the internal entry
-		// 在这种水平配置中，整个旋转按钮的行为均与条目相同，因此我们扩展了条目样式并在内部条目上添加样式
         @extend %entry;
 
         padding: 0;
@@ -1257,7 +1230,6 @@ spinbutton {
     }
 
     // OSD horizontal
-	// 水平
     .osd &:not(.vertical) {
         button {
             @include button(undecorated);
@@ -1312,7 +1284,6 @@ spinbutton {
     }
 
     // Vertical
-	// 垂直
     &.vertical {
         // in the vertical configuration, we treat the spinbutton
         // as a box, and tweak the style of the entry in the middle
@@ -1320,9 +1291,6 @@ spinbutton {
 
         // FIXME: this should not be set at all, but otherwise it gets the wrong
         // color
-		//在垂直配置中，我们将旋转按钮视为一个框，并在中间调整条目的样式，以便将其链接
-
-         // FIXME：根本不应该设置此项，否则会得到错误的颜色
         &:disabled {
             color: $disable_fg_color;
         }
@@ -1389,7 +1357,7 @@ spinbutton {
         }
     }
 
-    // Misc其他
+    // Misc
     treeview &:not(.vertical) {
         min-height: 0;
         border-style: none;
@@ -1403,7 +1371,7 @@ spinbutton {
 }
 
 /*******************
- * ComboBoxes组合框 *
+ * ComboBoxes *
  *******************/
 combobox {
     arrow {
@@ -1438,7 +1406,6 @@ combobox {
     // the combo is a composite widget so the way we do button linking doesn't
     // work, special case needed. See
     // https://bugzilla.gnome.org/show_bug.cgi?id=733979
-	// 该组合是一个复合小部件，因此我们需要进行按钮链接的方式不起作用，这需要特殊情况。 参见https://bugzilla.gnome.org/show_bug.cgi?id=733979
     &:dir(ltr),
     &:dir(rtl) {
         @extend %linked_middle;
@@ -1478,7 +1445,7 @@ combobox {
 
 
 /********************
- * Header bars标题栏 *
+ * Header bars *
  ********************/
 %titlebar,
 headerbar {
@@ -1637,7 +1604,6 @@ headerbar {
     }
 
     // squared corners when the window is maximized, tiled, or fullscreen
-	// 窗口最大化，平铺或全屏显示时的方形角
     .tiled &,
     .tiled-top &,
     .tiled-right &,
@@ -1679,7 +1645,6 @@ headerbar {
 
 headerbar {
     // add vertical margins to common widget on the headerbar to avoid them spanning the whole height
-	// 将垂直边距添加到标题栏上的公共小部件，以避免它们跨越整个高度
     entry,
     spinbutton,
     separator,
@@ -1718,7 +1683,6 @@ headerbar {
 
 headerbar {
     // headerbar border rounding
-	// 标题栏边框
     window separator:first-child + &,
     window &:first-child {
         &:backdrop, & {
@@ -1738,7 +1702,6 @@ headerbar {
 
     window stack & {
         // tackles the stacked headerbars case
-		// 处理堆叠的标题栏案例
         &:first-child, &:last-child {
             &:backdrop, & {
                 border-top-left-radius: 0;
@@ -1774,7 +1737,6 @@ headerbar {
 .titlebar:not(headerbar) {
     window.csd > & {
         // in csd we assume every titlebar is a headerbar so reset anything, this is needed for split toolbars cases
-		//在csd中，我们假设每个标题栏都是标题栏，所以请重置任何内容，这对于拆分工具栏是必需的
         padding: 0;
         background-color: transparent;
         background-image: none;
@@ -1793,7 +1755,7 @@ headerbar {
 }
 
 /*****************
- * Pathbars路径栏 *
+ * Pathbars *
  *****************/
 .path-bar button {
     &.text-button, &.image-button, & {
@@ -1829,7 +1791,7 @@ headerbar {
 
 
 /********************
- * Popovers 弹出框   *
+ * Popovers    *
  ********************/
 
 popover.background {
@@ -1882,7 +1844,7 @@ popover.background {
 }
 
 /******************
- * Notebooks标签页 *
+ * Notebooks *
  ******************/
 notebook {
     > header {
@@ -2044,7 +2006,6 @@ notebook {
             background-color:  $notebook_tab_normal_bg_color ;
 
             // for reorderable 
-			// 可重新订购
             border-color: $base_normal_border_color;
             &:hover {
                 color: $base_normal_fg_color;
@@ -2081,7 +2042,6 @@ notebook {
             }
 
             // colors the button like the label, overridden otherwise
-			// 像标签一样给按钮上色，否则覆盖
             button.flat {
                 &:hover {
                     color: currentColor;
@@ -2190,7 +2150,7 @@ notebook {
     }
 }
 /*******************
- * Scrollbars滚动条 *
+ * Scrollbars *
  *******************/
 scrollbar {
     $_slider_min_length: 40px;
@@ -2209,7 +2169,7 @@ scrollbar {
 			background-color:$scrollbar_prelight_bg_color;
 	}
 
-    // slider滑块
+    // slider
     slider {
         min-width: 4px;
 		min-height: 4px;
@@ -2250,7 +2210,7 @@ scrollbar {
 
 
 /************
- * Switch开关*
+ * Switch*
  ************/
 switch {
     font-weight: bold;
@@ -2449,14 +2409,12 @@ scale {
     padding: 12px;
 
     // those are inside the trough node, I need them to show their own border over the trough one, so negative margin
-	// 这些位于槽节点内，我需要它们在槽1上显示自己的边界，因此负边距
     fill,
     highlight {
         margin: -1px;
     }
 
     // the slider is inside the trough, so to have make it bigger there's a negative margin
-	// 滑块在槽内，所以要使其增大，存在负的边距
     slider {
         min-height: 18px;
         min-width: 18px;
@@ -2464,7 +2422,6 @@ scale {
     }
 
     // click-and-hold the slider to activate
-	// 单击并按住滑块以激活
     &.fine-tune {
         &.horizontal {
             padding-top: 9px;
@@ -2479,7 +2436,6 @@ scale {
         }
 
         // to make the trough grow in fine-tune mode
-		// 使槽在微调模式下生长
         slider {
             margin: -6px;
         }
@@ -2507,7 +2463,6 @@ scale {
 
     // this is another differently styled part of the backing bit, the most relevant use case is for example
     // in media player to indicate how much video stream as been cached
-	// 这是backing bit的另一个样式不同的部分，例如，在媒体播放器中，用于指示已缓存了多少视频
     fill {
         @extend %scale_trough;
 
@@ -2660,7 +2615,6 @@ scale {
                         &#{$state} {
                             // an asymmetric slider asset is used here, so the margins are uneven, the smaller
                             // margin is set on the point side.
-							// 这里使用的是非对称滑块资产，因此边距不均匀，将较小的边距设置在点侧。
                             margin: -10px;
 
                             $_scale_asset: "assets/slider-#{$dir_infix}-#{$marks_infix}#{$state_infix}#{$suffix}";
@@ -2853,7 +2807,7 @@ scale {
 }
 
 /**********************
- * Progress bars进度条 *
+ * Progress bars *
  **********************/
 progressbar {
     // sizing
@@ -2876,7 +2830,6 @@ progressbar {
     }
 
     // the progress node is positioned after the trough border
-	// 进度节点位于槽边界之后
     &.vertical progress {
         margin: -1px 0;
     }
@@ -2961,7 +2914,7 @@ progressbar {
 }
 
 /******************
- * Level Bar等级栏 *
+ * Level Bar*
  ******************/
 levelbar {
     &.horizontal {
@@ -3046,7 +2999,7 @@ levelbar {
 }
 
 /************************
- * Print dialog打印对话框 *
+ * Print dialog*
 *************************/
 printdialog {
     paper {
@@ -3067,7 +3020,7 @@ printdialog {
 }
 
 /*************
- * Frames边框 *
+ * Frames *
  *************/
 frame > border,
 .frame {
@@ -3098,14 +3051,11 @@ actionbar > revealer >  box {
 scrolledwindow {
     viewport.frame {
         // avoid double borders when viewport inside scrolled window
-		// 滚动窗口内的视口时避免双边框
         border-style: none;
     }
 
     // This is used when content is touch-dragged past boundaries.
     // draws a box on top of the content, the size changes programmatically.
-	// 当内容被触摸拖动到边界之外时使用。
-	//在内容顶部绘制一个框，大小以编程方式更改。
     overshoot {
         &.top {
             @include overshoot(top);
@@ -3141,7 +3091,6 @@ scrolledwindow {
     }
 
     // Overflow indication, works similarly to the overshoot, the size if fixed tho.
-	// 溢出指示，与过冲类似，其大小（如果固定）。
     undershoot {
         &.top, &.right, &.bottom, &.left {
             background-image: none;
@@ -3150,7 +3099,6 @@ scrolledwindow {
 
     junction {
         // the small square between two scrollbars
-		// 两个滚动条之间的小方块
         border-color: transparent;
 
         // the border image is used to add the missing dot between the borders, details, details, details...
@@ -3170,7 +3118,6 @@ scrolledwindow {
 }
 
 //vbox and hbox separators
-//vbox和hbox分隔符
 separator {
     background-color: $base_normal_border_color;
     min-width: 1px;
@@ -3178,7 +3125,7 @@ separator {
 }
 
 /************
- * Lists列表 *
+ * Lists *
  ************/
 list {
     color: $fg_color;
@@ -3243,7 +3190,7 @@ row {
 }
 
 /*******************************
- * App Notifications 应用程序提醒*
+ * App Notifications*
  *******************************/
 .app-notification,
 .app-notification.frame {
@@ -3270,7 +3217,7 @@ row {
 }
 
 /*****************************
- * Expanders 下拉控件、类似menu*
+ * Expanders *
  *****************************/
 expander {
     arrow {
@@ -3287,7 +3234,6 @@ expander {
         }
 
         //only lightens the arrow
-		// 只高亮箭头
         &:checked {
             -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
         }
@@ -3295,7 +3241,7 @@ expander {
 }
 
 /************
- * Calendar日历 *
+ * Calendar*
  ***********/
 calendar {
     color: $fg_color;
@@ -3352,7 +3298,7 @@ calendar {
 }
 
 /***************
- * Dialogs对话方块 *
+ * Dialogs*
  ***************/
 messagedialog {
     // Message Dialog styling
@@ -3416,7 +3362,7 @@ filechooserbutton:drop(active) {
 }
 
 /****************
- * Sidebar侧边栏 *
+ * Sidebar*
  ****************/
 .sidebar {
     border-style: none;
@@ -3489,7 +3435,7 @@ stacksidebar {
 }
 
 /**************************
- * File chooser 文件选择器 *
+ * File chooser *
  *************************/
 $_placesidebar_icons_opacity: 0.7;
 
@@ -3500,9 +3446,6 @@ row image.sidebar-icon {
 // dim the sidebar icons
 // see bug #786613 for details
 // on this oddity
-// 使侧边栏图标变暗
-// 有关详细信息，请参见错误＃786613
-// 对此很奇怪
 placessidebar {
     > viewport.frame {
         border-style: none;
@@ -3712,7 +3655,7 @@ paned {
 }
 
 /******************
- * GtkInfoBar信息栏*
+ * GtkInfoBar*
  ******************/
 infobar {
     border-style: none;
@@ -3783,7 +3726,7 @@ infobar {
 }
 
 /*****************
- * Tooltips提示框 *
+ * Tooltips *
  *****************/
 tooltip {
     background-color: $base_normal_bg_color;
@@ -3798,13 +3741,12 @@ tooltip {
 }
 
 /************************
- * Color Chooser颜色选择器*
+ * Color Chooser*
  ************************/
 colorswatch {
     // This widget is made of two boxes one on top of the other, the lower box is colorswatch {} the other one
     // is colorswatch overlay {}, colorswatch has the programmatically set background, so most of the style is
     // applied to the overlay box.
-	// 此小部件由两个框组成，一个框在另一个框的顶部，下部框是colorswatch {}，另一个框是colorswatch overlay {}，colorswatch具有以编程方式设置的背景，因此大部分样式都应用于重叠框。
 	background-color: transparent;
     &:drop(active), & {
         border-style: none;
@@ -3818,8 +3760,6 @@ colorswatch {
     // to avoid the artifacts caused by rounded corner anti-aliasing the base color
     // sports a bigger radius.
     // nth-child is needed by the custom color strip.
-	// 避免将圆角抗锯齿使基色产生较大的半径，从而避免了圆角导致的伪影。
-    // 自定义色带需要nth-child。
     &.top {
         border-top-left-radius: $_colorswatch_radius + 0.5px;
         border-top-right-radius: $_colorswatch_radius + 0.5px;
@@ -4018,7 +3958,7 @@ colorchooser .popover.osd {
 }
 
 /**********************
- * Window Decorations 窗饰*
+ * Window Decorations *
  *********************/
 decoration {
 	box-shadow: 0 0 5px #888;
@@ -4167,9 +4107,6 @@ cursor-handle {
 // Decouple the font of context menus from their entry/textview
 
 // shortcut window keys
-// 将上下文菜单的字体与其条目/文本视图解耦
-
-// 快捷键
 .keycap {
     min-width: 20px;
     min-height: 25px;
