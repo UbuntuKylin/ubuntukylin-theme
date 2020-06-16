@@ -1,15 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="17px" viewBox="0 0 24 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>收纳盒/n</title>
-    <desc>Created with Sketch.</desc>
-    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.847888765">
-        <g id="6.右栏-通知（触控板或鼠标）" transform="translate(-1226.000000, -109.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <g id="收纳盒1" transform="translate(1226.000000, 95.000000)">
-                <g id="收纳盒/n" transform="translate(0.000000, 14.000000)">
-                    <path d="M17.8495221,0 L6.18413213,0 C5.60937798,9.93759044e-16 5.06240372,0.247268502 4.6827051,0.67874421 L0,6 L0,6 L0,15 C1.3527075e-16,16.1045695 0.8954305,17 2,17 L22,17 C23.1045695,17 24,16.1045695 24,15 L24,6 L24,6 L19.3556661,0.684123721 C18.9758711,0.249412703 18.4267724,-2.46370929e-15 17.8495221,0 Z M5.70305085,1 L18.3322034,1 L22.7010169,6 L15.36,6 C15.36,7.87288136 13.7979661,9.38418079 12,9.38418079 C10.2020339,9.38418079 8.64,7.87288136 8.64,6 L1.30169492,6 L5.70305085,1 Z M22.04,16 L1.96,16 C1.40771525,16 0.96,15.5522847 0.96,15 L0.96,7 L0.96,7 L7.79932203,7 C8.25762712,8.91525424 9.9959322,10.3841808 12,10.3841808 C14.0040678,10.3841808 15.7423729,8.91242938 16.200678,7 L23.04,7 L23.04,15 C23.04,15.5522847 22.5922847,16 22.04,16 Z" id="收纳盒1"></path>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.8479;}
+	.st1{fill:#FFFFFF;}
+</style>
+<desc>Created with Sketch.</desc>
+<g id="页面-1" class="st0">
+	<g id="_x36_.右栏-通知_xFF08_触控板或鼠标_xFF09_" transform="translate(-1226.000000, -109.000000)">
+		<g id="收纳盒1_1_" transform="translate(1226.000000, 95.000000)">
+			<g id="收纳盒_x2F_n" transform="translate(0.000000, 14.000000)">
+				<path id="收纳盒1" class="st1" d="M21.8,8H10.2C9.6,8,9.1,8.2,8.7,8.7L4,14l0,0v9c0,1.1,0.9,2,2,2h20c1.1,0,2-0.9,2-2v-9l0,0
+					l-4.6-5.3C23,8.2,22.4,8,21.8,8z M9.7,9h12.6l4.4,5h-7.3c0,1.9-1.6,3.4-3.4,3.4s-3.4-1.5-3.4-3.4H5.3L9.7,9z M26,24H6
+					c-0.6,0-1-0.4-1-1v-8l0,0h6.8c0.5,1.9,2.2,3.4,4.2,3.4s3.7-1.5,4.2-3.4H27v8C27,23.6,26.6,24,26,24z"/>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>
