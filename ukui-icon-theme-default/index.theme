@@ -1,10 +1,10 @@
 [Icon Theme]
 Name=ukui-icon-theme-default
-Comment=Icon theme for UKUI ,from yaru.
+Comment=Icon theme for UKUI ,from moka.
 Inherits=gnome,hicolor
 Example=folder
 
-# UKUI Specifics
+# KDE Specifics
 
 DisplayDepth=32
 
@@ -211,7 +211,7 @@ Type=Scalable
 [256x256/categories]
 Context=Categories
 Size=256
-MinSize=129
+MinSize=97
 MaxSize=256
 Type=Scalable
 
@@ -586,7 +586,7 @@ Type=Scalable
 
 [128x128/status]
 Context=Status
-Size=96
+Size=128
 MinSize=97
 MaxSize=128
 Type=Scalable
@@ -703,7 +703,6 @@ Type=Scalable
 
 
 # Actions
-
 [16x16@2x/actions]
 Context=Actions
 Scale=2
@@ -720,8 +719,6 @@ Context=Applications
 Scale=2
 Size=16
 Type=Fixed
-
-
 
 [24x24@2x/apps]
 Context=Applications
@@ -767,7 +764,7 @@ Type=Scalable
 Context=Applications
 Scale=2
 Size=256
-MinSize=129
+MinSize=97
 MaxSize=256
 Type=Scalable
 
@@ -778,8 +775,6 @@ Context=Categories
 Scale=2
 Size=16
 Type=Fixed
-
-
 
 [24x24@2x/categories]
 Context=Categories
@@ -825,7 +820,7 @@ Type=Scalable
 Context=Categories
 Scale=2
 Size=256
-MinSize=129
+MinSize=97
 MaxSize=256
 Type=Scalable
 
@@ -836,8 +831,6 @@ Context=Devices
 Scale=2
 Size=16
 Type=Fixed
-
-
 
 [24x24@2x/devices]
 Context=Devices
@@ -867,7 +860,7 @@ Type=Fixed
 Context=Devices
 Scale=2
 Size=96
-MinSize=80
+MinSize=65
 MaxSize=96
 Type=Scalable
 
@@ -883,12 +876,11 @@ Type=Scalable
 Context=Devices
 Scale=2
 Size=256
-MinSize=128
+MinSize=97
 MaxSize=256
 Type=Scalable
 
 # Emblems
-
 [14x14@2x/emblems]
 Context=Emblems
 Scale=2
@@ -900,8 +892,6 @@ Context=Emblems
 Scale=2
 Size=16
 Type=Fixed
-
-
 
 [24x24@2x/emblems]
 Context=Emblems
@@ -931,7 +921,7 @@ Type=Fixed
 Context=Emblems
 Scale=2
 Size=96
-MinSize=80
+MinSize=65
 MaxSize=96
 Type=Scalable
 
@@ -947,12 +937,11 @@ Type=Scalable
 Context=Emblems
 Scale=2
 Size=256
-MinSize=129
+MinSize=97
 MaxSize=256
 Type=Scalable
 
 # Emotes
-
 
 # MimeTypes
 
@@ -961,8 +950,6 @@ Context=MimeTypes
 Scale=2
 Size=16
 Type=Fixed
-
-
 
 [24x24@2x/mimetypes]
 Context=MimeTypes
@@ -992,7 +979,7 @@ Type=Fixed
 Context=MimeTypes
 Scale=2
 Size=96
-MinSize=80
+MinSize=65
 MaxSize=96
 Type=Scalable
 
@@ -1008,7 +995,7 @@ Type=Scalable
 Context=MimeTypes
 Scale=2
 Size=256
-MinSize=129
+MinSize=97
 MaxSize=256
 Type=Scalable
 
@@ -1019,8 +1006,6 @@ Context=Places
 Scale=2
 Size=16
 Type=Fixed
-
-
 
 [24x24@2x/places]
 Context=Places
@@ -1050,7 +1035,7 @@ Type=Fixed
 Context=Places
 Scale=2
 Size=96
-MinSize=80
+MinSize=65
 MaxSize=96
 Type=Scalable
 
@@ -1066,7 +1051,7 @@ Type=Scalable
 Context=Places
 Scale=2
 Size=256
-MinSize=129
+MinSize=97
 MaxSize=256
 Type=Scalable
 
@@ -1077,8 +1062,6 @@ Context=Status
 Scale=2
 Size=16
 Type=Fixed
-
-
 
 [24x24@2x/status]
 Context=Status
@@ -1108,7 +1091,7 @@ Type=Fixed
 Context=Status
 Scale=2
 Size=96
-MinSize=80
+MinSize=65
 MaxSize=96
 Type=Scalable
 
@@ -1124,7 +1107,7 @@ Type=Scalable
 Context=Status
 Scale=2
 Size=256
-MinSize=129
+MinSize=97
 MaxSize=256
 Type=Scalable
 
