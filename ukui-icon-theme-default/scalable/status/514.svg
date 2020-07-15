@@ -1,1 +1,22 @@
-<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-1{opacity:0.9;}.cls-2{fill:#3dd0ff;}</style></defs><title>514-大雾-Heavy fog</title><g class="cls-1"><path class="cls-2" d="M55.53,38.5H8.47a1.5,1.5,0,0,1,0-3H55.53a1.5,1.5,0,0,1,0,3Z"/></g><g class="cls-1"><path class="cls-2" d="M55.53,28.5H8.47a1.5,1.5,0,0,1,0-3H55.53a1.5,1.5,0,0,1,0,3Z"/></g><g class="cls-1"><path class="cls-2" d="M55.53,48.5H8.47a1.5,1.5,0,0,1,0-3H55.53a1.5,1.5,0,0,1,0,3Z"/></g><g class="cls-1"><path class="cls-2" d="M55.53,18.5H8.47a1.5,1.5,0,0,1,0-3H55.53a1.5,1.5,0,0,1,0,3Z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="64px" viewBox="0 0 65 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>514-大雾-Heavy fog</title>
+    <desc>Created with Sketch.</desc>
+    <g id="514-大雾-Heavy-fog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 0.000000)" opacity="0.9">
+        <g transform="translate(6.000000, 15.000000)" fill="#3DD0FF" fill-rule="nonzero" id="编组">
+            <g transform="translate(0.000000, 20.000000)">
+                <path d="M49.53,3.5 L2.47,3.5 C1.64157288,3.5 0.97,2.82842712 0.97,2 C0.97,1.17157288 1.64157288,0.5 2.47,0.5 L49.53,0.5 C50.3584271,0.5 51.03,1.17157288 51.03,2 C51.03,2.82842712 50.3584271,3.5 49.53,3.5 Z" id="路径"></path>
+            </g>
+            <g transform="translate(0.000000, 10.000000)">
+                <path d="M49.53,3.5 L2.47,3.5 C1.64157288,3.5 0.97,2.82842712 0.97,2 C0.97,1.17157288 1.64157288,0.5 2.47,0.5 L49.53,0.5 C50.3584271,0.5 51.03,1.17157288 51.03,2 C51.03,2.82842712 50.3584271,3.5 49.53,3.5 Z" id="路径"></path>
+            </g>
+            <g transform="translate(0.000000, 30.000000)">
+                <path d="M49.53,3.5 L2.47000009,3.5 C1.64157291,3.5 0.970000089,2.82842709 0.970000089,2 C0.970000089,1.17157291 1.64157291,0.5 2.47000009,0.5 L49.53,0.5 C50.3584271,0.5 51.03,1.17157288 51.03,2 C51.03,2.82842712 50.3584271,3.5 49.53,3.5 L49.53,3.5 Z" id="路径"></path>
+            </g>
+            <g>
+                <path d="M49.53,3.5 L2.47,3.5 C1.64157288,3.5 0.97,2.82842712 0.97,2 C0.97,1.17157288 1.64157288,0.5 2.47,0.5 L49.53,0.5 C50.3584271,0.5 51.03,1.17157288 51.03,2 C51.03,2.82842712 50.3584271,3.5 49.53,3.5 L49.53,3.5 Z" id="路径"></path>
+            </g>
+        </g>
+    </g>
+</svg>

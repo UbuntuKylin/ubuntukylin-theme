@@ -1,1 +1,15 @@
-<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-1{fill:#fff;}.cls-2,.cls-3{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}.cls-3{opacity:0.68;}</style></defs><title>206-疾风-High Wind, Near Gale</title><path class="cls-1" d="M41,10a3,3,0,1,0,3-3A3,3,0,0,0,41,10Z"/><path class="cls-2" d="M21.29,11.9A7,7,0,1,1,27.07,23H7"/><path class="cls-2" d="M46.78,21.9A6.67,6.67,0,0,1,52.25,19a7,7,0,0,1,.09,14H5"/><path class="cls-2" d="M34.28,54.1A7,7,0,1,0,40.07,43H7"/><line class="cls-3" x1="12" y1="53" x2="23" y2="53"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="64px" viewBox="0 0 65 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>206-疾风-High Wind, Near Gale</title>
+    <desc>Created with Sketch.</desc>
+    <g id="206-疾风-High-Wind,-Near-Gale" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1.000000, 0.000000)">
+        <g transform="translate(5.000000, 6.000000)" id="路径">
+            <path d="M36,3 C36,4.65685425 37.3431458,6 39,6 C40.6568542,6 42,4.65685425 42,3 C42,1.34314575 40.6568542,-8.8817842e-16 39,-8.8817842e-16 C37.3431458,-8.8817842e-16 36,1.34314575 36,3 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M16.29,4.9 C18.219638,2.23055683 21.7492704,1.26752985 24.7672619,2.58705891 C27.7852534,3.90658797 29.4750227,7.15164666 28.8256496,10.3808484 C28.1762765,13.6100502 25.3634626,15.9496665 22.07,16 L2,16" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></path>
+            <path d="M41.78,14.9 C43.0170833,13.0944057 45.0612943,12.0106375 47.25,12 C51.1159932,11.9751472 54.2701471,15.0890068 54.2951476,18.955 C54.3198527,22.8209932 51.2059932,25.9751471 47.34,26 L0,26" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></path>
+            <path d="M29.28,47.1 C31.2089589,49.7683433 34.7367559,50.7316925 37.7541763,49.4140763 C40.7715966,48.09646 42.4628849,44.8540939 41.8168462,41.6255381 C41.1708074,38.3969824 38.3620974,36.0550726 35.07,36 L2,36" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"></path>
+            <line x1="7" y1="46" x2="18" y2="46" stroke="#FFFFFF" stroke-width="4" opacity="0.68" stroke-linecap="round"></line>
+        </g>
+    </g>
+</svg>

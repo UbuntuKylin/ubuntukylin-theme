@@ -1,1 +1,13 @@
-<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-1,.cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:4px;}.cls-2{opacity:0.7;}</style></defs><title>207-大风-Gale</title><path class="cls-1" d="M46.78,20.9A6.67,6.67,0,0,1,52.25,18a7,7,0,0,1,.09,14H5"/><path class="cls-1" d="M23,11.58A6,6,0,1,1,27.05,22H9"/><path class="cls-2" d="M37.94,52.42A6,6,0,1,0,42,42H8"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>207-大风-Gale</title>
+    <desc>Created with Sketch.</desc>
+    <g id="207-大风-Gale" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g transform="translate(4.000000, 10.000000)" id="路径" stroke="#FFFFFF" stroke-width="4">
+            <path d="M41.78,10.9 C43.0170833,9.09440573 45.0612943,8.01063753 47.25,8 C51.1159932,7.97514724 54.2701471,11.0890068 54.2951476,14.955 C54.3198527,18.8209932 51.2059932,21.9751471 47.34,22 L0,22"></path>
+            <path d="M18,1.58 C19.9778294,-0.235632503 22.9210907,-0.516328243 25.2064552,0.892727915 C27.4918198,2.30178407 28.5629236,5.05756227 27.8290093,7.64013856 C27.0950949,10.2227148 24.7348313,12.0033699 22.05,12.0000048 L4,12.0000048"></path>
+            <path d="M32.94,42.42 C34.9169178,44.2347995 37.8585236,44.5161641 40.1436197,43.1090263 C42.4287159,41.7018885 43.501541,38.9484803 42.7708324,36.3662785 C42.0401239,33.7840766 39.6835983,32.0011022 37,32 L3,32" opacity="0.7"></path>
+        </g>
+    </g>
+</svg>
