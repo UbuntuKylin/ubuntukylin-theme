@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="视图" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#808080;}
-</style>
-<title>14</title>
-<g id="_14">
-	<rect x="6" class="st0" width="1" height="14"/>
-	<path class="st0" d="M9,1v5h5V1H9z M13,5h-3V2h3V5z"/>
-	<path class="st0" d="M9,8v5h5V8H9z M13,12h-3V9h3V12z"/>
-	<rect y="2" class="st0" width="4" height="1"/>
-	<rect y="5" class="st0" width="4" height="1"/>
-	<rect y="8" class="st0" width="4" height="1"/>
-	<rect y="11" class="st0" width="4" height="1"/>
-</g>
-</svg>
+<svg id="v" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;stroke:gray;stroke-linecap:round;stroke-miterlimit:10;}.cls-2{fill:gray;}</style></defs><title>16</title><g id="_16" data-name="16"><line class="cls-1" x1="7.5" y1="13.5" x2="7.5" y2="2.5"/><path class="cls-2" d="M14,3V6H11V3h3m0-1H11a1,1,0,0,0-1,1V6a1,1,0,0,0,1,1h3a1,1,0,0,0,1-1V3a1,1,0,0,0-1-1Z"/><path class="cls-2" d="M14,10v3H11V10h3m0-1H11a1,1,0,0,0-1,1v3a1,1,0,0,0,1,1h3a1,1,0,0,0,1-1V10a1,1,0,0,0-1-1Z"/><line class="cls-1" x1="1.5" y1="12.5" x2="4.5" y2="12.5"/><line class="cls-1" x1="1.5" y1="9.5" x2="4.5" y2="9.5"/><line class="cls-1" x1="1.5" y1="6.5" x2="4.5" y2="6.5"/><line class="cls-1" x1="1.5" y1="3.5" x2="4.5" y2="3.5"/></g></svg>

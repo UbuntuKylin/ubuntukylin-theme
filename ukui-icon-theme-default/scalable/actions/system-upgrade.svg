@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="盒子" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#888888;stroke-miterlimit:10;}
-	.st1{fill:#2196F3;}
-</style>
-<title>14</title>
-<g id="_14">
-	<path class="st0" d="M6.5,13.5l-6-1.9V3.3l6.9-2.8l6,1.9V7"/>
-	<line class="st0" x1="6.5" y1="13.9" x2="6.5" y2="5"/>
-	<polyline class="st0" points="0.5,3.5 6.5,5.5 13.5,2.5 	"/>
-	<rect x="10" y="9" class="st1" width="2" height="5"/>
-	<polyline class="st1" points="14,10 11,7 8,10 	"/>
-</g>
-</svg>
+<svg id="s" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1,.cls-2,.cls-3{fill:none;stroke:#888;}.cls-1,.cls-2{stroke-linecap:round;}.cls-1{stroke-linejoin:round;}.cls-2,.cls-3{stroke-miterlimit:10;}.cls-4{fill:#2196f3;}</style></defs><title>16</title><g id="_16" data-name="16"><path class="cls-1" d="M7.5,14.5l-6-1.9V4.3L8.4,1.5l6,1.9V8"/><line class="cls-2" x1="7.5" y1="14.5" x2="7.5" y2="6.5"/><polyline class="cls-3" points="1.5 4.5 7.5 6.5 14.5 3.5"/><path class="cls-4" d="M11,10.25h2v4.5a.5.5,0,0,1-.5.5h-1a.5.5,0,0,1-.5-.5Z"/><path class="cls-4" d="M11.62,8.43,9.23,11.17A.5.5,0,0,0,9.6,12h4.8a.5.5,0,0,0,.37-.83L12.38,8.43A.5.5,0,0,0,11.62,8.43Z"/></g></svg>

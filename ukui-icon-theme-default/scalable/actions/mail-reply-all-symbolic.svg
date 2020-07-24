@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="图层_2" opacity="0.8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-linecap:round;stroke-miterlimit:10;}
-</style>
-<polyline class="st0" points="5.5,14 1.5,11.5 5.5,9 "/>
-<path class="st1" d="M1.5,11.5H10c2.5,0,4.5-2,4.5-4.5v0c0-2.5-2-4.5-4.5-4.5H7.5"/>
-<path class="st1" d="M3.3,11.5H8c1.4,0,2.5-1.1,2.5-2.5v0c0-1.4-1.1-2.5-2.5-2.5H6.5"/>
-</svg>
+<svg id="m" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1,.cls-2{fill:none;stroke:gray;stroke-linecap:round;}.cls-1{stroke-linejoin:round;}.cls-2{stroke-miterlimit:10;}</style></defs><title>16</title><g id="_16" data-name="16"><polyline class="cls-1" points="5.5 14 1.5 11.5 5.5 9"/><path class="cls-2" d="M1.5,11.5H10A4.48,4.48,0,0,0,14.5,7h0A4.48,4.48,0,0,0,10,2.5H7.5"/><path class="cls-2" d="M3.3,11.5H8A2.48,2.48,0,0,0,10.5,9h0A2.48,2.48,0,0,0,8,6.5H6.5"/></g></svg>
