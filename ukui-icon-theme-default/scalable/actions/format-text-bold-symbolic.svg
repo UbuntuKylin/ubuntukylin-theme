@@ -1,1 +1,13 @@
-<svg id="f" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;stroke:gray;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>16</title><g id="_16" data-name="16"><path class="cls-1" d="M4,8h6a3,3,0,0,1,3,3h0a3,3,0,0,1-3,3H4"/><path class="cls-1" d="M4,2h6a3,3,0,0,1,3,3h0a3,3,0,0,1-3,3H4"/><line class="cls-1" x1="3" y1="1" x2="3" y2="15"/></g></svg>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="f" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<title>16</title>
+<g id="_16">
+	<path style="fill:none;stroke:#808080;stroke-width:2;stroke-miterlimit:10;" d="M4,8h6c1.657,0,3,1.343,3,3l0,0
+		c0,1.657-1.343,3-3,3H4"/>
+	<path style="fill:none;stroke:#808080;stroke-width:2;stroke-miterlimit:10;" d="M4,2h6c1.657,0,3,1.343,3,3l0,0
+		c0,1.657-1.343,3-3,3H4"/>
+	<line style="fill:none;stroke:#808080;stroke-width:2;stroke-miterlimit:10;" x1="3" y1="1" x2="3" y2="15"/>
+</g>
+</svg>

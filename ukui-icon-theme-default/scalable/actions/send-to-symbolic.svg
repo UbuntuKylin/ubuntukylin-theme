@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:gray;}.cls-2{fill:none;stroke:gray;stroke-miterlimit:10;}</style></defs><title>16</title><g id="s"><g id="_16" data-name="16"><path class="cls-1" d="M3.5,6.5A1.5,1.5,0,1,1,2,8,1.5,1.5,0,0,1,3.5,6.5m0-1A2.5,2.5,0,1,0,6,8,2.5,2.5,0,0,0,3.5,5.5Z"/><path class="cls-1" d="M12.5,11A1.5,1.5,0,1,1,11,12.5,1.5,1.5,0,0,1,12.5,11m0-1A2.5,2.5,0,1,0,15,12.5,2.5,2.5,0,0,0,12.5,10Z"/><path class="cls-1" d="M12.5,2A1.5,1.5,0,1,1,11,3.5,1.5,1.5,0,0,1,12.5,2m0-1A2.5,2.5,0,1,0,15,3.5,2.5,2.5,0,0,0,12.5,1Z"/><line class="cls-2" x1="5.5" y1="8" x2="10.5" y2="4.5"/><line class="cls-2" x1="5.5" y1="8" x2="10.5" y2="11.5"/></g></g></svg>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="&#x56FE;&#x5C42;_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<title>16</title>
+<g id="s">
+	<g id="_16">
+		<path style="fill:#808080;" d="M3.5,6.5C4.328,6.5,5,7.172,5,8S4.328,9.5,3.5,9.5S2,8.828,2,8S2.672,6.5,3.5,6.5 M3.5,5.5
+			C2.119,5.5,1,6.619,1,8s1.119,2.5,2.5,2.5S6,9.381,6,8S4.881,5.5,3.5,5.5z"/>
+		<path style="fill:#808080;" d="M12.5,11c0.828,0,1.5,0.672,1.5,1.5S13.328,14,12.5,14S11,13.328,11,12.5S11.672,11,12.5,11
+			 M12.5,10c-1.381,0-2.5,1.119-2.5,2.5s1.119,2.5,2.5,2.5s2.5-1.119,2.5-2.5S13.881,10,12.5,10z"/>
+		<path style="fill:#808080;" d="M12.5,2C13.328,2,14,2.672,14,3.5S13.328,5,12.5,5S11,4.328,11,3.5S11.672,2,12.5,2 M12.5,1
+			C11.119,1,10,2.119,10,3.5S11.119,6,12.5,6S15,4.881,15,3.5S13.881,1,12.5,1z"/>
+		<line style="fill:none;stroke:#808080;stroke-miterlimit:10;" x1="5.5" y1="8" x2="10.5" y2="4.5"/>
+		<line style="fill:none;stroke:#808080;stroke-miterlimit:10;" x1="5.5" y1="8" x2="10.5" y2="11.5"/>
+	</g>
+</g>
+</svg>
