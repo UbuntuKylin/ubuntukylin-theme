@@ -34,13 +34,18 @@ Context=Status
 Size=16
 Type=Fixed
 
+[32x32/panel]
+Context=Status
+Size=32
+Type=Fixed
+
 [48x48/panel]
 Context=Status
 Size=48
 Type=Fixed
 
 
-[symbolic/panel]
+[scalable/panel]
 Context=Status
 Size=16
 MinSize=16
