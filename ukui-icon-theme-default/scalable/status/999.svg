@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="65px" height="64px" viewBox="0 0 65 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+<svg width="63px" height="64px" viewBox="0 0 63 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>999-未知-Unknown</title>
-    <desc>Created with Sketch.</desc>
-    <g id="999-未知-Unknown" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(1.000000, 0.000000)">
-        <g transform="translate(4.000000, 31.000000)" fill="#EBEBEB" fill-rule="nonzero" id="路径">
-            <path d="M24.56,3 L2.44,3 C1.61157288,3 0.94,2.32842712 0.94,1.5 C0.94,0.671572875 1.61157288,-3.55271368e-15 2.44,-3.55271368e-15 L24.56,-3.55271368e-15 C25.3884271,-3.55271368e-15 26.06,0.671572875 26.06,1.5 C26.06,2.32842712 25.3884271,3 24.56,3 Z"></path>
-            <path d="M53.56,3 L31.44,3 C30.6115729,3 29.94,2.32842712 29.94,1.5 C29.94,0.671572875 30.6115729,-3.55271368e-15 31.44,-3.55271368e-15 L53.56,-3.55271368e-15 C54.3884271,-3.55271368e-15 55.06,0.671572875 55.06,1.5 C55.06,2.32842712 54.3884271,3 53.56,3 L53.56,3 Z"></path>
-        </g>
+    <g id="999-未知-Unknown" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M8.466,43 L8.466,25.977 L8.553,25.977 L20.327,43 L22.763,43 L22.763,22.294 L20.385,22.294 L20.385,39.143 L20.298,39.143 L8.582,22.294 L6.088,22.294 L6.088,43 L8.466,43 Z M28.012,45.9 L38.278,19.22 L36.219,19.22 L25.924,45.9 L28.012,45.9 Z M41.903,43 L44.107,37.2 L53.619,37.2 L55.823,43 L58.404,43 L50.255,22.294 L47.5,22.294 L39.351,43 L41.903,43 Z M52.865,35.199 L44.861,35.199 L48.834,24.846 L48.95,24.846 L52.865,35.199 Z" id="N/A" fill="#FFFFFF" fill-rule="nonzero"></path>
     </g>
 </svg>
