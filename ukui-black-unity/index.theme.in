@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=ukui-black-unity
+_Comment=ukui-black-unity is an awesome GTK+ theme. It's another name is Genisys.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=ukui-black-unity
+MetacityTheme=ukui-black-unity
+IconTheme=ukui-icon-theme-default
