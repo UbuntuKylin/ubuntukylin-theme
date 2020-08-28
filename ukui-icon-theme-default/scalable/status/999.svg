@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>999-未知-Unknown</title>
-    <g id="999-未知-Unknown" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="N/A-2" transform="translate(6.088000, 19.220000)" fill="#FFFFFF" fill-rule="nonzero">
-            <path d="M2.378,23.78 L2.378,6.757 L2.465,6.757 L14.239,23.78 L16.675,23.78 L16.675,3.074 L14.297,3.074 L14.297,19.923 L14.21,19.923 L2.494,3.074 L3.55271368e-15,3.074 L3.55271368e-15,23.78 L2.378,23.78 Z M21.924,26.68 L32.19,-8.17124146e-14 L30.131,-8.17124146e-14 L19.836,26.68 L21.924,26.68 Z M35.815,23.78 L38.019,17.98 L47.531,17.98 L49.735,23.78 L52.316,23.78 L44.167,3.074 L41.412,3.074 L33.263,23.78 L35.815,23.78 Z M46.777,15.979 L38.773,15.979 L42.746,5.626 L42.862,5.626 L46.777,15.979 Z" id="N/A"></path>
-        </g>
-    </g>
-</svg>
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:#fff;}</style></defs><title>999-N-A</title><path class="cls-1" d="M1.12,4l3.73,6h0V4H6v8H4.92L1.15,6h0v6H0V4Z"/><path class="cls-1" d="M13.55,4,16,12H15L14.36,10H11.63L11,12H10l2.45-8ZM14.07,9,13,5.34h0L11.92,9Z"/><path class="cls-1" d="M10,5,7.83,11H7L9.2,5Z"/></svg>
