@@ -1,3 +1,13 @@
+ubuntukylin-theme (2.0.5) focal; urgency=medium
+  
+  * Bugfix only:
+    - Fix the problem that the webpage prompt is fuzzy and unclear.
+    - Fix the error in the checkbox and raidobox.
+    - Fix the disorder of color structure.
+    - Fix the background overlap problem of the drop-down menu.
+
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Mon, 06 Apr 2020 20:06:49 +0800
+
 ubuntukylin-theme (2.0.4) focal; urgency=medium
 
   * Bugfix only:
