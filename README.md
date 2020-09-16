@@ -68,19 +68,24 @@
 　　首先获取到所有光标名称，ubuntu下是88个，但由于软链接其实只有50种需要修改，现已经提取出这些鼠标文件名称（left_ptr是默认光标），使用gimp可以打开这些鼠标文件，绘制出对应合适的外观。该鼠标文件分为静态和动态，静态是由一张图片的三种尺寸组成（48x48px,32x32px,24x24px）共三张即可,动态同样是按照三种尺寸组成，但还需要按照帧数进行排列（ubuntu是30张图片完成一个动画），目前只有两张图片是动态（watch、left_ptr_watch），注意静态图片命名请按照：图片名_尺寸.png(如：left_ptr_48.png)，动态图片按照：图片名_序号_尺寸.png(如：watch_1_48.png、watch_2_48.png)。
 
 　　绘制完图片后，制作.conf文件,內容格式為：
-    (size) (xhot) (yhot) (filename) (ms-delay)
+
+　　(size) (xhot) (yhot) (filename) (ms-delay)
 
 　　其中：
 
 　　(size)处写鼠标的大小（像素）
-    (xhot)(yhot)鼠标的有效区域，一般都写0(注1）
-    (filename)图片名
-    (ms-delay)动态鼠标使用，每帧图片的间隔时间
+
+　　(xhot)(yhot)鼠标的有效区域，一般都写0(注1）
+
+　　(filename)图片名
+
+　　(ms-delay)动态鼠标使用，每帧图片的间隔时间
 
 　　注1：
-　　若右侧鼠标（↗），xhot应该填size的值，yhot填0。
-　　若左侧鼠标，默认状态，xhot应该填size/4的值，yhot填0。
-　　若拖动时的鼠标（↔）xhot和yhot均应是size/2。
+
+　　若右侧鼠标（↗），xhot应该填size的值，yhot填0;
+　　若左侧鼠标，默认状态，xhot应该填size/4的值，yhot填0;
+　　若拖动时的鼠标（↔）xhot和yhot均应是size/2;
 　　文本间隙选择（I）xhot和yhot均应该是size/2。
 
 　　制作.conf后，通过命令制作成系统可读取的文件。生成命令：
