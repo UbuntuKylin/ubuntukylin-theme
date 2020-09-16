@@ -22,7 +22,7 @@
 
 	sudo apt install sass
 
-　　然后建议学习一下sass，当然如果你熟悉css可以很快掌握，可以直接查看官网的教程<https://www.sass.hk/guide/>，也可以去看看阮一峰的教程<http://www.ruanyifeng.com/blog/2012/06/sass.html>。
+　　然后建议学习一下sass，当然如果你熟悉css可以很快掌握，可以直接查看官网的教程(https://www.sass.hk/guide/)，也可以去看看阮一峰的教程(http://www.ruanyifeng.com/blog/2012/06/sass.html)。
 
 　　学过CSS的人都知道，它不是一种编程语言。你可以用它开发网页样式，但是没法用它编程。也就是说，CSS基本上是设计师的工具，不是程序员的工具。所以这里使用的是sass，目的就是为了更加配合程序猿的使用习惯，使代码更有逻辑性。当然为了使系统能够读取，必须得在编包安装时把.scss文件转换成css。
 
@@ -68,14 +68,14 @@
 　　首先获取到所有光标名称，ubuntu下是88个，但由于软链接其实只有50种需要修改，现已经提取出这些鼠标文件名称（left_ptr是默认光标），使用gimp可以打开这些鼠标文件，绘制出对应合适的外观。该鼠标文件分为静态和动态，静态是由一张图片的三种尺寸组成（48x48px,32x32px,24x24px）共三张即可,动态同样是按照三种尺寸组成，但还需要按照帧数进行排列（ubuntu是30张图片完成一个动画），目前只有两张图片是动态（watch、left_ptr_watch），注意静态图片命名请按照：图片名_尺寸.png(如：left_ptr_48.png)，动态图片按照：图片名_序号_尺寸.png(如：watch_1_48.png、watch_2_48.png)。
 
 　　绘制完图片后，制作.conf文件,內容格式為：
-    <size> <xhot> <yhot> <filename> <ms-delay>
+    (size) (xhot) (yhot) (filename) (ms-delay)
 
 　　其中：
 
-　　<size>处写鼠标的大小（像素）
-    <xhot><yhot>鼠标的有效区域，一般都写0(注1）
-    <filename>图片名
-    <ms-delay>动态鼠标使用，每帧图片的间隔时间
+　　(size)处写鼠标的大小（像素）
+    (xhot)(yhot)鼠标的有效区域，一般都写0(注1）
+    (filename)图片名
+    (ms-delay)动态鼠标使用，每帧图片的间隔时间
 
 　　注1：
 　　若右侧鼠标（↗），xhot应该填size的值，yhot填0。
