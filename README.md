@@ -83,10 +83,7 @@
 
 　　注1：
 
-　　若右侧鼠标（↗），xhot应该填size的值，yhot填0;
-　　若左侧鼠标，默认状态，xhot应该填size/4的值，yhot填0;
-　　若拖动时的鼠标（↔）xhot和yhot均应是size/2;
-　　文本间隙选择（I）xhot和yhot均应该是size/2。
+　　若右侧鼠标（↗），xhot应该填size的值，yhot填0;若左侧鼠标，默认状态，xhot应该填size/4的值，yhot填0;若拖动时的鼠标（↔）xhot和yhot均应是size/2;文本间隙选择（I）xhot和yhot均应该是size/2。
 
 　　制作.conf后，通过命令制作成系统可读取的文件。生成命令：
 
