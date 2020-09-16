@@ -1,6 +1,6 @@
 # ubuntukylin-theme
   
-　　ubuntukylin-theme 优麒麟主题包，此包包含开机动画、gtk主题、图标主题、开机选择界面和搜狗输入法皮肤。  
+　　ubuntukylin-theme 优麒麟主题包，此包包含开机动画、gtk主题、图标主题、光标主题、开机选择界面和搜狗输入法皮肤。  
   
 一、开机动画  
   
@@ -58,3 +58,28 @@
 　　在图标主题下有很多相同的图标，那么我们该如何控制他们同时切换呢，这个时候就用到了软链接，因软链接生成的图片会跟着父级图片进行改变。为了方便批量替换，我写了一个脚本<https://github.com/kwwzzz/shell/tree/master/ukui-theme-icons-replace>用来替换同名的图标，这样能够节约部分时间提高效率，毕竟总是重复的工作会让人感觉枯燥。  
   
 　　关于图标命名规范，首先是和上游的图标名称相同，还有图标名中不可以出现空格，不可以出现奇怪的符号，图片的权限也必须合理等等，你可以通过编包，跑lintian来检查错误，由于主题包过大，编包跑lintian往往要很久时间，所以我写了一个脚本用于检查修改图片权限<https://github.com/kwwzzz/shell/tree/master/ukui-theme-icons-power>，这样也能够省去一些重复的编包测试工作。  
+
+四、光标主题
+
+    关于光标主题，为了让ukui的鼠标更有个性化，我调研了ubuntu的光标主题并以ubuntu为基础进行ukui的光标主题制作。
+    光标主题读取的不是简单的.png图片，是经过配置后的鼠标文件，直接使用图像工具无法打开，目前使用了gimp可以看见鼠标文件。并且尝试是否可以直接用gimp绘制鼠标文件，目前是不可行的，目前只有一种办法制作鼠标文件。
+    首先获取到所有光标名称，ubuntu下是88个，但由于软链接其实只有50种需要修改，现已经提取出这些鼠标文件名称（left_ptr是默认光标），使用gimp可以打开这些鼠标文件，绘制出对应合适的外观。该鼠标文件分为静态和动态，静态是由一张图片的三种尺寸组成（48x48px,32x32px,24x24px）共三张即可,动态同样是按照三种尺寸组成，但还需要按照帧数进行排列（ubuntu是30张图片完成一个动画），目前只有两张图片是动态（watch、left_ptr_watch），注意静态图片命名请按照：图片名_尺寸.png(如：left_ptr_48.png)，动态图片按照：图片名_序号_尺寸.png(如：watch_1_48.png、watch_2_48.png)。
+    绘制完图片后，制作.conf文件,內容格式為：
+	<size> <xhot> <yhot> <filename> <ms-delay>
+    其中：
+	<size>处写鼠标的大小（像素）
+	<xhot><yhot>鼠标的有效区域，一般都写0(注1）
+	<filename>图片名
+	<ms-delay>动态鼠标使用，每帧图片的间隔时间
+
+    注1：
+	若右侧鼠标（↗），xhot应该填size的值，yhot填0。
+	若左侧鼠标，默认状态，xhot应该填size/4的值，yhot填0。
+	若拖动时的鼠标（↔）xhot和yhot均应是size/2。
+	文本间隙选择（I）xhot和yhot均应该是size/2。
+
+    制作.conf后，通过命令制作成系统可读取的文件。生成命令：
+    
+	xcursorgen xxxx.conf xxxx
+    
+    生成的文件就是对应的光标文件，放入/usr/share/icons对应的光标主题下，最后需要注意包含此类文件的文件名必须是cursors才可以被系统读取，具体例子可以看<https://github.com/kwwzzz/shell/blob/master/xcursorgen/%E5%85%89%E6%A0%87%E5%88%B6%E4%BD%9C>。
