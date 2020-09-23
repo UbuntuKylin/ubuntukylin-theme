@@ -3,7 +3,7 @@ debian/chinese /usr/share/initramfs-tools/hooks/
 ukui-custom.xml /usr/share/mime/packages
 usr/share/plymouth/themes/ubuntukylin-logo/
 usr/share/plymouth/themes/ubuntukylin-text/
-ukui-icon-theme-basic ukui-icon-theme-classical ukui-icon-theme-default dark-sense blue-crystal usr/share/icons/
+ukui-icon-theme-classical ukui-icon-theme-default dark-sense blue-crystal usr/share/icons/
 ukui-black ukui-white usr/share/themes/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-dark1/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-dark2/
