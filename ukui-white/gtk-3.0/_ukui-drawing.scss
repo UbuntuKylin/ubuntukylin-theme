@@ -16,15 +16,6 @@
     //
     // Helper mixin to stack up to box-shadows;
     //
-    $shadows: null;
-
-    @each $shadow in $list {
-        @if $shadow != none {
-            $shadows: $shadows, $shadow;
-        }
-    }
-
-    box-shadow: $shadows;
 }
 
 // entries
@@ -66,21 +57,21 @@
 
     @if $t == insensitive {
         color: $disable_fg_color;
-        border-color: $disable_bg_color;
+        border-color: $disable_bd_color;
         background-color: $disable_bg_color;
         box-shadow: $_entry_edge;
     }
 
     @if $t == backdrop {
-        color: $backdrop_text_color;
-        border-color: $backdrop_borders_color;
+        color: $backdrop_fg_color;
+        border-color: $bd_color;
         background-color: $backdrop_base_color;
         box-shadow: $_blank_edge;
     }
 
     @if $t == backdrop-insensitive {
         color: $disable_fg_color;
-        border-color: $disable_bg_color;
+        border-color: $disable_bd_color;
         background-color: $disable_bg_color;
         box-shadow: $_blank_edge;
     }
@@ -189,16 +180,6 @@
     // TODO: this functions needs a way to deal with special cases
     //
 
-    $_shadow: _text_shadow_color($tc, $bg);
-
-    @if lightness($tc) < 50% {
-        text-shadow: 0 1px $_shadow;
-        -gtk-icon-shadow: 0 1px $_shadow;
-    }
-    @else {
-        text-shadow: 0 -1px $_shadow;
-        -gtk-icon-shadow: 0 -1px $_shadow;
-    }
 }
 
 @mixin button($t, $c: $bg_color, $tc: $fg_color, $edge: none) {
@@ -234,7 +215,7 @@
 
         background-image: image($bg_color);
 
-        @include _button_text_shadow($tc, $c);
+        //@include _button_text_shadow($tc, $c);
     }
     @else if $t == hover {
         //
@@ -246,7 +227,7 @@
 
         $button_fill: linear-gradient(to bottom, lighten($c, 6%), $c 60%, lighten($c, 4%)) !global;
 
-        @include _button_text_shadow($tc, lighten($c, 6%));
+       // @include _button_text_shadow($tc, lighten($c, 6%));
 
         background-image: image($bg_color);
     }
@@ -259,7 +240,7 @@
         outline-color: transparentize($tc, 0.7);
         border-color: if($c != $bg_color, _border_color($c, true), $alt_borders_color);
 
-        @include _button_text_shadow($tc, $c);
+        //@include _button_text_shadow($tc, $c);
 
         background-image: linear-gradient(to bottom, lighten($c, 5%) 20%, $c 90%);
     }
@@ -297,7 +278,7 @@
             color: if($tc != $fg_color, mix($tc, $_bg, 50%), $disable_fg_color);
         }
 
-        border-color: $disable_bg_color;
+        border-color: $disable_bd_color;
 
         $button_fill: image($_bg) !global;
 
@@ -332,7 +313,7 @@
         //
         // backdrop button
         //
-        $_bg: if($c != $bg_color, $c, $backdrop_bg_color);
+        $_bg: if($c != $bg_color, $c, $change_bg_color);
         $_bc: $c;
 
         label, & {
@@ -373,7 +354,7 @@
         $_bc: $_bg;
 
         label, & {
-            color: if($c != $bg_color, mix($tc, $_bg, 35%), $disable_bg_color);
+            color: if($c != $bg_color, mix($tc, $_bg, 35%), $disable_fg_color);
         }
 
         border-color: if($c != $bg_color, $_bc, $backdrop_borders_color);
@@ -396,7 +377,7 @@
         $_bc: $_bg;
 
         label {
-            color: if($c != $bg_color, mix($tc, $_bg, 35%), $disable_bg_color);
+            color: if($c != $bg_color, mix($tc, $_bg, 35%), $disable_fg_color);
         }
 
         border-color: if($c != $bg_color, $_bc, $backdrop_borders_color);

@@ -1,43 +1,40 @@
-
-/***************
+/**********************
  * Base States *
- ***************/
+ **********************/
 %widget_base_class {
 	border-radius: 4px;
     color: $fg_color;
 	box-shadow:none;
     background-color: $bg_color;
-	border-color:$bd_color;
+	border-style:none;
     &:focus {
         color: $fg_color;
         background-color: $bg_color;
-		border-color:$bd_color;
     }
     &:hover {
         color: $hover_fg_color;
         background-color: $hover_bg_color;
-		border-color:$hover_bd_color;
     }
     &:active {
         color: $active_fg_color;
         background-color: $active_bg_color;
-		border-color:$active_bd_color;    
 	}
     &:checked {
         color: $active_fg_color;
         background-color: $active_bg_color;
-		border-color:$active_bd_color;    
 	}
     &:disabled {
         color: $disable_fg_color;
         background-color: $disable_bg_color;
-		border-color:$disable_bd_color;
     }
 	&:backdrop{
-		color:$backdrop_bg_color;
-		background-color:$backdrop_fg_color;
-		border-color:$backdrop_bd_color;	
+		color:$backdrop_fg_color;
+		background-color:$backdrop_bg_color;
 	}
+    &:backdrop:disabled {
+		color: $disable_fg_color;
+        background-image: image($disable_bg_color);
+    }
 }
 
 
@@ -46,18 +43,22 @@
  * Buttons *
  **************/
 %button_base_class {
+	@extend %widget_base_class;
     box-shadow: none;
 	border-radius: 4px;
-	@extend %widget_base_class;
 	color: $button_fg_color;
     background-image: image($button_bg_color);
-
+	border-style:none;
+    &:focus {
+		color: $bt_hover_fg_color;
+        background-image: image($bt_hover_bg_color);
+    }
     &:hover {
 		color: $bt_hover_fg_color;
         background-image: image($bt_hover_bg_color);
     }
 
-    &:active {		
+    &:active {
 		color: $bt_active_fg_color;
         background-image:image( $bt_active_bg_color);
     }
@@ -88,9 +89,9 @@ button {
     min-height: 24px;
 }
 
-/*********
+/************
  * Menus *
- *********/
+ ************/
 %menuitem_base_class {
     @extend %widget_base_class;
 		background:$menu_color;
@@ -106,9 +107,9 @@ menubar,
 	@extend %menuitem_base_class;
 	border-radius:0px;
 	color: $headerbar_normal_fg_color;
-	background-color: $change_bg_color; 
+	background-color: $change_bg_color;
     &:backdrop {
-        background-color: $change_bg_color;  
+        background-color: $change_bg_color;
     }
     > menuitem {
 		margin-bottom:3px;
@@ -136,7 +137,7 @@ menubar,
 			margin-left:5px;
 			margin-right:5px;
 			&:disabled{
-				background-color:$menuitem_insensitive_bg_color;			
+				background-color:$menuitem_insensitive_bg_color;
 			}
         }
     }
@@ -169,7 +170,7 @@ menu,
         &:disabled {
             color: $disable_fg_color;
             &:backdrop {
-                color: $disable_bg_color;
+                color: $disable_fg_color;
             }
         }
 
@@ -229,15 +230,15 @@ menu,
         &:disabled {
             color: $disable_fg_color;
             background-color: $disable_bg_color;
-            border-color: $disable_bg_color;
+            border-color: $disable_bd_color;
         }
     }
 }
 
 
-/**************
- * ComboBoxes *
- **************/
+/******************
+ * ComboBoxes*
+ ******************/
 combobox {
 	@extend %widget_base_class;
     menu {
@@ -245,7 +246,11 @@ combobox {
 			border-radius: 4px;
             min-height: 23px;
             background-color: $combobox_dropdown_menuitem_normal_bg_color;
-            &:hover {
+			&:focus {
+                color: $active_fg_color;
+                background-color: $active_bg_color;
+            }
+			&:hover {
                 color: $active_fg_color;
                 background-color: $active_bg_color;
             }
@@ -261,18 +266,18 @@ combobox {
     /* When combobox entry isn't clicked, it uses entry's style. I don't want to change it. */
 }
 
-/****************
+/***********************
  * Text Entries *
- ****************/
+ **********************/
 entry {
 	background-color:    $text_bg_color;
 	border-radius: 4px;
 }
 
 
-/*
- * Notebooks
- */
+/***************
+ * Notebooks*
+ ***************/
 %tab_border {
     &.top {
         tab {
@@ -312,18 +317,21 @@ entry {
 %tab_closebutton {
     button {
 		border-radius:10px;
+		border-width:0;
         background-image: $notebook_tab_closebutton_normal_bg_image;
     }
     &:checked {
         button {
 			border-radius:10px;
+			border-width:0;
             background-image: $notebook_tab_closebutton_checked_bg_image;
         }
     }
 	&:hover{
 		button{
 			border-radius: 10px;
-			background-image: $notebook_tab_closebutton_active_bg_image;		
+			border-width:0;
+			background-image: $notebook_tab_closebutton_active_bg_image;
 		}
 	}
 
@@ -331,20 +339,20 @@ entry {
 
 notebook {
     > header {
-		border-color: $disable_bd_color;
+		//border-color: $disable_bd_color;
         > tabs {
             > tab {
                 /* close button in tab */
                 @extend %tab_closebutton;
             }
         }
-        @extend %tab_border;
+        //@extend %tab_border;
     }
 }
 
-/*************************
- * Check and Radio items *
- *************************/
+/*********************************
+ * Check and Radio items*
+ *********************************/
 // draw regular check and radio items using our PNG assets
 // all assets are rendered from assets.svg. never add pngs directly
 
@@ -385,8 +393,7 @@ check,
 radio {
 	border-radius: 4px;
 	color:$crb_fg_color;
-    margin: 0 4px;
-	margin-top:2px;
+    margin: 2px 6px 0 0px;
     &:only-child {
         margin: 0;
     }
@@ -410,44 +417,49 @@ radio {
     -gtk-icon-source: none;
 	background-image: image($crb_bg_color);
 	border-color:$crb_bd_color;
+	&:focus{
+		border-color:$crb_hover_bd_color;
+		background-image: image($crb_hover_bg_color);
+		color:$crb_hover_fg_color;
+	}
 	&:hover{
-		border-color:$crb_hover_bd_color;	
-		background-image: image($crb_hover_bg_color);	
+		border-color:$crb_hover_bd_color;
+		background-image: image($crb_hover_bg_color);
 		color:$crb_hover_fg_color;
 	}
 	&:checked{
         background-image: image($crb_active_bg_color);
-		border-color:$crb_active_bd_color;        
+		border-color:$crb_active_bd_color;
         color: $crb_active_fg_color;
         &:disabled {
-		    background-image: image(darken($crb_active_bg_color,20%));
-			border-color:darken($crb_active_bd_color,20%);        
-		    color: darken($crb_active_fg_color,20%);
-        }	
+		    background-image: image($crb_disable_bg_color);
+			border-color:$crb_disable_bd_color;
+        	color: $crb_disable_fg_color;
+        }
 	}
     &:selected {
         background-image: image($crb_active_bg_color);
-		border-color:$crb_active_bd_color;        
-        color: $crb_active_fg_color;	
+		border-color:$crb_active_bd_color;
+        color: $crb_active_fg_color;
         &:disabled {
-		    background-image: image($crb_active_bg_color);
-			border-color:$crb_active_bd_color;        
-		    color: $crb_active_fg_color;	
+		    background-image: image($crb_disable_bg_color);
+			border-color:$crb_disable_bd_color;
+        	color: $crb_disable_fg_color;
         }
 	}
     &:disabled {
         background-image: image($crb_disable_bg_color);
 		border-color:$crb_disable_bd_color;
-        color: $crb_disable_fg_color;	
+        color: $crb_disable_fg_color;
     }
     &:backdrop {
         background-image: image($crb_backdrop_bg_color);
 		border-color:$crb_backdrop_bd_color;
-        color: $crb_backdrop_fg_color;	
+        color: $crb_backdrop_fg_color;
         &:disabled {
 		    background-image: image($crb_disable_bg_color);
 			border-color:$crb_disable_bd_color;
-        	color: $crb_disable_fg_color;	
+        	color: $crb_disable_fg_color;
         }
     }
 
@@ -524,47 +536,46 @@ menu menuitem {
 		@extend %check;
 	}
 	radio{
-		@extend %radio;	
+		@extend %radio;
 	}
 }
 
-treeview.view check,
-treeview.view radio {
+treeview.view check {
 		@extend %check;
 		background-image: image($bg_color);
 		&:checked{
-				background-image: image($bg_color);
-				border-color:$crb_active_bd_color;        
+				background-image: image($crb_active_bg_color);
+				border-color:$crb_active_bd_color;
 				color: $crb_active_fg_color;
 			&:disabled {
 					background-image: image($crb_active_bg_color);
-					border-color:$crb_active_bd_color;        
+					border-color:$crb_active_bd_color;
 					color: $crb_active_fg_color;
 				&:hover{
 						background-image: image($crb_active_bg_color);
-						border-color:$crb_active_bd_color;        
-						color: $crb_active_fg_color;				
+						border-color:$crb_active_bd_color;
+						color: $crb_active_fg_color;
 				}
-			}	
+			}
 		}
 		&:disabled {
 				background-image: image($bg_color);
 				border-color:$crb_disable_bd_color;
 				color: $crb_disable_fg_color;
 				&:hover{
-					border-color:$crb_hover_bd_color;	
-					background-image: image($crb_hover_bg_color);	
+					border-color:$crb_hover_bd_color;
+					background-image: image($crb_hover_bg_color);
 					color:$crb_hover_fg_color;
 				}
 		}
 		&:backdrop {
 				background-image: image($crb_backdrop_bg_color);
 				border-color:$crb_backdrop_bd_color;
-				color: $crb_backdrop_fg_color;	
+				color: $crb_backdrop_fg_color;
 			&:disabled {
 					background-image: image($crb_disable_bg_color);
 					border-color:$crb_disable_bd_color;
-					color: $crb_disable_fg_color;	
+					color: $crb_disable_fg_color;
 			}
 		}
 }
@@ -572,9 +583,9 @@ treeview.view radio{
 		@extend %radio;
 }
 
-/*********************
- * Switch & its slider
- *********************/
+/*********************************
+ * Switch & its slider *
+ ********************************/
 switch {
     @extend %widget_base_class;
 }
@@ -584,20 +595,16 @@ slider {
 }
 
 
-/************
- * SpinButton
- ************/
+/**************
+ * SpinButton *
+ **************/
 spinbutton {
     @extend %widget_base_class;
 }
 
-
-
-
-
-/*
- * trough in scale/progress bar
- */
+/*************************************
+ * trough in scale/progress bar *
+ *************************************/
 @mixin trough_colors($filled_widget) {
     /* trough - not filled part */
     background-color: $trough_free_space_normal_color;
@@ -627,13 +634,13 @@ spinbutton {
     }
 }
 
-/*********
+/**************
  * Scale *
- *********/
+ **************/
 scale {
     trough {
         @include trough_colors(highlight);
-		
+
         slider {
             /* scale slider */
 
@@ -665,7 +672,7 @@ scale {
 
 
 /**************
- * Progessbar*
+ * Progessbar *
  **************/
 progressbar {
     trough {
@@ -731,18 +738,19 @@ treeview.view {
         &:backdrop, & {
             border-left-color: mix($selected_fg_color, $selected_bg_color, 50%);
             border-top-color: transparentize($fg_color, 0.9);
+			background-color: $active_bg_color;
         }
     }
     &:disabled {
         color: $disable_fg_color;
         &:selected {
-            color: mix($selected_fg_color, $selected_bg_color, 40%);
+            color: $disable_fg_color;
             &:backdrop {
-                color: $backdrop_fg_color;
+                color: $disable_fg_color;
             }
         }
         &:backdrop {
-            color: $backdrop_fg_color;
+            color: $disable_fg_color;
         }
     }
     &.separator {
@@ -754,8 +762,10 @@ treeview.view {
     }
 
     &:backdrop {
-        border-left-color: mix($backdrop_fg_color, $backdrop_bg_color, 50%);
-        border-top: $backdrop_bg_color;
+        border-left-color: $treeview_view_selected_bg_color;
+        border-top: $treeview_view_selected_bg_color;
+		background-color:$treeview_view_selected_bg_color;
+		color:$backdrop_fg_color;
     }
 
     &:drop(active) {
@@ -803,7 +813,7 @@ treeview.view {
         //border-radius: 4px;
         background-color: $selected_bg_color;
         background-image: linear-gradient(to bottom, $selected_bg_color, darken($selected_bg_color, 10%));
-        box-shadow: inset 0 1px transparentize(white, 0.7), 0 1px transparentize(black, 0.8);
+        //box-shadow: inset 0 1px transparentize(white, 0.7), 0 1px transparentize(black, 0.8);
         &:selected {
             &:focus, & {
                 border-radius: 0px;
@@ -813,7 +823,7 @@ treeview.view {
                 &:backdrop {
                     color: $selected_bg_color;
                     border-color: $selected_borders_color;
-                    background-color: $backdrop_base_color;
+                    background-color: $treeview_view_selected_bg_color;
                 }
             }
         }
@@ -872,7 +882,7 @@ treeview.view {
             background-color: $selected_bg_color;
             border-style: none;
             border-radius: 0;
-            box-shadow: inset 0 0 0 1px $bg_color;
+            //box-shadow: inset 0 0 0 1px $bg_color;
             text-shadow: none;
             transition: none;
         }
@@ -927,13 +937,14 @@ scrolledwindow {
  * headerbar - for several applications such as gedit and gnome-calculator
  *****************************************/
 .titlebar, headerbar {
-    color: $fg_color;
+    color: $headerbar_normal_fg_color;
     background-image: $headerbar_normal_bg_image;
     &:backdrop {
-        color: $headerbar_button_backdrop_fg_color;
+        color: $headerbar_backdrop_fg_color;
         background-image: $headerbar_backdrop_bg_image;
     }
     button.titlebutton {
+		border-radius:6px;
         color: $headerbar_button_normal_fg_color;
         background-image:$headerbar_button_normal_bg_image;
         border-width: 0px;
@@ -960,9 +971,9 @@ scrolledwindow {
         }
     }
 }
-/************
- * Toolbars *
- ************/
+/****************
+ * Toolbars*
+ ***************/
 %toolbar {
     -GtkWidget-window-dragging: true;
     padding: 4px;
@@ -972,7 +983,7 @@ scrolledwindow {
 toolbar {
     @extend %toolbar;
     padding: 4px 3px 3px 4px;
-	
+
     // on OSD
     .osd & {
         background-color: transparent;
@@ -994,11 +1005,10 @@ toolbar {
 
     }
 	button {
-        @extend %button_base_class;
+		box-shadow: none;
+		border-radius: 4px;
+		color: $button_fg_color;
         background-image: image($toolbar_button_bg_color);
-		&:disabled{
-        	background-image: image($toolbar_button_bg_color);
-		}
     }
     // toolbar separators
     &.horizontal separator {
@@ -1036,25 +1046,26 @@ searchbar,
     @extend %darkbar;
     border-width: 1px;
     padding: 3px;
-	border-color:$active_bg_color;
+	border-color:$sp_bd_color;
 }
 
 %darkbar {
     border-style: solid;
-    border-color: $fg_color;
+    border-color: $sp_bd_color;
     background-color: $change_bg_color;
 
     &:backdrop {
-        border-color: $fg_color;
+		color:$backdrop_fg_color;
+        border-color: $sp_bd_color;
         background-color: $change_bg_color;
         box-shadow: none;
         transition: $backdrop_transition;
     }
 }
 
-/************
+/*****************
  * Separator*
- ***********/
+ *****************/
 separator {
     margin: 3px;
 }
@@ -1122,7 +1133,7 @@ button:visited {
  * Emoji *
  ********/
 
-popover.emoji-picker { 
+popover.emoji-picker {
 	padding-left: 0;
     padding-right: 0;
 }
