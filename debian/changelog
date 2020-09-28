@@ -1,3 +1,10 @@
+ubuntukylin-theme (2.0.6) groovy; urgency=medium
+
+  * Add some icons for new apps and devices. (LP: #1897506)
+  * Fix some bugs about the style and icons.
+
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Mon, 28 Sep 2020 13:52:31 +0800
+
 ubuntukylin-theme (2.0.5) focal; urgency=medium
   
   * Bugfix only:
