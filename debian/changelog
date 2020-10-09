@@ -1,6 +1,12 @@
+ubuntukylin-theme (2.0.7) groovy; urgency=medium
+
+  * New bugfix release. (LP: #1897506)
+
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Fri, 09 Oct 2020 19:05:53 +0800
+
 ubuntukylin-theme (2.0.6) groovy; urgency=medium
 
-  * Add some icons for new apps and devices. (LP: #1897506)
+  * Add some icons for new apps and devices.
   * Fix some bugs about the style and icons.
 
  -- handsome_feng <jianfengli@ubuntukylin.com>  Mon, 28 Sep 2020 13:52:31 +0800
