@@ -71,7 +71,7 @@ $link_visited_fg_color: $active_fg_color;
 $link_selected_fg_color: $selected_fg_color;
 $dark_fill: mix($bg_color, $bg_color, 50%);
 $alt_borders_color: darken($bg_color, 35%);
-$borders_edge: transparentize(white, 0.2);/*shadow*/
+$borders_edge: transparentize(black, 0.2);/*shadow*/
 $top_hilight: $borders_edge;
 
 /**popover**/
@@ -166,7 +166,7 @@ $notebook_tab_closebutton_checked_bg_image: image($notebook_tab_checked_bg_color
 $scrollbar_bg_color: mix($bg_color, $fg_color, 80%);
 $scrollbar_normal_bg_color: $bg_color;
 $scrollbar_prelight_bg_color: #303033;
-$scrollbar_free_space_color: #343438; 
+$scrollbar_free_space_color: #343438;
 $scrollbar_slider_normal_color: #3D3D41;
 $scrollbar_slider_active_color: #85858C;
 $scrollbar_slider_prelight_color: #616166;
