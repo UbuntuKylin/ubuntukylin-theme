@@ -99,8 +99,8 @@
   echo "32 26 6 ../32x32/ur_angle.png 0 ">> cursors/ur_angle.conf
   echo "32 15 16 ../32x32/X_cursor.png 0 ">> cursors/X_cursor.conf
   echo "32 14 15 ../32x32/xterm.png 0 ">> cursors/xterm.conf
-  echo "32 14 13 ../32x32/zoom-in.png 0 "> cursors/zoom-in.conf
-  echo "32 14 13 ../32x32/zoom-out.png 0 "> cursors/zoom-out.conf
+  echo "32 14 13 ../32x32/zoom-in.png 0 ">> cursors/zoom-in.conf
+  echo "32 14 13 ../32x32/zoom-out.png 0 ">> cursors/zoom-out.conf
 
   echo "48 11 11 ../48x48/bd_double_arrow.png 0 ">> cursors/bd_double_arrow.conf
   echo "48 19 29 ../48x48/bottom_left_corner.png 0 ">> cursors/bottom_left_corner.conf
@@ -150,8 +150,8 @@
   echo "48 39 9 ../48x48/ur_angle.png 0 ">> cursors/ur_angle.conf
   echo "48 23 23 ../48x48/X_cursor.png 0 ">> cursors/X_cursor.conf
   echo "48 21 23 ../48x48/xterm.png 0 ">> cursors/xterm.conf
-  echo "48 22 19 ../48x48/zoom-in.png 0 "> cursors/zoom-in.conf
-  echo "48 22 19 ../48x48/zoom-out.png 0 "> cursors/zoom-out.conf
+  echo "48 22 19 ../48x48/zoom-in.png 0 ">> cursors/zoom-in.conf
+  echo "48 22 19 ../48x48/zoom-out.png 0 ">> cursors/zoom-out.conf
 
   echo "24 0 0 ../24x24/left_ptr_watch_1.png 50" > cursors/left_ptr_watch.conf
   echo "24 0 0 ../24x24/left_ptr_watch_2.png 50" > cursors/left_ptr_watch.conf
