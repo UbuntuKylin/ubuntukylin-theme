@@ -68,7 +68,7 @@ $crb_backdrop_bd_color: #BFBFBF;
 /** Link **/
 $link_fg_color: $fg_color;
 $link_active_fg_color: $active_fg_color;
-$link_visited_fg_color: $active_fg_color;
+$link_visited_fg_color:  $fg_color;
 $link_selected_fg_color: $selected_fg_color;
 $dark_fill: mix($bg_color, $bg_color, 50%);
 $alt_borders_color: darken($bg_color, 35%);
