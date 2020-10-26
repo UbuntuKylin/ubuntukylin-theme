@@ -47,7 +47,7 @@
     box-shadow: none;
 	border-radius: 4px;
 	color: $button_fg_color;
-    background-color: $button_bg_color;
+    background: $button_bg_color;
 	border-style:none;
     &:focus {
 		color: $bt_hover_fg_color;
