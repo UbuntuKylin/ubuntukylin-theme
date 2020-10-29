@@ -3,7 +3,7 @@ Section: gnome
 Priority: optional
 Maintainer: Ubuntu Kylin Team <ubuntukylin-members@lists.launchpad.net>
 Uploaders: handsome_feng <jianfengli@ubuntukylin.com>
-Build-Depends: debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 13),
                sass
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
