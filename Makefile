@@ -1,4 +1,4 @@
-all: ukui-dark ukui-light dark-sense blue-crystal
+all: ukui-dark ukui-light ukui-white dark-sense blue-crystal
 
 ukui-dark:
 	$(MAKE) -C ukui-dark/
