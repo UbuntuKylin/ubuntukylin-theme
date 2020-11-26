@@ -4,7 +4,7 @@ ukui-custom.xml /usr/share/mime/packages
 usr/share/plymouth/themes/ubuntukylin-logo/
 usr/share/plymouth/themes/ubuntukylin-text/
 ukui-icon-theme-classical ukui-icon-theme-default dark-sense blue-crystal usr/share/icons/
-ukui-dark ukui-light usr/share/themes/
+ukui-dark ukui-light  ukui-white usr/share/themes/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-dark1/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-dark2/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-light1/
