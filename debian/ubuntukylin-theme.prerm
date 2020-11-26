@@ -46,6 +46,12 @@ case "$1" in
     abort-install|abort-upgrade)
 	;;
 
+    remove|deconfigure|failed-upgrade)
+	update-alternatives --remove x-cursor-theme \
+		/usr/share/icons/DMZ-White/cursor.theme
+	update-alternatives --remove x-cursor-theme \
+		/usr/share/icons/DMZ-Black/cursor.theme
+	;;
     *)
 	echo "$0 called with unknown argument \`$1'" 1>&2
 	exit 1

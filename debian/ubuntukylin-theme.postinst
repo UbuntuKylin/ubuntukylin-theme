@@ -48,3 +48,8 @@ case "$1" in
 esac
 
 #DEBHELPER#
+
+update-alternatives --install /usr/share/icons/default/index.theme \
+        x-cursor-theme /usr/share/icons/dark-sense/cursor.theme 110
+update-alternatives --install /usr/share/icons/default/index.theme \
+        x-cursor-theme /usr/share/icons/blue-crystal/cursor.theme 45
