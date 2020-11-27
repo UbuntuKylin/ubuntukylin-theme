@@ -48,9 +48,9 @@ case "$1" in
 
     remove|deconfigure|failed-upgrade)
 	update-alternatives --remove x-cursor-theme \
-		/usr/share/icons/DMZ-White/cursor.theme
+		/usr/share/icons/dark-sense/cursor.theme
 	update-alternatives --remove x-cursor-theme \
-		/usr/share/icons/DMZ-Black/cursor.theme
+		/usr/share/icons/blue-crystal/cursor.theme
 	;;
     *)
 	echo "$0 called with unknown argument \`$1'" 1>&2
