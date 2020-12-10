@@ -16,6 +16,10 @@ themes/ukui-light/gtk-3.0/ usr/share/themes/ukui/
 themes/ukui-light/gtk-3.0/ usr/share/themes/ukui-white/
 themes/ukui-dark/gtk-3.0/ usr/share/themes/ukui-black/
 
+themes/ukui-light/gtk-2.0/ usr/share/themes/ukui/
+themes/ukui-light/gtk-2.0/ usr/share/themes/ukui-white/
+themes/ukui-dark/gtk-2.0/ usr/share/themes/ukui-black/
+
 usr/share/fcitx-qimpanel/skin/ubuntukylin-dark1/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-dark2/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-light1/
