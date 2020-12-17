@@ -26,3 +26,36 @@ usr/share/fcitx-qimpanel/skin/ubuntukylin-light1/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-light2/
 ubuntukylin-grub-theme/06_ubuntukylin_theme /etc/grub.d/
 usr/share/grub/themes/UKUI/
+
+
+icons/ukui/8x8 icons/ukui-icon-theme-default/8x8
+icons/ukui/14x14 icons/ukui-icon-theme-default/14x14
+icons/ukui/14x14@2x icons/ukui-icon-theme-default/14x14@2x
+icons/ukui/16x16 icons/ukui-icon-theme-default/16x16
+icons/ukui/16x16@2x icons/ukui-icon-theme-default/16x16@2x
+icons/ukui/22x22 icons/ukui-icon-theme-default/22x22
+icons/ukui/24x24 icons/ukui-icon-theme-default/24x24
+icons/ukui/24x24@2x icons/ukui-icon-theme-default/24x24@2x
+icons/ukui/32x32 icons/ukui-icon-theme-default/32x32
+icons/ukui/32x32@2x icons/ukui-icon-theme-default/32x32@2x
+icons/ukui/48x48 icons/ukui-icon-theme-default/48x48
+icons/ukui/48x48@2x icons/ukui-icon-theme-default/48x48@2x
+icons/ukui/64x64 icons/ukui-icon-theme-default/64x64
+icons/ukui/64x64@2x icons/ukui-icon-theme-default/64x64@2x
+icons/ukui/96x96 icons/ukui-icon-theme-default/96x96
+icons/ukui/96x96@2x icons/ukui-icon-theme-default/96x96@2x
+icons/ukui/128x128 icons/ukui-icon-theme-default/128x128
+icons/ukui/128x128@2x icons/ukui-icon-theme-default/128x128@2x
+icons/ukui/256x256 icons/ukui-icon-theme-default/256x256
+icons/ukui/256x256@2x icons/ukui-icon-theme-default/256x256@2x
+icons/ukui/scalable icons/ukui-icon-theme-default/scalable
+icons/ukui/symbolic icons/ukui-icon-theme-default/symbolic
+
+
+
+
+
+
+
+
+
