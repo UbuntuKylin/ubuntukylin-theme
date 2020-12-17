@@ -3,7 +3,7 @@ debian/chinese /usr/share/initramfs-tools/hooks/
 ukui-custom.xml /usr/share/mime/packages
 usr/share/plymouth/themes/ubuntukylin-logo/
 usr/share/plymouth/themes/ubuntukylin-text/
-icons/ukui-classical icons/ukui icons/ukui-icon-theme-default usr/share/icons/
+icons/ukui-classical icons/ukui usr/share/icons/
 dark-sense/*.theme /usr/share/icons/dark-sense
 dark-sense/cursors /usr/share/icons/dark-sense/
 blue-crystal/*.theme /usr/share/icons/blue-crystal
@@ -26,9 +26,6 @@ usr/share/fcitx-qimpanel/skin/ubuntukylin-light1/
 usr/share/fcitx-qimpanel/skin/ubuntukylin-light2/
 ubuntukylin-grub-theme/06_ubuntukylin_theme /etc/grub.d/
 usr/share/grub/themes/UKUI/
-
-
-icons/ukui/8x8  icons/ukui/14x14 icons/ukui/14x14@2x icons/ukui/16x16 icons/ukui/16x16@2x icons/ukui/22x22 icons/ukui/24x24 icons/ukui/24x24@2x icons/ukui/32x32 icons/ukui/32x32@2x icons/ukui/48x48 icons/ukui/48x48@2x icons/ukui/64x64 icons/ukui/64x64@2x icons/ukui/96x96 icons/ukui/96x96@2x icons/ukui/128x128 icons/ukui/128x128@2x icons/ukui/256x256 icons/ukui/256x256@2x icons/ukui/scalable icons/ukui/symbolic usr/share/icons/ukui-icon-theme-default/
 
 
 

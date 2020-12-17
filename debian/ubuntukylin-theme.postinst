@@ -16,8 +16,6 @@ set -e
 # If prerm fails during replacement due to conflict:
 #       <postinst> abort-remove in-favour <new-package> <version>
 
-rm -rf /usr/share/icons/ukui-icon-theme-classical
-rm -rf /usr/share/icons/ukui-icon-theme-basic
 
 case "$1" in
     configure)
