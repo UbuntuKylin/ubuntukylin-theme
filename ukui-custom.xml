@@ -75,4 +75,33 @@
 		<icon name="application-x-archive"/>
 		<glob pattern="*.ear" weight="60"/>
 	</mime-type>
+
+
+
+	<mime-type type="application/x-cbz">
+		<comment>war Document</comment>
+		<comment xml:lang="zh_CN">cbz 文档</comment>
+		<comment xml:lang="zh_TW">cbz 文件</comment>
+		<generic-icon name="application-x-archive"/>
+		<icon name="application-x-archive"/>
+		<glob pattern="*.cbz" weight="60"/>
+	</mime-type>
+
+	<mime-type type="application/x-7z-compressed-tar">
+		<comment>war Document</comment>
+		<comment xml:lang="zh_CN">tar.7z 文档</comment>
+		<comment xml:lang="zh_TW">tar.7z 文件</comment>
+		<generic-icon name="application-x-archive"/>
+		<icon name="application-x-archive"/>
+		<glob pattern="*.tar.7z" weight="60"/>
+	</mime-type>
+
+	<mime-type type="application/x-lzop-compressed-tar">
+		<comment>war Document</comment>
+		<comment xml:lang="zh_CN">tar.lzo 文档</comment>
+		<comment xml:lang="zh_TW">tar.lzo 文件</comment>
+		<generic-icon name="application-x-archive"/>
+		<icon name="application-x-archive"/>
+		<glob pattern="*.tar.lzo" weight="60"/>
+	</mime-type>
 </mime-info>
