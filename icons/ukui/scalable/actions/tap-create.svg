@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="t" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
-<title>16</title>
-<g id="_16">
-	<path style="fill:#808080;" d="M14.38,2L14.38,2v5.29L7.66,14L2.42,8.71L9.14,2H14.38 M14.38,1H9.14
-		C8.867,1.002,8.606,1.11,8.41,1.3L1.72,8C1.317,8.377,1.296,9.01,1.673,9.413C1.688,9.429,1.704,9.445,1.72,9.46L7,14.7
-		c0.38,0.4,1.013,0.417,1.414,0.036c0.012-0.012,0.024-0.024,0.036-0.036L15.11,8c0.196-0.192,0.304-0.456,0.3-0.73V2
-		c0-0.552-0.448-1-1-1H14.38z"/>
-	<circle style="fill:#808080;" cx="11.5" cy="4.5" r="1"/>
+<style type="text/css">
+	.st0{opacity:0.75;}
+	.st1{fill:#1F2022;}
+</style>
+<g id="_16" class="st0">
+	<path class="st1" d="M14.4,2L14.4,2v5.3L7.7,14L2.4,8.7L9.1,2H14.4 M14.4,1H9.1C8.9,1,8.6,1.1,8.4,1.3L1.7,8c-0.4,0.4-0.4,1,0,1.4
+		l0,0L7,14.7c0.4,0.4,1,0.4,1.4,0l0,0L15.1,8c0.2-0.2,0.3-0.5,0.3-0.7V2C15.4,1.4,15,1,14.4,1L14.4,1z"/>
+	<circle class="st1" cx="11.5" cy="4.5" r="1"/>
 </g>
 </svg>
