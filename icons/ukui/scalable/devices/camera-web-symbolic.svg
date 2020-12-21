@@ -16,10 +16,13 @@
 <g id="layer9" transform="translate(-81,-447)" inkscape:groupmode="layer" inkscape:label="status">
 </g>
 <g id="layer10" transform="translate(-81,-447)" inkscape:groupmode="layer" inkscape:label="devices" class="st0">
-	<path id="rect6844" class="st1" d="M95,451h-8c-0.6,0-1,0.4-1,1v7c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1v-7C96,451.4,95.5,451,95,451z
-		"/>
-	<path id="path6846" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccc" class="st1" d="M86,455.5l-3.5-3.5H82v7h0.5
-		L86,455.5z"/>
+	<g id="rect6844">
+		<path class="st1" d="M95,452v7h-8v-7H95 M95,451h-8c-0.6,0-1,0.4-1,1v7c0,0.6,0.4,1,1,1h8c0.6,0,1-0.4,1-1v-7
+			C96,451.4,95.5,451,95,451L95,451z"/>
+	</g>
+	<g id="path6846" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccc">
+		<path class="st1" d="M83,453.9l1.6,1.6l-1.6,1.6V453.9 M82.5,452H82v7h0.5l3.5-3.5L82.5,452L82.5,452z"/>
+	</g>
 </g>
 <g id="layer11" transform="translate(-81,-447)" inkscape:groupmode="layer" inkscape:label="apps">
 </g>
