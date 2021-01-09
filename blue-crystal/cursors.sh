@@ -154,13 +154,13 @@
   echo "48 22 19 ../48x48/zoom-out.png 0 ">> cursors/zoom-out.conf
 
   echo "24 0 0 ../24x24/left_ptr_watch_1.png 50" > cursors/left_ptr_watch.conf
-  echo "24 0 0 ../24x24/left_ptr_watch_2.png 50" > cursors/left_ptr_watch.conf
-  echo "24 0 0 ../24x24/left_ptr_watch_3.png 50" > cursors/left_ptr_watch.conf
-  echo "24 0 0 ../24x24/left_ptr_watch_4.png 50" > cursors/left_ptr_watch.conf
-  echo "24 0 0 ../24x24/left_ptr_watch_5.png 50" > cursors/left_ptr_watch.conf
-  echo "24 0 0 ../24x24/left_ptr_watch_6.png 50" > cursors/left_ptr_watch.conf
-  echo "24 0 0 ../24x24/left_ptr_watch_7.png 50" > cursors/left_ptr_watch.conf
-  echo "24 0 0 ../24x24/left_ptr_watch_8.png 50" > cursors/left_ptr_watch.conf
+  echo "24 0 0 ../24x24/left_ptr_watch_2.png 50" >> cursors/left_ptr_watch.conf
+  echo "24 0 0 ../24x24/left_ptr_watch_3.png 50" >> cursors/left_ptr_watch.conf
+  echo "24 0 0 ../24x24/left_ptr_watch_4.png 50" >> cursors/left_ptr_watch.conf
+  echo "24 0 0 ../24x24/left_ptr_watch_5.png 50" >> cursors/left_ptr_watch.conf
+  echo "24 0 0 ../24x24/left_ptr_watch_6.png 50" >> cursors/left_ptr_watch.conf
+  echo "24 0 0 ../24x24/left_ptr_watch_7.png 50" >> cursors/left_ptr_watch.conf
+  echo "24 0 0 ../24x24/left_ptr_watch_8.png 50" >> cursors/left_ptr_watch.conf
 
   echo "32 0 0 ../32x32/left_ptr_watch_1.png 50" >> cursors/left_ptr_watch.conf
   echo "32 0 0 ../32x32/left_ptr_watch_2.png 50" >> cursors/left_ptr_watch.conf
