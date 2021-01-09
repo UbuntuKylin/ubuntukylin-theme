@@ -173,15 +173,15 @@
 
 
   echo "24 11 11 ../24x24/watch_1.png 50" > cursors/watch.conf
-  echo "24 11 11 ../24x24/watch_2.png 50" > cursors/watch.conf
-  echo "24 11 11 ../24x24/watch_3.png 50" > cursors/watch.conf
-  echo "24 11 11 ../24x24/watch_4.png 50" > cursors/watch.conf
-  echo "24 11 11 ../24x24/watch_5.png 50" > cursors/watch.conf
-  echo "24 11 11 ../24x24/watch_6.png 50" > cursors/watch.conf
-  echo "24 11 11 ../24x24/watch_7.png 50" > cursors/watch.conf
-  echo "24 11 11 ../24x24/watch_8.png 50" > cursors/watch.conf
-  echo "24 11 11 ../24x24/watch_9.png 50" > cursors/watch.conf
-  echo "24 11 11 ../24x24/watch_10.png 50" > cursors/watch.conf
+  echo "24 11 11 ../24x24/watch_2.png 50" >> cursors/watch.conf
+  echo "24 11 11 ../24x24/watch_3.png 50" >> cursors/watch.conf
+  echo "24 11 11 ../24x24/watch_4.png 50" >> cursors/watch.conf
+  echo "24 11 11 ../24x24/watch_5.png 50" >> cursors/watch.conf
+  echo "24 11 11 ../24x24/watch_6.png 50" >> cursors/watch.conf
+  echo "24 11 11 ../24x24/watch_7.png 50" >> cursors/watch.conf
+  echo "24 11 11 ../24x24/watch_8.png 50" >> cursors/watch.conf
+  echo "24 11 11 ../24x24/watch_9.png 50" >> cursors/watch.conf
+  echo "24 11 11 ../24x24/watch_10.png 50" >> cursors/watch.conf
 
   echo "32 15 14 ../32x32/watch_1.png 50" >> cursors/watch.conf
   echo "32 15 14 ../32x32/watch_2.png 50" >> cursors/watch.conf
