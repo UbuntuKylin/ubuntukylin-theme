@@ -760,7 +760,7 @@ button {
     // Suggested and Destructive Action buttons
     @each $b_type, $b_color in (suggested-action, $selected_bg_color), (destructive-action, $destructive_color) {
         &.#{$b_type} {
-            @include button(normal, $b_color, white);
+            @include button(normal, $b_color, black);
 
             &.flat {
                 @include button(undecorated);
