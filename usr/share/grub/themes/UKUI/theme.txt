@@ -60,7 +60,6 @@ terminal-border: "0"
 +label{
 		top = 100%-80
 		left = 50%-250
-		left = 50%-420
 #                width = 400
                 height = 20
                 align = "center"
