@@ -6,8 +6,7 @@ Uploaders: handsome_feng <jianfengli@ubuntukylin.com>
 Build-Depends: debhelper-compat (= 12),
                sass,
                x11-apps,
-               meson,
-               ninja-build
+               meson
 Standards-Version: 4.5.0
 Rules-Requires-Root: no
 Homepage: https://github.com/ukui/ubuntukylin-theme
