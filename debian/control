@@ -17,6 +17,7 @@ Package: ubuntukylin-theme
 Architecture: all
 Depends: gnome-icon-theme,
          hicolor-icon-theme,
+         adwaita-icon-theme,
          plymouth,
          ubuntu-mono,
          fonts-droid-fallback,
