@@ -1,1 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 256"><defs><style>.cls-1{opacity:0.08;}.cls-2{opacity:0.1;}.cls-3{opacity:0.2;}.cls-4{fill:url(#未命名的渐变_95);}.cls-5{fill:url(#未命名的渐变_92);}.cls-6{fill:url(#未命名的渐变_90);}.cls-7{fill:url(#未命名的渐变_89);}.cls-8{opacity:0.9;fill:url(#未命名的渐变_88);}.cls-8,.cls-9{isolation:isolate;}.cls-9{fill:#7f7f7f;opacity:0.7;}.cls-10{fill:#3aa5fc;}.cls-11{fill:#60cc25;}.cls-12{fill:#ff9843;}</style><linearGradient id="未命名的渐变_95" x1="128" y1="248" x2="128" y2="8" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#22b7a3"/><stop offset="1" stop-color="#36f8b8"/></linearGradient><linearGradient id="未命名的渐变_92" x1="128" y1="240" x2="128" y2="16" gradientUnits="userSpaceOnUse"><stop offset="0.04" stop-color="#11ad98"/><stop offset="1" stop-color="#13eba3"/></linearGradient><linearGradient id="未命名的渐变_90" x1="128" y1="282" x2="128" y2="434" gradientTransform="matrix(1, 0, 0, -1, 0, 488)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffc63a"/><stop offset="1" stop-color="#fce745"/></linearGradient><linearGradient id="未命名的渐变_89" x1="128" y1="423" x2="128" y2="293" gradientTransform="matrix(1, 0, 0, -1, 0, 488)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#ebe9e6"/></linearGradient><linearGradient id="未命名的渐变_88" x1="128" y1="413" x2="128" y2="449" gradientTransform="matrix(1, 0, 0, -1, 0, 488)" gradientUnits="userSpaceOnUse"><stop offset="0.04" stop-color="#6b6b6b"/><stop offset="0.05" stop-color="#6b6b6b"/><stop offset="0.21" stop-color="#565656"/><stop offset="0.4" stop-color="#484848"/><stop offset="0.63" stop-color="#404040"/><stop offset="1" stop-color="#3d3d3d"/></linearGradient></defs><title>256</title><g id="底板_复制"><g id="青绿色"><g id="_256" data-name="256"><g class="cls-1"><path d="M130,254c-41.5,0-78.15-10.87-95.64-28.36S6,171.52,6,130,16.88,51.83,34.36,34.36,88.5,6,130,6s78.15,10.87,95.64,28.36S254,88.48,254,130s-10.85,78.17-28.33,95.64S171.5,254,130,254Z"/></g><g class="cls-2"><path d="M130,252c-41,0-77.1-10.64-94.23-27.77-37-37-37-151.47,0-188.46C52.9,18.64,89,8,130,8s77.1,10.64,94.23,27.77c37,37,37,151.47,0,188.46C207.1,241.36,171,252,130,252Z"/></g><g class="cls-3"><path d="M128,250c-41,0-77.1-10.64-94.23-27.77-37-37-37-151.47,0-188.46C50.9,16.64,87,6,128,6s77.1,10.64,94.23,27.77c37,37,37,151.47,0,188.46C205.1,239.36,169,250,128,250Z"/></g><g id="_256-2" data-name="256"><circle class="cls-4" cx="128" cy="128" r="131.26"/></g><path class="cls-5" d="M128,240c-38.44,0-71.83-9.52-87.16-24.84S16,166.44,16,128s9.52-71.83,24.84-87.16S89.56,16,128,16s71.83,9.52,87.16,24.84S240,89.56,240,128s-9.52,71.83-24.84,87.16S166.44,240,128,240Z"/></g></g></g><g id="图层_27" data-name="图层 27"><g id="_256-3" data-name="256"><rect class="cls-6" x="52" y="54" width="152" height="152" rx="32.02"/><rect class="cls-7" x="63" y="65" width="130" height="130" rx="23.4"/><path class="cls-8" d="M148.31,49.29h0A10.23,10.23,0,0,0,138.15,39h-20.3a10.23,10.23,0,0,0-10.16,10.29h0a5.1,5.1,0,0,1-5.06,5.14h-2.55A5.11,5.11,0,0,0,95,59.57h0V69.86A5.11,5.11,0,0,0,100.08,75h55.84A5.11,5.11,0,0,0,161,69.86h0V59.57a5.11,5.11,0,0,0-5.08-5.14h-2.54a5.1,5.1,0,0,1-5.07-5.13Z"/><path class="cls-9" d="M114.52,101h50a2.5,2.5,0,0,1,2.5,2.5h0a2.5,2.5,0,0,1-2.5,2.5h-50a2.5,2.5,0,0,1-2.5-2.5h0A2.5,2.5,0,0,1,114.52,101Z"/><path class="cls-9" d="M114.52,130h50a2.5,2.5,0,0,1,2.5,2.5h0a2.5,2.5,0,0,1-2.5,2.5h-50a2.5,2.5,0,0,1-2.5-2.5h0A2.5,2.5,0,0,1,114.52,130Z"/><path class="cls-9" d="M114.52,159h50a2.5,2.5,0,0,1,2.5,2.5h0a2.5,2.5,0,0,1-2.5,2.5h-50a2.5,2.5,0,0,1-2.5-2.5h0A2.5,2.5,0,0,1,114.52,159Z"/><circle class="cls-10" cx="92" cy="102.5" r="6.5"/><circle class="cls-11" cx="92" cy="131.5" r="6.5"/><circle class="cls-12" cx="92" cy="160.5" r="6.5"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.2;}
+	.st1{opacity:8.000000e-02;}
+	.st2{opacity:0.1;}
+	.st3{fill:url(#SVGID_1_);}
+	.st4{fill:url(#SVGID_2_);}
+	.st5{fill:url(#SVGID_3_);}
+	.st6{fill:url(#SVGID_4_);}
+	.st7{opacity:0.9;fill:url(#SVGID_5_);enable-background:new    ;}
+	.st8{opacity:0.7;fill:#7F7F7F;enable-background:new    ;}
+	.st9{fill:#3AA5FC;}
+	.st10{fill:#60CC25;}
+	.st11{fill:#FF9843;}
+</style>
+<g id="_128">
+	<g class="st0">
+		<path d="M47.5,92c-14.9,0-28-3.9-34.3-10.2S3,62.4,3,47.5s3.9-28,10.2-34.3S32.6,3,47.5,3s28,3.9,34.3,10.2S92,32.6,92,47.5
+			s-3.9,28-10.2,34.3S62.4,92,47.5,92z"/>
+	</g>
+	<g class="st1">
+		<path d="M49,95c-15.3,0-28.8-4.1-35.4-10.6S3,64.3,3,49s4.1-28.8,10.6-35.4S33.7,3,49,3s28.8,4.1,35.4,10.6S95,33.7,95,49
+			s-4.1,28.8-10.6,35.4S64.3,95,49,95z"/>
+	</g>
+	<g class="st2">
+		<path d="M49,93.5c-14.9,0-28-3.9-34.3-10.2S4.5,63.9,4.5,49s3.9-28,10.2-34.3S34.1,4.5,49,4.5s28,3.9,34.3,10.2S93.5,34.1,93.5,49
+			s-3.9,28-10.2,34.3S63.9,93.5,49,93.5z"/>
+	</g>
+	<g id="_128-2">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="47.4912" y1="149.48" x2="47.4912" y2="235.4513" gradientTransform="matrix(1 0 0 -1 0 239.97)">
+			<stop  offset="0" style="stop-color:#22B7A3"/>
+			<stop  offset="1" style="stop-color:#36F8B8"/>
+		</linearGradient>
+		<path class="st3" d="M80.7,80.7c-13,13-53.5,13-66.5,0s-13-53.5,0-66.5s53.5-13,66.5,0S93.7,67.8,80.7,80.7z"/>
+	</g>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="47.485" y1="152.51" x2="47.485" y2="232.45" gradientTransform="matrix(1 0 0 -1 0 239.97)">
+		<stop  offset="4.000000e-02" style="stop-color:#11AD98"/>
+		<stop  offset="1" style="stop-color:#13EBA3"/>
+	</linearGradient>
+	<path class="st4" d="M47.5,87.5c-13.7,0-25.6-3.4-31.1-8.8S7.5,61.2,7.5,47.5s3.4-25.6,8.9-31.1s17.4-8.9,31.1-8.9
+		s25.6,3.4,31.1,8.9s8.8,17.4,8.8,31.1s-3.4,25.6-8.9,31.1S61.2,87.5,47.5,87.5z"/>
+</g>
+<g id="图层_27">
+	<g id="_96-2">
+		
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="48" y1="258" x2="48" y2="200" gradientTransform="matrix(1 0 0 1 0 -180)">
+			<stop  offset="0" style="stop-color:#FFC63A"/>
+			<stop  offset="1" style="stop-color:#FCE745"/>
+		</linearGradient>
+		<path class="st5" d="M31,20h34c6.6,0,12,5.4,12,12v34c0,6.6-5.4,12-12,12H31c-6.6,0-12-5.4-12-12V32C19,25.4,24.4,20,31,20z"/>
+		
+			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="48" y1="204" x2="48" y2="254" gradientTransform="matrix(1 0 0 1 0 -180)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="1" style="stop-color:#EBE9E6"/>
+		</linearGradient>
+		<path class="st6" d="M32,24h32c5,0,9,4,9,9v32c0,5-4,9-9,9H32c-5,0-9-4-9-9V33C23,28,27,24,32,24z"/>
+		
+			<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="48" y1="208" x2="48" y2="194" gradientTransform="matrix(1 0 0 1 0 -180)">
+			<stop  offset="4.000000e-02" style="stop-color:#6B6B6B"/>
+			<stop  offset="5.000000e-02" style="stop-color:#6B6B6B"/>
+			<stop  offset="0.21" style="stop-color:#565656"/>
+			<stop  offset="0.4" style="stop-color:#484848"/>
+			<stop  offset="0.63" style="stop-color:#404040"/>
+			<stop  offset="1" style="stop-color:#3D3D3D"/>
+		</linearGradient>
+		<path class="st7" d="M56,18L56,18c0-2.2-1.8-4-4-4h-8c-2.2,0-4,1.8-4,4l0,0c0,1.1-0.9,2-2,2h-1c-1.1,0-2,0.9-2,2v4
+			c0,1.1,0.9,2,2,2h22c1.1,0,2-0.9,2-2v-4c0-1.1-0.9-2-2-2h-1C56.9,20,56,19.1,56,18z"/>
+		<path class="st8" d="M42.9,38h19.2c0.5,0,0.9,0.4,0.9,0.9v0.2c0,0.5-0.4,0.9-0.9,0.9H42.9c-0.5,0-0.9-0.4-0.9-0.9v-0.2
+			C42,38.4,42.4,38,42.9,38z"/>
+		<path class="st8" d="M42.9,49h19.2c0.5,0,0.9,0.4,0.9,0.9v0.2c0,0.5-0.4,0.9-0.9,0.9H42.9c-0.5,0-0.9-0.4-0.9-0.9v-0.2
+			C42,49.4,42.4,49,42.9,49z"/>
+		<path class="st8" d="M42.9,60h19.2c0.5,0,0.9,0.4,0.9,0.9v0.2c0,0.5-0.4,0.9-0.9,0.9H42.9c-0.5,0-0.9-0.4-0.9-0.9v-0.2
+			C42,60.4,42.4,60,42.9,60z"/>
+		<circle class="st9" cx="34.5" cy="38.5" r="2.5"/>
+		<circle class="st10" cx="34.5" cy="49.5" r="2.5"/>
+		<circle class="st11" cx="34.5" cy="60.5" r="2.5"/>
+	</g>
+</g>
+</svg>
