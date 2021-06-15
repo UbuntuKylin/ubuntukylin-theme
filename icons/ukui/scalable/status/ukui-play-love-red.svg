@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>ukui-play-love-red-symbolic</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 -9.73122324e-06 16.0248 -9.73122324e-06 16.0248 14.0149 0 14.0149"></polygon>
+    </defs>
+    <g id="ukui-play-love-red-symbolic" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(0.000000, 1.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M6.91399657,13.6004158 L1.42257691,8.10626697 C-0.47445897,6.20828828 -0.47445897,3.31137344 1.42257691,1.41339475 C3.31961279,-0.384690323 6.11524462,-0.484583938 8.0122805,1.21360752 C10.0091604,-0.484583938 12.7049482,-0.384690323 14.6019841,1.41339475 C15.50058,2.31243729 15.9998,3.51116067 15.9998,4.80977767 C15.9998,6.10839467 15.4017345,7.30711805 14.5021401,8.10626697 L9.01072044,13.6004158 C8.81103245,13.800203 8.41265491,13.9999903 8.0122805,13.9999903 C7.61290452,13.9999903 7.21352855,13.9000967 6.91399657,13.6004158 Z" id="Fill-1" fill="#FF4848" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>
