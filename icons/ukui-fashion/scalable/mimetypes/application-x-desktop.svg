@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 96 96" style="enable-background:new 0 0 96 96;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#2B6B99;}
+	.st2{fill:#F57464;}
+	.st3{fill:#F5C81B;}
+	.st4{fill:#52C273;}
+	.st5{opacity:0.45;fill:#0089DF;enable-background:new    ;}
+	.st6{opacity:0.2;fill:#0078D7;enable-background:new    ;}
+	.st7{opacity:0.45;fill:#0499E3;enable-background:new    ;}
+</style>
+<g id="_96">
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="48" y1="8" x2="48" y2="76.13" gradientTransform="matrix(1 0 0 -1 0 98)">
+		<stop  offset="0" style="stop-color:#DFE3E6"/>
+		<stop  offset="0.16" style="stop-color:#E7E9EA;stop-opacity:0.98"/>
+		<stop  offset="1" style="stop-color:#EDEDED;stop-opacity:0.96"/>
+	</linearGradient>
+	<path class="st0" d="M25,6h46c10.5,0,19,8.5,19,19v46c0,10.5-8.5,19-19,19H25C14.5,90,6,81.5,6,71V25C6,14.5,14.5,6,25,6z"/>
+	<path class="st1" d="M71,6H25C14.5,6,6,14.5,6,25v4h84v-4C90,14.5,81.5,6,71,6z"/>
+	<path class="st2" d="M48,18c0,2.2-1.8,4-4,4s-4-1.8-4-4s1.8-4,4-4S48,15.8,48,18"/>
+	<path class="st3" d="M62,18c0,2.2-1.8,4-4,4s-4-1.8-4-4l0,0c0-2.2,1.8-4,4-4S62,15.8,62,18"/>
+	<path class="st4" d="M76,18c0,2.2-1.8,4-4,4s-4-1.8-4-4l0,0c0-2.2,1.8-4,4-4S76,15.8,76,18"/>
+	<path class="st5" d="M20,40h18c1.7,0,3,1.3,3,3v30c0,1.7-1.3,3-3,3H20c-1.7,0-3-1.3-3-3V43C17,41.3,18.3,40,20,40z"/>
+	<path class="st6" d="M49,40h16c0.6,0,1,0.4,1,1v3c0,0.6-0.4,1-1,1H49c-0.6,0-1-0.4-1-1v-3C48,40.4,48.4,40,49,40z"/>
+	<path class="st6" d="M49,50h16c0.6,0,1,0.4,1,1v3c0,0.6-0.4,1-1,1H49c-0.6,0-1-0.4-1-1v-3C48,50.4,48.4,50,49,50z"/>
+	<path class="st6" d="M49,60h16c0.6,0,1,0.4,1,1v3c0,0.6-0.4,1-1,1H49c-0.6,0-1-0.4-1-1v-3C48,60.4,48.4,60,49,60z"/>
+	<path class="st6" d="M49,70h29c0.6,0,1,0.4,1,1v3c0,0.6-0.4,1-1,1H49c-0.6,0-1-0.4-1-1v-3C48,70.4,48.4,70,49,70z"/>
+	<path class="st7" d="M74,40h4c0.6,0,1,0.4,1,1v23c0,0.6-0.4,1-1,1h-4c-0.6,0-1-0.4-1-1V41C73,40.4,73.4,40,74,40z"/>
+</g>
+</svg>
