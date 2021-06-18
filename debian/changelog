@@ -1,3 +1,9 @@
+ubuntukylin-theme (2.0.81) focal; urgency=medium
+
+  * 修复主题间依赖问题
+
+ -- Kevin Duan <duankaiwen@kylinos.cn>  Fri, 18 Jun 2021 10:13:48 +0800
+
 ubuntukylin-theme (2.0.80) focal; urgency=medium
 
   * Update icons
