@@ -1,14 +1,8 @@
-ubuntukylin-theme (2.0.81) focal; urgency=medium
+ubuntukylin-theme (3.0.0~0802) focal; urgency=medium
 
-  * 修复主题间依赖问题
+  * New release.
 
- -- Kevin Duan <duankaiwen@kylinos.cn>  Fri, 18 Jun 2021 10:13:48 +0800
-
-ubuntukylin-theme (2.0.80) focal; urgency=medium
-
-  * Update icons
-
- -- Kevin Duan <duankaiwen@kylinos.cn>  Tue, 15 Jun 2021 18:59:58 +0800
+ -- handsome_feng <jianfengli@ubuntukylin.com>  Mon, 02 Aug 2021 14:14:53 +0800
 
 ubuntukylin-theme (2.0.5) focal; urgency=medium
 
